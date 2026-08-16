@@ -1,0 +1,169 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import AdSlot from '../components/AdSlot.astro';
+import Disclaimer from '../components/Disclaimer.astro';
+import Icon from '../components/Icon.astro';
+import FristRechner from '../components/FristRechner.tsx';
+import { SITE_NAME } from '../lib/site';
+import { REGELBEDARF, STUFEN } from '../data/grundsicherungsgeld';
+
+/**
+ * Startseite (queue task 5.1/5.3).
+ *
+ * Der Rechner steht oben, nicht unter einer Einleitung. Wer hierherkommt, hat
+ * ein Schreiben in der Hand und eine Frist im Nacken — die erste Frage ist
+ * „bis wann?", nicht „was ist das hier für eine Website".
+ */
+const stufe1 = STUFEN.find((s) => s.nummer === 1)!;
+---
+
+<BaseLayout
+  title={`Bescheid verstehen und Widerspruchsfrist berechnen — ${SITE_NAME}`}
+  description="Behördenbescheid nicht verstanden? Hier steht, was die Sätze bedeuten, welche Fehler häufig vorkommen und bis wann Ihr Widerspruch eingegangen sein muss."
+  path="/"
+>
+  <p class="flex items-center gap-2 text-[15px] font-medium text-marker">
+    <Icon name="frist" class="h-5 w-5" />
+    Erst die Frist, dann alles andere
+  </p>
+
+  <h1 class="mt-3 font-display text-[clamp(2rem,6vw,3rem)] leading-tight text-ink">
+    Bis wann müssen Sie widersprechen?
+  </h1>
+  <p class="mt-4 max-w-prose text-ink-soft">
+    Ein Bescheid kommt, und irgendwo darin steht ein Satz über einen Monat.
+    Wann dieser Monat beginnt, ist die Frage, an der die meisten scheitern —
+    denn er läuft nicht ab dem Datum auf dem Brief. Tragen Sie das Datum ein,
+    und Sie sehen jeden Rechenschritt mit seiner Vorschrift.
+  </p>
+
+  <div class="mt-8">
+    <FristRechner client:load />
+  </div>
+
+  <div class="mt-10">
+    <AdSlot />
+  </div>
+
+  <section class="mt-14">
+    <h2 class="font-display text-2xl text-ink">Was diese Seite erklärt</h2>
+    <ul class="mt-5 flex flex-col divide-y divide-rule border-y border-rule">
+      <li class="flex items-start gap-4 py-5">
+        <Icon name="markierung" class="mt-1 h-6 w-6 shrink-0 text-marker" />
+        <div>
+          <a
+            href="/grundsicherungsgeld-bescheid/"
+            class="font-display text-xl text-ink underline underline-offset-4"
+          >
+            Den Grundsicherungsgeld-Bescheid Zeile für Zeile
+          </a>
+          <p class="mt-1 text-[15px] text-ink-soft">
+            Was Regelbedarf, Mehrbedarf, KdU und Einkommensanrechnung in einem
+            Bescheid bedeuten — an einem markierten Musterschreiben erklärt, mit
+            den Stellen, an denen häufig Fehler stecken.
+          </p>
+        </div>
+      </li>
+      <li class="flex items-start gap-4 py-5">
+        <Icon name="quelle" class="mt-1 h-6 w-6 shrink-0 text-marker" />
+        <div>
+          <a
+            href="/regelbedarf/"
+            class="font-display text-xl text-ink underline underline-offset-4"
+          >
+            Regelbedarf {REGELBEDARF.gueltig_ab.slice(0, 4)}: {stufe1.betrag} € und die anderen fünf Stufen
+          </a>
+          <p class="mt-1 text-[15px] text-ink-soft">
+            Alle sechs Stufen mit der Angabe, für wen sie gelten — und warum die
+            Beträge in diesem Jahr dieselben sind wie im Vorjahr.
+          </p>
+        </div>
+      </li>
+      <li class="flex items-start gap-4 py-5">
+        <Icon name="wohnen" class="mt-1 h-6 w-6 shrink-0 text-marker" />
+        <div>
+          <a
+            href="/wohngeldbescheid/"
+            class="font-display text-xl text-ink underline underline-offset-4"
+          >
+            Den Wohngeldbescheid und seine vier Größen
+          </a>
+          <p class="mt-1 text-[15px] text-ink-soft">
+            Mietenstufe, Höchstbetrag, Heizkostenentlastung und Gesamteinkommen
+            — mit den Tabellen aus dem Gesetz und dem Hinweis, warum hier nicht
+            überall der Widerspruch der richtige Rechtsbehelf ist.
+          </p>
+        </div>
+      </li>
+      <li class="flex items-start gap-4 py-5">
+        <Icon name="ausbildung" class="mt-1 h-6 w-6 shrink-0 text-marker" />
+        <div>
+          <a
+            href="/bafoeg-bescheid/"
+            class="font-display text-xl text-ink underline underline-offset-4"
+          >
+            Den BAföG-Bescheid nachrechnen
+          </a>
+          <p class="mt-1 text-[15px] text-ink-soft">
+            Bedarf, Elterneinkommen und Freibeträge — und die beiden Anträge,
+            die mit dem Bewilligungszeitraum verfallen, ohne dass eine
+            Rechtsbehelfsbelehrung je davon spricht.
+          </p>
+        </div>
+      </li>
+      <li class="flex items-start gap-4 py-5">
+        <Icon name="rente" class="mt-1 h-6 w-6 shrink-0 text-marker" />
+        <div>
+          <a
+            href="/rentenbescheid/"
+            class="font-display text-xl text-ink underline underline-offset-4"
+          >
+            Den Rentenbescheid: drei Zahlen und ein Versicherungsverlauf
+          </a>
+          <p class="mt-1 text-[15px] text-ink-soft">
+            Entgeltpunkte, Zugangsfaktor, Rentenartfaktor — und die Frist, die
+            Jahrzehnte vor dem Rentenbescheid abläuft, wenn man dem
+            Versicherungsverlauf nicht widerspricht.
+          </p>
+        </div>
+      </li>
+      <li class="flex items-start gap-4 py-5">
+        <Icon name="frist" class="mt-1 h-6 w-6 shrink-0 text-marker" />
+        <div>
+          <a
+            href="/widerspruchsfrist/"
+            class="font-display text-xl text-ink underline underline-offset-4"
+          >
+            Die Widerspruchsfrist und ihre fünf Rechenschritte
+          </a>
+          <p class="mt-1 text-[15px] text-ink-soft">
+            Warum der Monat nicht am Briefdatum beginnt, was passiert, wenn die
+            Rechtsbehelfsbelehrung fehlt, und was gilt, wenn die Frist schon
+            abgelaufen scheint.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="mt-14 max-w-prose">
+    <h2 class="font-display text-2xl text-ink">Warum „Bürgergeld" hier anders heißt</h2>
+    <p class="mt-3 text-ink-soft">
+      Wer nach seinem Bescheid sucht, sucht nach „Bürgergeld". Im Gesetz steht
+      das Wort so nicht mehr: Seit dem 1. Juli 2026 heißt die Leistung nach
+      § 19 SGB II <strong class="text-ink">Grundsicherungsgeld</strong>. Bis Ende
+      2026 dürfen Behörden das alte Wort übergangsweise weiterverwenden — es
+      sind also beide Bescheide im Umlauf.
+    </p>
+    <p class="mt-3 text-ink-soft">
+      Deshalb steht hier beides: der Begriff, unter dem Sie suchen, und der, der
+      in Ihrem Schreiben steht.
+    </p>
+  </section>
+
+  <Disclaimer rechner />
+
+  <div class="mt-10">
+    <AdSlot />
+  </div>
+</BaseLayout>

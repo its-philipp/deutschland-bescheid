@@ -1,0 +1,169 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import AdSlot from '../components/AdSlot.astro';
+import Bescheidauszug from '../components/Bescheidauszug.astro';
+import Disclaimer from '../components/Disclaimer.astro';
+import Icon from '../components/Icon.astro';
+import { PRUEFPUNKTE, RDG_GRENZE, STUFEN } from '../data/grundsicherungsgeld';
+import { VORLAGEN_URL } from '../lib/site';
+
+/**
+ * Die Erklärseite zum Grundsicherungsgeld-Bescheid (queue task 5.4).
+ *
+ * Sie trägt das Signaturelement: den markierten Bescheid. Der Musterauszug ist
+ * ausdrücklich als solcher gekennzeichnet und nennt **keine Beträge** — die
+ * stehen in der Tabelle auf der Regelbedarfsseite, wo sie aus dem Datensatz
+ * kommen und nicht aus einem erfundenen Schreiben.
+ *
+ * Die Prüfpunkte kommen aus der Erhebung und behalten deren Grenze: Sie sagen,
+ * woran man rechnet und wo häufig Fehler stecken — nie, ob ein bestimmter
+ * Bescheid falsch ist.
+ */
+const stufe1 = STUFEN.find((s) => s.nummer === 1)!;
+---
+
+<BaseLayout
+  title="Grundsicherungsgeld-Bescheid verstehen (früher Bürgergeld)"
+  description="Was Regelbedarf, Mehrbedarf, Unterkunftskosten und Einkommensanrechnung im Bescheid bedeuten — an einem markierten Musterschreiben erklärt, mit den häufigsten Fehlerstellen."
+  path="/grundsicherungsgeld-bescheid/"
+>
+  <nav class="text-[14px] text-ink-mute" aria-label="Sie sind hier">
+    <a href="/" class="underline underline-offset-2">Startseite</a> · Grundsicherungsgeld-Bescheid
+  </nav>
+
+  <h1 class="mt-2 font-display text-[clamp(1.9rem,5vw,2.75rem)] leading-tight text-ink">
+    Den Bescheid Zeile für Zeile verstehen
+  </h1>
+  <p class="mt-4 max-w-prose text-ink-soft">
+    Ein Bewilligungsbescheid besteht aus wenigen Bausteinen, die immer gleich
+    heißen. Wer sie einmal kennt, findet in jedem weiteren Bescheid dieselben
+    Stellen wieder — und sieht, ob dort etwas fehlt.
+  </p>
+  <p class="mt-3 max-w-prose text-ink-soft">
+    <strong class="text-ink">Ein Wort vorweg:</strong> Seit dem 1. Juli 2026
+    heißt die Leistung im Gesetz Grundsicherungsgeld (§ 19 SGB II). Bis Ende
+    2026 dürfen Behörden übergangsweise weiter „Bürgergeld" schreiben — in
+    Ihrem Bescheid kann also beides stehen. Gemeint ist dasselbe.
+  </p>
+
+  <div class="mt-10">
+    <Bescheidauszug
+      titel="Aus einem Bewilligungsbescheid"
+      absaetze={[
+        'Sehr geehrte Damen und Herren, auf Ihren Antrag vom 12.03.2026 bewillige ich Ihnen für die Zeit vom 01.04.2026 bis 31.03.2027 Grundsicherungsgeld nach dem Zweiten Buch Sozialgesetzbuch.',
+        'Der Berechnung liegt der Regelbedarf nach § 20 Abs. 2 SGB II zugrunde. Daneben werden die Bedarfe für Unterkunft und Heizung nach § 22 SGB II in tatsächlicher Höhe berücksichtigt, soweit sie angemessen sind.',
+        'Auf den Gesamtbedarf ist Ihr Einkommen nach § 11b SGB II anzurechnen. Der Bewilligungszeitraum umfasst zwölf Monate; die Leistung wird vorläufig bewilligt, da Ihr Einkommen schwankt.',
+      ]}
+      markierungen={[
+        {
+          stelle: 'Regelbedarf nach § 20 Abs. 2 SGB II',
+          erklaerung:
+            'Der Grundbetrag für Ernährung, Kleidung, Strom und Alltag. Welche der sechs Stufen für Sie gilt, hängt davon ab, mit wem Sie zusammenleben und wie alt Sie sind — nicht vom Einkommen.',
+          fundstelle: '§ 20 SGB II',
+        },
+        {
+          stelle: 'in tatsächlicher Höhe berücksichtigt, soweit sie angemessen sind',
+          erklaerung:
+            'Hier steckt die häufigste Streitfrage. In der Karenzzeit nach einem Neuantrag sind die tatsächlichen Kosten anzuerkennen, nicht die Angemessenheitsgrenze. Prüfen Sie, ob die Karenzzeit noch läuft.',
+          fundstelle: '§ 22 SGB II',
+        },
+        {
+          stelle: 'vorläufig bewilligt',
+          erklaerung:
+            'Vorläufig heißt: Es kommt später eine abschließende Entscheidung, und die kann eine Nachzahlung oder eine Rückforderung bedeuten. Legen Sie Ihre Einkommensnachweise für den ganzen Zeitraum beiseite.',
+          fundstelle: '§ 41a SGB II',
+        },
+      ]}
+    />
+  </div>
+
+  <div class="mt-10">
+    <AdSlot />
+  </div>
+
+  <section class="mt-14">
+    <h2 class="font-display text-2xl text-ink">Die Bausteine und ihre bekannten Fehlerstellen</h2>
+    <p class="mt-3 max-w-prose text-ink-soft">
+      Das Folgende sind allgemeine Hinweise auf Fehlerbilder, die bei diesem
+      Bescheidtyp häufig vorkommen — kein Urteil über Ihren Bescheid.
+    </p>
+
+    <div class="mt-6 flex flex-col gap-8">
+      {
+        PRUEFPUNKTE.map((p) => (
+          <article class="border-t-4 border-marker bg-paper p-5 sm:p-6">
+            <h3 class="font-display text-xl text-ink">{p.bestandteil}</h3>
+            <p class="mt-1 text-[14px] text-ink-mute">{p.legal_basis}</p>
+
+            {p.saetze && (
+              <ul class="mt-4 flex flex-col divide-y divide-rule border-y border-rule">
+                {p.saetze.map((s) => (
+                  <li class="flex flex-wrap items-baseline justify-between gap-x-4 py-2 text-[15px]">
+                    <span class="text-ink-soft">{s.fall}</span>
+                    <span class="font-semibold text-ink">
+                      {s.prozent_des_regelbedarfs} %
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            )}
+
+            {p.grundfreibetrag_eur && (
+              <p class="mt-4 text-[15px] text-ink-soft">
+                Grundfreibetrag <strong class="text-ink">{p.grundfreibetrag_eur} €</strong>.{' '}
+                {p.grundfreibetrag_regel}
+              </p>
+            )}
+
+            {p.satz_prozent && (
+              <p class="mt-4 text-[15px] text-ink-soft">
+                Minderung <strong class="text-ink">{p.satz_prozent} %</strong> des maßgebenden
+                Regelbedarfs. {p.obergrenze}
+              </p>
+            )}
+
+            <ul class="mt-4 flex flex-col gap-2">
+              {p.pruefen.map((frage) => (
+                <li class="flex gap-2.5 text-[15px] text-ink">
+                  <Icon name="pruefen" class="mt-1 h-4 w-4 shrink-0 text-marker" />
+                  <span>{frage}</span>
+                </li>
+              ))}
+            </ul>
+
+            {p.hinweis && <p class="mt-4 text-[15px] text-ink-mute">{p.hinweis}</p>}
+          </article>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="mt-14 max-w-prose">
+    <h2 class="font-display text-2xl text-ink">Wenn Sie widersprechen wollen</h2>
+    <p class="mt-3 text-ink-soft">
+      Zuerst die Frist prüfen — sie beginnt nicht am Datum des Bescheids. Der{' '}
+      <a href="/widerspruchsfrist/" class="text-ink underline underline-offset-2">
+        Fristenrechner</a
+      > zeigt Ihnen den letzten Tag mit jedem Rechenschritt. Ein Musterschreiben
+      für den Widerspruch selbst finden Sie auf{' '}
+      <a
+        href={`${VORLAGEN_URL}/behoerden/widerspruch-bescheid/`}
+        rel="noopener"
+        class="text-ink underline underline-offset-2">Deutschlandvorlagen</a
+      >.
+    </p>
+    <p class="mt-3 text-[15px] text-ink-mute">{RDG_GRENZE}</p>
+    <p class="mt-3 text-ink-soft">
+      Zum Nachrechnen der Beträge: die{' '}
+      <a href="/regelbedarf/" class="text-ink underline underline-offset-2">
+        sechs Regelbedarfsstufen</a
+      > — Stufe 1 liegt bei {stufe1.betrag} € im Monat.
+    </p>
+  </section>
+
+  <Disclaimer />
+
+  <div class="mt-10">
+    <AdSlot />
+  </div>
+</BaseLayout>

@@ -1,0 +1,122 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import AdSlot from '../components/AdSlot.astro';
+import Disclaimer from '../components/Disclaimer.astro';
+import { ERHOBEN_AM, QUELLEN, REGELBEDARF, STUFEN } from '../data/grundsicherungsgeld';
+import { isoToGerman } from '../lib/format';
+
+/**
+ * Die Regelbedarfs-Seite (queue task 5.4).
+ *
+ * **Ihre eigentliche Antwort ist die auf eine Frage, die kein Ratgeber
+ * beantwortet:** Warum sind die Beträge 2026 dieselben wie 2025? Nicht aus
+ * politischer Entscheidung, sondern weil die Fortschreibung nach unten zeigte
+ * und § 28a Abs. 5 SGB XII den Besitzstand wahrt. Wer seinen Bescheid mit dem
+ * Vorjahr vergleicht und keinen Unterschied findet, sucht sonst einen Fehler,
+ * der keiner ist.
+ */
+const jahr = REGELBEDARF.gueltig_ab.slice(0, 4);
+---
+
+<BaseLayout
+  title={`Regelbedarf ${jahr}: alle sechs Stufen im Grundsicherungsgeld-Bescheid`}
+  description={`Die Regelbedarfsstufen ${jahr} mit Betrag und Zuordnung — und warum sie dieselben sind wie im Vorjahr. Mit Fundstelle zu jeder Zahl.`}
+  path="/regelbedarf/"
+>
+  <nav class="text-[14px] text-ink-mute" aria-label="Sie sind hier">
+    <a href="/" class="underline underline-offset-2">Startseite</a> · Regelbedarf
+  </nav>
+
+  <h1 class="mt-2 font-display text-[clamp(1.9rem,5vw,2.75rem)] leading-tight text-ink">
+    Regelbedarf {jahr}: die sechs Stufen
+  </h1>
+  <p class="mt-4 max-w-prose text-ink-soft">
+    Der Regelbedarf ist der Posten, mit dem jeder Grundsicherungsgeld-Bescheid
+    anfängt. Welche Stufe für Sie gilt, hängt nicht vom Einkommen ab, sondern
+    davon, mit wem Sie zusammenleben und wie alt Sie sind.
+  </p>
+
+  <div class="mt-8 overflow-x-auto">
+    <table class="w-full border-collapse text-[16px]">
+      <thead>
+        <tr class="border-y border-rule text-left text-[14px] text-ink-mute">
+          <th scope="col" class="py-2 pr-3 font-normal">Stufe</th>
+          <th scope="col" class="py-2 pr-3 font-normal">Für wen</th>
+          <th scope="col" class="py-2 text-right font-normal">Monatlich</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          STUFEN.map((s) => (
+            <tr class="border-b border-rule/60">
+              <td class="py-3 pr-3 align-top font-semibold text-ink">{s.nummer}</td>
+              <td class="py-3 pr-3 align-top text-ink-soft">{s.wer}</td>
+              <td class="py-3 text-right align-top font-display text-xl font-semibold text-ink">
+                {s.betrag} €
+              </td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+
+  <p class="mt-3 text-[14px] text-ink-mute">
+    {REGELBEDARF.legal_basis} · gültig ab {isoToGerman(REGELBEDARF.gueltig_ab)}
+  </p>
+
+  <div class="mt-10">
+    <AdSlot />
+  </div>
+
+  {
+    REGELBEDARF.identisch_mit_2025 && (
+      <section class="mt-14 max-w-prose">
+        <h2 class="font-display text-2xl text-ink">
+          Warum die Beträge dieselben sind wie im Vorjahr
+        </h2>
+        <p class="mt-3 text-ink-soft">
+          Das ist kein Versehen und keine politische Entscheidung, sondern das
+          Ergebnis der Rechenregel. Die Regelbedarfe werden jedes Jahr
+          fortgeschrieben; für {jahr} hätte die Fortschreibung
+          <strong class="text-ink"> niedrigere</strong> Beträge ergeben. Für
+          diesen Fall bestimmt § 28a Abs. 5 SGB XII, dass die bisherigen Werte
+          weitergelten — die Beträge dürfen also nicht sinken.
+        </p>
+        <p class="mt-3 text-ink-soft">
+          Wenn Sie Ihren Bescheid mit dem des Vorjahres vergleichen und beim
+          Regelbedarf keinen Unterschied finden: Das ist der Grund. Ein Fehler
+          steckt dort nicht.
+        </p>
+        {REGELBEDARF.hinweis && (
+          <p class="mt-3 text-[15px] text-ink-mute">{REGELBEDARF.hinweis}</p>
+        )}
+      </section>
+    )
+  }
+
+  <section class="mt-14 max-w-prose">
+    <h2 class="font-display text-2xl text-ink">Quellen</h2>
+    <p class="mt-3 text-ink-soft">
+      Alle Beträge auf dieser Seite stammen aus dem Volltext der Vorschriften,
+      gelesen am {isoToGerman(ERHOBEN_AM)}:
+    </p>
+    <ul class="mt-3 flex list-disc flex-col gap-1 pl-5">
+      {
+        QUELLEN.map((q) => (
+          <li>
+            <a href={q.url} rel="noopener" class="text-ink underline underline-offset-2">
+              {q.label}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <Disclaimer />
+
+  <div class="mt-10">
+    <AdSlot />
+  </div>
+</BaseLayout>

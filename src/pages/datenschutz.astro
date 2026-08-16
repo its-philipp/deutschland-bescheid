@@ -1,0 +1,124 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import {
+  CONTACT_EMAIL,
+  IMPRESSUM_ADDRESS,
+  IMPRESSUM_HOSTER,
+  IMPRESSUM_NAME,
+  SITE_NAME,
+} from '../lib/site';
+import { adsEnabled } from '../lib/ads';
+
+/**
+ * Datenschutzerklärung nach Art. 13 DSGVO (queue task 5.5), `noindex`.
+ *
+ * **Der Werbeteil hängt an `adsEnabled` und nicht an einem Textbaustein.**
+ * Solange `ADSENSE_CLIENT` leer ist, wird kein Anzeigenskript ausgeliefert —
+ * und nur deshalb darf hier stehen, dass keine Cookies gesetzt werden. Wer die
+ * Kennung einträgt, schaltet automatisch beides um; die Erklärung kann nicht
+ * beschreiben, was die Seite nicht tut, und umgekehrt.
+ *
+ * Der wichtigste Abschnitt ist der zweite, und er sagt etwas, das diese Seite
+ * von der ursprünglichen Produktidee unterscheidet: **Es gibt keinen Upload.**
+ * Der Entwurf sah einmal vor, Bescheide hochzuladen und von einem Modell
+ * erklären zu lassen; der Owner hat das gestrichen. Bescheide enthalten die
+ * empfindlichsten Daten überhaupt, und eine Seite, die sie nicht entgegennimmt,
+ * kann sie auch nicht verlieren.
+ */
+---
+
+<BaseLayout
+  title={`Datenschutzerklärung — ${SITE_NAME}`}
+  description="Informationen nach Art. 13 DSGVO: welche Daten beim Aufruf dieser Website verarbeitet werden und welche nicht."
+  path="/datenschutz/"
+  noindex
+>
+  <h1 class="font-display text-3xl font-semibold">Datenschutzerklärung</h1>
+
+  <section class="mt-8 max-w-prose">
+    <h2 class="font-display text-xl">Verantwortlicher</h2>
+    <p class="mt-3 whitespace-pre-line">{`${IMPRESSUM_NAME}\n${IMPRESSUM_ADDRESS}`}</p>
+    <p class="mt-3">E-Mail: {CONTACT_EMAIL}</p>
+  </section>
+
+  <section class="mt-8 max-w-prose">
+    <h2 class="font-display text-xl">Ihre Angaben im Fristenrechner</h2>
+    <p class="mt-3">
+      Der Rechner läuft vollständig in Ihrem Browser. Das Datum, das Sie
+      eintragen, wird <strong>nicht an einen Server gesendet, nicht gespeichert
+      und nicht ausgewertet</strong>. Es entsteht bei uns keine Datei.
+    </p>
+    <p class="mt-3">
+      <strong>Und es gibt hier keinen Upload.</strong> Diese Website nimmt keine
+      Bescheide entgegen — weder als Datei noch als Text. Bescheide enthalten
+      besonders schutzwürdige Angaben, und die sichersten Daten sind die, die
+      gar nicht erst erhoben werden.
+    </p>
+    <p class="mt-3">
+      Das ist keine Zusicherung ins Blaue: Die Seite ist statisch, es gibt
+      keinen Endpunkt, der solche Angaben entgegennehmen könnte.
+    </p>
+  </section>
+
+  <section class="mt-8 max-w-prose">
+    <h2 class="font-display text-xl">Hosting und Server-Logfiles</h2>
+    <p class="mt-3">
+      Diese Website wird bei {IMPRESSUM_HOSTER} gehostet. Beim Aufruf erhebt der
+      Hosting-Anbieter technisch notwendige Zugriffsdaten: IP-Adresse, Datum und
+      Uhrzeit, aufgerufene Seite, übertragene Datenmenge, Referrer und
+      Browserkennung. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO; das
+      berechtigte Interesse liegt im sicheren und störungsfreien Betrieb. Diese
+      Daten werden nicht mit anderen Quellen zusammengeführt und nach kurzer
+      Zeit gelöscht.
+    </p>
+  </section>
+
+  {
+    adsEnabled ? (
+      <section class="mt-8 max-w-prose">
+        <h2 class="font-display text-xl">Werbung</h2>
+        <p class="mt-3">
+          Diese Website finanziert sich über Google AdSense (Google Ireland
+          Limited, Gordon House, Barrow Street, Dublin 4, Irland). Dabei können
+          Cookies gesetzt und Nutzungsdaten verarbeitet werden. Vor der
+          Auslieferung personalisierter Werbung wird Ihre Einwilligung über eine
+          zertifizierte Consent-Management-Plattform eingeholt; Rechtsgrundlage
+          ist dann Art. 6 Abs. 1 lit. a DSGVO. Ihre Einwilligung können Sie
+          jederzeit über die Datenschutzeinstellungen widerrufen.
+        </p>
+      </section>
+    ) : (
+      <section class="mt-8 max-w-prose">
+        <h2 class="font-display text-xl">Werbung, Cookies, Analyse</h2>
+        <p class="mt-3">
+          Derzeit wird auf dieser Website <strong>keine Werbung ausgeliefert</strong>.
+          Es werden <strong>keine Cookies gesetzt</strong>, keine Reichweiten- oder
+          Analysedienste eingebunden und keine Profile gebildet. Sollte sich das
+          ändern, wird diese Erklärung vorher angepasst und Ihre Einwilligung
+          eingeholt, soweit sie erforderlich ist.
+        </p>
+      </section>
+    )
+  }
+
+  <section class="mt-8 max-w-prose">
+    <h2 class="font-display text-xl">Schriften und externe Inhalte</h2>
+    <p class="mt-3">
+      Schriften werden von unserem eigenen Server ausgeliefert, nicht von einem
+      Anbieter für Web-Schriften. Beim bloßen Aufruf einer Seite entsteht daher
+      keine Verbindung zu Dritten. Links auf Gesetzestexte führen erst dann zu einer
+      Verbindung, wenn Sie sie anklicken.
+    </p>
+  </section>
+
+  <section class="mt-8 max-w-prose">
+    <h2 class="font-display text-xl">Ihre Rechte</h2>
+    <p class="mt-3">
+      Sie haben das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16),
+      Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18),
+      Datenübertragbarkeit (Art. 20) und Widerspruch (Art. 21). Wenden Sie sich
+      dafür an die oben genannte Adresse. Außerdem steht Ihnen ein
+      Beschwerderecht bei einer Datenschutz-Aufsichtsbehörde zu.
+    </p>
+  </section>
+</BaseLayout>

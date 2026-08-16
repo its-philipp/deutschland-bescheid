@@ -1,0 +1,244 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import AdSlot from '../components/AdSlot.astro';
+import Bescheidauszug from '../components/Bescheidauszug.astro';
+import Disclaimer from '../components/Disclaimer.astro';
+import Fristkette from '../components/Fristkette.astro';
+import Icon from '../components/Icon.astro';
+import Pruefpunkte from '../components/Pruefpunkte.astro';
+import Quellen from '../components/Quellen.astro';
+import { euro, isoToGerman } from '../lib/format';
+import {
+  ALTERSGRENZEN,
+  ERHOBEN_AM,
+  FRIST,
+  PRUEFPUNKTE,
+  QUELLEN,
+  RDG_GRENZE,
+  RENTENARTFAKTOREN,
+  RENTENFORMEL,
+  RENTENWERT,
+  ZEITEN,
+  ZUGANGSFAKTOR,
+} from '../data/rente';
+
+/**
+ * Die Erklärseite zum Rentenbescheid (queue task 5.4).
+ *
+ * **Der eigentliche Termin liegt Jahrzehnte vor dem Bescheid.** Wer einem
+ * Versicherungsverlauf nicht binnen sechs Kalendermonaten widerspricht, dessen
+ * mehr als sechs Jahre zurückliegende Daten stellt der Träger anschließend
+ * durch Bescheid fest (§ 149 Abs. 5 SGB VI) — und dieses Schreiben trägt keine
+ * Rechtsbehelfsbelehrung, weil es keine braucht. Eine Seite, die nur die
+ * Widerspruchsfrist des fertigen Rentenbescheids erklärt, kommt für den
+ * wichtigeren Termin zu spät; deshalb steht er hier oben und nicht als
+ * Fußnote.
+ *
+ * Die Seite rechnet keine Rente aus. Dafür fehlen die Durchschnittsentgelte
+ * der Anlage 1 zum SGB VI, und die Grenze ist beabsichtigt: Eine Rechnung, die
+ * einen Betrag nennt, wäre eine Aussage über den Einzelfall.
+ */
+const einEntgeltpunkt = RENTENWERT.betrag_eur;
+---
+
+<BaseLayout
+  title="Rentenbescheid verstehen: Entgeltpunkte, Abschläge, Frist 2026"
+  description="Was Entgeltpunkte, Zugangsfaktor und Rentenartfaktor im Rentenbescheid bedeuten, wo im Versicherungsverlauf die typischen Lücken sitzen und welche Frist schon vorher läuft."
+  path="/rentenbescheid/"
+>
+  <nav class="text-[14px] text-ink-mute" aria-label="Sie sind hier">
+    <a href="/" class="underline underline-offset-2">Startseite</a> · Rentenbescheid
+  </nav>
+
+  <h1 class="mt-2 font-display text-[clamp(1.9rem,5vw,2.75rem)] leading-tight text-ink">
+    Der Rentenbescheid besteht aus drei Zahlen
+  </h1>
+  <p class="mt-4 max-w-prose text-ink-soft">
+    So lang das Schreiben ist — die Rente selbst entsteht aus einer
+    Multiplikation mit drei Faktoren. Wer weiß, welcher davon wofür steht,
+    findet die Stelle, an der eine Zahl nicht stimmen kann.
+  </p>
+
+  <p class="mt-6 flex max-w-prose gap-2.5 border-l-4 border-marker bg-marker-tint px-4 py-3 text-ink">
+    <Icon name="frist" class="mt-0.5 h-5 w-5 shrink-0 text-marker" />
+    <span>
+      <strong>Die wichtigere Frist läuft früher.</strong> Der
+      Versicherungsverlauf, den die Rentenversicherung regelmäßig schickt, ist
+      kein Bescheid und trägt keine Rechtsbehelfsbelehrung. Widerspricht man
+      ihm nicht innerhalb von sechs Kalendermonaten, stellt der Träger die
+      mehr als sechs Jahre zurückliegenden Daten anschließend durch Bescheid
+      fest (§ 149 Abs. 5 SGB VI).
+    </span>
+  </p>
+
+  <div class="mt-10">
+    <Bescheidauszug
+      titel="Aus einem Rentenbescheid"
+      absaetze={[
+        'Sie erhalten ab dem 01.09.2026 eine Altersrente für langjährig Versicherte. Der Rentenberechnung liegen die in der Anlage aufgeführten persönlichen Entgeltpunkte zugrunde.',
+        'Die persönlichen Entgeltpunkte ergeben sich aus der Summe aller Entgeltpunkte, vervielfältigt mit dem Zugangsfaktor. Der Zugangsfaktor beträgt 0,904, weil die Rente vorzeitig in Anspruch genommen wird.',
+        'Der Monatsbetrag der Rente ergibt sich aus den persönlichen Entgeltpunkten, dem Rentenartfaktor und dem aktuellen Rentenwert. Die Zeiten Ihres Versicherungsverlaufs entnehmen Sie bitte der beigefügten Anlage.',
+      ]}
+      markierungen={[
+        {
+          stelle: 'Der Zugangsfaktor beträgt 0,904',
+          erklaerung:
+            'Jeder Monat vor der für Sie maßgebenden Altersgrenze kostet 0,003. Prüfen Sie beides: die Zahl der Monate und die zugrunde gelegte Altersgrenze — sie hängt vom Geburtsjahr und von der Rentenart ab. Ein Abschlag bleibt dauerhaft, er endet nicht mit dem 67. Geburtstag.',
+          fundstelle: '§ 77 SGB VI',
+        },
+        {
+          stelle: 'dem Rentenartfaktor',
+          erklaerung:
+            'Bei Altersrenten 1,0, bei einer Rente wegen teilweiser Erwerbsminderung 0,5, bei einer großen Witwenrente nach dem Sterbevierteljahr 0,55. Ein falscher Rentenartfaktor halbiert die Rente, ohne dass eine einzige Zeit fehlt.',
+          fundstelle: '§ 67 SGB VI',
+        },
+        {
+          stelle: 'der beigefügten Anlage',
+          erklaerung:
+            'Hier steckt die Arbeit. Der Versicherungsverlauf in der Anlage ist die Stelle, an der Lücken sichtbar werden — Schul- und Studienzeiten, Kindererziehungszeiten, Zeiten der Arbeitslosigkeit oder Krankheit.',
+          fundstelle: '§ 149 SGB VI',
+        },
+      ]}
+    />
+  </div>
+
+  <div class="mt-10">
+    <AdSlot />
+  </div>
+
+  <section class="mt-14">
+    <h2 class="font-display text-2xl text-ink">Die Rentenformel</h2>
+    <p class="mt-4 max-w-prose border-l-4 border-marker bg-marker-tint px-4 py-3 font-[Times_New_Roman,serif] text-[17px] text-ink">
+      {RENTENFORMEL.darstellung}
+    </p>
+    <p class="mt-2 text-[14px] text-ink-mute">{RENTENFORMEL.legal_basis}</p>
+
+    <dl class="mt-6 flex flex-col divide-y divide-rule border-y border-rule">
+      <div class="py-3">
+        <dt class="font-medium text-ink">Entgeltpunkte</dt>
+        <dd class="mt-1 text-[15px] text-ink-soft">{RENTENFORMEL.bedeutung.entgeltpunkte}</dd>
+      </div>
+      <div class="py-3">
+        <dt class="font-medium text-ink">Rentenartfaktor</dt>
+        <dd class="mt-1 text-[15px] text-ink-soft">{RENTENFORMEL.bedeutung.rentenartfaktor}</dd>
+      </div>
+      <div class="py-3">
+        <dt class="font-medium text-ink">Aktueller Rentenwert</dt>
+        <dd class="mt-1 text-[15px] text-ink-soft">{RENTENFORMEL.bedeutung.rentenwert}</dd>
+      </div>
+    </dl>
+
+    <p class="mt-6 max-w-prose text-ink-soft">
+      Der aktuelle Rentenwert steht nicht im Gesetz, sondern in einer
+      Verordnung, die jedes Jahr neu ergeht. Seit dem{' '}
+      {isoToGerman(RENTENWERT.gilt_ab)} beträgt er{' '}
+      <strong class="text-ink">{euro(einEntgeltpunkt)}</strong> — so viel ist
+      ein Entgeltpunkt bei einer Altersrente im Monat wert. Die nächste
+      Anpassung wirkt zum {isoToGerman(RENTENWERT.naechste_anpassung)}.
+    </p>
+    <p class="mt-2 text-[14px] text-ink-mute">{RENTENWERT.legal_basis}</p>
+    <p class="mt-3 max-w-prose text-[15px] text-ink-soft">{RENTENWERT.hinweis}</p>
+  </section>
+
+  <section class="mt-14">
+    <h2 class="font-display text-2xl text-ink">Rentenartfaktor je Rentenart</h2>
+    <ul class="mt-5 flex flex-col divide-y divide-rule border-y border-rule">
+      {
+        RENTENARTFAKTOREN.werte.map((w) => (
+          <li class="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 py-2.5 text-[15px]">
+            <span class="text-ink-soft">{w.rentenart}</span>
+            <span class="font-semibold tabular-nums text-ink">
+              {w.faktor.toLocaleString('de-DE', { minimumFractionDigits: 1 })}
+            </span>
+          </li>
+        ))
+      }
+    </ul>
+    <p class="mt-3 text-[14px] text-ink-mute">{RENTENARTFAKTOREN.legal_basis}</p>
+    <p class="mt-3 max-w-prose text-[15px] text-ink-soft">{RENTENARTFAKTOREN.hinweis}</p>
+  </section>
+
+  <section class="mt-14">
+    <h2 class="font-display text-2xl text-ink">Abschlag und Zuschlag: der Zugangsfaktor</h2>
+    <p class="mt-3 max-w-prose text-ink-soft">
+      Wer früher geht, bekommt je Kalendermonat{' '}
+      <strong class="text-ink">{ZUGANGSFAKTOR.abschlag_je_monat.toLocaleString('de-DE', { minimumFractionDigits: 3 })}</strong>{' '}
+      weniger als 1,0 — das sind {ZUGANGSFAKTOR.abschlag_je_jahr_prozent.toLocaleString('de-DE', { minimumFractionDigits: 1 })} Prozent
+      im Jahr. Wer später geht,{' '}
+      {ZUGANGSFAKTOR.zuschlag_je_monat.toLocaleString('de-DE', { minimumFractionDigits: 3 })} mehr,
+      also {ZUGANGSFAKTOR.zuschlag_je_jahr_prozent.toLocaleString('de-DE', { minimumFractionDigits: 1 })} Prozent im Jahr.
+    </p>
+    <ul class="mt-5 flex flex-col gap-2">
+      {
+        ZUGANGSFAKTOR.regeln.map((r) => (
+          <li class="flex gap-2.5 text-[15px] text-ink">
+            <Icon name="pruefen" class="mt-1 h-4 w-4 shrink-0 text-marker" />
+            <span>{r}</span>
+          </li>
+        ))
+      }
+    </ul>
+    <p class="mt-4 max-w-prose text-[15px] text-ink">
+      <strong>{ZUGANGSFAKTOR.dauerhaft}</strong>
+    </p>
+    <p class="mt-2 text-[14px] text-ink-mute">
+      {ZUGANGSFAKTOR.legal_basis} · {ZUGANGSFAKTOR.abgeleitet}
+    </p>
+  </section>
+
+  <section class="mt-14">
+    <h2 class="font-display text-2xl text-ink">Die Altersgrenzen, an denen gemessen wird</h2>
+    <div class="mt-6 flex flex-col gap-6">
+      {
+        ALTERSGRENZEN.map((a) => (
+          <article class="border-t-4 border-marker bg-paper p-5">
+            <h3 class="font-display text-xl text-ink">{a.titel}</h3>
+            <p class="mt-1 text-[14px] text-ink-mute">{a.legal_basis}</p>
+            <p class="mt-3 text-[15px] text-ink">
+              <strong>{a.alter}</strong> · Wartezeit {a.wartezeit}
+            </p>
+            {a.uebergang && <p class="mt-2 text-[15px] text-ink-soft">{a.uebergang}</p>}
+            {a.hinweis && <p class="mt-2 text-[15px] text-ink-soft">{a.hinweis}</p>}
+          </article>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="mt-14">
+    <h2 class="font-display text-2xl text-ink">Zeiten, die man selbst beibringen muss</h2>
+    <p class="mt-3 max-w-prose text-ink-soft">
+      Beitragszeiten kommen über die Meldungen der Arbeitgeber von selbst ins
+      Konto. Diese hier nicht — sie sind nachzuweisen, und genau dort sitzen die
+      bekannten Lücken.
+    </p>
+    <div class="mt-6 flex flex-col divide-y divide-rule border-y border-rule">
+      {
+        ZEITEN.map((z) => (
+          <article class="py-4">
+            <h3 class="font-display text-lg text-ink">{z.titel}</h3>
+            <p class="mt-1 text-[14px] text-ink-mute">{z.legal_basis}</p>
+            <p class="mt-2 text-[15px] text-ink">{z.dauer ?? z.regel ?? z.voraussetzung}</p>
+            {z.zuordnung && <p class="mt-2 text-[15px] text-ink-soft">{z.zuordnung}</p>}
+            {z.verlaengerung && <p class="mt-2 text-[15px] text-ink-soft">{z.verlaengerung}</p>}
+            {z.hinweis && <p class="mt-2 text-[15px] text-ink-soft">{z.hinweis}</p>}
+          </article>
+        ))
+      }
+    </div>
+  </section>
+
+  <Pruefpunkte punkte={PRUEFPUNKTE} />
+
+  <Fristkette frist={FRIST} />
+
+  <p class="mt-5 max-w-prose text-[15px] text-ink-mute">{RDG_GRENZE}</p>
+
+  <Quellen quellen={QUELLEN} erhobenAm={ERHOBEN_AM} />
+
+  <Disclaimer />
+
+  <div class="mt-10">
+    <AdSlot />
+  </div>
+</BaseLayout>

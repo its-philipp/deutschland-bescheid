@@ -1,0 +1,78 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { CONTACT_EMAIL, SITE_NAME } from '../lib/site';
+
+/**
+ * Kontakt — indexierbar, anders als Impressum und Datenschutz.
+ *
+ * Der zweite Abschnitt ist der wichtigste und der schwerste. Menschen
+ * schreiben an solche Seiten mit ihrem Bescheid im Anhang und der Frage, ob er
+ * stimmt. Beides muss die Seite abwenden — die Rechtsberatung, weil sie sie
+ * nicht leisten darf, und den Anhang, weil sie ihn nicht haben will. Und zwar
+ * ohne den Absender abzuweisen: Sie nennt deshalb die Stellen, die es dürfen,
+ * und den Grund, warum die Frist zuerst kommt.
+ */
+---
+
+<BaseLayout
+  title={`Kontakt: Fragen und Korrekturen zu ${SITE_NAME}`}
+  description="So erreichen Sie uns: E-Mail für Hinweise auf überholte Angaben. Keine Rechtsberatung im Einzelfall — und bitte keine Bescheide mitschicken."
+  path="/kontakt/"
+>
+  <h1 class="font-display text-3xl text-ink">Kontakt</h1>
+
+  <section class="mt-8 max-w-prose space-y-8">
+    <div>
+      <h2 class="font-display text-xl text-ink">Eine Angabe ist überholt</h2>
+      <p class="mt-3 text-ink-soft">
+        Im Sozialrecht ist das der häufigste Fall, und Hinweise darauf sind
+        willkommen. Hilfreich sind die Stelle, die Ihnen aufgefallen ist, und
+        die Fundstelle – ein Paragraf oder eine Fassung. Ich sehe am
+        Gesetzestext nach und korrigiere.
+      </p>
+    </div>
+
+    <div>
+      <h2 class="font-display text-xl text-ink">
+        Bitte schicken Sie mir Ihren Bescheid nicht
+      </h2>
+      <p class="mt-3 text-ink-soft">
+        Ich kann ihn nicht prüfen – das wäre Rechtsberatung, und die darf nur
+        leisten, wer dazu befugt ist. Und ich möchte ihn auch nicht haben: Ein
+        Bescheid enthält Namen, Anschrift, Einkommen und oft
+        Gesundheitsangaben, und E-Mail ist dafür der falsche Weg.
+      </p>
+      <p class="mt-3 text-ink-soft">
+        <strong>Wenn eine Frist läuft, ist die Reihenfolge wichtig:</strong>{' '}
+        erst fristwahrend Widerspruch einlegen, dann in Ruhe beraten lassen. Ein
+        knapper Widerspruch lässt sich jederzeit begründen; eine versäumte Frist
+        ist meist nicht mehr zu heilen. Wie lange Sie haben, zeigt der{' '}
+        <a href="/widerspruchsfrist/" class="underline underline-offset-2">
+          Fristenrechner</a
+        >.
+      </p>
+      <p class="mt-3 text-ink-soft">
+        Beraten dürfen Fachanwältinnen und Fachanwälte für Sozialrecht sowie die
+        Sozialverbände VdK und SoVD im Rahmen ihrer Mitgliedschaft; die
+        Verbraucherzentralen beraten zu vielen Bescheidarten günstig oder
+        kostenlos, und wer die Kosten nicht tragen kann, beantragt beim
+        Amtsgericht Beratungshilfe.
+      </p>
+    </div>
+
+    <div>
+      <h2 class="font-display text-xl text-ink">So erreichen Sie mich</h2>
+      <p class="mt-3 text-ink-soft">
+        Per E-Mail an{' '}
+        <a href={`mailto:${CONTACT_EMAIL}`} class="underline underline-offset-2">
+          {CONTACT_EMAIL}</a
+        >. Anschrift im{' '}
+        <a href="/impressum/" class="underline underline-offset-2">Impressum</a>,
+        Umgang mit Ihren Angaben in der{' '}
+        <a href="/datenschutz/" class="underline underline-offset-2">
+          Datenschutzerklärung</a
+        >.
+      </p>
+    </div>
+  </section>
+</BaseLayout>

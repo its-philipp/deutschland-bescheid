@@ -1,0 +1,185 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import AdSlot from '../components/AdSlot.astro';
+import Disclaimer from '../components/Disclaimer.astro';
+import FristRechner from '../components/FristRechner.tsx';
+import { VORLAGEN_URL } from '../lib/site';
+import regeln from '../data/sources/widerspruchsfrist.json';
+
+/**
+ * Die Frist-Erklärseite (queue task 5.3/5.4).
+ *
+ * Sie ist die eigentliche Keyword-Seite; die Startseite bringt den Rechner,
+ * diese Seite die Begründung jedes Schritts. **Jeder Schritt nennt seine
+ * Fundstelle** — das ist bei Fristen kein Schmuck, sondern die einzige
+ * Möglichkeit für den Leser, das Ergebnis gegen den Gesetzestext zu prüfen,
+ * bevor er sich darauf verlässt.
+ */
+const daten = regeln as unknown as {
+  rechenregeln: { schritt: number; regel: string; legal_basis: string; ausnahme?: string; hinweis?: string }[];
+  fristwahrung: { legal_basis: string; form: string[]; auch_gewahrt_bei: string };
+  anschlussfristen: { name: string; legal_basis: string; frist: string }[];
+};
+---
+
+<BaseLayout
+  title="Widerspruchsfrist berechnen: 1 Monat ab wann? (§ 84 SGG)"
+  description="Die Widerspruchsfrist beginnt nicht am Datum des Bescheids. Alle fünf Rechenschritte mit Fundstelle, dazu ein Rechner und die Ausnahmen, wenn die Frist abgelaufen scheint."
+  path="/widerspruchsfrist/"
+>
+  <nav class="text-[14px] text-ink-mute" aria-label="Sie sind hier">
+    <a href="/" class="underline underline-offset-2">Startseite</a> · Widerspruchsfrist
+  </nav>
+
+  <h1 class="mt-2 font-display text-[clamp(1.9rem,5vw,2.75rem)] leading-tight text-ink">
+    Die Widerspruchsfrist: ein Monat — aber ab wann?
+  </h1>
+  <p class="mt-4 max-w-prose text-ink-soft">
+    Der häufigste Irrtum ist, ab dem Datum auf dem Bescheid zu zählen. Das
+    Gesetz zählt anders, und zwar zu Ihren Gunsten: Zwischen dem Tag, an dem
+    die Behörde den Brief zur Post gibt, und dem Beginn der Frist liegen noch
+    einige Tage.
+  </p>
+
+  <div class="mt-8">
+    <FristRechner client:load />
+  </div>
+
+  <div class="mt-10">
+    <AdSlot />
+  </div>
+
+  <section class="mt-14">
+    <h2 class="font-display text-2xl text-ink">Die fünf Schritte, jeder mit seiner Vorschrift</h2>
+    <ol class="mt-5 flex flex-col divide-y divide-rule border-y border-rule">
+      {
+        daten.rechenregeln.map((r) => (
+          <li class="py-4">
+            <div class="flex gap-3">
+              <span class="font-display text-lg font-semibold text-marker">{r.schritt}</span>
+              <div class="min-w-0">
+                <p class="text-ink">{r.regel}</p>
+                <p class="mt-1 text-[14px] text-ink-mute">{r.legal_basis}</p>
+                {r.ausnahme && (
+                  <p class="mt-2 border-l-4 border-marker bg-marker-tint px-3 py-2 text-[15px] text-ink">
+                    {r.ausnahme}
+                  </p>
+                )}
+                {r.hinweis && <p class="mt-2 text-[15px] text-ink-soft">{r.hinweis}</p>}
+              </div>
+            </div>
+          </li>
+        ))
+      }
+    </ol>
+  </section>
+
+  <section class="mt-14">
+    <h2 class="font-display text-2xl text-ink">Womit die Frist gewahrt ist</h2>
+    <p class="mt-3 max-w-prose text-ink-soft">
+      Der Widerspruch muss innerhalb der Frist <strong class="text-ink">eingehen</strong>,
+      nicht abgeschickt sein. Zulässig sind nach {daten.fristwahrung.legal_basis}:
+    </p>
+    <ul class="mt-3 flex list-disc flex-col gap-1 pl-5 text-ink-soft">
+      {daten.fristwahrung.form.map((f) => <li>{f}</li>)}
+    </ul>
+    <p class="mt-3 max-w-prose text-ink-soft">{daten.fristwahrung.auch_gewahrt_bei}</p>
+    <p class="mt-4 max-w-prose text-ink-soft">
+      Ein Musterschreiben für den Widerspruch finden Sie auf{' '}
+      <a
+        href={`${VORLAGEN_URL}/behoerden/widerspruch-bescheid/`}
+        rel="noopener"
+        class="text-ink underline underline-offset-2">Deutschlandvorlagen</a
+      > — ausfüllen, ausdrucken, absenden.
+    </p>
+  </section>
+
+  <section class="mt-14">
+    <h2 class="font-display text-2xl text-ink">Wenn die Frist schon abgelaufen scheint</h2>
+    <p class="mt-3 max-w-prose text-ink-soft">
+      Dann ist der Fall nicht zwingend erledigt. Zwei Vorschriften helfen
+      regelmäßig weiter, und die erste davon ist der häufigste Rettungsanker
+      überhaupt: <strong class="text-ink">Fehlt die Rechtsbehelfsbelehrung oder
+      ist sie falsch, beträgt die Frist ein Jahr</strong> (§ 66 Abs. 2 SGG).
+      Prüfen Sie also zuerst, ob im Bescheid überhaupt steht, wie und wo Sie
+      widersprechen können — und ob das stimmt.
+    </p>
+    <p class="mt-3 max-w-prose text-ink-soft">
+      Wer ohne eigenes Verschulden an der Frist gehindert war — Krankenhaus,
+      Zustellung an die falsche Adresse —, kann Wiedereinsetzung in den vorigen
+      Stand beantragen (§ 67 SGG). Der Antrag ist binnen eines Monats nach
+      Wegfall des Hindernisses zu stellen, und der Widerspruch ist dabei
+      nachzuholen.
+    </p>
+  </section>
+
+  <section class="mt-14">
+    <h2 class="font-display text-2xl text-ink">
+      Gilt das auch für Wohngeld, BAföG und Rente?
+    </h2>
+    <p class="mt-3 max-w-prose text-ink-soft">
+      Für die Rechnung ja, ohne Abstriche. Beim Grundsicherungsgeld und bei der
+      Rente stehen die Vorschriften im Sozialgerichtsgesetz, beim Wohngeld und
+      beim BAföG in der Verwaltungsgerichtsordnung — vier Tage bis zur
+      Bekanntgabe, dann ein Monat, dann die Verschiebung auf den nächsten
+      Werktag ergeben aber auf beiden Wegen Tag für Tag dasselbe Datum. Der
+      Rechner oben gilt deshalb für alle vier Bescheidtypen.
+    </p>
+    <p class="mt-3 max-w-prose text-ink-soft">
+      <strong class="text-ink">Ein Unterschied bleibt, und er ist wichtig:</strong>
+      Beim Wohngeld und beim BAföG führt der Weg zum Verwaltungsgericht, und
+      § 68 Abs. 1 Satz 2 VwGO erlaubt den Ländern, das Widerspruchsverfahren
+      abzuschaffen. Wo das geschehen ist, wäre ein Widerspruch der falsche
+      Rechtsbehelf; der Monat läuft dann für die Klage (§ 74 Abs. 1 Satz 2
+      VwGO). Was gilt, muss die Rechtsbehelfsbelehrung Ihres Bescheids sagen —
+      und wenn sie fehlt oder falsch ist, haben Sie ein Jahr.
+    </p>
+    <ul class="mt-5 flex flex-col divide-y divide-rule border-y border-rule">
+      <li class="py-3">
+        <a href="/grundsicherungsgeld-bescheid/" class="font-medium text-ink underline underline-offset-2">
+          Grundsicherungsgeld-Bescheid
+        </a>
+        <p class="mt-1 text-[15px] text-ink-soft">Sozialgericht · §§ 84, 64 SGG · Widerspruch immer statthaft</p>
+      </li>
+      <li class="py-3">
+        <a href="/rentenbescheid/" class="font-medium text-ink underline underline-offset-2">
+          Rentenbescheid
+        </a>
+        <p class="mt-1 text-[15px] text-ink-soft">Sozialgericht · §§ 84, 64 SGG · Widerspruchsstelle der Selbstverwaltung</p>
+      </li>
+      <li class="py-3">
+        <a href="/wohngeldbescheid/" class="font-medium text-ink underline underline-offset-2">
+          Wohngeldbescheid
+        </a>
+        <p class="mt-1 text-[15px] text-ink-soft">Verwaltungsgericht · § 70 VwGO · Vorverfahren je nach Landesrecht</p>
+      </li>
+      <li class="py-3">
+        <a href="/bafoeg-bescheid/" class="font-medium text-ink underline underline-offset-2">
+          BAföG-Bescheid
+        </a>
+        <p class="mt-1 text-[15px] text-ink-soft">Verwaltungsgericht · § 54 BAföG, § 70 VwGO · Vorverfahren je nach Landesrecht</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="mt-14">
+    <h2 class="font-display text-2xl text-ink">Was danach kommt</h2>
+    <ul class="mt-4 flex flex-col divide-y divide-rule border-y border-rule">
+      {
+        daten.anschlussfristen.map((a) => (
+          <li class="py-3">
+            <p class="font-medium text-ink">{a.name}</p>
+            <p class="mt-1 text-[15px] text-ink-soft">{a.frist}</p>
+            <p class="mt-1 text-[14px] text-ink-mute">{a.legal_basis}</p>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <Disclaimer rechner />
+
+  <div class="mt-10">
+    <AdSlot />
+  </div>
+</BaseLayout>

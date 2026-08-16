@@ -1,0 +1,275 @@
+{
+  "_meta": {
+    "topic": "rentenbescheid",
+    "retrieved": "2026-08-16",
+    "collector": "local session (owner's machine)",
+    "method": "Gesamt-XML des SGB VI von gesetze-im-internet.de gezogen (Stand: zuletzt geändert durch Art. 2a G v. 24.7.2026 I Nr. 228) und im Volltext gelesen. Der aktuelle Rentenwert steht nicht im SGB VI, sondern in der jährlichen Rentenwertbestimmungsverordnung — deren Text wurde einzeln geholt.",
+    "sources": [
+      {
+        "label": "SGB VI § 63 – Grundsätze",
+        "url": "https://www.gesetze-im-internet.de/sgb_6/__63.html",
+        "retrieved": "2026-08-16"
+      },
+      {
+        "label": "SGB VI § 64 – Rentenformel für den Monatsbetrag der Rente",
+        "url": "https://www.gesetze-im-internet.de/sgb_6/__64.html",
+        "retrieved": "2026-08-16"
+      },
+      {
+        "label": "SGB VI § 67 – Rentenartfaktor",
+        "url": "https://www.gesetze-im-internet.de/sgb_6/__67.html",
+        "retrieved": "2026-08-16"
+      },
+      {
+        "label": "SGB VI § 77 – Zugangsfaktor",
+        "url": "https://www.gesetze-im-internet.de/sgb_6/__77.html",
+        "retrieved": "2026-08-16"
+      },
+      {
+        "label": "SGB VI § 35 – Regelaltersrente",
+        "url": "https://www.gesetze-im-internet.de/sgb_6/__35.html",
+        "retrieved": "2026-08-16"
+      },
+      {
+        "label": "SGB VI § 36 – Altersrente für langjährig Versicherte",
+        "url": "https://www.gesetze-im-internet.de/sgb_6/__36.html",
+        "retrieved": "2026-08-16"
+      },
+      {
+        "label": "SGB VI § 38 – Altersrente für besonders langjährig Versicherte",
+        "url": "https://www.gesetze-im-internet.de/sgb_6/__38.html",
+        "retrieved": "2026-08-16"
+      },
+      {
+        "label": "SGB VI § 56 – Kindererziehungszeiten",
+        "url": "https://www.gesetze-im-internet.de/sgb_6/__56.html",
+        "retrieved": "2026-08-16"
+      },
+      {
+        "label": "SGB VI § 57 – Berücksichtigungszeiten",
+        "url": "https://www.gesetze-im-internet.de/sgb_6/__57.html",
+        "retrieved": "2026-08-16"
+      },
+      {
+        "label": "SGB VI § 58 – Anrechnungszeiten",
+        "url": "https://www.gesetze-im-internet.de/sgb_6/__58.html",
+        "retrieved": "2026-08-16"
+      },
+      {
+        "label": "SGB VI § 76g – Zuschlag an Entgeltpunkten für langjährige Versicherung",
+        "url": "https://www.gesetze-im-internet.de/sgb_6/__76g.html",
+        "retrieved": "2026-08-16"
+      },
+      {
+        "label": "SGB VI § 99 – Beginn der Rente",
+        "url": "https://www.gesetze-im-internet.de/sgb_6/__99.html",
+        "retrieved": "2026-08-16"
+      },
+      {
+        "label": "SGB VI § 149 – Versicherungskonto",
+        "url": "https://www.gesetze-im-internet.de/sgb_6/__149.html",
+        "retrieved": "2026-08-16"
+      },
+      {
+        "label": "SGB VI § 235 – Regelaltersrente (Übergangsrecht)",
+        "url": "https://www.gesetze-im-internet.de/sgb_6/__235.html",
+        "retrieved": "2026-08-16"
+      },
+      {
+        "label": "Verordnung zur Bestimmung der Rentenwerte zum 1. Juli 2026 (RWBestV 2026), § 1",
+        "url": "https://www.gesetze-im-internet.de/rwbestv_2026/__1.html",
+        "retrieved": "2026-08-16"
+      },
+      {
+        "label": "SGB X § 44 – Rücknahme eines rechtswidrigen nicht begünstigenden Verwaltungsaktes",
+        "url": "https://www.gesetze-im-internet.de/sgb_10/__44.html",
+        "retrieved": "2026-08-16"
+      },
+      {
+        "label": "SGG § 85 – Widerspruchsbescheid",
+        "url": "https://www.gesetze-im-internet.de/sgg/__85.html",
+        "retrieved": "2026-08-16"
+      }
+    ],
+    "BEFUND_1_der_versicherungsverlauf_haertet_nach_sechs_monaten_aus": {
+      "sachverhalt": "§ 149 Abs. 5 Satz 1 SGB VI: Hat der Versicherte „innerhalb von sechs Kalendermonaten nach Versendung des Versicherungsverlaufs seinem Inhalt nicht widersprochen“, stellt der Träger die enthaltenen Daten, die länger als sechs Kalenderjahre zurückliegen, durch Bescheid fest.",
+      "folge_fuer_das_projekt": "Das ist eine Frist, die kaum jemand als Frist wahrnimmt, weil das Schreiben kein Bescheid ist und keine Rechtsbehelfsbelehrung trägt. Sie liegt Jahrzehnte vor dem Rentenbescheid und entscheidet mit darüber, was in ihm steht. Eine Erklärseite zum Rentenbescheid, die nur die Widerspruchsfrist des fertigen Bescheids nennt, kommt für den eigentlich wichtigen Termin zu spät."
+    },
+    "BEFUND_2_der_rentenwert_steht_nicht_im_gesetz": {
+      "sachverhalt": "Das SGB VI beschreibt in §§ 63 bis 68 nur, wie der aktuelle Rentenwert zustande kommt. Der Betrag selbst wird jährlich durch Rechtsverordnung festgesetzt: § 1 RWBestV 2026 lautet „Der aktuelle Rentenwert beträgt ab dem 1. Juli 2026 42,52 Euro.“ Derselbe Rechtsakt nennt den Anpassungsfaktor 1,0424 für die Unfallversicherung.",
+      "folge_fuer_das_projekt": "Wie beim BAföG-Freibetrag gilt: die maßgebliche Zahl steht nicht dort, wo die Regel steht. Und sie hat ein bekanntes Verfallsdatum — zum 1. Juli jedes Jahres kommt eine neue Verordnung. Der Datensatz führt `gilt_ab` und den Anpassungstermin mit."
+    },
+    "BEFUND_3_zwei_zeiten_muss_man_selbst_beantragen": {
+      "sachverhalt": "Kindererziehungszeiten (§ 56) und Zeiten schulischer Ausbildung nach dem 17. Lebensjahr (§ 58 Abs. 1 Satz 1 Nr. 4, insgesamt höchstens acht Jahre) stehen dem Träger nicht automatisch zur Verfügung — anders als Beitragszeiten, die über das Meldeverfahren der Arbeitgeber ins Konto kommen. § 149 Abs. 4 SGB VI verpflichtet Versicherte ausdrücklich, bei der Klärung mitzuwirken und Nachweise beizubringen.",
+      "folge_fuer_das_projekt": "Die bekannteste Lücke im Rentenbescheid ist deshalb keine Falschberechnung, sondern eine fehlende Meldung. Das ist eine Aussage über den Bescheidtyp, die man ohne jede Einzelfallprüfung treffen kann — und damit genau das, was diese Seite sagen darf."
+    }
+  },
+  "rentenformel": {
+    "legal_basis": "§ 64 SGB VI",
+    "darstellung": "persönliche Entgeltpunkte × Rentenartfaktor × aktueller Rentenwert",
+    "bedeutung": {
+      "entgeltpunkte": "Ein Jahr mit genau dem Durchschnittsentgelt aller Versicherten ergibt einen Entgeltpunkt (§ 63 Abs. 2). Die persönlichen Entgeltpunkte sind die Summe aller Entgeltpunkte, multipliziert mit dem Zugangsfaktor (§ 66 Abs. 1).",
+      "rentenartfaktor": "Er bildet das Sicherungsziel der Rentenart ab (§ 63 Abs. 4).",
+      "rentenwert": "Der Eurobetrag, den ein Entgeltpunkt im Monat wert ist — jährlich zum 1. Juli neu festgesetzt (§ 63 Abs. 7)."
+    }
+  },
+  "rentenwert": {
+    "legal_basis": "§ 1 RWBestV 2026, ergangen zu §§ 68, 69 SGB VI",
+    "betrag_eur": 42.52,
+    "gilt_ab": "2026-07-01",
+    "naechste_anpassung": "2027-07-01",
+    "wortlaut": "Der aktuelle Rentenwert beträgt ab dem 1. Juli 2026 42,52 Euro.",
+    "hinweis": "Der Betrag im Bescheid ist der Rentenwert bei Rentenbeginn (§ 64 Nr. 3). Ein älterer Bescheid nennt deshalb einen niedrigeren Wert, ohne falsch zu sein — die laufende Rente wird stattdessen jedes Jahr angepasst."
+  },
+  "rentenartfaktoren": {
+    "legal_basis": "§ 67 SGB VI",
+    "werte": [
+      { "rentenart": "Renten wegen Alters", "faktor": 1.0 },
+      { "rentenart": "Renten wegen voller Erwerbsminderung", "faktor": 1.0 },
+      { "rentenart": "Renten wegen teilweiser Erwerbsminderung", "faktor": 0.5 },
+      { "rentenart": "Erziehungsrenten", "faktor": 1.0 },
+      {
+        "rentenart": "große Witwen- und Witwerrenten nach dem dritten Kalendermonat",
+        "faktor": 0.55
+      },
+      {
+        "rentenart": "kleine Witwen- und Witwerrenten nach dem dritten Kalendermonat",
+        "faktor": 0.25
+      },
+      { "rentenart": "Halbwaisenrenten", "faktor": 0.1 },
+      { "rentenart": "Vollwaisenrenten", "faktor": 0.2 }
+    ],
+    "hinweis": "In den ersten drei Kalendermonaten nach dem Sterbemonat beträgt der Faktor bei Witwen- und Witwerrenten 1,0 — das ist das sogenannte Sterbevierteljahr."
+  },
+  "zugangsfaktor": {
+    "legal_basis": "§ 77 SGB VI",
+    "ausgangswert": 1.0,
+    "abschlag_je_monat": 0.003,
+    "zuschlag_je_monat": 0.005,
+    "abschlag_je_jahr_prozent": 3.6,
+    "zuschlag_je_jahr_prozent": 6.0,
+    "abgeleitet": "Die Jahresangaben sind aus den Monatswerten des § 77 Abs. 2 gerechnet (0,003 × 12 und 0,005 × 12). Im Gesetz stehen die Monatswerte.",
+    "regeln": [
+      "Rentenbeginn mit Erreichen der Regelaltersgrenze oder eines maßgebenden niedrigeren Rentenalters: 1,0 (§ 77 Abs. 2 Nr. 1).",
+      "Vorzeitige Altersrente: je Kalendermonat 0,003 weniger als 1,0 (§ 77 Abs. 2 Nr. 2 Buchst. a).",
+      "Rente nach der Regelaltersgrenze nicht in Anspruch genommen: je Kalendermonat 0,005 mehr als 1,0 (§ 77 Abs. 2 Nr. 2 Buchst. b).",
+      "Erwerbsminderungsrenten: Abschlag für jeden Monat vor Vollendung des 65. Lebensjahres, höchstens jedoch gerechnet ab Vollendung des 62. Lebensjahres (§ 77 Abs. 2 Nr. 3 und Satz 2)."
+    ],
+    "dauerhaft": "Der bei Rentenbeginn ermittelte Zugangsfaktor bleibt für diese Entgeltpunkte maßgebend (§ 77 Abs. 3 Satz 1). Ein Abschlag verschwindet also nicht mit dem Erreichen der Regelaltersgrenze."
+  },
+  "altersgrenzen": {
+    "regelaltersrente": {
+      "legal_basis": "§ 35 SGB VI",
+      "alter": "67 Jahre",
+      "wartezeit": "5 Jahre (allgemeine Wartezeit)",
+      "uebergang": "Für vor 1964 Geborene wird die Regelaltersgrenze nach § 235 SGB VI stufenweise von 65 auf 67 angehoben."
+    },
+    "langjaehrig_versicherte": {
+      "legal_basis": "§ 36 SGB VI",
+      "alter": "67 Jahre, vorzeitig ab 63",
+      "wartezeit": "35 Jahre",
+      "hinweis": "Die vorzeitige Inanspruchnahme kostet den Abschlag nach § 77 — 0,003 je Monat."
+    },
+    "besonders_langjaehrig_versicherte": {
+      "legal_basis": "§ 38 SGB VI, Übergangsrecht § 236b",
+      "alter": "65 Jahre",
+      "wartezeit": "45 Jahre",
+      "hinweis": "Diese Rente hat ihre eigene Altersgrenze; wer sie erreicht, hat keinen Abschlag. Für vor 1964 Geborene liegt die Grenze nach § 236b niedriger und steigt von 63 auf 64 Jahre und 10 Monate."
+    }
+  },
+  "zeiten": {
+    "kindererziehung": {
+      "legal_basis": "§ 56 SGB VI",
+      "dauer": "36 Kalendermonate, beginnend nach Ablauf des Geburtsmonats",
+      "zuordnung": "Bei gemeinsamer Erziehung wird die Zeit einem Elternteil zugeordnet; eine übereinstimmende Erklärung wirkt für die Zukunft und höchstens zwei Monate rückwirkend (§ 56 Abs. 2).",
+      "verlaengerung": "Wird in diesem Zeitraum ein weiteres Kind erzogen, verlängert sich dessen Kindererziehungszeit um die Monate der gleichzeitigen Erziehung."
+    },
+    "beruecksichtigungszeit": {
+      "legal_basis": "§ 57 SGB VI",
+      "dauer": "bis zum vollendeten zehnten Lebensjahr des Kindes",
+      "hinweis": "Sie zählt für Wartezeiten und kann die Bewertung anderer Zeiten beeinflussen, ist aber nicht dasselbe wie die Kindererziehungszeit."
+    },
+    "schulische_ausbildung": {
+      "legal_basis": "§ 58 Abs. 1 Satz 1 Nr. 4 SGB VI",
+      "regel": "Schule, Fachschule oder Hochschule nach dem vollendeten 17. Lebensjahr, insgesamt höchstens acht Jahre",
+      "hinweis": "Diese Zeiten kommen nicht von selbst ins Konto — sie sind mit Zeugnissen und Immatrikulationsbescheinigungen nachzuweisen (§ 149 Abs. 4)."
+    },
+    "grundrentenzuschlag": {
+      "legal_basis": "§ 76g SGB VI",
+      "voraussetzung": "mindestens 33 Jahre mit Grundrentenzeiten",
+      "hinweis": "Zeiten mit Pflichtbeiträgen oder Anrechnungszeiten wegen Arbeitslosengeldbezugs zählen ausdrücklich nicht als Grundrentenzeiten (§ 76g Abs. 2 Satz 3). Der Zuschlag wird von Amts wegen geprüft."
+    }
+  },
+  "pruefpunkte": [
+    {
+      "bestandteil": "Versicherungsverlauf",
+      "legal_basis": "§ 149 SGB VI",
+      "pruefen": [
+        "Ist jedes Jahr seit dem 17. Lebensjahr belegt, oder klaffen Lücken? Lücken sind der häufigste Befund und selten ein Rechenfehler.",
+        "Sind Schul-, Fachschul- und Hochschulzeiten nach dem 17. Lebensjahr enthalten — bis zu acht Jahre?",
+        "Sind Kindererziehungs- und Berücksichtigungszeiten für jedes Kind erfasst und dem richtigen Elternteil zugeordnet?",
+        "Sind Zeiten der Arbeitslosigkeit, Krankheit, Ausbildungssuche und Pflege als Anrechnungszeiten erfasst?"
+      ],
+      "hinweis": "Der Versicherungsverlauf ist selbst kein Bescheid. Wer ihm nicht innerhalb von sechs Kalendermonaten widerspricht, dessen mehr als sechs Jahre zurückliegende Daten stellt der Träger anschließend durch Bescheid fest (§ 149 Abs. 5)."
+    },
+    {
+      "bestandteil": "Entgeltpunkte",
+      "legal_basis": "§§ 63 und 66 SGB VI",
+      "pruefen": [
+        "Stimmen die gemeldeten Jahresentgelte mit Ihren Lohnabrechnungen und Zeugnissen überein?",
+        "Sind Zuschläge für geringfügige Beschäftigung, aus Versorgungsausgleich oder Rentensplitting berücksichtigt (§ 66 Abs. 1)?",
+        "Ist der Zuschlag für langjährige Versicherung geprüft worden, wenn 33 Jahre mit Grundrentenzeiten vorliegen?"
+      ]
+    },
+    {
+      "bestandteil": "Zugangsfaktor",
+      "legal_basis": "§ 77 SGB VI",
+      "pruefen": [
+        "Weist der Bescheid einen Zugangsfaktor unter 1,0 aus? Dann ist ein Abschlag gerechnet — prüfen Sie die Zahl der Monate zwischen Rentenbeginn und Ihrer maßgebenden Altersgrenze.",
+        "Wurde die richtige Altersgrenze zugrunde gelegt? Sie hängt vom Geburtsjahr und von der Rentenart ab und ist bei der Rente für besonders langjährig Versicherte eine andere als bei der Regelaltersrente.",
+        "Bei Rentenbeginn nach der Regelaltersgrenze: ist der Zuschlag von 0,005 je Monat angesetzt?"
+      ],
+      "hinweis": "Ein einmal gerechneter Abschlag bleibt dauerhaft — er endet nicht mit dem Erreichen der Regelaltersgrenze (§ 77 Abs. 3 Satz 1)."
+    },
+    {
+      "bestandteil": "Rentenart und Rentenbeginn",
+      "legal_basis": "§§ 67 und 99 SGB VI",
+      "pruefen": [
+        "Ist der Rentenartfaktor der Ihrer Rentenart? Eine Rente wegen teilweiser Erwerbsminderung wird mit 0,5 gerechnet, eine wegen voller mit 1,0.",
+        "Beginnt die Rente in dem Monat, in dem die Voraussetzungen erfüllt waren? Das gilt, wenn der Antrag bis zum Ende des dritten Kalendermonats danach gestellt wurde — bei späterem Antrag beginnt sie erst mit dem Antragsmonat (§ 99 Abs. 1).",
+        "Bei Hinterbliebenenrenten: wird für längstens zwölf Monate vor dem Antragsmonat rückwirkend geleistet (§ 99 Abs. 2)?"
+      ]
+    },
+    {
+      "bestandteil": "Wenn die Widerspruchsfrist abgelaufen ist",
+      "legal_basis": "§ 44 SGB X",
+      "pruefen": [
+        "Wurde bei Erlass des Bescheids das Recht unrichtig angewandt oder von einem unrichtigen Sachverhalt ausgegangen? Dann ist der Bescheid auch nach Eintritt der Bestandskraft zurückzunehmen (§ 44 Abs. 1).",
+        "Leistungen werden dabei längstens für vier Jahre rückwirkend erbracht, gerechnet ab Beginn des Jahres der Rücknahme — bei einem Antrag zählt der Antrag statt der Rücknahme (§ 44 Abs. 4)."
+      ],
+      "hinweis": "Der Überprüfungsantrag nach § 44 SGB X ist kein Ersatz für den Widerspruch: Er wirkt nur begrenzt zurück und hemmt nichts. Aber er ist der Grund, warum ein alter Rentenbescheid nicht endgültig erledigt ist."
+    }
+  ],
+  "frist": {
+    "rechtsweg": "Sozialgericht",
+    "rechtsweg_begruendung": "§ 51 Abs. 1 Nr. 1 SGG: Angelegenheiten der gesetzlichen Rentenversicherung gehören vor die Gerichte der Sozialgerichtsbarkeit.",
+    "rechtsbehelf": "Widerspruch nach §§ 78 ff. SGG — hier ist das Vorverfahren bundesrechtlich geregelt und findet immer statt",
+    "dauer": "ein Monat ab Bekanntgabe, bei Bekanntgabe im Ausland drei Monate",
+    "kette": [
+      { "schritt": "Bekanntgabe am vierten Tag nach Aufgabe zur Post", "legal_basis": "§ 37 Abs. 2 Satz 1 SGB X" },
+      { "schritt": "Der Fristlauf beginnt am Tag nach der Bekanntgabe", "legal_basis": "§ 64 Abs. 1 SGG" },
+      { "schritt": "Ein Monat, bei Bekanntgabe im Ausland drei Monate", "legal_basis": "§ 84 Abs. 1 SGG" },
+      { "schritt": "Monatsende nach der Zahl des Bekanntgabetages, sonst mit dem Monatsende", "legal_basis": "§ 64 Abs. 2 SGG" },
+      { "schritt": "Sonnabend, Sonntag oder Feiertag verschieben auf den nächsten Werktag", "legal_basis": "§ 64 Abs. 3 SGG" },
+      { "schritt": "Fehlende oder unrichtige Rechtsbehelfsbelehrung: ein Jahr", "legal_basis": "§ 66 Abs. 2 SGG" }
+    ],
+    "besonderheit": "Über den Widerspruch entscheidet in Angelegenheiten der Sozialversicherung nicht die Fachabteilung, sondern die von der Vertreterversammlung bestimmte Stelle — die Widerspruchsstelle der Selbstverwaltung (§ 85 Abs. 2 Nr. 2 SGG).",
+    "rechnung_identisch": "Die Rechnung ist dieselbe wie beim Grundsicherungsgeld-Bescheid: vier Tage, dann ein Monat. Der Fristenrechner dieser Seite gilt hier unverändert."
+  },
+  "rdg_grenze": "Diese Prüfpunkte beschreiben, wie ein Rentenbescheid aufgebaut ist und welche Fehlerbilder bei diesem Bescheidtyp bekannt sind. Sie sind keine Prüfung des einzelnen Bescheids, keine Rentenberechnung und keine Aussage über die Erfolgsaussichten eines Widerspruchs.",
+  "noch_offen": [
+    "Die Anlage 1 zum SGB VI (Durchschnittsentgelte je Kalenderjahr) ist nicht erhoben. Ohne sie lässt sich aus einem Bruttoentgelt kein Entgeltpunkt ausrechnen — was auf dieser Seite auch nicht vorgesehen ist.",
+    "Die Übergangstabellen der §§ 235, 236 und 236b SGB VI (Anhebung der Altersgrenzen je Geburtsjahrgang) sind im Volltext gelesen, aber nicht als Datensatz erfasst. Für eine eigene Seite „Wann kann ich in Rente gehen“ wären sie die Grundlage.",
+    "Erhebungen von Sozialverbänden und Verbraucherzentralen zu den häufigsten Fehlerbildern fehlen; die Prüfpunkte stammen aus dem Gesetzestext."
+  ]
+}

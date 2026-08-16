@@ -1,0 +1,55 @@
+---
+import Icon from './Icon.astro';
+import type { Pruefpunkt } from '../data/bescheid';
+
+/**
+ * Die Bausteine eines Bescheidtyps mit ihren bekannten Fehlerstellen.
+ *
+ * **Die Überschrift dieser Liste ist Teil der RDG-Linie**, nicht Dekoration:
+ * Was hier steht, sind allgemeine Hinweise auf Fehlerbilder, die bei einem
+ * Bescheidtyp häufig vorkommen — kein Urteil über einen einzelnen Bescheid.
+ * Deshalb steht der Satz im Bauteil und nicht in jeder Seite neu, wo er beim
+ * Umformulieren weicher werden könnte.
+ *
+ * `/grundsicherungsgeld-bescheid/` rendert seine Prüfpunkte weiterhin selbst:
+ * Dieser Datensatz führt zusätzlich Prozentsätze, Freibeträge und Staffeln
+ * mit, die eine eigene Darstellung haben. Diese Komponente kann die
+ * gemeinsame Form — sie soll die reichere nicht platt machen.
+ */
+interface Props {
+  punkte: Pruefpunkt[];
+  ueberschrift?: string;
+}
+
+const { punkte, ueberschrift = 'Die Bausteine und ihre bekannten Fehlerstellen' } = Astro.props;
+---
+
+<section class="mt-14">
+  <h2 class="font-display text-2xl text-ink">{ueberschrift}</h2>
+  <p class="mt-3 max-w-prose text-ink-soft">
+    Das Folgende sind allgemeine Hinweise auf Fehlerbilder, die bei diesem
+    Bescheidtyp häufig vorkommen — kein Urteil über Ihren Bescheid.
+  </p>
+
+  <div class="mt-6 flex flex-col gap-8">
+    {
+      punkte.map((p) => (
+        <article class="border-t-4 border-marker bg-paper p-5 sm:p-6">
+          <h3 class="font-display text-xl text-ink">{p.bestandteil}</h3>
+          <p class="mt-1 text-[14px] text-ink-mute">{p.legal_basis}</p>
+
+          <ul class="mt-4 flex flex-col gap-2">
+            {p.pruefen.map((frage) => (
+              <li class="flex gap-2.5 text-[15px] text-ink">
+                <Icon name="pruefen" class="mt-1 h-4 w-4 shrink-0 text-marker" />
+                <span>{frage}</span>
+              </li>
+            ))}
+          </ul>
+
+          {p.hinweis && <p class="mt-4 text-[15px] text-ink-mute">{p.hinweis}</p>}
+        </article>
+      ))
+    }
+  </div>
+</section>

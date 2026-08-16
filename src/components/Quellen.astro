@@ -1,0 +1,40 @@
+---
+import { isoToGerman } from '../lib/format';
+import type { Quelle } from '../data/bescheid';
+
+/**
+ * Die Quellenliste einer Erklärseite.
+ *
+ * **Das Abrufdatum ist eine Behauptung über eine Handlung**, kein
+ * Formatierungsdetail (Portfolio-Lehre aus deutschland-kosten, 2026-08-03).
+ * Es steht hier, weil die Erhebung die Volltexte tatsächlich an diesem Tag
+ * gelesen hat — es wird nicht aus dem Kalender gesetzt.
+ */
+interface Props {
+  quellen: Quelle[];
+  erhobenAm: string;
+  einleitung?: string;
+}
+
+const {
+  quellen,
+  erhobenAm,
+  einleitung = 'Alle Angaben und Beträge auf dieser Seite stammen aus dem Volltext der Vorschriften, gelesen am',
+} = Astro.props;
+---
+
+<section class="mt-14 max-w-prose">
+  <h2 class="font-display text-2xl text-ink">Quellen</h2>
+  <p class="mt-3 text-ink-soft">{einleitung} {isoToGerman(erhobenAm)}:</p>
+  <ul class="mt-3 flex list-disc flex-col gap-1 pl-5">
+    {
+      quellen.map((q) => (
+        <li>
+          <a href={q.url} rel="noopener" class="text-ink underline underline-offset-2">
+            {q.label}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</section>

@@ -1,0 +1,136 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { ERHOBEN_AM, QUELLEN } from '../data/grundsicherungsgeld';
+import { CONTACT_EMAIL, CURRENT_YEAR, SITE_NAME, VORLAGEN_URL } from '../lib/site';
+import { adsEnabled } from '../lib/ads';
+import { isoToGerman } from '../lib/format';
+
+/**
+ * Über uns — indexierbar, weil Impressum und Datenschutz `noindex` tragen.
+ *
+ * **Bewusst kurz** (Owner-Entscheidung 2026-08-15): Jeder Satz über die eigene
+ * Sorgfalt ist eine Behauptung, die niemand nachprüfen kann. Was hier trägt,
+ * ist der verlinkte Paragraf — und der Prüflauf, der die Fristenlogik gegen
+ * fünf dokumentierte Grenzfälle rechnet.
+ */
+---
+
+<BaseLayout
+  title={`Über ${SITE_NAME}: Woher die Angaben kommen`}
+  description="Wer hinter dieser Seite steht, aus welchen Vorschriften die Fristen und Beträge stammen, warum es hier keinen Upload gibt und wo die Grenze zur Rechtsberatung liegt."
+  path="/ueber-uns/"
+>
+  <h1 class="font-display text-3xl text-ink">Über {SITE_NAME}</h1>
+  <p class="mt-3 max-w-prose text-ink-mute">
+    Woher die Angaben kommen, was geprüft wird – und was diese Seite
+    ausdrücklich nicht tut.
+  </p>
+
+  <section class="mt-10 max-w-prose space-y-8">
+    <div>
+      <h2 class="font-display text-xl text-ink">Wer dahintersteht</h2>
+      <p class="mt-3 text-ink-soft">
+        Ein privates Projekt von Philipp Trinh aus Hamburg – keine Behörde,
+        keine Kanzlei, kein Sozialverband. Verantwortlich für die Inhalte nach
+        § 18 Abs. 2 MStV bin ebenfalls ich; die vollständige
+        Anbieterkennzeichnung steht im{' '}
+        <a href="/impressum/" class="underline underline-offset-2">Impressum</a>.
+        Die Schwesterseite mit den Musterschreiben ist{' '}
+        <a href={VORLAGEN_URL} rel="noopener" class="underline underline-offset-2">
+          Deutschlandvorlagen</a
+        >.
+      </p>
+      <p class="mt-3 text-ink-soft">
+        Zwei Dinge zur Einordnung: Hier schreibt <strong>keine Juristin und kein
+        Sozialrechtler</strong>. Und die Texte dieser Seite entstehen{' '}
+        <strong>mit Unterstützung von KI-Systemen</strong> – unter meiner Regie,
+        und veröffentlicht wird nichts ohne meine Freigabe.
+      </p>
+    </div>
+
+    <div>
+      <h2 class="font-display text-xl text-ink">Es gibt hier keinen Upload</h2>
+      <p class="mt-3 text-ink-soft">
+        Das ist die wichtigste Aussage dieser Seite. Es wäre technisch möglich,
+        Bescheide hochladen und von einem Modell erklären zu lassen – und genau
+        das wurde gestrichen. Ein Bescheid enthält Namen, Anschrift, Einkommen,
+        oft Gesundheitsangaben; das sind die empfindlichsten Daten, die jemand
+        besitzt. Eine Seite, die sie nicht entgegennimmt, kann sie auch nicht
+        verlieren.
+      </p>
+      <p class="mt-3 text-ink-soft">
+        Stattdessen erklärt die Seite den <em>Bescheidtyp</em>: Was steht
+        typischerweise drin, was bedeuten die Sätze, wo stecken bekannte Fehler.
+        Den Abgleich mit Ihrem Schreiben machen Sie selbst – und behalten es
+        dabei in der Hand.
+      </p>
+    </div>
+
+    <div>
+      <h2 class="font-display text-xl text-ink">Woher Fristen und Beträge stammen</h2>
+      <p class="mt-3 text-ink-soft">
+        Aus dem Gesetzestext, im Volltext gelesen am {isoToGerman(ERHOBEN_AM)}:
+        die Widerspruchsfrist aus SGG und SGB X, Regelbedarf und Prüfpunkte aus
+        dem SGB II und der Regelbedarfsstufen-Fortschreibungsverordnung. Jede
+        Angabe nennt ihre Fundstelle, {QUELLEN.length} Quellen sind verlinkt.
+      </p>
+      <p class="mt-3 text-ink-soft">
+        Die Fristenrechnung ist der Teil, bei dem ein Fehler am teuersten wäre.
+        Sie ist deshalb nicht nur geschrieben, sondern geprüft:{' '}
+        <strong>ein Testlauf rechnet sie gegen fünf dokumentierte Grenzfälle</strong>{' '}
+        – Monatsende ohne entsprechenden Tag, Fristende am Wochenende,
+        Jahreswechsel. Weicht einer ab, scheitert die Prüfung.
+      </p>
+      <p class="mt-3 text-ink-soft">
+        Der häufigste Fehler in fremden Rechnern steckt gleich im ersten
+        Schritt: § 37 Abs. 2 SGB X stellt auf den <strong>vierten</strong> Tag
+        nach Aufgabe zur Post ab, nicht auf den dritten. Wer mit drei rechnet,
+        nennt ein Fristende, das einen Tag zu früh liegt.
+      </p>
+    </div>
+
+    <div>
+      <h2 class="font-display text-xl text-ink">Was diese Seite nicht ist</h2>
+      <p class="mt-3 text-ink-soft">
+        Keine Rechtsberatung im Sinne des Rechtsdienstleistungsgesetzes. Die
+        Seite sagt, was in einem Bescheid steht und welche Fehler bei einem
+        Bescheidtyp häufig sind – nicht, ob Ihr Bescheid falsch ist oder ob ein
+        Widerspruch Erfolg hätte. Das darf nur beurteilen, wer den Fall kennt
+        und dazu befugt ist.
+      </p>
+      <p class="mt-3 text-ink-soft">
+        Beraten dürfen Rechtsanwältinnen und Rechtsanwälte für Sozialrecht sowie
+        die Sozialverbände im Rahmen ihrer Mitgliedschaft; kostenlos beraten die
+        Verbraucherzentralen, und wer die Kosten nicht tragen kann, beantragt
+        beim Amtsgericht Beratungshilfe.
+      </p>
+    </div>
+
+    {
+      adsEnabled && (
+        <div>
+          <h2 class="font-display text-xl text-ink">Wie sich die Seite finanziert</h2>
+          <p class="mt-3 text-ink-soft">
+            Die Nutzung ist kostenlos und soll es bleiben; getragen wird die
+            Seite durch Werbung. Zwischen dem Datumsfeld und dem Fristende steht
+            nie eine Anzeige. Es gibt keine bezahlten Empfehlungen und keine
+            Vermittlung von Kanzleien oder Beratungsangeboten.
+          </p>
+        </div>
+      )
+    }
+
+    <div>
+      <h2 class="font-display text-xl text-ink">Fehler gefunden?</h2>
+      <p class="mt-3 text-ink-soft">
+        Sozialrecht ändert sich häufig. Stimmt eine Angabe nicht mehr, schreiben
+        Sie bitte an{' '}
+        <a href={`mailto:${CONTACT_EMAIL}`} class="underline underline-offset-2">
+          {CONTACT_EMAIL}</a
+        > – am besten mit der Fundstelle. Ich sehe am Gesetzestext nach.
+      </p>
+    </div>
+
+    <p class="border-t border-rule pt-4 text-sm text-ink-mute">Stand: {CURRENT_YEAR}</p>
+  </section>
+</BaseLayout>

@@ -1,0 +1,245 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import AdSlot from '../components/AdSlot.astro';
+import Bescheidauszug from '../components/Bescheidauszug.astro';
+import Disclaimer from '../components/Disclaimer.astro';
+import Fristkette from '../components/Fristkette.astro';
+import Icon from '../components/Icon.astro';
+import Pruefpunkte from '../components/Pruefpunkte.astro';
+import Quellen from '../components/Quellen.astro';
+import { euro, isoToGerman } from '../lib/format';
+import {
+  BEDARFSSAETZE,
+  EIGENES_EINKOMMEN,
+  ERHOBEN_AM,
+  FREIBETRAEGE,
+  FRIST,
+  HOECHSTSATZ,
+  PRUEFPUNKTE,
+  QUELLEN,
+  RDG_GRENZE,
+} from '../data/bafoeg';
+
+/**
+ * Die Erklärseite zum BAföG-Bescheid (queue task 5.4).
+ *
+ * Sie trägt zwei Aussagen, die man auf keiner anderen Seite dieses Projekts
+ * findet und die beim Weiterbauen erhalten bleiben müssen:
+ *
+ * 1. **Der Freibetrag im Gesetzestext ist nicht der Freibetrag, der gilt.**
+ *    § 23 Abs. 1 Satz 1 Nr. 1 BAföG nennt 353 Euro „vorbehaltlich einer
+ *    Bekanntmachung"; für 2026 sind es 389 Euro (BGBl. 2025 I Nr. 279). Wer
+ *    nur eine der beiden Zahlen zeigt, produziert entweder einen Fehler oder
+ *    einen unerklärlichen Widerspruch zum Gesetzestext. Die Seite zeigt beide.
+ * 2. **Die schärfste Frist ist nicht die Widerspruchsfrist.** Der
+ *    Aktualisierungsantrag (§ 24 Abs. 3) und die Vorausleistung (§ 36) sind
+ *    mit dem Ende des Bewilligungszeitraums endgültig verloren — und stehen in
+ *    keiner Rechtsbehelfsbelehrung.
+ */
+const hochschule = BEDARFSSAETZE.studierende.find((s) => s.grundbedarf === 475)!;
+const auswaerts = BEDARFSSAETZE.wohnzuschlag.find((w) => w.betrag === 380)!;
+---
+
+<BaseLayout
+  title="BAföG-Bescheid verstehen: Bedarf, Freibeträge, Widerspruch 2026"
+  description="Was Bedarf, Elterneinkommen, Freibeträge und Förderungshöchstdauer im BAföG-Bescheid bedeuten — mit den Beträgen für 2026 und den Anträgen, die mit dem Bewilligungszeitraum verfallen."
+  path="/bafoeg-bescheid/"
+>
+  <nav class="text-[14px] text-ink-mute" aria-label="Sie sind hier">
+    <a href="/" class="underline underline-offset-2">Startseite</a> · BAföG-Bescheid
+  </nav>
+
+  <h1 class="mt-2 font-display text-[clamp(1.9rem,5vw,2.75rem)] leading-tight text-ink">
+    Der BAföG-Bescheid rechnet vor — man muss nur wissen, wo
+  </h1>
+  <p class="mt-4 max-w-prose text-ink-soft">
+    Ein BAföG-Bescheid ist der einzige Bescheidtyp auf dieser Seite, bei dem
+    das Gesetz vorschreibt, dass die ganze Rechnung darin stehen muss:
+    Bedarf, Einkommen, Freibeträge, angerechnete Beträge. Wenn Sie nur einen
+    Endbetrag sehen, fehlt etwas.
+  </p>
+  <p class="mt-3 max-w-prose text-ink-soft">
+    <strong class="text-ink">Der häufigste Grund für zu wenig BAföG</strong> ist
+    kein Rechenfehler des Amtes, sondern ein nicht gestellter Antrag —
+    angerechnet wird das Elterneinkommen des vorletzten Kalenderjahres, und
+    dass es heute niedriger ist, merkt niemand von selbst.
+  </p>
+
+  <div class="mt-10">
+    <Bescheidauszug
+      titel="Aus einem BAföG-Bescheid"
+      absaetze={[
+        'Auf Ihren Antrag vom 15.08.2026 wird Ihnen für den Bewilligungszeitraum 10/2026 bis 09/2027 Ausbildungsförderung nach dem Bundesausbildungsförderungsgesetz bewilligt.',
+        'Der Bedarf setzt sich zusammen aus dem Grundbedarf nach § 13 Abs. 1 Nr. 2 BAföG und dem Wohnzuschlag nach § 13 Abs. 2 Nr. 2 BAföG. Auf den Bedarf wird das Einkommen Ihrer Eltern nach den §§ 21 bis 25 BAföG angerechnet.',
+        'Maßgebend sind die Einkommensverhältnisse im vorletzten Kalenderjahr. Die Förderungshöchstdauer endet mit dem Monat 09/2029. Die Leistung wird unter dem Vorbehalt der Rückforderung erbracht.',
+      ]}
+      markierungen={[
+        {
+          stelle: 'Wohnzuschlag nach § 13 Abs. 2 Nr. 2 BAföG',
+          erklaerung:
+            'Der höhere der beiden Wohnzuschläge — er gilt nur, wenn Sie nicht bei Ihren Eltern wohnen. Ein Zimmer, das den Eltern gehört, zählt ausdrücklich als Wohnen bei den Eltern, auch wenn es woanders steht.',
+          fundstelle: '§ 13 Abs. 2 und Abs. 3a BAföG',
+        },
+        {
+          stelle: 'Einkommensverhältnisse im vorletzten Kalenderjahr',
+          erklaerung:
+            'Hier steckt der häufigste Fehler — und er ist keiner des Amtes. Ist das Einkommen der Eltern heute wesentlich niedriger, zählt das nur auf besonderen Antrag nach § 24 Abs. 3, und der ist nach Ende des Bewilligungszeitraums unwiderruflich verloren.',
+          fundstelle: '§ 24 Abs. 1 und 3 BAföG',
+        },
+        {
+          stelle: 'Förderungshöchstdauer endet mit dem Monat 09/2029',
+          erklaerung:
+            'Diese Angabe muss bei Hochschulen in jedem Bescheid stehen. Sie ist der Termin, an dem eine Verlängerung nach § 15 Abs. 3, das Flexibilitätssemester nach § 15 Abs. 4 oder die Hilfe zum Studienabschluss nach § 15 Abs. 5 zur Frage werden.',
+          fundstelle: '§ 50 Abs. 2 Satz 4 BAföG',
+        },
+      ]}
+    />
+  </div>
+
+  <div class="mt-10">
+    <AdSlot />
+  </div>
+
+  <section class="mt-14">
+    <h2 class="font-display text-2xl text-ink">Der Bedarf: woraus die Summe entsteht</h2>
+    <p class="mt-3 max-w-prose text-ink-soft">
+      Der Bedarf ist der Betrag, den das Gesetz für Lebensunterhalt und
+      Ausbildung ansetzt — vor jeder Anrechnung. Für Studierende an Hochschulen
+      sind das {euro(hochschule.grundbedarf)} Grundbedarf und{' '}
+      {euro(auswaerts.betrag)} Wohnzuschlag, zusammen{' '}
+      <strong class="text-ink">{euro(HOECHSTSATZ.betrag)}</strong>.
+    </p>
+
+    <ul class="mt-5 flex flex-col divide-y divide-rule border-y border-rule">
+      {
+        BEDARFSSAETZE.studierende.map((s) => (
+          <li class="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 py-3">
+            <span class="min-w-0 flex-1 text-[15px] text-ink-soft">
+              {s.fall}
+              <span class="block text-[14px] text-ink-mute">{s.legal_basis}</span>
+            </span>
+            <span class="font-semibold tabular-nums text-ink">{euro(s.grundbedarf)}</span>
+          </li>
+        ))
+      }
+      {
+        BEDARFSSAETZE.wohnzuschlag.map((w) => (
+          <li class="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 py-3">
+            <span class="min-w-0 flex-1 text-[15px] text-ink-soft">
+              Wohnzuschlag: {w.fall}
+              <span class="block text-[14px] text-ink-mute">{w.legal_basis}</span>
+            </span>
+            <span class="font-semibold tabular-nums text-ink">+ {euro(w.betrag)}</span>
+          </li>
+        ))
+      }
+      {
+        BEDARFSSAETZE.zuschlaege.map((z) => (
+          <li class="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 py-3">
+            <span class="min-w-0 flex-1 text-[15px] text-ink-soft">
+              {z.fall}
+              <span class="block text-[14px] text-ink-mute">{z.legal_basis}</span>
+            </span>
+            <span class="font-semibold tabular-nums text-ink">+ {euro(z.betrag)}</span>
+          </li>
+        ))
+      }
+    </ul>
+    <p class="mt-3 text-[14px] text-ink-mute">
+      {BEDARFSSAETZE.legal_basis} · Beträge im Monat · {BEDARFSSAETZE.stand}
+    </p>
+    <p class="mt-3 max-w-prose text-[15px] text-ink-mute">{HOECHSTSATZ.hinweis}</p>
+  </section>
+
+  <section class="mt-14">
+    <h2 class="font-display text-2xl text-ink">
+      Warum im Gesetz eine andere Zahl steht als im Bescheid
+    </h2>
+    <p class="mt-3 max-w-prose text-ink-soft">
+      Wer den Freibetrag für eigenes Einkommen im Gesetzestext nachschlägt,
+      findet <strong class="text-ink">{euro(EIGENES_EINKOMMEN.betrag_im_gesetzestext)}</strong> —
+      und dahinter den Halbsatz „vorbehaltlich einer Bekanntmachung". Der
+      Betrag ist seit 2024 an die Minijob-Grenze gekoppelt und wird jedes Jahr
+      neu festgesetzt.
+    </p>
+    <p class="mt-4 max-w-prose border-l-4 border-marker bg-marker-tint px-4 py-3 text-ink">
+      Seit dem {isoToGerman(EIGENES_EINKOMMEN.gilt_ab)} gilt ein Freibetrag von{' '}
+      <strong>{euro(EIGENES_EINKOMMEN.betrag_2026)}</strong> im Monat.
+      <span class="mt-1 block text-[14px] text-ink-mute">{EIGENES_EINKOMMEN.fundstelle}</span>
+    </p>
+    <p class="mt-3 max-w-prose text-[15px] text-ink-soft">{EIGENES_EINKOMMEN.mechanik}</p>
+    <p class="mt-3 max-w-prose text-[15px] text-ink-soft">
+      {FREIBETRAEGE.auszubildende.voll_angerechnet}
+    </p>
+  </section>
+
+  <section class="mt-14">
+    <h2 class="font-display text-2xl text-ink">Freibeträge vom Einkommen der Eltern</h2>
+    <p class="mt-3 max-w-prose text-ink-soft">
+      Erst oberhalb dieser Beträge wird überhaupt etwas angerechnet — und auch
+      dann bleibt die Hälfte des übersteigenden Einkommens frei.
+    </p>
+    <ul class="mt-5 flex flex-col divide-y divide-rule border-y border-rule">
+      {
+        [...FREIBETRAEGE.eltern.grundfreibetraege, ...FREIBETRAEGE.eltern.erhoehungen].map((p) => (
+          <li class="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 py-3">
+            <span class="min-w-0 flex-1 text-[15px] text-ink-soft">
+              {p.fall}
+              <span class="block text-[14px] text-ink-mute">{p.legal_basis}</span>
+            </span>
+            <span class="font-semibold tabular-nums text-ink">{euro(p.betrag)}</span>
+          </li>
+        ))
+      }
+    </ul>
+    <p class="mt-3 max-w-prose text-[15px] text-ink-soft">
+      {FREIBETRAEGE.eltern.zusatzfreibetrag}
+    </p>
+    <p class="mt-3 max-w-prose text-[15px] text-ink-soft">{FREIBETRAEGE.eltern.haertefreibetrag}</p>
+
+    <h3 class="mt-8 font-display text-xl text-ink">Und vom eigenen Vermögen</h3>
+    <ul class="mt-4 flex flex-col divide-y divide-rule border-y border-rule">
+      {
+        FREIBETRAEGE.vermoegen.posten.map((p) => (
+          <li class="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 py-2 text-[15px]">
+            <span class="text-ink-soft">{p.fall}</span>
+            <span class="font-semibold tabular-nums text-ink">{euro(p.betrag)}</span>
+          </li>
+        ))
+      }
+    </ul>
+    <p class="mt-3 max-w-prose text-[15px] text-ink-soft">{FREIBETRAEGE.vermoegen.stichtag}</p>
+    <p class="mt-2 max-w-prose text-[15px] text-ink-soft">{FREIBETRAEGE.vermoegen.anrechnung}</p>
+    <p class="mt-2 text-[14px] text-ink-mute">{FREIBETRAEGE.vermoegen.legal_basis}</p>
+  </section>
+
+  <Pruefpunkte punkte={PRUEFPUNKTE} />
+
+  <section class="mt-14 max-w-prose">
+    <h2 class="font-display text-2xl text-ink">Die Frist, die vor der Frist kommt</h2>
+    <p class="mt-3 flex gap-2.5 text-ink-soft">
+      <Icon name="frist" class="mt-1 h-5 w-5 shrink-0 text-marker" />
+      <span>
+        Zwei Anträge im BAföG hängen nicht am Bescheid, sondern am
+        <strong class="text-ink"> Bewilligungszeitraum</strong>: der
+        Aktualisierungsantrag, wenn das Elterneinkommen heute niedriger ist
+        (§ 24 Abs. 3), und die Vorausleistung, wenn die Eltern den angerechneten
+        Unterhalt nicht zahlen (§ 36). Beide Vorschriften sagen ausdrücklich,
+        dass später gestellte Anträge nicht mehr berücksichtigt werden. Das
+        steht in keiner Rechtsbehelfsbelehrung.
+      </span>
+    </p>
+  </section>
+
+  <Fristkette frist={FRIST} />
+
+  <p class="mt-5 max-w-prose text-[15px] text-ink-mute">{RDG_GRENZE}</p>
+
+  <Quellen quellen={QUELLEN} erhobenAm={ERHOBEN_AM} />
+
+  <Disclaimer />
+
+  <div class="mt-10">
+    <AdSlot />
+  </div>
+</BaseLayout>

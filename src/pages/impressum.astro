@@ -1,0 +1,104 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import {
+  CONTACT_EMAIL,
+  IMPRESSUM_ADDRESS,
+  IMPRESSUM_NAME,
+  SITE_NAME,
+} from '../lib/site';
+
+/**
+ * Impressum nach § 5 DDG (Nachfolger des § 5 TMG) und § 18 Abs. 2 MStV für die
+ * journalistisch-redaktionellen Inhalte (queue task 5.5).
+ *
+ * `noindex`: Die Seite muss erreichbar sein, nicht auffindbar. Was von hier im
+ * Index stehen soll — wer veröffentlicht und woher die Zahlen kommen —, steht
+ * auf „Über uns", und die ist indexierbar.
+ *
+ * Die Identitätsfelder kommen aus `src/lib/site.ts`. Dort stehen bis zum
+ * Deploy Platzhalter; sie zu erfinden wäre ein schlimmerer Mangel als ein
+ * offensichtlich fehlender Wert.
+ *
+ * Der Zeilenumbruch steht **im Ausdruck**, nicht zwischen zwei Ausdrücken:
+ * Astro entfernt einen reinen Umbruch dazwischen, wodurch Name und Straße
+ * zusammenkleben — genau dieser Fehler ist am 2026-08-15 in zwei anderen
+ * Projekten aufgefallen.
+ */
+---
+
+<BaseLayout
+  title={`Impressum — ${SITE_NAME}`}
+  description="Anbieterkennzeichnung nach § 5 DDG und Verantwortlichkeit nach § 18 Abs. 2 MStV."
+  path="/impressum/"
+  noindex
+>
+  <h1 class="font-display text-3xl font-semibold">Impressum</h1>
+
+  <section class="mt-8 max-w-prose">
+    <h2 class="font-display text-xl">Angaben gemäß § 5 DDG</h2>
+    <p class="mt-3 whitespace-pre-line">{`${IMPRESSUM_NAME}\n${IMPRESSUM_ADDRESS}`}</p>
+  </section>
+
+  <section class="mt-8 max-w-prose">
+    <h2 class="font-display text-xl">Kontakt</h2>
+    <p class="mt-3">E-Mail: {CONTACT_EMAIL}</p>
+  </section>
+
+  <section class="mt-8 max-w-prose">
+    <h2 class="font-display text-xl">
+      Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV
+    </h2>
+    <p class="mt-3 whitespace-pre-line">{`${IMPRESSUM_NAME}\n${IMPRESSUM_ADDRESS}`}</p>
+  </section>
+
+  <section class="mt-8 max-w-prose">
+    <h2 class="font-display text-xl">Streitschlichtung</h2>
+    <p class="mt-3">
+      Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren
+      vor einer Verbraucherschlichtungsstelle teilzunehmen.
+    </p>
+  </section>
+
+  <section class="mt-8 max-w-prose">
+    <h2 class="font-display text-xl">Haftung für Inhalte</h2>
+    <p class="mt-3">
+      Diese Seite erklärt allgemein, was in einem Bescheid steht und welche
+      Fehler bei einem Bescheidtyp häufig vorkommen. Sie ist
+      <strong>keine Rechtsberatung</strong> im Sinne des
+      Rechtsdienstleistungsgesetzes und prüft keinen einzelnen Bescheid.
+      Sozialrecht ändert sich häufig; wir prüfen die Angaben sorgfältig, können
+      für Richtigkeit und Aktualität aber keine Gewähr übernehmen.
+    </p>
+  </section>
+
+  <section class="mt-8 max-w-prose">
+    <h2 class="font-display text-xl">Haftung für Links</h2>
+    <p class="mt-3">
+      Für die Inhalte verlinkter externer Seiten sind deren Betreiber
+      verantwortlich. Zum Zeitpunkt der Verlinkung waren keine Rechtsverstöße
+      erkennbar.
+    </p>
+  </section>
+
+  {/* Owner-Entscheidung 2026-08-15, portfolioweit: die KI-Beteiligung
+      offenlegen, statt zu warten, bis jemand sie bemerkt. */}
+  <section class="mt-8 max-w-prose">
+    <h2 class="font-display text-xl">Einsatz von KI</h2>
+    <p class="mt-3">
+      Die Texte dieser Website entstehen unter redaktioneller Verantwortung des
+      oben genannten Anbieters mit Unterstützung von KI-Systemen. Die
+      Beträge und Fristen werden nicht frei formuliert, sondern aus dem
+      Gesetzestext übernommen oder nach dessen Vorgaben berechnet; jede Angabe
+      nennt ihre Fundstelle.
+    </p>
+  </section>
+
+  <section class="mt-8 max-w-prose">
+    <h2 class="font-display text-xl">Urheberrecht</h2>
+    <p class="mt-3">
+      Die von uns erstellten Inhalte und Darstellungen unterliegen dem deutschen
+      Urheberrecht. Gesetzestexte und amtliche Werke sind nach § 5 UrhG
+      gemeinfrei und werden unter Nennung ihrer Fundstelle ausgewertet.
+    </p>
+  </section>
+</BaseLayout>

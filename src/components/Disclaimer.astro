@@ -1,0 +1,66 @@
+---
+/**
+ * Der Standardhinweis auf jeder Inhaltsseite (root CLAUDE.md → Legal).
+ *
+ * **Hier ist die RDG-Linie dünner als irgendwo sonst im Portfolio**
+ * (CLAUDE.md dieses Projekts). Die Seite darf sagen, was in einem Bescheid
+ * stehen muss und woran gerechnet wird — nie, ob ein bestimmter Bescheid
+ * rechtswidrig ist oder ob ein Widerspruch Erfolg hätte. Der Unterschied ist
+ * nicht rhetorisch: „Bei diesem Bescheidtyp sind folgende Fehler häufig,
+ * prüfen Sie…" ist Information, „Ihr Bescheid ist falsch" wäre
+ * Rechtsdienstleistung.
+ *
+ * Der zweite Absatz ist der praktisch wichtigste. Wer hier landet, hat oft
+ * eine laufende Frist — und die richtige Reihenfolge ist: erst fristwahrend
+ * widersprechen, dann in Ruhe beraten lassen. Eine versäumte Frist ist meist
+ * nicht zu heilen, ein knapper Widerspruch dagegen jederzeit zu begründen.
+ */
+interface Props {
+  /** Zusatz, wo eine Seite eine eigene Besonderheit hat. */
+  hinweis?: string;
+  /** Auf der Rechnerseite: der Satz zur Rechengrundlage. */
+  rechner?: boolean;
+}
+
+const { hinweis, rechner = false } = Astro.props;
+---
+
+<aside class="mt-10 border-t border-rule pt-5 text-sm text-ink-mute">
+  <h2 class="font-semibold tracking-wide text-ink uppercase">Hinweis</h2>
+
+  <p class="mt-2 max-w-prose">
+    Diese Seite erklärt allgemein, was in einem Bescheid steht und welche
+    Fehler bei einem Bescheidtyp häufig vorkommen. Sie prüft <strong
+      class="text-ink">nicht Ihren Bescheid</strong> und sagt nicht, ob ein
+    Widerspruch Erfolg hat — das wäre Rechtsberatung im Sinne des
+    Rechtsdienstleistungsgesetzes, und die darf nur leisten, wer dazu befugt
+    ist.
+  </p>
+
+  {
+    rechner && (
+      <p class="mt-2 max-w-prose">
+        Der Rechner wendet die Vorschriften auf ein eingegebenes Datum an. Er
+        kennt weder Ihren Bescheid noch die Feiertage Ihres Bundeslandes und
+        ersetzt keine Beratung.
+      </p>
+    )
+  }
+
+  <p class="mt-2 max-w-prose">
+    <strong class="text-ink">Wenn eine Frist läuft, ist die Reihenfolge
+    wichtig:</strong> erst fristwahrend Widerspruch einlegen, dann in Ruhe
+    beraten lassen. Ein knapper Widerspruch lässt sich jederzeit begründen —
+    eine versäumte Frist ist meist nicht mehr zu heilen.
+  </p>
+
+  {hinweis && <p class="mt-2 max-w-prose">{hinweis}</p>}
+
+  <p class="mt-2 max-w-prose">
+    Beraten dürfen Sie im Einzelfall Rechtsanwältinnen und Rechtsanwälte für
+    Sozialrecht sowie die Sozialverbände (etwa VdK und SoVD) im Rahmen ihrer
+    Mitgliedschaft; kostenlos beraten die Verbraucherzentralen zu vielen
+    Bescheidarten, und wer die Kosten nicht tragen kann, beantragt beim
+    Amtsgericht Beratungshilfe. Alle Angaben ohne Gewähr.
+  </p>
+</aside>

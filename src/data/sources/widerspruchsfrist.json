@@ -1,0 +1,149 @@
+{
+  "_meta": {
+    "topic": "widerspruchsfrist",
+    "retrieved": "2026-08-03",
+    "collector": "local session (owner's machine)",
+    "zweck": "Rechengrundlage für den Fristen-Rechner (QUEUE 5.3) und für die Erklärseiten (5.4).",
+    "sources": [
+      {
+        "label": "SGB X § 37 – Bekanntgabe des Verwaltungsaktes",
+        "url": "https://www.gesetze-im-internet.de/sgb_10/__37.html",
+        "retrieved": "2026-08-03"
+      },
+      {
+        "label": "SGG § 84 – Widerspruchsfrist",
+        "url": "https://www.gesetze-im-internet.de/sgg/__84.html",
+        "retrieved": "2026-08-03"
+      },
+      {
+        "label": "SGG § 64 – Fristbeginn, Fristende",
+        "url": "https://www.gesetze-im-internet.de/sgg/__64.html",
+        "retrieved": "2026-08-03"
+      },
+      {
+        "label": "SGG § 66 – Rechtsbehelfsbelehrung",
+        "url": "https://www.gesetze-im-internet.de/sgg/__66.html",
+        "retrieved": "2026-08-03"
+      },
+      {
+        "label": "SGG § 67 – Wiedereinsetzung in den vorigen Stand",
+        "url": "https://www.gesetze-im-internet.de/sgg/__67.html",
+        "retrieved": "2026-08-03"
+      },
+      {
+        "label": "SGG § 87 – Klagefrist",
+        "url": "https://www.gesetze-im-internet.de/sgg/__87.html",
+        "retrieved": "2026-08-03"
+      },
+      {
+        "label": "SGG § 88 – Untätigkeitsklage",
+        "url": "https://www.gesetze-im-internet.de/sgg/__88.html",
+        "retrieved": "2026-08-03"
+      }
+    ],
+    "ACHTUNG_vier_tage_nicht_drei": "§ 37 Abs. 2 SGB X stellt auf den **vierten** Tag nach Aufgabe zur Post ab. Die überall zitierte Drei-Tages-Regel ist der frühere Wortlaut. Für einen Fristenrechner ist das kein Detail: Wer mit drei Tagen rechnet, nennt ein Fristende, das um einen Tag danebenliegt.",
+    "KORREKTUR_2026_08_16": "Hier stand, die Drei-Tages-Regel sei „die allgemeine Verwaltungsverfahrensregel“. Das ist überholt: § 41 Abs. 2 Satz 1 VwVfG stellt heute wortgleich mit § 37 Abs. 2 Satz 1 SGB X auf den vierten Tag ab (Volltext gelesen am 2026-08-16 für die Erhebungen zu Wohngeld und BAföG). Folge: Es gibt keinen Bescheidtyp dieser Seite, für den drei Tage zu rechnen wären, und der vorhandene Rechner gilt auch für Wohngeld, BAföG und Rente.",
+    "GILT_AUCH_FUER_VWGO": "Für Wohngeld und BAföG führt der Rechtsweg zum Verwaltungsgericht. Die Kette lautet dort: § 37 Abs. 2 SGB X bzw. § 41 Abs. 2 VwVfG (vier Tage) → § 70 Abs. 1 VwGO (ein Monat ab Bekanntgabe) → § 57 Abs. 2 VwGO i. V. m. § 222 Abs. 1 ZPO und §§ 187 Abs. 1, 188 Abs. 2 und 3 BGB (Fristberechnung) → § 222 Abs. 2 ZPO und § 193 BGB (Verschiebung auf den nächsten Werktag) → § 58 Abs. 2 VwGO (ein Jahr ohne oder mit falscher Rechtsbehelfsbelehrung) → § 60 VwGO (Wiedereinsetzung). Das Ergebnis ist Tag für Tag dasselbe. Der Unterschied, den ein Rechner nicht abbilden kann: Nach § 68 Abs. 1 Satz 2 VwGO dürfen die Länder das Widerspruchsverfahren abschaffen — dann ist der Widerspruch nicht statthaft und der Monat läuft für die Klage (§ 74 Abs. 1 Satz 2 VwGO).",
+    "rdg_grenze": "Der Rechner nennt eine Frist, keine Bewertung des Bescheids. Er darf nicht sagen, ob ein Widerspruch Aussicht auf Erfolg hat, und muss darauf hinweisen, dass im Zweifel die Behörde den Zugang und dessen Zeitpunkt nachzuweisen hat (§ 37 Abs. 2 Satz 3 SGB X) — im Zweifel gilt also nicht die Fiktion, sondern der tatsächliche, spätere Zugang."
+  },
+  "rechenregeln": [
+    {
+      "schritt": 1,
+      "regel": "Bekanntgabe = Aufgabe zur Post + 4 Tage",
+      "legal_basis": "§ 37 Abs. 2 Satz 1 SGB X",
+      "ausnahme": "Gilt nicht, wenn der Bescheid nicht oder später zugegangen ist. Im Zweifel muss die Behörde Zugang und Zeitpunkt nachweisen (Satz 3). Elektronische Übermittlung: ebenfalls vierter Tag nach Absendung (Satz 2); bei Bereitstellung zum Abruf vierter Tag nach Absendung der Benachrichtigung (Abs. 2a)."
+    },
+    {
+      "schritt": 2,
+      "regel": "Der Fristlauf beginnt am Tag nach der Bekanntgabe",
+      "legal_basis": "§ 64 Abs. 1 SGG"
+    },
+    {
+      "schritt": 3,
+      "regel": "Die Widerspruchsfrist beträgt einen Monat; bei Bekanntgabe im Ausland drei Monate",
+      "legal_basis": "§ 84 Abs. 1 SGG"
+    },
+    {
+      "schritt": 4,
+      "regel": "Die Monatsfrist endet an dem Tag des letzten Monats, der nach Zahl dem Tag der Bekanntgabe entspricht. Fehlt dem letzten Monat dieser Tag, endet die Frist mit dem Monat.",
+      "legal_basis": "§ 64 Abs. 2 SGG"
+    },
+    {
+      "schritt": 5,
+      "regel": "Fällt das Fristende auf einen Sonnabend, Sonntag oder gesetzlichen Feiertag, endet die Frist mit Ablauf des nächsten Werktags",
+      "legal_basis": "§ 64 Abs. 3 SGG",
+      "hinweis": "Gesetzliche Feiertage sind überwiegend Landesrecht. Ein bundesweiter Rechner kann nur die bundeseinheitlichen Tage sicher berücksichtigen und muss auf Landesfeiertage hinweisen, statt sie zu raten."
+    },
+    {
+      "schritt": 6,
+      "regel": "Fehlt die Rechtsbehelfsbelehrung oder ist sie unrichtig, beträgt die Frist ein Jahr seit Zustellung, Eröffnung oder Verkündung",
+      "legal_basis": "§ 66 Abs. 2 SGG",
+      "hinweis": "Nach § 66 Abs. 1 beginnt die Frist überhaupt nur zu laufen, wenn schriftlich oder elektronisch über Rechtsbehelf, Stelle, Sitz und Frist belehrt wurde. Das ist der häufigste Rettungsanker bei einer versäumten Frist."
+    },
+    {
+      "schritt": 7,
+      "regel": "Wer ohne Verschulden verhindert war, kann Wiedereinsetzung beantragen — binnen eines Monats nach Wegfall des Hindernisses, und innerhalb der Antragsfrist ist die versäumte Handlung nachzuholen",
+      "legal_basis": "§ 67 Abs. 1 und 2 SGG"
+    }
+  ],
+  "fristwahrung": {
+    "legal_basis": "§ 84 Abs. 1 und 2 SGG",
+    "form": [
+      "schriftlich",
+      "in elektronischer Form nach § 36a Abs. 2 SGB I",
+      "schriftformersetzend nach § 36a Abs. 2a SGB I und § 9a Abs. 5 OZG",
+      "zur Niederschrift bei der Stelle, die den Verwaltungsakt erlassen hat"
+    ],
+    "auch_gewahrt_bei": "Eingang bei einer anderen inländischen Behörde, einem Versicherungsträger, einer deutschen Konsularbehörde oder (bei Seeleuten) einem deutschen Seemannsamt."
+  },
+  "anschlussfristen": [
+    {
+      "name": "Klagefrist nach Widerspruchsbescheid",
+      "legal_basis": "§ 87 Abs. 1 und 2 SGG",
+      "frist": "ein Monat ab Bekanntgabe des Widerspruchsbescheids; bei Bekanntgabe im Ausland drei Monate"
+    },
+    {
+      "name": "Untätigkeitsklage",
+      "legal_basis": "§ 88 Abs. 2 SGG",
+      "frist": "wenn über einen Widerspruch nicht entschieden wurde — siehe die dort genannte angemessene Frist"
+    }
+  ],
+  "rechenbeispiele": [
+    {
+      "aufgabe_zur_post": "2026-01-28",
+      "bekanntgabe_fiktion": "2026-02-01",
+      "fristbeginn": "2026-02-02",
+      "fristende": "2026-03-02",
+      "fristende_wochentag": "Mo"
+    },
+    {
+      "aufgabe_zur_post": "2026-01-31",
+      "bekanntgabe_fiktion": "2026-02-04",
+      "fristbeginn": "2026-02-05",
+      "fristende": "2026-03-04",
+      "fristende_wochentag": "Mi"
+    },
+    {
+      "aufgabe_zur_post": "2026-07-01",
+      "bekanntgabe_fiktion": "2026-07-05",
+      "fristbeginn": "2026-07-06",
+      "fristende": "2026-08-05",
+      "fristende_wochentag": "Mi"
+    },
+    {
+      "aufgabe_zur_post": "2026-02-26",
+      "bekanntgabe_fiktion": "2026-03-02",
+      "fristbeginn": "2026-03-03",
+      "fristende": "2026-04-02",
+      "fristende_wochentag": "Do"
+    },
+    {
+      "aufgabe_zur_post": "2026-12-24",
+      "bekanntgabe_fiktion": "2026-12-28",
+      "fristbeginn": "2026-12-29",
+      "fristende": "2027-01-28",
+      "fristende_wochentag": "Do"
+    }
+  ],
+  "beispiel_erlaeuterung": "Die Beispiele decken die Fälle ab, an denen ein naiv gebauter Rechner scheitert: ein Monatsende ohne entsprechenden Tag, ein Fristende am Wochenende und der Jahreswechsel."
+}

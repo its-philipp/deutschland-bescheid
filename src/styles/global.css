@@ -1,0 +1,117 @@
+@import 'tailwindcss';
+
+/* Schriften selbst gehostet über npm, nie über ein CDN (root CLAUDE.md).
+   **Dieselbe Schriftfamilie wie deutschland-vorlagen** — die beiden Seiten
+   verlinken einander bei den Widerspruchsvorlagen, und ein sichtbarer
+   Zusammenhang hilft beiden (STATE.md → Design-Richtung, Vorschlag
+   2026-08-02, mit 5.1 entschieden). Unterschieden werden sie über die Farbe,
+   nicht über die Schrift. */
+@import '@fontsource-variable/fraunces/wonk.css';
+@import '@fontsource/public-sans/400.css';
+@import '@fontsource/public-sans/600.css';
+
+@theme {
+  --font-sans: 'Public Sans', system-ui, -apple-system, sans-serif;
+  --font-display: 'Fraunces Variable', Georgia, 'Times New Roman', serif;
+
+  /* Grundfläche und Tinte. Etwas kühler als bei deutschland-vorlagen: dort ist
+     der Grund ein Aktendeckel, hier ein Blatt Papier, das auf dem Tisch
+     liegt. */
+  --color-ground: #f7f7f5;
+  --color-paper: #ffffff;
+  --color-ink: #1b1d21; /* 16.30:1 auf ground */
+  --color-ink-soft: #454a52; /* 8.65:1 */
+  --color-ink-mute: #6b7079; /* 4.86:1 — nur Marginalien, nie Fließtext */
+  --color-rule: #d5d7d3;
+
+  /* Die eigene Farbe der Seite: ein warmes Rot-Orange, wie ein
+     Textmarkerstrich auf einem Behördenschreiben. Bewusst nicht das
+     Stempelblau von deutschland-vorlagen — dieselbe Schrift, andere Farbe. */
+  --color-marker: #b03a1a; /* 6.09:1 auf ground */
+  --color-marker-tint: #fbe8df;
+
+  /* Die Markierung im Dokument selbst. Sie liegt hinter dem Text, muss also
+     hell genug bleiben, dass Tinte darauf lesbar ist: Tinte auf #FDE9A8
+     erreicht 13.62:1. */
+  --color-hervorhebung: #fde9a8;
+
+  /* Für Prüfpunkte mit Ampelcharakter — nie allein tragend, immer mit Wort
+     daneben. */
+  --color-hinweis: #7a5518; /* 6.22:1 */
+  --color-hinweis-tint: #fbf1de;
+}
+
+@layer base {
+  html {
+    /* Diese Seite nennt Fristen, Beträge und Paragrafen. Tabellenziffern sind
+       der Standard, nicht die Ausnahme. */
+    font-variant-numeric: tabular-nums;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-ground);
+    color: var(--color-ink);
+    /* Grundschrift bewusst groß: Wer einen Bescheid nicht versteht, liest
+       ihn oft mehrfach — und ein Teil der Leserschaft ist älter. */
+    font-size: 17px;
+    line-height: 1.65;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    text-wrap: balance;
+  }
+
+  a {
+    text-underline-offset: 3px;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-marker);
+    outline-offset: 2px;
+  }
+}
+
+/* Anzeigenfläche (root CLAUDE.md → Advertising slots). Der gestrichelte
+   Rahmen markiert einen leeren Platz beim Bauen und darf nie in Produktion
+   erscheinen — deshalb hängt er an `data-dev`, das AdSlot.astro nur unter
+   `import.meta.env.DEV` setzt. */
+.ad-slot[data-dev]:empty {
+  display: block;
+  min-height: 90px;
+  border: 1px dashed var(--color-rule);
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 20mm;
+  }
+
+  /* Anzeigen drucken nie mit — `display: none`, nicht `visibility: hidden`:
+     ein unsichtbarer Kasten behielte seine Höhe und schöbe leere Blätter
+     hinter den Text (root CLAUDE.md; im Portfolio schon einmal passiert). */
+  .ad-slot,
+  ins.adsbygoogle {
+    display: none !important;
+  }
+
+  /* Die Hervorhebung ist das Signaturelement dieser Seite und trägt
+     Bedeutung — im Druck wird sie deshalb ausnahmsweise erzwungen. Ohne
+     Fläche bliebe ein Textstück übrig, dem man nicht mehr ansieht, warum es
+     hervorgehoben war. */
+  .hervorhebung {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  a[href^='http']::after {
+    content: ' (' attr(href) ')';
+    font-size: 0.85em;
+    color: #555;
+  }
+}

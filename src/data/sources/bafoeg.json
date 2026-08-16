@@ -1,0 +1,338 @@
+{
+  "_meta": {
+    "topic": "bafoeg-bescheid",
+    "retrieved": "2026-08-16",
+    "collector": "local session (owner's machine)",
+    "method": "Gesamt-XML des BAföG von gesetze-im-internet.de gezogen (Stand: zuletzt geändert durch Art. 11 Abs. 1 G v. 16.4.2026 I Nr. 107) und im Volltext gelesen. Der Freibetrag nach § 23 Abs. 1 Satz 1 Nr. 1 steht nicht im Gesetzestext, sondern in einer Bekanntmachung im Bundesgesetzblatt — deren PDF wurde einzeln geholt und im Wortlaut gelesen.",
+    "sources": [
+      {
+        "label": "BAföG § 12 – Bedarf für Schüler",
+        "url": "https://www.gesetze-im-internet.de/baf_g/__12.html",
+        "retrieved": "2026-08-16"
+      },
+      {
+        "label": "BAföG § 13 – Bedarf für Studierende",
+        "url": "https://www.gesetze-im-internet.de/baf_g/__13.html",
+        "retrieved": "2026-08-16"
+      },
+      {
+        "label": "BAföG § 13a – Kranken- und Pflegeversicherungszuschlag",
+        "url": "https://www.gesetze-im-internet.de/baf_g/__13a.html",
+        "retrieved": "2026-08-16"
+      },
+      {
+        "label": "BAföG § 14b – Kinderbetreuungszuschlag",
+        "url": "https://www.gesetze-im-internet.de/baf_g/__14b.html",
+        "retrieved": "2026-08-16"
+      },
+      {
+        "label": "BAföG § 15 – Förderungsdauer (mit dem Flexibilitätssemester nach Absatz 4)",
+        "url": "https://www.gesetze-im-internet.de/baf_g/__15.html",
+        "retrieved": "2026-08-16"
+      },
+      {
+        "label": "BAföG § 23 – Freibeträge vom Einkommen des Auszubildenden",
+        "url": "https://www.gesetze-im-internet.de/baf_g/__23.html",
+        "retrieved": "2026-08-16"
+      },
+      {
+        "label": "BAföG § 24 – Berechnungszeitraum für das Einkommen der Eltern",
+        "url": "https://www.gesetze-im-internet.de/baf_g/__24.html",
+        "retrieved": "2026-08-16"
+      },
+      {
+        "label": "BAföG § 25 – Freibeträge vom Einkommen der Eltern",
+        "url": "https://www.gesetze-im-internet.de/baf_g/__25.html",
+        "retrieved": "2026-08-16"
+      },
+      {
+        "label": "BAföG § 29 – Freibeträge vom Vermögen",
+        "url": "https://www.gesetze-im-internet.de/baf_g/__29.html",
+        "retrieved": "2026-08-16"
+      },
+      {
+        "label": "BAföG § 36 – Vorausleistung von Ausbildungsförderung",
+        "url": "https://www.gesetze-im-internet.de/baf_g/__36.html",
+        "retrieved": "2026-08-16"
+      },
+      {
+        "label": "BAföG § 48 – Mitwirkung von Ausbildungsstätten (Leistungsnachweis)",
+        "url": "https://www.gesetze-im-internet.de/baf_g/__48.html",
+        "retrieved": "2026-08-16"
+      },
+      {
+        "label": "BAföG § 50 – Bescheid",
+        "url": "https://www.gesetze-im-internet.de/baf_g/__50.html",
+        "retrieved": "2026-08-16"
+      },
+      {
+        "label": "BAföG § 54 – Rechtsweg",
+        "url": "https://www.gesetze-im-internet.de/baf_g/__54.html",
+        "retrieved": "2026-08-16"
+      },
+      {
+        "label": "Bekanntmachung des Freibetrags für Auszubildende nach § 23 Absatz 1 Satz 1 Nummer 1 BAföG vom 18. November 2025 (BGBl. 2025 I Nr. 279)",
+        "url": "https://www.recht.bund.de/bgbl/1/2025/279/VO.html",
+        "retrieved": "2026-08-16"
+      },
+      {
+        "label": "VwGO § 70 – Widerspruchsfrist",
+        "url": "https://www.gesetze-im-internet.de/vwgo/__70.html",
+        "retrieved": "2026-08-16"
+      }
+    ],
+    "BEFUND_1_die_zahl_im_gesetz_ist_nicht_die_zahl_die_gilt": {
+      "sachverhalt": "§ 23 Abs. 1 Satz 1 Nr. 1 BAföG nennt einen Freibetrag von 353 Euro — „vorbehaltlich einer Bekanntmachung nach Absatz 6 Satz 3“. Dieser Betrag ist seit 2024 an die Minijob-Grenze gekoppelt und wird jährlich neu festgesetzt. Für 2026 gilt nach der Bekanntmachung vom 18. November 2025 (BGBl. 2025 I Nr. 279): „Der Freibetrag für Auszubildende nach § 23 Absatz 1 Satz 1 Nummer 1 des Bundesausbildungsförderungsgesetzes wird zum 1. Januar 2026 auf 389 Euro festgesetzt.“",
+      "folge_fuer_das_projekt": "Wer den Gesetzestext liest, liest die falsche Zahl — und zwar eine, die 36 Euro im Monat danebenliegt. Der Datensatz führt beide: den Wert im Gesetz und den bekanntgemachten Wert samt Fundstelle. Übertragbar auf das ganze Portfolio: **ein Betrag im Paragraphentext kann ein Platzhalter sein.** Steht dort ein Vorbehalt („vorbehaltlich einer Bekanntmachung“, „soweit nichts anderes bestimmt ist“), ist die Erhebung erst mit der Bekanntmachung fertig, nicht mit dem Gesetz."
+    },
+    "BEFUND_2_der_bescheid_muss_seine_eigene_rechnung_offenlegen": {
+      "sachverhalt": "§ 50 Abs. 2 BAföG zählt auf, was in einem BAföG-Bescheid anzugeben ist: Höhe und Zusammensetzung des Bedarfs, die Einkommen von Auszubildenden, Ehegatten und Eltern, die berücksichtigten Steuern und Sozialpauschalen, die gewährten Freibeträge und die angerechneten Beträge. Bei Hochschulen ist zusätzlich in **jedem** Bescheid das Ende der Förderungshöchstdauer anzugeben.",
+      "folge_fuer_das_projekt": "Das ist die stärkste Aussage, die eine Erklärseite zu diesem Bescheidtyp machen kann: Der Gesetzgeber schreibt vor, dass die Rechnung im Bescheid nachvollziehbar sein muss. Fehlt eine dieser Angaben, ist das kein Formfehler ohne Folgen, sondern der Punkt, an dem man nachfragen kann. Die Ausnahme steht daneben: Bei einer Ablehnung dem Grunde nach gilt die Aufzählung nicht (§ 50 Abs. 2 Satz 2)."
+    },
+    "BEFUND_3_das_massgebliche_einkommen_ist_zwei_jahre_alt": {
+      "sachverhalt": "Für das Einkommen der Eltern und des Ehegatten ist nach § 24 Abs. 1 BAföG das **vorletzte Kalenderjahr** vor Beginn des Bewilligungszeitraums maßgebend. Sinkt das Einkommen im Bewilligungszeitraum, geschieht von selbst nichts: § 24 Abs. 3 verlangt einen **besonderen Antrag**, und Anträge nach Ende des Bewilligungszeitraums werden ausdrücklich nicht mehr berücksichtigt.",
+      "folge_fuer_das_projekt": "Der häufigste Grund für einen zu niedrigen BAföG-Bescheid ist damit kein Rechenfehler des Amtes, sondern ein nicht gestellter Antrag — und er ist mit Ablauf des Bewilligungszeitraums endgültig verloren. Diese Frist ist wichtiger als die Widerspruchsfrist und steht in keiner Rechtsbehelfsbelehrung."
+    }
+  },
+  "bedarfssaetze": {
+    "legal_basis": "§§ 12, 13, 13a und 14b BAföG",
+    "stand": "Gesetzesfassung vom 16.4.2026",
+    "einheit": "Euro im Monat",
+    "studierende": [
+      {
+        "fall": "Fachschulklassen mit abgeschlossener Berufsausbildung, Abendgymnasien, Kollegs",
+        "grundbedarf": 442,
+        "legal_basis": "§ 13 Abs. 1 Nr. 1"
+      },
+      {
+        "fall": "Höhere Fachschulen, Akademien, Hochschulen",
+        "grundbedarf": 475,
+        "legal_basis": "§ 13 Abs. 1 Nr. 2"
+      }
+    ],
+    "wohnzuschlag": [
+      { "fall": "bei den Eltern wohnend", "betrag": 59, "legal_basis": "§ 13 Abs. 2 Nr. 1" },
+      { "fall": "nicht bei den Eltern wohnend", "betrag": 380, "legal_basis": "§ 13 Abs. 2 Nr. 2" }
+    ],
+    "hoechstsatz_studierende": {
+      "betrag": 855,
+      "abgeleitet": true,
+      "rechnung": "475 € Grundbedarf (§ 13 Abs. 1 Nr. 2) + 380 € Wohnzuschlag (§ 13 Abs. 2 Nr. 2)",
+      "hinweis": "Ohne die Zuschläge für Kranken- und Pflegeversicherung und ohne den Kinderbetreuungszuschlag — die kommen nur hinzu, wenn ihre Voraussetzungen vorliegen."
+    },
+    "schueler": [
+      {
+        "fall": "Berufsfachschulen und Fachschulklassen ohne abgeschlossene Berufsausbildung, bei den Eltern wohnend",
+        "betrag": 276,
+        "legal_basis": "§ 12 Abs. 1 Nr. 1"
+      },
+      {
+        "fall": "Abendhauptschulen, Berufsaufbauschulen, Abendrealschulen, Fachoberschulklassen mit abgeschlossener Berufsausbildung, bei den Eltern wohnend",
+        "betrag": 498,
+        "legal_basis": "§ 12 Abs. 1 Nr. 2"
+      },
+      {
+        "fall": "weiterführende allgemeinbildende Schulen, Berufsfachschulen, Fach- und Fachoberschulklassen ohne abgeschlossene Berufsausbildung, nicht bei den Eltern wohnend",
+        "betrag": 666,
+        "legal_basis": "§ 12 Abs. 2 Nr. 1"
+      },
+      {
+        "fall": "Abendhauptschulen, Berufsaufbauschulen, Abendrealschulen, Fachoberschulklassen mit abgeschlossener Berufsausbildung, nicht bei den Eltern wohnend",
+        "betrag": 775,
+        "legal_basis": "§ 12 Abs. 2 Nr. 2"
+      }
+    ],
+    "zuschlaege": [
+      {
+        "fall": "Krankenversicherung, pflichtversichert nach § 5 Abs. 1 Nr. 9 oder 10 SGB V",
+        "betrag": 102,
+        "legal_basis": "§ 13a Abs. 1 Satz 1"
+      },
+      {
+        "fall": "Pflegeversicherung, pflichtversichert nach § 20 Abs. 1 Nr. 9 oder 10 SGB XI",
+        "betrag": 35,
+        "legal_basis": "§ 13a Abs. 1 Satz 2"
+      },
+      {
+        "fall": "Krankenversicherung, freiwillig versichert oder nach § 5 Abs. 1 Nr. 13 SGB V",
+        "betrag": 185,
+        "legal_basis": "§ 13a Abs. 2 Satz 1"
+      },
+      {
+        "fall": "Pflegeversicherung in diesen Fällen",
+        "betrag": 48,
+        "legal_basis": "§ 13a Abs. 2 Satz 2"
+      },
+      {
+        "fall": "je eigenes Kind unter 14 Jahren im Haushalt (Kinderbetreuungszuschlag)",
+        "betrag": 160,
+        "legal_basis": "§ 14b Abs. 1"
+      }
+    ]
+  },
+  "freibetraege": {
+    "auszubildende": {
+      "legal_basis": "§ 23 Abs. 1 BAföG",
+      "einheit": "Euro im Monat",
+      "eigenes_einkommen": {
+        "betrag_im_gesetzestext": 353,
+        "betrag_2026": 389,
+        "gilt_ab": "2026-01-01",
+        "fundstelle": "Bekanntmachung vom 18. November 2025, BGBl. 2025 I Nr. 279",
+        "mechanik": "Der Betrag ist nach § 23 Abs. 6 an die Entwicklung der Minijob-Grenze (§ 8 Abs. 1a SGB IV) gekoppelt und wird jährlich zum 1. Januar neu berechnet und im Bundesgesetzblatt bekannt gemacht.",
+        "hinweis": "Der Gesetzestext nennt weiterhin 353 Euro. Maßgebend ist der bekanntgemachte Betrag."
+      },
+      "weitere": [
+        { "fall": "für den Ehegatten oder Lebenspartner", "betrag": 850, "legal_basis": "§ 23 Abs. 1 Nr. 2" },
+        { "fall": "für jedes Kind der oder des Auszubildenden", "betrag": 770, "legal_basis": "§ 23 Abs. 1 Nr. 3" },
+        {
+          "fall": "Härtefreibetrag auf besonderen Antrag für besondere Ausbildungskosten, höchstens",
+          "betrag": 390,
+          "legal_basis": "§ 23 Abs. 5"
+        }
+      ],
+      "voll_angerechnet": "Eine Ausbildungsvergütung wird abweichend von den Freibeträgen in voller Höhe angerechnet (§ 23 Abs. 3), ebenso Stipendien und andere Ausbildungsbeihilfen aus öffentlichen Mitteln (§ 23 Abs. 4 Nr. 2)."
+    },
+    "eltern": {
+      "legal_basis": "§ 25 BAföG",
+      "einheit": "Euro im Monat",
+      "grundfreibetraege": [
+        {
+          "fall": "verheiratete oder verpartnerte Eltern, nicht dauernd getrennt lebend",
+          "betrag": 2540,
+          "legal_basis": "§ 25 Abs. 1 Nr. 1"
+        },
+        {
+          "fall": "je Elternteil in sonstigen Fällen sowie für den Ehegatten oder Lebenspartner der oder des Auszubildenden",
+          "betrag": 1690,
+          "legal_basis": "§ 25 Abs. 1 Nr. 2"
+        }
+      ],
+      "erhoehungen": [
+        {
+          "fall": "für den nicht in Eltern-Kind-Beziehung stehenden Ehegatten oder Lebenspartner des Einkommensbeziehers",
+          "betrag": 850,
+          "legal_basis": "§ 25 Abs. 3 Nr. 1"
+        },
+        {
+          "fall": "je Kind des Einkommensbeziehers und je weitere unterhaltsberechtigte Person, die nicht selbst gefördert werden kann",
+          "betrag": 770,
+          "legal_basis": "§ 25 Abs. 3 Nr. 2"
+        }
+      ],
+      "zusatzfreibetrag": "Vom Einkommen oberhalb dieser Freibeträge bleiben weitere 50 Prozent anrechnungsfrei, zuzüglich 5 Prozent für jedes Kind, für das ein Freibetrag nach Absatz 3 gewährt wird (§ 25 Abs. 4).",
+      "haertefreibetrag": "Auf besonderen Antrag vor Ende des Bewilligungszeitraums kann ein weiterer Teil anrechnungsfrei bleiben, insbesondere bei außergewöhnlichen Belastungen nach §§ 33 bis 33b EStG (§ 25 Abs. 6)."
+    },
+    "vermoegen": {
+      "legal_basis": "§ 29 BAföG",
+      "einheit": "Euro",
+      "posten": [
+        { "fall": "Auszubildende unter 30 Jahren", "betrag": 15000 },
+        { "fall": "Auszubildende ab 30 Jahren", "betrag": 45000 },
+        { "fall": "für den Ehegatten oder Lebenspartner", "betrag": 2300 },
+        { "fall": "für jedes Kind", "betrag": 2300 }
+      ],
+      "stichtag": "Maßgebend sind die Verhältnisse im Zeitpunkt der Antragstellung (§ 29 Abs. 1 Satz 2).",
+      "anrechnung": "Anzurechnendes Vermögen wird durch die Zahl der Monate des Bewilligungszeitraums geteilt und monatlich vom Bedarf abgezogen (§ 30)."
+    }
+  },
+  "pruefpunkte": [
+    {
+      "bestandteil": "Vollständigkeit des Bescheids",
+      "legal_basis": "§ 50 Abs. 2 BAföG",
+      "pruefen": [
+        "Stehen Höhe und Zusammensetzung des Bedarfs im Bescheid?",
+        "Sind die angesetzten Einkommen von Ihnen, Ehegatten und Eltern beziffert — und die gewährten Freibeträge?",
+        "Bei Hochschule oder Akademie: nennt der Bescheid das Ende der Förderungshöchstdauer? Das ist in jedem Bescheid vorgeschrieben.",
+        "Sind die berücksichtigten Steuern und die Pauschale für die soziale Sicherung ausgewiesen?"
+      ],
+      "hinweis": "Bei einer Ablehnung dem Grunde nach gilt diese Aufzählung nicht (§ 50 Abs. 2 Satz 2) — dann muss der Bescheid den Ablehnungsgrund tragen, nicht die Rechnung."
+    },
+    {
+      "bestandteil": "Bedarf und Zuschläge",
+      "legal_basis": "§§ 12, 13, 13a und 14b BAföG",
+      "pruefen": [
+        "Ist der Wohnzuschlag für „nicht bei den Eltern wohnend“ angesetzt? Ein Zimmer, das den Eltern gehört, gilt ausdrücklich als Wohnen bei den Eltern (§ 13 Abs. 3a).",
+        "Sind die Zuschläge für Kranken- und Pflegeversicherung berücksichtigt, und der richtige Satz — pflichtversichert und freiwillig versichert sind verschiedene Beträge?",
+        "Bei eigenen Kindern unter 14 Jahren: ist der Kinderbetreuungszuschlag je Kind angesetzt?"
+      ]
+    },
+    {
+      "bestandteil": "Einkommen der Eltern",
+      "legal_basis": "§§ 24 und 25 BAföG",
+      "pruefen": [
+        "Wurde das Einkommen des vorletzten Kalenderjahres genommen — und ist das noch die heutige Lage? Ist es jetzt wesentlich niedriger, geht das nur über den Aktualisierungsantrag nach § 24 Abs. 3.",
+        "Ist der Antrag noch möglich? Nach Ende des Bewilligungszeitraums wird er ausdrücklich nicht mehr berücksichtigt.",
+        "Sind die Freibeträge für Geschwister und andere Unterhaltsberechtigte angesetzt, die nicht selbst gefördert werden können?",
+        "Wurde der zusätzliche Freibetrag von 50 Prozent auf das übersteigende Einkommen und die 5 Prozent je Kind gewährt?",
+        "Lag der Steuerbescheid noch nicht vor? Dann ist die Bewilligung vorläufig und es folgt eine abschließende Entscheidung (§ 24 Abs. 2)."
+      ],
+      "hinweis": "Zahlen die Eltern den angerechneten Unterhalt nicht, gibt es die Vorausleistung nach § 36 — auch dafür ist ein eigener Antrag vor Ende des Bewilligungszeitraums nötig."
+    },
+    {
+      "bestandteil": "Eigenes Einkommen und Vermögen",
+      "legal_basis": "§§ 23, 29 und 30 BAföG",
+      "pruefen": [
+        "Wurde der für das Jahr bekanntgemachte Freibetrag angesetzt — nicht der ältere Betrag aus dem Gesetzestext?",
+        "Ist der Vermögensfreibetrag richtig gewählt? Ab 30 Jahren ist er dreimal so hoch.",
+        "Wurde auf die Verhältnisse im Zeitpunkt der Antragstellung abgestellt und nicht auf einen späteren Kontostand?",
+        "Wird angerechnetes Vermögen auf alle Monate des Bewilligungszeitraums verteilt (§ 30)?"
+      ]
+    },
+    {
+      "bestandteil": "Förderungsdauer und Leistungsnachweis",
+      "legal_basis": "§§ 15, 15a und 48 BAföG",
+      "pruefen": [
+        "Wurde die Förderung zum fünften Fachsemester eingestellt, weil der Leistungsnachweis fehlt? Er gilt als rechtzeitig vorgelegt, wenn er in den ersten vier Monaten des Folgesemesters kommt und die Leistungen aus dem vorherigen Semester ausweist (§ 48 Abs. 1 Satz 2).",
+        "Liegt ein Grund für eine Verlängerung über die Förderungshöchstdauer hinaus vor — Krankheit, Behinderung, Schwangerschaft, Pflege naher Angehöriger, Gremienarbeit, erstmaliges Nichtbestehen der Abschlussprüfung (§ 15 Abs. 3)?",
+        "Ist das Flexibilitätssemester nach § 15 Abs. 4 noch offen? Es steht einmal je Ausbildung zu und wird nicht auf eine Verlängerung nach Absatz 3 angerechnet.",
+        "Nach der Förderungshöchstdauer: kommt Hilfe zum Studienabschluss für bis zu zwölf Monate in Betracht (§ 15 Abs. 5)?"
+      ]
+    },
+    {
+      "bestandteil": "Fachrichtungswechsel und Abbruch",
+      "legal_basis": "§ 7 Abs. 3 BAföG",
+      "pruefen": [
+        "Beim erstmaligen Wechsel wird ein wichtiger Grund in der Regel vermutet — an Hochschulen aber nur, wenn der Wechsel bis zum Beginn des vierten Fachsemesters erfolgt.",
+        "Wurden angerechnete Semester abgezogen? Die von der Hochschule anerkannten Semester zählen bei dieser Grenze nicht mit (§ 7 Abs. 3 Satz 5)."
+      ],
+      "hinweis": "Für einen Wechsel, eine weitere Ausbildung oder eine Ausbildung nach Überschreiten der Altersgrenze gibt es die Vorabentscheidung dem Grunde nach (§ 46 Abs. 5) — sie klärt die Frage, bevor Zeit vergeht."
+    }
+  ],
+  "frist": {
+    "rechtsweg": "Verwaltungsgericht",
+    "rechtsweg_begruendung": "§ 54 BAföG: „Für öffentlich-rechtliche Streitigkeiten aus diesem Gesetz ist der Verwaltungsrechtsweg gegeben.“",
+    "rechtsbehelf": "Widerspruch nach §§ 68 ff. VwGO, soweit das Landesrecht das Vorverfahren nicht abgeschafft oder freigestellt hat",
+    "dauer": "ein Monat ab Bekanntgabe",
+    "kette": [
+      {
+        "schritt": "Bekanntgabe am vierten Tag nach Aufgabe zur Post",
+        "legal_basis": "§ 37 Abs. 2 Satz 1 SGB X; wortgleich § 41 Abs. 2 Satz 1 VwVfG"
+      },
+      {
+        "schritt": "Ein Monat ab Bekanntgabe, beim Amt für Ausbildungsförderung, das den Bescheid erlassen hat",
+        "legal_basis": "§ 70 Abs. 1 VwGO"
+      },
+      {
+        "schritt": "Fristberechnung: der Tag der Bekanntgabe zählt nicht mit, die Monatsfrist endet am gleichlautenden Tag des Folgemonats, sonst mit dem Monatsende",
+        "legal_basis": "§ 57 Abs. 2 VwGO i. V. m. § 222 ZPO, §§ 187 Abs. 1, 188 Abs. 2 und 3 BGB"
+      },
+      {
+        "schritt": "Sonnabend, Sonntag oder Feiertag verschieben das Fristende auf den nächsten Werktag",
+        "legal_basis": "§ 222 Abs. 2 ZPO, § 193 BGB"
+      },
+      {
+        "schritt": "Fehlende oder unrichtige Rechtsbehelfsbelehrung: ein Jahr",
+        "legal_basis": "§ 58 Abs. 2 VwGO i. V. m. § 70 Abs. 2 VwGO"
+      }
+    ],
+    "achtung": "Ob gegen einen BAföG-Bescheid ein Widerspruch statthaft ist oder unmittelbar Klage zu erheben wäre, hängt vom Landesrecht ab — § 68 Abs. 1 Satz 2 VwGO erlaubt den Ländern, das Vorverfahren abzuschaffen. Was gilt, muss die Rechtsbehelfsbelehrung des Bescheids benennen.",
+    "wichtiger_als_die_widerspruchsfrist": "Zwei Anträge im BAföG sind an das **Ende des Bewilligungszeitraums** gebunden und danach unwiderruflich verloren: der Aktualisierungsantrag (§ 24 Abs. 3) und die Vorausleistung (§ 36 Abs. 1). Diese Frist steht in keiner Rechtsbehelfsbelehrung."
+  },
+  "rdg_grenze": "Diese Prüfpunkte beschreiben den Bescheidtyp und bekannte Fehlerbilder. Sie sind keine Prüfung eines einzelnen Bescheids und keine Aussage über die Erfolgsaussichten eines Widerspruchs.",
+  "noch_offen": [
+    "Die Bedarfssätze der §§ 12 und 13 sind Gesetzesbeträge und stehen unter § 35 BAföG (Anpassung durch Gesetz). Ein Anpassungstermin steht derzeit nicht im Gesetz — anders als beim Wohngeld gibt es also kein bekanntes Verfallsdatum, sondern nur die nächste Novelle.",
+    "Ob und wie § 44 SGB X (nachträgliche Rücknahme eines bestandskräftigen Bescheids) auf BAföG anzuwenden ist, wurde hier nicht geklärt. § 53 Satz 3 BAföG schließt nur § 48 SGB X aus und verweist für Erstattungen auf § 50 SGB X; daraus folgt nicht ohne Weiteres die Anwendung des § 44. Deshalb steht dazu nichts auf der Seite.",
+    "Erhebungen von Studierendenwerken und Sozialverbänden zu den häufigsten Fehlerbildern fehlen; die Prüfpunkte stammen aus dem Gesetzestext."
+  ]
+}

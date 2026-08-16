@@ -1,0 +1,301 @@
+{
+  "_meta": {
+    "topic": "wohngeldbescheid",
+    "retrieved": "2026-08-16",
+    "collector": "local session (owner's machine)",
+    "method": "Gesamt-XML des Wohngeldgesetzes von gesetze-im-internet.de gezogen (Stand: zuletzt geändert durch Art. 11 Abs. 8 G v. 16.4.2026 I Nr. 107) und im Volltext gelesen; Anlagen 1 bis 3 aus der Tabellenstruktur des XML ausgelesen, nicht abgetippt. Die Fristenkette zusätzlich an VwGO, VwVfG, SGB X, ZPO und BGB im Volltext geprüft.",
+    "sources": [
+      {
+        "label": "WoGG § 4 – Berechnungsgrößen des Wohngeldes",
+        "url": "https://www.gesetze-im-internet.de/wogg/__4.html",
+        "retrieved": "2026-08-16"
+      },
+      {
+        "label": "WoGG § 7 – Ausschluss vom Wohngeld",
+        "url": "https://www.gesetze-im-internet.de/wogg/__7.html",
+        "retrieved": "2026-08-16"
+      },
+      {
+        "label": "WoGG § 9 – Miete",
+        "url": "https://www.gesetze-im-internet.de/wogg/__9.html",
+        "retrieved": "2026-08-16"
+      },
+      {
+        "label": "WoGG § 11 – Zu berücksichtigende Miete und Belastung",
+        "url": "https://www.gesetze-im-internet.de/wogg/__11.html",
+        "retrieved": "2026-08-16"
+      },
+      {
+        "label": "WoGG § 12 – Höchstbeträge, Heizkostenentlastung, Klimakomponente",
+        "url": "https://www.gesetze-im-internet.de/wogg/__12.html",
+        "retrieved": "2026-08-16"
+      },
+      {
+        "label": "WoGG § 17 – Freibeträge",
+        "url": "https://www.gesetze-im-internet.de/wogg/__17.html",
+        "retrieved": "2026-08-16"
+      },
+      {
+        "label": "WoGG § 19 – Höhe des Wohngeldes",
+        "url": "https://www.gesetze-im-internet.de/wogg/__19.html",
+        "retrieved": "2026-08-16"
+      },
+      {
+        "label": "WoGG § 24 – Wohngeldbehörde und Entscheidung",
+        "url": "https://www.gesetze-im-internet.de/wogg/__24.html",
+        "retrieved": "2026-08-16"
+      },
+      {
+        "label": "WoGG § 25 – Bewilligungszeitraum",
+        "url": "https://www.gesetze-im-internet.de/wogg/__25.html",
+        "retrieved": "2026-08-16"
+      },
+      {
+        "label": "WoGG § 27 – Änderung des Wohngeldes",
+        "url": "https://www.gesetze-im-internet.de/wogg/__27.html",
+        "retrieved": "2026-08-16"
+      },
+      {
+        "label": "WoGG § 31 – Rücknahme eines rechtswidrigen nicht begünstigenden Wohngeldbescheides",
+        "url": "https://www.gesetze-im-internet.de/wogg/__31.html",
+        "retrieved": "2026-08-16"
+      },
+      {
+        "label": "WoGG § 43 – Fortschreibung des Wohngeldes",
+        "url": "https://www.gesetze-im-internet.de/wogg/__43.html",
+        "retrieved": "2026-08-16"
+      },
+      {
+        "label": "WoGG Anlage 1 (zu § 12 Absatz 1) – Höchstbeträge für Miete und Belastung",
+        "url": "https://www.gesetze-im-internet.de/wogg/anlage_1.html",
+        "retrieved": "2026-08-16"
+      },
+      {
+        "label": "VwGO § 70 – Widerspruchsfrist",
+        "url": "https://www.gesetze-im-internet.de/vwgo/__70.html",
+        "retrieved": "2026-08-16"
+      },
+      {
+        "label": "Regierung von Unterfranken: Wohngeld – Widerspruchsverfahren (Beispiel eines fakultativen Widerspruchsverfahrens)",
+        "url": "https://www.regierung.unterfranken.bayern.de/aufgaben/177660/177662/eigene_leistung/el_00254/index.html",
+        "retrieved": "2026-08-16"
+      }
+    ],
+    "BEFUND_1_widerspruch_ist_nicht_ueberall_der_richtige_rechtsbehelf": {
+      "sachverhalt": "Wohngeld ist eine Sozialleistung (§ 68 Nr. 10 SGB I), aber der Rechtsweg führt zum **Verwaltungsgericht**, nicht zum Sozialgericht — § 51 SGG zählt Wohngeld nicht auf. Damit gilt § 68 VwGO, und dessen Absatz 1 Satz 2 erlaubt den Ländern, das Vorverfahren durch Gesetz abzuschaffen. Mehrere Länder haben davon Gebrauch gemacht; Bayern etwa stellt es frei: „Gegen einen Wohngeldbescheid kann der Betroffene entweder Widerspruch einlegen oder direkt beim jeweils zuständigen Bayerischen Verwaltungsgericht Klage erheben.“ (Regierung von Unterfranken).",
+      "folge_fuer_das_projekt": "Eine bundesweite Seite darf beim Wohngeld **nicht** pauschal „legen Sie Widerspruch ein“ schreiben. Wo das Vorverfahren abgeschafft ist, wäre ein Widerspruch der falsche Rechtsbehelf, und der Monat läuft dann für die **Klage** (§ 74 Abs. 1 Satz 2 VwGO). Die belastbare Aussage ist die Rechtsbehelfsbelehrung des Bescheids: sie muss nach § 58 Abs. 1 VwGO benennen, welcher Rechtsbehelf statthaft ist und wo er anzubringen ist — und wenn sie fehlt oder falsch ist, gilt ein Jahr (§ 58 Abs. 2 VwGO)."
+    },
+    "BEFUND_2_die_rechnung_ist_dieselbe_die_fundstellen_sind_andere": {
+      "sachverhalt": "Beim Wohngeld führt die Fristenkette durch andere Vorschriften als beim Grundsicherungsgeld, **kommt aber Tag für Tag zum selben Ergebnis**: Bekanntgabe am vierten Tag nach Aufgabe zur Post (§ 37 Abs. 2 SGB X, wortgleich § 41 Abs. 2 VwVfG), ein Monat ab Bekanntgabe (§ 70 Abs. 1 VwGO), Fristberechnung über § 57 Abs. 2 VwGO → § 222 ZPO → §§ 187 Abs. 1, 188 Abs. 2 und 3 BGB, Verschiebung von Sonnabend, Sonntag und Feiertag auf den nächsten Werktag (§ 222 Abs. 2 ZPO, § 193 BGB).",
+      "folge_fuer_das_projekt": "Der vorhandene Fristenrechner rechnet für Wohngeld und BAföG richtig, ohne dass an der Logik etwas geändert werden müsste — nur die genannten Fundstellen unterscheiden sich. Das ist prüfbar und wurde Vorschrift für Vorschrift am Volltext nachgelesen, nicht angenommen."
+    },
+    "BEFUND_3_die_haeufig_zitierte_bagatellgrenze_gibt_es_nicht_mehr": {
+      "sachverhalt": "§ 30a WoGG (Bagatellgrenze von 50 Euro bei Rückforderungen) war ausdrücklich befristet: „Die Erprobung dauert bis zum 31. Dezember 2024.“ Der Satz steht unverändert im Gesetz, die Erprobung ist abgelaufen.",
+      "folge_fuer_das_projekt": "Ratgeber, die weiterhin eine 50-Euro-Grenze nennen, zitieren eine ausgelaufene Vorschrift. Die Seite darf sie nicht als geltendes Recht führen. Dass eine Norm im Gesetzestext steht, heißt nicht, dass sie noch wirkt — der Auslauftermin steht im Normtext selbst."
+    },
+    "BEFUND_4_die_betraege_haben_ein_bekanntes_verfallsdatum": {
+      "sachverhalt": "Nach § 43 Abs. 4 WoGG werden die Höchstbeträge (Anlage 1) und die Rechengrößen (Anlagen 2 und 3) **am 1. Januar jedes zweiten Jahres** fortgeschrieben, erstmals zum 1. Januar 2025. Die hier erhobenen Werte tragen die Fundstelle BGBl. 2024 I Nr. 314 und gelten damit bis zum 31. Dezember 2026; die nächste Fortschreibung wirkt zum 1. Januar 2027.",
+      "folge_fuer_das_projekt": "Der Datensatz führt `gilt_bis` und `naechste_fortschreibung` mit. Das ist die Lehre aus der BEG-EM-Erhebung vom 2026-08-03: ein Datensatz, der planmäßig zu einem bekannten Termin veraltet, muss diesen Termin selbst mitführen, statt ihn dem nächsten Leser zu überlassen."
+    }
+  },
+  "hoechstbetraege": {
+    "legal_basis": "§ 12 Abs. 1 WoGG i. V. m. Anlage 1",
+    "fundstelle_anlage": "BGBl. 2024 I Nr. 314",
+    "gilt_ab": "2025-01-01",
+    "gilt_bis": "2026-12-31",
+    "naechste_fortschreibung": "2027-01-01",
+    "einheit": "Euro im Monat",
+    "mietenstufen": ["I", "II", "III", "IV", "V", "VI", "VII"],
+    "zeilen": [
+      { "haushaltsmitglieder": "1", "betraege": [361, 408, 456, 511, 562, 615, 677] },
+      { "haushaltsmitglieder": "2", "betraege": [437, 493, 551, 619, 680, 745, 820] },
+      { "haushaltsmitglieder": "3", "betraege": [521, 587, 657, 737, 809, 887, 975] },
+      { "haushaltsmitglieder": "4", "betraege": [608, 686, 766, 858, 946, 1035, 1139] },
+      { "haushaltsmitglieder": "5", "betraege": [694, 782, 875, 982, 1080, 1183, 1302] },
+      { "haushaltsmitglieder": "je weiteres", "betraege": [82, 94, 106, 119, 129, 149, 163] }
+    ],
+    "hinweis": "Welche Mietenstufe für eine Gemeinde gilt, steht nicht im Wohngeldgesetz, sondern in der Anlage zu § 1 Abs. 3 der Wohngeldverordnung. Sie richtet sich nach dem vom Statistischen Bundesamt festgestellten Mietenniveau (§ 12 Abs. 2 bis 5 WoGG) und ist deshalb hier nicht beziffert."
+  },
+  "heizkostenentlastung": {
+    "legal_basis": "§ 12 Abs. 6 WoGG",
+    "einheit": "Euro im Monat",
+    "erlaeuterung": "Der Gesamtbetrag ist die Summe aus der Entlastung wegen der CO2-Bepreisung und der dauerhaften Heizkostenkomponente. Er wird zusätzlich zum Höchstbetrag berücksichtigt (§ 11 Abs. 1 Nr. 2 WoGG).",
+    "zeilen": [
+      { "haushaltsmitglieder": "1", "co2": 14.4, "dauerhaft": 96, "gesamt": 110.4 },
+      { "haushaltsmitglieder": "2", "co2": 18.6, "dauerhaft": 124, "gesamt": 142.6 },
+      { "haushaltsmitglieder": "3", "co2": 22.2, "dauerhaft": 148, "gesamt": 170.2 },
+      { "haushaltsmitglieder": "4", "co2": 25.8, "dauerhaft": 172, "gesamt": 197.8 },
+      { "haushaltsmitglieder": "5", "co2": 29.4, "dauerhaft": 196, "gesamt": 225.4 },
+      { "haushaltsmitglieder": "je weiteres", "co2": 3.6, "dauerhaft": 24, "gesamt": 27.6 }
+    ]
+  },
+  "klimakomponente": {
+    "legal_basis": "§ 12 Abs. 7 WoGG",
+    "einheit": "Euro im Monat",
+    "erlaeuterung": "Zuschlag zu den Höchstbeträgen nach § 12 Abs. 1 — er hebt also die Obergrenze an, statt neben ihr zu stehen (§ 11 Abs. 1 Nr. 1 WoGG).",
+    "zeilen": [
+      { "haushaltsmitglieder": "1", "betrag": 19.2 },
+      { "haushaltsmitglieder": "2", "betrag": 24.8 },
+      { "haushaltsmitglieder": "3", "betrag": 29.6 },
+      { "haushaltsmitglieder": "4", "betrag": 34.4 },
+      { "haushaltsmitglieder": "5", "betrag": 39.2 },
+      { "haushaltsmitglieder": "je weiteres", "betrag": 4.8 }
+    ]
+  },
+  "formel": {
+    "legal_basis": "§ 19 Abs. 1 WoGG i. V. m. Anlagen 2 und 3",
+    "darstellung": "1,15 · (M − (a + b · M + c · Y) · Y)",
+    "bedeutung": {
+      "M": "zu berücksichtigende monatliche Miete oder Belastung in Euro",
+      "Y": "monatliches Gesamteinkommen in Euro",
+      "a_b_c": "nach der Zahl der zu berücksichtigenden Haushaltsmitglieder gestaffelte Werte aus Anlage 2"
+    },
+    "rechenschritte": "z1 = a + b · M + c · Y; z2 = z1 · Y; z3 = M − z2; z4 = 1,15 · z3 — als Festkommazahlen mit zehn Nachkommastellen, anschließend kaufmännisch auf volle Euro gerundet (Anlage 3 Nr. 2 und 3).",
+    "mindestwerte": "Liegen M oder Y unter den Werten der Tabelle in Anlage 3 Nr. 1, werden sie durch diese ersetzt — für einen Einpersonenhaushalt M = 54 und Y = 396.",
+    "ueber_zwoelf": "Ab dem 13. zu berücksichtigenden Haushaltsmitglied erhöht sich das Wohngeld um je 65 Euro, höchstens bis zur Höhe der zu berücksichtigenden Miete (§ 19 Abs. 3 WoGG).",
+    "hinweis": "Die Formel steht hier, damit ein Bescheid nachvollziehbar wird — nicht, damit hier gerechnet wird. Die Seite rechnet kein Wohngeld aus."
+  },
+  "freibetraege": {
+    "legal_basis": "§ 17 WoGG",
+    "einheit": "Euro im Jahr",
+    "posten": [
+      {
+        "fall": "Schwerbehinderung mit einem Grad der Behinderung von 100, oder darunter bei Pflegebedürftigkeit mit häuslicher, teilstationärer oder Kurzzeitpflege",
+        "betrag": 1800,
+        "legal_basis": "§ 17 Nr. 1"
+      },
+      {
+        "fall": "Opfer der nationalsozialistischen Verfolgung oder im Sinne des Bundesentschädigungsgesetzes gleichgestellt",
+        "betrag": 750,
+        "legal_basis": "§ 17 Nr. 2"
+      },
+      {
+        "fall": "Ein Haushaltsmitglied wohnt ausschließlich mit Kindern zusammen und mindestens eines davon ist noch nicht 18 Jahre alt, mit Kindergeldbezug",
+        "betrag": 1320,
+        "legal_basis": "§ 17 Nr. 3"
+      },
+      {
+        "fall": "Eigene Erwerbseinnahmen eines Kindes unter 25 Jahren, das Haushaltsmitglied ist — in Höhe dieser Einnahmen, höchstens",
+        "betrag": 1200,
+        "legal_basis": "§ 17 Nr. 4"
+      }
+    ],
+    "grundrentenfreibetrag": {
+      "legal_basis": "§ 17a WoGG",
+      "voraussetzung": "mindestens 33 Jahre mit Grundrentenzeiten nach § 76g Abs. 2 SGB VI oder vergleichbaren Zeiten",
+      "betrag": "1.200 Euro im Jahr aus der gesetzlichen Rente zuzüglich 30 Prozent des darüber liegenden Renteneinkommens, höchstens das Zwölffache von 50 Prozent der Regelbedarfsstufe 1",
+      "hinweis": "Die Wohngeldbehörde entscheidet ohne diesen Freibetrag, solange sie von den Grundrentenzeiten nichts weiß, und muss von Amts wegen neu entscheiden, sobald der Rentenversicherungsträger sie unterrichtet (§ 17a Abs. 3)."
+    },
+    "unterhaltsabzug": {
+      "legal_basis": "§ 18 WoGG",
+      "posten": [
+        { "fall": "Haushaltsmitglied, das wegen Berufsausbildung auswärts wohnt", "bis_eur_jahr": 3000 },
+        { "fall": "Kind, das Haushaltsmitglied beim anderen Elternteil ist", "bis_eur_jahr": 3000 },
+        { "fall": "früherer oder dauernd getrennt lebender Ehegatte oder Lebenspartner", "bis_eur_jahr": 6000 },
+        { "fall": "sonstige unterhaltsberechtigte Person, die kein Haushaltsmitglied ist", "bis_eur_jahr": 3000 }
+      ],
+      "hinweis": "Liegt eine notariell beurkundete Unterhaltsvereinbarung, ein Unterhaltstitel oder ein Bescheid vor, ist bis zu dem dort festgelegten Betrag abzuziehen."
+    }
+  },
+  "pruefpunkte": [
+    {
+      "bestandteil": "Mietenstufe und Höchstbetrag",
+      "legal_basis": "§ 12 Abs. 1 und 2 WoGG",
+      "pruefen": [
+        "Nennt der Bescheid die Mietenstufe Ihrer Gemeinde, und stimmt sie mit der Anlage zur Wohngeldverordnung überein?",
+        "Ist der Höchstbetrag für die richtige Zahl von Haushaltsmitgliedern angesetzt — gezählt wird nach §§ 5 und 6 WoGG, nicht nach Meldeadressen?",
+        "Wurde die Klimakomponente zum Höchstbetrag hinzugerechnet? Sie hebt die Obergrenze an und steht nicht daneben."
+      ],
+      "hinweis": "Ein Bescheid, der nur einen Endbetrag nennt, macht diese Prüfung unmöglich. Die Berechnungsgrößen müssen darin stehen (§ 24 Abs. 3 WoGG)."
+    },
+    {
+      "bestandteil": "Zu berücksichtigende Miete",
+      "legal_basis": "§§ 9 und 11 WoGG",
+      "pruefen": [
+        "Wurden Heizkosten und Kosten für Warmwasser aus der Miete herausgerechnet? Sie zählen nach § 9 Abs. 2 nicht zur Miete — die Entlastung dafür kommt getrennt nach § 12 Abs. 6.",
+        "Sind Garage oder Stellplatz abgezogen worden, obwohl sie nicht mitgemietet sind?",
+        "Ist der Gesamtbetrag zur Entlastung bei den Heizkosten überhaupt angesetzt? Er wird zusätzlich berücksichtigt und nicht vom Höchstbetrag gedeckelt."
+      ]
+    },
+    {
+      "bestandteil": "Gesamteinkommen",
+      "legal_basis": "§§ 13 bis 18 WoGG",
+      "pruefen": [
+        "Wurde vom Jahreseinkommen ausgegangen, das im Bewilligungszeitraum zu erwarten ist — oder von einem vergangenen Jahr? Maßgebend sind die Verhältnisse, die bei Antragstellung für den Bewilligungszeitraum zu erwarten waren (§ 24 Abs. 2).",
+        "Sind die Freibeträge nach § 17 abgezogen, insbesondere der für Alleinerziehende und der für eigene Erwerbseinnahmen von Kindern unter 25?",
+        "Bei mindestens 33 Jahren mit Grundrentenzeiten: ist der Freibetrag nach § 17a berücksichtigt?",
+        "Sind Unterhaltszahlungen nach § 18 abgezogen worden?"
+      ]
+    },
+    {
+      "bestandteil": "Ausschluss vom Wohngeld",
+      "legal_basis": "§ 7 WoGG",
+      "pruefen": [
+        "Wurde Wohngeld abgelehnt, weil ein Haushaltsmitglied Grundsicherungsgeld, Grundsicherung im Alter oder Hilfe zum Lebensunterhalt bezieht? Der Ausschluss greift nur, wenn dort Kosten der Unterkunft berücksichtigt wurden.",
+        "Kann Wohngeld die Hilfebedürftigkeit vermeiden oder beseitigen? Dann besteht der Ausschluss nicht (§ 7 Abs. 1 Satz 3 Nr. 2) — das ist der sogenannte Wohngeldvorrang.",
+        "Werden die anderen Leistungen ausschließlich als Darlehen gewährt? Dann greift der Ausschluss ebenfalls nicht."
+      ],
+      "hinweis": "Diese Vorschrift entscheidet oft darüber, ob überhaupt Wohngeld in Betracht kommt — und sie ist der Grund, warum ein abgelehnter Antrag nicht immer bedeutet, dass kein Anspruch besteht."
+    },
+    {
+      "bestandteil": "Bewilligungszeitraum und Änderungen",
+      "legal_basis": "§§ 25 und 27 WoGG",
+      "pruefen": [
+        "Beginnt der Bewilligungszeitraum am Ersten des Antragsmonats? Ein späterer Beginn braucht einen Grund aus § 25.",
+        "Hat sich die Miete um mehr als 10 Prozent erhöht, das Einkommen um mehr als 10 Prozent verringert oder die Zahl der Haushaltsmitglieder erhöht? Dann ist auf Antrag neu zu bewilligen (§ 27 Abs. 1) — von selbst geschieht das nicht.",
+        "Wurde von Amts wegen zu Ihren Lasten neu entschieden? Das setzt eine Änderung von mehr als 15 Prozent voraus und muss binnen eines Jahres nach Kenntnis der Behörde geschehen (§ 27 Abs. 2)."
+      ],
+      "hinweis": "Der Unterschied zwischen den 10 Prozent zu Ihren Gunsten und den 15 Prozent zu Ihren Lasten ist kein Druckfehler, sondern die Systematik des § 27."
+    },
+    {
+      "bestandteil": "Rückforderung und nachträgliche Korrektur",
+      "legal_basis": "§§ 28, 30a und 31 WoGG",
+      "pruefen": [
+        "Wird zurückgefordert, weil das Wohngeld nicht für die Miete verwendet worden sei? Das setzt eine zweckwidrige Verwendung im Sinne des § 28 Abs. 2 voraus.",
+        "Stellt sich ein bestandskräftiger Ablehnungs- oder Kürzungsbescheid als rechtswidrig heraus, kann er auch nach Ablauf der Widerspruchsfrist zurückgenommen werden — Wohngeld ist dann längstens für zwei Jahre vor der Rücknahme zu leisten (§ 31 WoGG)."
+      ],
+      "hinweis": "Die häufig zitierte Bagatellgrenze von 50 Euro nach § 30a WoGG galt nur als Erprobung bis zum 31. Dezember 2024. Der Satz steht noch im Gesetz, die Erprobung ist abgelaufen."
+    }
+  ],
+  "frist": {
+    "rechtsweg": "Verwaltungsgericht",
+    "rechtsweg_begruendung": "Wohngeld ist zwar Sozialleistung (§ 68 Nr. 10 SGB I), wird aber in § 51 SGG nicht aufgezählt — zuständig ist deshalb die Verwaltungsgerichtsbarkeit.",
+    "rechtsbehelf": "Widerspruch nach §§ 68 ff. VwGO, soweit das Landesrecht das Vorverfahren nicht abgeschafft oder freigestellt hat",
+    "dauer": "ein Monat ab Bekanntgabe",
+    "kette": [
+      {
+        "schritt": "Bekanntgabe am vierten Tag nach Aufgabe zur Post",
+        "legal_basis": "§ 37 Abs. 2 Satz 1 SGB X; wortgleich § 41 Abs. 2 Satz 1 VwVfG",
+        "hinweis": "Beide Vorschriften stellen auf den vierten Tag ab. Im Zweifel muss die Behörde Zugang und Zeitpunkt nachweisen."
+      },
+      {
+        "schritt": "Ein Monat ab Bekanntgabe, schriftlich, elektronisch oder zur Niederschrift bei der Behörde, die den Bescheid erlassen hat",
+        "legal_basis": "§ 70 Abs. 1 VwGO"
+      },
+      {
+        "schritt": "Der Tag der Bekanntgabe zählt nicht mit; die Monatsfrist endet an dem Tag des Folgemonats, der ihm nach seiner Zahl entspricht, und fehlt dieser Tag, mit dem Monatsende",
+        "legal_basis": "§ 57 Abs. 2 VwGO i. V. m. § 222 Abs. 1 ZPO, §§ 187 Abs. 1, 188 Abs. 2 und 3 BGB"
+      },
+      {
+        "schritt": "Fällt das Fristende auf Sonnabend, Sonntag oder einen Feiertag, endet die Frist mit dem nächsten Werktag",
+        "legal_basis": "§ 222 Abs. 2 ZPO, § 193 BGB"
+      },
+      {
+        "schritt": "Fehlt die Rechtsbehelfsbelehrung oder ist sie unrichtig, beträgt die Frist ein Jahr",
+        "legal_basis": "§ 58 Abs. 2 VwGO i. V. m. § 70 Abs. 2 VwGO"
+      },
+      {
+        "schritt": "Wer ohne Verschulden gehindert war, kann Wiedereinsetzung beantragen",
+        "legal_basis": "§ 60 VwGO i. V. m. § 70 Abs. 2 VwGO"
+      }
+    ],
+    "achtung": "In mehreren Bundesländern ist das Widerspruchsverfahren nach § 68 Abs. 1 Satz 2 VwGO ganz oder teilweise abgeschafft oder freigestellt; in Bayern kann statt eines Widerspruchs unmittelbar Klage erhoben werden. Welcher Rechtsbehelf statthaft ist und wo er anzubringen ist, muss die Rechtsbehelfsbelehrung des Bescheids benennen (§ 58 Abs. 1 VwGO). Ist dort keine genannt oder ist sie falsch, gilt die Jahresfrist.",
+    "rechnung_identisch": "Die Rechnung ist Tag für Tag dieselbe wie im Sozialrecht — vier Tage, dann ein Monat, dann die Verschiebung auf den nächsten Werktag. Verschieden sind nur die Fundstellen."
+  },
+  "rdg_grenze": "Diese Prüfpunkte beschreiben, was in einem Wohngeldbescheid steht und welche Fehlerbilder bei diesem Bescheidtyp bekannt sind. Sie sind keine Prüfung des einzelnen Bescheids und keine Aussage darüber, ob ein Widerspruch Erfolg hätte.",
+  "noch_offen": [
+    "Die Mietenstufe je Gemeinde steht in der Anlage zu § 1 Abs. 3 der Wohngeldverordnung — rund 11.000 Zeilen. Sie ist nicht erhoben.",
+    "Welche Bundesländer das Vorverfahren für Wohngeld abgeschafft haben, ist Landesrecht und wurde nur für Bayern an einer amtlichen Quelle belegt. Eine Länderübersicht müsste 16 Ausführungsgesetze einzeln nachweisen.",
+    "Erhebungen von Verbraucherzentralen und Sozialverbänden zu den häufigsten Fehlerbildern beim Wohngeld fehlen noch; die Prüfpunkte stammen bislang aus dem Gesetzestext."
+  ]
+}

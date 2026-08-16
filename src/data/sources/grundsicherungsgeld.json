@@ -1,0 +1,194 @@
+{
+  "_meta": {
+    "topic": "grundsicherungsgeld-bescheid",
+    "retrieved": "2026-08-03",
+    "collector": "local session (owner's machine)",
+    "method": "Gesamt-XML von SGB II und der Regelbedarfsstufen-Fortschreibungsverordnung 2026 gezogen und im Volltext gelesen.",
+    "sources": [
+      {
+        "label": "SGB II § 19 – Grundsicherungsgeld und Leistungen für Bildung und Teilhabe",
+        "url": "https://www.gesetze-im-internet.de/sgb_2/__19.html",
+        "retrieved": "2026-08-03"
+      },
+      {
+        "label": "SGB II § 20 – Regelbedarf zur Sicherung des Lebensunterhalts",
+        "url": "https://www.gesetze-im-internet.de/sgb_2/__20.html",
+        "retrieved": "2026-08-03"
+      },
+      {
+        "label": "SGB II § 21 – Mehrbedarfe",
+        "url": "https://www.gesetze-im-internet.de/sgb_2/__21.html",
+        "retrieved": "2026-08-03"
+      },
+      {
+        "label": "SGB II § 11b – Absetzbeträge vom Einkommen",
+        "url": "https://www.gesetze-im-internet.de/sgb_2/__11b.html",
+        "retrieved": "2026-08-03"
+      },
+      {
+        "label": "SGB II § 31a – Rechtsfolgen bei Pflichtverletzungen",
+        "url": "https://www.gesetze-im-internet.de/sgb_2/__31a.html",
+        "retrieved": "2026-08-03"
+      },
+      {
+        "label": "Regelbedarfsstufen-Fortschreibungsverordnung 2026 (BGBl. I 2025 Nr. 243, v. 17.10.2025)",
+        "url": "https://www.gesetze-im-internet.de/rbsfv_2026/",
+        "retrieved": "2026-08-03"
+      },
+      {
+        "label": "SGB II § 22 – Bedarfe für Unterkunft und Heizung",
+        "url": "https://www.gesetze-im-internet.de/sgb_2/__22.html",
+        "retrieved": "2026-08-03"
+      }
+    ],
+    "BEFUND_1_die_leistung_heisst_nicht_mehr_buergergeld": {
+      "sachverhalt": "Das SGB II nennt die Leistung durchgehend **Grundsicherungsgeld** (41 Fundstellen im Gesetzestext) und nur noch an drei Stellen Bürgergeld. § 19 Abs. 1 lautet: „Erwerbsfähige Leistungsberechtigte erhalten Grundsicherungsgeld.“",
+      "folge_fuer_das_projekt": "Der gesamte Abschnitt 5 der QUEUE ist auf „Bürgergeld“ geschrieben. Das ist für die **Suche** weiterhin richtig — danach suchen die Leute — aber der Bescheid, den jemand in der Hand hält, sagt Grundsicherungsgeld. Genau diese Lücke ist der Daseinszweck von bescheid-checker: die Seite muss beide Wörter führen, unter „Bürgergeld“ ranken und im Text erklären, dass das Amt es anders nennt. Für die Bescheidprüfung ist der Gesetzesbegriff maßgeblich."
+    },
+    "BEFUND_2_2026_gab_es_keine_erhoehung": {
+      "sachverhalt": "§ 1 Abs. 2 RBSFV 2026: die fortgeschriebenen Beträge wären **niedriger** als die für 2025 geltenden. Nach § 28a Abs. 5 SGB XII gelten deshalb die Beträge von 2025 auch zum 1. Januar 2026 weiter.",
+      "folge_fuer_das_projekt": "Die Regelsätze 2026 sind identisch mit denen von 2025 — es gab keine Nullrunde „aus politischer Entscheidung“, sondern eine gesetzlich angeordnete Besitzstandswahrung, weil die Rechnung nach unten zeigte. Das ist eine belegbare Aussage, die kaum ein Ratgeber sauber erklärt, und sie beantwortet die naheliegende Leserfrage „warum steht da dasselbe wie letztes Jahr“."
+    }
+  },
+  "regelbedarfsstufen_2026": {
+    "legal_basis": "§ 2 RBSFV 2026 (Ergänzung der Anlage zu § 28 SGB XII), über § 20 Abs. 1a SGB II",
+    "gueltig_ab": "2026-01-01",
+    "identisch_mit_2025": true,
+    "betraege_eur": {
+      "stufe_1": 563,
+      "stufe_2": 506,
+      "stufe_3": 451,
+      "stufe_4": 471,
+      "stufe_5": 390,
+      "stufe_6": 357
+    },
+    "zuordnung": {
+      "stufe_1": "Alleinstehende, Alleinerziehende, sowie Personen, deren Partner minderjährig ist (§ 20 Abs. 2 Satz 1 SGB II)",
+      "stufe_2": "Partner in einer Bedarfsgemeinschaft, beide volljährig",
+      "stufe_3": "Erwachsene ohne eigenen Haushalt",
+      "stufe_4": "Jugendliche von 14 bis 17 Jahren",
+      "stufe_5": "Kinder von 6 bis 13 Jahren",
+      "stufe_6": "Kinder bis 5 Jahre"
+    },
+    "hinweis": "Die Zuordnung der Stufen 3 bis 6 folgt der Systematik von § 20 Abs. 2 SGB II und der Anlage zu § 28 SGB XII. Die Altersgrenzen wurden hier **nicht** einzeln am Anlagentext geprüft — vor Veröffentlichung nachlesen."
+  },
+  "pruefpunkte": [
+    {
+      "bestandteil": "Regelbedarf",
+      "legal_basis": "§ 20 SGB II",
+      "pruefen": [
+        "Ist die richtige Regelbedarfsstufe angesetzt?",
+        "Stimmt der Betrag mit der Tabelle für das Jahr des Bewilligungszeitraums überein?",
+        "Wurde für jedes Mitglied der Bedarfsgemeinschaft eine eigene Stufe angesetzt?"
+      ]
+    },
+    {
+      "bestandteil": "Mehrbedarfe",
+      "legal_basis": "§ 21 SGB II",
+      "saetze": [
+        {
+          "fall": "Werdende Mütter nach der 12. Schwangerschaftswoche bis zum Ende des Entbindungsmonats",
+          "prozent_des_regelbedarfs": 17,
+          "legal_basis": "§ 21 Abs. 2"
+        },
+        {
+          "fall": "Alleinerziehend mit einem Kind unter 7 oder zwei bis drei Kindern unter 16",
+          "prozent_des_regelbedarfs": 36,
+          "legal_basis": "§ 21 Abs. 3 Nr. 1"
+        },
+        {
+          "fall": "Alleinerziehend, je Kind",
+          "prozent_des_regelbedarfs": 12,
+          "hoechstens_prozent": 60,
+          "legal_basis": "§ 21 Abs. 3 Nr. 2",
+          "hinweis": "Gilt, wenn sich dadurch ein höherer Prozentsatz ergibt als nach Nummer 1."
+        }
+      ],
+      "pruefen": [
+        "Ist ein zustehender Mehrbedarf überhaupt angesetzt? Mehrbedarfe werden häufig übersehen, weil sie nicht beantragt wurden.",
+        "Bei Alleinerziehenden: wurde die für den Einzelfall günstigere der beiden Varianten gerechnet?"
+      ]
+    },
+    {
+      "bestandteil": "Bedarf für Unterkunft und Heizung",
+      "legal_basis": "§ 22 SGB II",
+      "pruefen": [
+        "Läuft noch die Karenzzeit? Dann sind die tatsächlichen Kosten anzuerkennen, nicht die Angemessenheitsgrenze.",
+        "Wurde die Karenzzeit um Monate ohne Leistungsbezug verlängert?",
+        "Wird die Grenze des Eineinhalbfachen überhaupt überschritten? Unterhalb davon greift die Karenzzeit uneingeschränkt.",
+        "Nach der Karenzzeit: liegt eine Kostensenkungsaufforderung vor, und sind die sechs Monate schon abgelaufen — gerechnet **ab dem Ende der Karenzzeit**, nicht ab Leistungsbeginn?",
+        "Bei einer zu hohen Miete: hat der Träger zur Rüge nach der Mietpreisbremse aufgefordert, statt nur zu kürzen?"
+      ],
+      "hinweis": "Die abstrakt angemessenen Aufwendungen legen die Kommunen fest — sie stehen nicht im Gesetz und sind deshalb hier nicht beziffert. Eine Seite darf keine Grenze nennen, die sie nicht für den konkreten Kreis belegt hat.",
+      "karenzzeit": {
+        "legal_basis": "§ 22 Abs. 1 Sätze 2 bis 5 SGB II",
+        "dauer": "ein Jahr ab Beginn des Monats, für den erstmals Leistungen bezogen werden",
+        "wirkung": "In der Karenzzeit werden die Aufwendungen für die Unterkunft in **tatsächlicher Höhe** anerkannt, ohne Angemessenheitsprüfung.",
+        "verlaengerung": "Wird der Leistungsbezug in der Karenzzeit für mindestens einen Monat unterbrochen, verlängert sie sich um die vollen Monate ohne Bezug.",
+        "neubeginn": "Eine neue Karenzzeit beginnt, wenn zuvor mindestens drei Jahre keine Leistungen nach dem SGB II oder SGB XII bezogen wurden.",
+        "grenze_trotz_karenzzeit": "Aufwendungen werden **nicht** anerkannt, soweit sie mehr als das Eineinhalbfache der abstrakt angemessenen Aufwendungen betragen (§ 22 Abs. 1 Satz 6).",
+        "ausnahme_nach_oben": "In der Karenzzeit können im Einzelfall höhere Aufwendungen anerkannt werden, wenn sie unabweisbar sind oder in Bedarfsgemeinschaften mit Kindern anfallen (Satz 7)."
+      },
+      "unangemessen_kraft_gesetzes": {
+        "legal_basis": "§ 22 Abs. 1 Satz 8 SGB II",
+        "faelle": [
+          "Im maßgeblichen Gebiet ist eine Quadratmeter-Obergrenze bestimmt und die tatsächlichen Aufwendungen liegen darüber.",
+          "Die vereinbarte Miete übersteigt die nach §§ 556d bis 556g BGB zulässige Miethöhe (Mietpreisbremse). In diesem Fall muss der kommunale Träger die Mieterin oder den Mieter auffordern, den Verstoß zu rügen."
+        ],
+        "hinweis": "Der zweite Fall ist bemerkenswert und in Ratgebern selten zu finden: das Jobcenter muss zur Rüge auffordern, statt die Kosten einfach zu kürzen."
+      },
+      "kostensenkung": {
+        "legal_basis": "§ 22 Abs. 1 Sätze 9 und 10 SGB II",
+        "regel": "Übersteigen die Aufwendungen den angemessenen Umfang, sind sie so lange als Bedarf anzuerkennen, wie eine Senkung nicht möglich oder nicht zuzumuten ist — **in der Regel längstens sechs Monate**.",
+        "wichtig": "Der Zeitraum der Karenzzeit wird auf diese sechs Monate **nicht angerechnet**. Ein Bescheid, der die Kostensenkungsfrist mit dem Ende der Karenzzeit zusammenfallen lässt, verkürzt sie also unzulässig."
+      }
+    },
+    {
+      "bestandteil": "Einkommensanrechnung",
+      "legal_basis": "§ 11b SGB II",
+      "grundfreibetrag_eur": 100,
+      "grundfreibetrag_regel": "Bei Erwerbstätigen tritt ein Pauschbetrag von 100 € an die Stelle der Absetzbeträge nach Abs. 1 Satz 1 Nr. 3 bis 5. Über 400 € Erwerbseinkommen gilt das nicht, wenn nachgewiesen wird, dass die tatsächlichen Beträge höher sind (§ 11b Abs. 2).",
+      "erwerbstaetigenfreibetrag_staffel": [
+        {
+          "von_eur": 100,
+          "bis_eur": 520,
+          "prozent": 20
+        },
+        {
+          "von_eur": 520,
+          "bis_eur": 1000,
+          "prozent": 30
+        },
+        {
+          "von_eur": 1000,
+          "bis_eur": 1200,
+          "prozent": 10
+        }
+      ],
+      "erhoehte_obergrenze": {
+        "bis_eur": 1500,
+        "voraussetzung": "Erwerbsfähige, die mit mindestens einem minderjährigen Kind in Bedarfsgemeinschaft leben oder mindestens ein minderjähriges Kind haben"
+      },
+      "pruefen": [
+        "Wurde der Grundfreibetrag von 100 € abgesetzt?",
+        "Wurde die Staffel auf die jeweiligen Einkommensteile angewandt — nicht auf das gesamte Einkommen?",
+        "Bei Kindern im Haushalt: wurde die Obergrenze von 1.500 € statt 1.200 € genommen?"
+      ]
+    },
+    {
+      "bestandteil": "Leistungsminderung",
+      "legal_basis": "§ 31a SGB II",
+      "satz_prozent": 30,
+      "obergrenze": "Leistungsminderungen bei wiederholten Pflichtverletzungen oder wiederholten Meldeversäumnissen nach § 32 sind auf insgesamt 30 Prozent des maßgebenden Regelbedarfs begrenzt (§ 31a Abs. 4).",
+      "pruefen": [
+        "Übersteigt die Minderung insgesamt 30 Prozent? Dann ist sie zu hoch — die Obergrenze gilt ausdrücklich auch bei Wiederholung.",
+        "Ist die Pflichtverletzung im Bescheid konkret benannt?"
+      ]
+    }
+  ],
+  "rdg_grenze": "Diese Prüfpunkte sind allgemeine Hinweise auf bekannte Fehlerbilder, keine Prüfung des einzelnen Bescheids. Die Seite darf sagen, was in einem Bescheid stehen muss und woran man rechnet — nicht, ob ein konkreter Bescheid rechtswidrig ist oder ob ein Widerspruch Erfolg hat.",
+  "noch_offen": [
+    "Altersgrenzen der Regelbedarfsstufen 3–6 an der Anlage zu § 28 SGB XII gegenlesen.",
+    "Erhebungen von Verbraucherzentralen und Sozialverbänden zu den häufigsten Fehlerbildern — die eigentliche Aufgabenstellung von 5.2 nennt sie ausdrücklich, und sie fehlen noch."
+  ]
+}

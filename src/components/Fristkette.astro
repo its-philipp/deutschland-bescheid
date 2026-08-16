@@ -1,0 +1,109 @@
+---
+import Icon from './Icon.astro';
+import { VORLAGEN_URL } from '../lib/site';
+import type { Frist } from '../data/bescheid';
+
+/**
+ * Der Rechtsbehelf und die Fristenkette eines Bescheidtyps.
+ *
+ * **Die Kette ist je Bescheidtyp verschieden, das Ergebnis nicht.** Beim
+ * Grundsicherungsgeld und bei der Rente läuft sie über SGG und SGB X, beim
+ * Wohngeld und beim BAföG über VwGO, VwVfG, ZPO und BGB — beide Wege ergeben
+ * Tag für Tag dasselbe Fristende. Deshalb darf der Rechner dieser Seite für
+ * alle vier gelten, und deshalb muss jede Seite trotzdem ihre eigenen
+ * Fundstellen nennen: Wer die Frist gegen den Gesetzestext prüfen will, sucht
+ * sonst im falschen Gesetz.
+ *
+ * Der `achtung`-Block ist der wichtigste Teil. Beim Wohngeld und beim BAföG
+ * kann das Widerspruchsverfahren nach § 68 Abs. 1 Satz 2 VwGO landesrechtlich
+ * abgeschafft sein — dort wäre ein Widerspruch der falsche Rechtsbehelf. Eine
+ * bundesweite Seite kann das nicht für 16 Länder auflösen und soll es auch
+ * nicht raten; sie verweist auf die Rechtsbehelfsbelehrung, die es sagen muss.
+ */
+interface Props {
+  frist: Frist;
+}
+
+const { frist } = Astro.props;
+---
+
+<section class="mt-14">
+  <h2 class="font-display text-2xl text-ink">Rechtsbehelf und Frist</h2>
+
+  <dl class="mt-5 flex flex-col divide-y divide-rule border-y border-rule">
+    <div class="flex flex-wrap gap-x-6 gap-y-1 py-3">
+      <dt class="w-full shrink-0 text-[14px] text-ink-mute sm:w-40">Rechtsweg</dt>
+      <dd class="min-w-0 flex-1 text-ink">
+        {frist.rechtsweg}
+        <span class="block text-[15px] text-ink-soft">{frist.rechtsweg_begruendung}</span>
+      </dd>
+    </div>
+    <div class="flex flex-wrap gap-x-6 gap-y-1 py-3">
+      <dt class="w-full shrink-0 text-[14px] text-ink-mute sm:w-40">Rechtsbehelf</dt>
+      <dd class="min-w-0 flex-1 text-ink">{frist.rechtsbehelf}</dd>
+    </div>
+    <div class="flex flex-wrap gap-x-6 gap-y-1 py-3">
+      <dt class="w-full shrink-0 text-[14px] text-ink-mute sm:w-40">Frist</dt>
+      <dd class="min-w-0 flex-1 text-ink">{frist.dauer}</dd>
+    </div>
+  </dl>
+
+  {
+    frist.achtung && (
+      <p class="mt-5 max-w-prose border-l-4 border-marker bg-marker-tint px-4 py-3 text-[15px] text-ink">
+        <strong>Prüfen Sie zuerst die Rechtsbehelfsbelehrung.</strong> {frist.achtung}
+      </p>
+    )
+  }
+
+  {
+    frist.besonderheit && (
+      <p class="mt-5 max-w-prose text-[15px] text-ink-soft">{frist.besonderheit}</p>
+    )
+  }
+
+  <ol class="mt-6 flex flex-col divide-y divide-rule border-y border-rule">
+    {
+      frist.kette.map((s, i) => (
+        <li class="flex gap-3 py-3">
+          <span class="font-display text-lg font-semibold text-marker">{i + 1}</span>
+          <div class="min-w-0">
+            <p class="text-ink">{s.schritt}</p>
+            <p class="mt-1 text-[14px] text-ink-mute">{s.legal_basis}</p>
+            {s.hinweis && <p class="mt-1 text-[15px] text-ink-soft">{s.hinweis}</p>}
+          </div>
+        </li>
+      ))
+    }
+  </ol>
+
+  {
+    frist.rechnung_identisch && (
+      <p class="mt-5 max-w-prose text-ink-soft">
+        {frist.rechnung_identisch} Den{' '}
+        <a href="/widerspruchsfrist/" class="text-ink underline underline-offset-2">
+          Fristenrechner
+        </a>{' '}
+        finden Sie auf der Startseite und auf der Fristenseite; ein Musterschreiben für den
+        Widerspruch liegt auf{' '}
+        <a
+          href={`${VORLAGEN_URL}/behoerden/widerspruch-bescheid/`}
+          rel="noopener"
+          class="text-ink underline underline-offset-2"
+        >
+          Deutschlandvorlagen
+        </a>
+        .
+      </p>
+    )
+  }
+
+  {
+    frist.wichtiger_als_die_widerspruchsfrist && (
+      <p class="mt-5 flex max-w-prose gap-2.5 text-[15px] text-ink">
+        <Icon name="hinweis" class="mt-0.5 h-5 w-5 shrink-0 text-marker" />
+        <span>{frist.wichtiger_als_die_widerspruchsfrist}</span>
+      </p>
+    )
+  }
+</section>

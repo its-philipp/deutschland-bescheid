@@ -1,0 +1,268 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import AdSlot from '../components/AdSlot.astro';
+import Bescheidauszug from '../components/Bescheidauszug.astro';
+import Disclaimer from '../components/Disclaimer.astro';
+import Fristkette from '../components/Fristkette.astro';
+import Icon from '../components/Icon.astro';
+import Pruefpunkte from '../components/Pruefpunkte.astro';
+import Quellen from '../components/Quellen.astro';
+import { isoToGerman, euro } from '../lib/format';
+import {
+  ERHOBEN_AM,
+  FORMEL,
+  FREIBETRAEGE,
+  FRIST,
+  HEIZKOSTEN,
+  HOECHSTBETRAEGE,
+  KLIMAKOMPONENTE,
+  PRUEFPUNKTE,
+  QUELLEN,
+  RDG_GRENZE,
+} from '../data/wohngeld';
+
+/**
+ * Die Erklärseite zum Wohngeldbescheid (queue task 5.4).
+ *
+ * Zwei Dinge unterscheiden sie von den übrigen Erklärseiten und dürfen beim
+ * Weiterbauen nicht verloren gehen:
+ *
+ * 1. **Der Widerspruch ist hier nicht überall der richtige Rechtsbehelf.**
+ *    Wohngeld führt vor das Verwaltungsgericht, und § 68 Abs. 1 Satz 2 VwGO
+ *    erlaubt den Ländern, das Vorverfahren abzuschaffen. Die Seite schreibt
+ *    deshalb nirgends unbedingt „legen Sie Widerspruch ein", sondern verweist
+ *    auf die Rechtsbehelfsbelehrung.
+ * 2. **Die Tabellen haben ein Verfallsdatum im Gesetz** (§ 43 Abs. 4 WoGG,
+ *    Fortschreibung zum 1. Januar jedes zweiten Jahres). Es steht sichtbar an
+ *    der Tabelle, nicht nur im Datensatz.
+ */
+const stufen = HOECHSTBETRAEGE.mietenstufen;
+---
+
+<BaseLayout
+  title="Wohngeldbescheid verstehen: Höchstbetrag, Mietenstufe, Frist 2026"
+  description="Was Mietenstufe, Höchstbetrag, Heizkostenentlastung und Gesamteinkommen im Wohngeldbescheid bedeuten — mit den Tabellen aus dem Gesetz und den häufigsten Fehlerstellen."
+  path="/wohngeldbescheid/"
+>
+  <nav class="text-[14px] text-ink-mute" aria-label="Sie sind hier">
+    <a href="/" class="underline underline-offset-2">Startseite</a> · Wohngeldbescheid
+  </nav>
+
+  <h1 class="mt-2 font-display text-[clamp(1.9rem,5vw,2.75rem)] leading-tight text-ink">
+    Der Wohngeldbescheid und seine vier Größen
+  </h1>
+  <p class="mt-4 max-w-prose text-ink-soft">
+    Wohngeld hängt an genau drei Zahlen und einer Tabelle: wie viele Menschen
+    im Haushalt zählen, wie hoch die Miete ist, wie hoch das Einkommen — und
+    welche Mietenstufe für Ihre Gemeinde gilt. Steht eine davon falsch im
+    Bescheid, stimmt der Betrag darunter nicht.
+  </p>
+  <p class="mt-3 max-w-prose text-ink-soft">
+    <strong class="text-ink">Ein Hinweis vorweg:</strong> Anders als beim
+    Grundsicherungsgeld führt der Weg beim Wohngeld nicht zum Sozialgericht,
+    sondern zum Verwaltungsgericht. Das ändert nichts an der Rechnung der
+    Frist, aber es kann ändern, welcher Rechtsbehelf statthaft ist.
+  </p>
+
+  <div class="mt-10">
+    <Bescheidauszug
+      titel="Aus einem Wohngeldbescheid"
+      absaetze={[
+        'Auf Ihren Antrag vom 04.02.2026 bewillige ich Ihnen für die Zeit vom 01.02.2026 bis 31.01.2027 Wohngeld als Mietzuschuss nach dem Wohngeldgesetz.',
+        'Der Berechnung liegen zwei zu berücksichtigende Haushaltsmitglieder, die Mietenstufe IV und die zu berücksichtigende Miete nach § 11 WoGG zugrunde. Die Miete wird bis zum Höchstbetrag nach § 12 Abs. 1 WoGG berücksichtigt.',
+        'Das monatliche Gesamteinkommen wurde nach den §§ 13 bis 18 WoGG ermittelt. Die Höhe des Wohngeldes ergibt sich aus § 19 WoGG.',
+      ]}
+      markierungen={[
+        {
+          stelle: 'die Mietenstufe IV',
+          erklaerung:
+            'Die Mietenstufe Ihrer Gemeinde entscheidet über den Höchstbetrag — zwischen Stufe I und Stufe VII liegen bei zwei Personen mehrere hundert Euro im Monat. Sie steht nicht im Wohngeldgesetz, sondern in der Anlage zur Wohngeldverordnung.',
+          fundstelle: '§ 12 Abs. 2 WoGG',
+        },
+        {
+          stelle: 'bis zum Höchstbetrag nach § 12 Abs. 1 WoGG berücksichtigt',
+          erklaerung:
+            'Alles, was über dem Höchstbetrag liegt, zählt nicht mit. Die Heizkostenentlastung kommt aber zusätzlich hinzu, und die Klimakomponente hebt den Höchstbetrag an — beides geht leicht unter.',
+          fundstelle: '§§ 11 und 12 WoGG',
+        },
+        {
+          stelle: 'monatliche Gesamteinkommen',
+          erklaerung:
+            'Maßgebend ist das Einkommen, das im Bewilligungszeitraum zu erwarten war — nicht das eines vergangenen Jahres. Davon gehen die Freibeträge nach §§ 17 und 17a und die Unterhaltsleistungen nach § 18 ab.',
+          fundstelle: '§ 13 WoGG',
+        },
+      ]}
+    />
+  </div>
+
+  <div class="mt-10">
+    <AdSlot />
+  </div>
+
+  <section class="mt-14">
+    <h2 class="font-display text-2xl text-ink">Höchstbeträge für Miete und Belastung</h2>
+    <p class="mt-3 max-w-prose text-ink-soft">
+      Bis zu diesem Betrag zählt die Miete mit. Gesucht wird die Zeile mit der
+      Zahl der zu berücksichtigenden Haushaltsmitglieder und die Spalte mit der
+      Mietenstufe Ihrer Gemeinde.
+    </p>
+
+    <div class="mt-5 overflow-x-auto">
+      <table class="w-full min-w-[34rem] border-collapse text-[15px]">
+        <caption class="sr-only">
+          Höchstbeträge für Miete und Belastung nach Haushaltsgröße und Mietenstufe, in Euro
+          im Monat
+        </caption>
+        <thead>
+          <tr class="border-b border-rule text-left">
+            <th scope="col" class="py-2 pr-3 font-semibold text-ink">Haushalt</th>
+            {
+              stufen.map((s) => (
+                <th scope="col" class="py-2 pr-3 text-right font-semibold text-ink">
+                  {s}
+                </th>
+              ))
+            }
+          </tr>
+        </thead>
+        <tbody>
+          {
+            HOECHSTBETRAEGE.zeilen.map((z) => (
+              <tr class="border-b border-rule">
+                <th scope="row" class="py-2 pr-3 text-left font-normal text-ink-soft">
+                  {z.haushaltsmitglieder}
+                </th>
+                {z.betraege.map((b) => (
+                  <td class="py-2 pr-3 text-right tabular-nums text-ink">{b}</td>
+                ))}
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+
+    <p class="mt-3 text-[14px] text-ink-mute">
+      {HOECHSTBETRAEGE.legal_basis} · Fundstelle {HOECHSTBETRAEGE.fundstelle_anlage} · Beträge in
+      Euro im Monat, gültig vom {isoToGerman(HOECHSTBETRAEGE.gilt_ab)} bis {
+        isoToGerman(HOECHSTBETRAEGE.gilt_bis)
+      }
+    </p>
+    <p class="mt-3 flex max-w-prose gap-2.5 text-[15px] text-ink">
+      <Icon name="hinweis" class="mt-0.5 h-5 w-5 shrink-0 text-marker" />
+      <span>
+        Diese Tabelle läuft planmäßig aus: Nach § 43 Abs. 4 WoGG werden die
+        Höchstbeträge zum 1. Januar jedes zweiten Jahres fortgeschrieben. Die
+        nächste Fortschreibung wirkt zum {isoToGerman(HOECHSTBETRAEGE.naechste_fortschreibung)}.
+        Für einen laufenden Bewilligungszeitraum bleibt es bei dem Recht, das
+        bei der Entscheidung galt (§ 41 Abs. 2 WoGG).
+      </span>
+    </p>
+    <p class="mt-3 max-w-prose text-[15px] text-ink-mute">{HOECHSTBETRAEGE.hinweis}</p>
+  </section>
+
+  <section class="mt-14">
+    <h2 class="font-display text-2xl text-ink">
+      Was zusätzlich zum Höchstbetrag kommt
+    </h2>
+    <p class="mt-3 max-w-prose text-ink-soft">
+      Zwei Beträge werden häufig übersehen, weil sie nicht in der Höchstbetrags-
+      tabelle stehen — sie gehören aber zur Rechnung und stehen im Bescheid.
+    </p>
+
+    <div class="mt-6 grid gap-6 sm:grid-cols-2">
+      <article class="border-t-4 border-marker bg-paper p-5">
+        <h3 class="font-display text-xl text-ink">Entlastung bei den Heizkosten</h3>
+        <p class="mt-1 text-[14px] text-ink-mute">{HEIZKOSTEN.legal_basis}</p>
+        <p class="mt-3 text-[15px] text-ink-soft">{HEIZKOSTEN.erlaeuterung}</p>
+        <ul class="mt-4 flex flex-col divide-y divide-rule border-y border-rule">
+          {
+            HEIZKOSTEN.zeilen.map((z) => (
+              <li class="flex items-baseline justify-between gap-4 py-2 text-[15px]">
+                <span class="text-ink-soft">{z.haushaltsmitglieder}</span>
+                <span class="font-semibold tabular-nums text-ink">{euro(z.gesamt ?? 0)}</span>
+              </li>
+            ))
+          }
+        </ul>
+      </article>
+
+      <article class="border-t-4 border-marker bg-paper p-5">
+        <h3 class="font-display text-xl text-ink">Klimakomponente</h3>
+        <p class="mt-1 text-[14px] text-ink-mute">{KLIMAKOMPONENTE.legal_basis}</p>
+        <p class="mt-3 text-[15px] text-ink-soft">{KLIMAKOMPONENTE.erlaeuterung}</p>
+        <ul class="mt-4 flex flex-col divide-y divide-rule border-y border-rule">
+          {
+            KLIMAKOMPONENTE.zeilen.map((z) => (
+              <li class="flex items-baseline justify-between gap-4 py-2 text-[15px]">
+                <span class="text-ink-soft">{z.haushaltsmitglieder}</span>
+                <span class="font-semibold tabular-nums text-ink">{euro(z.betrag ?? 0)}</span>
+              </li>
+            ))
+          }
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="mt-14">
+    <h2 class="font-display text-2xl text-ink">Freibeträge vom Einkommen</h2>
+    <p class="mt-3 max-w-prose text-ink-soft">
+      Diese Beträge gehen vom Jahreseinkommen ab, bevor daraus das
+      Gesamteinkommen wird. Sie werden nur berücksichtigt, wenn die
+      Wohngeldbehörde von ihren Voraussetzungen weiß.
+    </p>
+    <ul class="mt-5 flex flex-col divide-y divide-rule border-y border-rule">
+      {
+        FREIBETRAEGE.posten.map((p) => (
+          <li class="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 py-3">
+            <span class="min-w-0 flex-1 text-[15px] text-ink-soft">
+              {p.fall}
+              <span class="block text-[14px] text-ink-mute">{p.legal_basis}</span>
+            </span>
+            <span class="font-semibold tabular-nums text-ink">{euro(p.betrag)} / Jahr</span>
+          </li>
+        ))
+      }
+    </ul>
+    <p class="mt-4 max-w-prose text-[15px] text-ink-soft">
+      <strong class="text-ink">Grundrentenfreibetrag:</strong>{' '}
+      {FREIBETRAEGE.grundrentenfreibetrag.voraussetzung} — {FREIBETRAEGE.grundrentenfreibetrag.betrag}
+      {' '}({FREIBETRAEGE.grundrentenfreibetrag.legal_basis}).{' '}
+      {FREIBETRAEGE.grundrentenfreibetrag.hinweis}
+    </p>
+  </section>
+
+  <Pruefpunkte punkte={PRUEFPUNKTE} />
+
+  <section class="mt-14 max-w-prose">
+    <h2 class="font-display text-2xl text-ink">Wie das Wohngeld gerechnet wird</h2>
+    <p class="mt-3 text-ink-soft">
+      Der Betrag entsteht nicht aus einer Tabelle, sondern aus einer Formel
+      ({FORMEL.legal_basis}):
+    </p>
+    <p class="mt-4 border-l-4 border-marker bg-marker-tint px-4 py-3 font-[Times_New_Roman,serif] text-[17px] text-ink">
+      {FORMEL.darstellung}
+    </p>
+    <p class="mt-3 text-[15px] text-ink-soft">
+      <strong class="text-ink">M</strong> ist {FORMEL.bedeutung.M},{' '}
+      <strong class="text-ink">Y</strong> ist {FORMEL.bedeutung.Y}. Die Werte a, b und c sind{' '}
+      {FORMEL.bedeutung.a_b_c}.
+    </p>
+    <p class="mt-3 text-[15px] text-ink-soft">{FORMEL.rechenschritte}</p>
+    <p class="mt-3 text-[15px] text-ink-soft">{FORMEL.mindestwerte}</p>
+    <p class="mt-3 text-[15px] text-ink-mute">{FORMEL.hinweis}</p>
+  </section>
+
+  <Fristkette frist={FRIST} />
+
+  <p class="mt-5 max-w-prose text-[15px] text-ink-mute">{RDG_GRENZE}</p>
+
+  <Quellen quellen={QUELLEN} erhobenAm={ERHOBEN_AM} />
+
+  <Disclaimer />
+
+  <div class="mt-10">
+    <AdSlot />
+  </div>
+</BaseLayout>
