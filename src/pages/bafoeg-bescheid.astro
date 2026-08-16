@@ -36,13 +36,44 @@ import {
  *    mit dem Ende des Bewilligungszeitraums endgültig verloren — und stehen in
  *    keiner Rechtsbehelfsbelehrung.
  */
-const hochschule = BEDARFSSAETZE.studierende.find((s) => s.grundbedarf === 475)!;
-const auswaerts = BEDARFSSAETZE.wohnzuschlag.find((w) => w.betrag === 380)!;
+
+/**
+ * Ausgewählt über die **Fundstelle**, nicht über den Betrag.
+ *
+ * Vorher stand hier `find((s) => s.grundbedarf === 475)!`. Das ist auf genau
+ * dieser Seite der falscheste denkbare Schlüssel: Ihr Thema ist, dass
+ * BAföG-Beträge sich ändern und der Gesetzestext dann nicht mehr den geltenden
+ * Wert nennt. Bei der nächsten Erhöhung findet `find` nichts, das `!` bringt
+ * TypeScript zum Schweigen, und die Seite rendert `undefined` — still, an einer
+ * Stelle, an der ein Betrag steht.
+ *
+ * Die Fundstelle ist der stabile Teil: § 13 Abs. 1 Nr. 2 bleibt § 13 Abs. 1
+ * Nr. 2, wenn aus 475 € ein anderer Betrag wird.
+ */
+// `legal_basis` ist bei `Betragsposten` optional, deshalb `?:` — ein Posten
+// ohne Fundstelle kann hier schlicht nie getroffen werden, was richtig ist.
+function nachFundstelle<T extends { legal_basis?: string }>(saetze: T[], fundstelle: string): T {
+  const treffer = saetze.find((s) => s.legal_basis === fundstelle);
+  if (!treffer) {
+    // Lauter Abbruch statt stillem `undefined`: hat sich die Struktur des
+    // Datensatzes geändert, soll der Build es sagen und nicht die Seite.
+    throw new Error(
+      `bafoeg-bescheid: kein Satz zu "${fundstelle}" in src/data/sources/bafoeg.json. ` +
+        `Wurde die Norm neu gefasst, muss die Fundstelle hier mitgezogen werden.`,
+    );
+  }
+  return treffer;
+}
+
+/** Höhere Fachschulen, Akademien, Hochschulen. */
+const hochschule = nachFundstelle(BEDARFSSAETZE.studierende, '§ 13 Abs. 1 Nr. 2');
+/** Nicht bei den Eltern wohnend. */
+const auswaerts = nachFundstelle(BEDARFSSAETZE.wohnzuschlag, '§ 13 Abs. 2 Nr. 2');
 ---
 
 <BaseLayout
   title="BAföG-Bescheid verstehen: Bedarf, Freibeträge, Widerspruch 2026"
-  description="Was Bedarf, Elterneinkommen, Freibeträge und Förderungshöchstdauer im BAföG-Bescheid bedeuten — mit den Beträgen für 2026 und den Anträgen, die mit dem Bewilligungszeitraum verfallen."
+  description="Was Bedarf, Elterneinkommen und Freibeträge im BAföG-Bescheid bedeuten — mit den Beträgen für 2026 und den Anträgen, die stillschweigend verfallen."
   path="/bafoeg-bescheid/"
 >
   <nav class="text-[14px] text-ink-mute" aria-label="Sie sind hier">

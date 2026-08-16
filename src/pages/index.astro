@@ -15,11 +15,14 @@ import { REGELBEDARF, STUFEN } from '../data/grundsicherungsgeld';
  * „bis wann?", nicht „was ist das hier für eine Website".
  */
 const stufe1 = STUFEN.find((s) => s.nummer === 1)!;
+/** Aus dem Datensatz, nicht aus dem Kalender: der Titel darf kein Jahr
+    behaupten, für das die Beträge gar nicht erhoben sind. */
+const jahr = REGELBEDARF.gueltig_ab.slice(0, 4);
 ---
 
 <BaseLayout
-  title={`Bescheid verstehen und Widerspruchsfrist berechnen — ${SITE_NAME}`}
-  description="Behördenbescheid nicht verstanden? Hier steht, was die Sätze bedeuten, welche Fehler häufig vorkommen und bis wann Ihr Widerspruch eingegangen sein muss."
+  title={`Bescheid verstehen und Widerspruchsfrist berechnen ${jahr}`}
+  description="Behördenbescheid nicht verstanden? Was die Sätze bedeuten, welche Fehler häufig sind und bis wann der Widerspruch eingegangen sein muss."
   path="/"
 >
   <p class="flex items-center gap-2 text-[15px] font-medium text-marker">

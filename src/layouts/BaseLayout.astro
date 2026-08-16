@@ -1,7 +1,7 @@
 ---
 import '../styles/global.css';
 import IconSprite from '../components/IconSprite.astro';
-import { SITE_NAME, absoluteUrl } from '../lib/site';
+import { SITE_NAME, GITHUB_REPO, absoluteUrl } from '../lib/site';
 import { adsEnabled, adsenseScriptUrl } from '../lib/ads';
 
 interface Props {
@@ -70,6 +70,10 @@ const canonical = absoluteUrl(path);
         <a class="underline" href="/kontakt/">Kontakt</a>
         <a class="underline" href="/impressum/">Impressum</a>
         <a class="underline" href="/datenschutz/">Datenschutz</a>
+        {/* Das Belegstück zu „nichts wird hochgeladen": im Spiegel steht, dass
+            es keinen Endpunkt gibt, an den etwas gehen könnte. Ohne den Link
+            ist der Spiegel eine Behauptung über eine Behauptung. */}
+        <a class="underline" href={GITHUB_REPO} rel="noopener" target="_blank">Quellcode</a>
       </div>
     </footer>
   </body>

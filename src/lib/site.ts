@@ -1,6 +1,6 @@
 // Site-weite Konstanten. `SITE_URL` und `site` in astro.config.mjs müssen
 // übereinstimmen: die Sitemap liest es von dort, canonical und OG von hier.
-export const SITE_URL = 'https://{{DOMAIN}}';
+export const SITE_URL = 'https://deutschland-bescheid.de';
 
 /**
  * Wortmarke. „Deutschland Bescheid" folgt der vorgesehenen Domain
@@ -19,10 +19,20 @@ export const SITE_NAME = 'Deutschland Bescheid';
  * Niemals durch plausibel aussehende Werte ersetzen — ein falsches Impressum
  * ist ein schlimmerer Mangel als ein offensichtlich fehlendes.
  */
-export const CONTACT_EMAIL = '{{IMPRESSUM_EMAIL}}';
-export const IMPRESSUM_NAME = '{{IMPRESSUM_NAME}}';
-export const IMPRESSUM_ADDRESS = '{{IMPRESSUM_ADDRESS}}';
-export const IMPRESSUM_HOSTER = '{{IMPRESSUM_HOSTER}}';
+export const CONTACT_EMAIL = 'kontakt@deutschland-bescheid.de';
+export const IMPRESSUM_NAME = 'Philipp Trinh';
+export const IMPRESSUM_ADDRESS = 'Döscherstraße 3, 22083 Hamburg';
+export const IMPRESSUM_HOSTER = 'Cloudflare (Cloudflare, Inc., 101 Townsend Street, San Francisco, CA 94107, USA)';
+
+/**
+ * Öffentlicher Spiegel des Quellcodes dieser Seite.
+ *
+ * Der Name klingt nach einem Dienst, der den Bescheid liest. Er tut es nicht:
+ * kein Upload, keine Texterkennung, keine Inferenz, kein Backend. Das ist eine
+ * Aussage über etwas, das man nicht sehen kann — und deshalb verlinkt die Seite
+ * ihren Quellcode, statt um Vertrauen zu bitten.
+ */
+export const GITHUB_REPO = 'https://github.com/its-philipp/deutschland-bescheid';
 
 export const CURRENT_YEAR = 2026;
 

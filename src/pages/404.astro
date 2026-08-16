@@ -1,0 +1,62 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+/**
+ * 404 — und der Grund, warum es diese Datei braucht, ist leicht zu übersehen.
+ *
+ * Cloudflare Pages liefert einen statischen Build aus. Fehlt `404.html` im
+ * `dist/`, antwortet eine unbekannte Adresse **nicht** mit 404: Pages fällt auf
+ * `index.html` zurück und schickt **200 mit der Startseite**. Auf
+ * deutschland-kosten.de am 2026-08-16 an der laufenden Seite nachgemessen —
+ * `/gibtsnicht`, `/404` und `/sitemap.xml` gaben alle dieselben 18.450 Bytes
+ * zurück. Für einen Crawler ist das ein unbegrenzter Vorrat an Soft-404s, jeder
+ * davon eine Kopie der Startseite. Astro macht aus dieser Datei `dist/404.html`,
+ * und Pages liefert sie dann mit echtem 404-Status aus.
+ *
+ * `noindex`, weil diese Seite unter beliebig vielen Adressen erreichbar ist und
+ * deshalb selbst nie ein Kandidat für den Index sein darf.
+ *
+ * Der Ton ist bewusst knapp und ohne Entschuldigung: Wer hier landet, hat oft
+ * einen Bescheid in der Hand und eine Frist im Nacken. Die nützlichste Reaktion
+ * ist ein Weg zum Fristenrechner, nicht ein Bedauern.
+ */
+const wege = [
+  { href: '/widerspruchsfrist/', text: 'Widerspruchsfrist berechnen' },
+  { href: '/grundsicherungsgeld-bescheid/', text: 'Grundsicherungsgeld-Bescheid (Bürgergeld)' },
+  { href: '/wohngeldbescheid/', text: 'Wohngeldbescheid' },
+  { href: '/bafoeg-bescheid/', text: 'BAföG-Bescheid' },
+  { href: '/rentenbescheid/', text: 'Rentenbescheid' },
+  { href: '/regelbedarf/', text: 'Regelbedarf: alle sechs Stufen' },
+];
+---
+
+<BaseLayout
+  title="Seite nicht gefunden"
+  description="Diese Seite gibt es nicht. Hier stehen die Erklärseiten und der Fristenrechner."
+  path="/404/"
+  noindex
+>
+  <h1 class="mt-2 font-display text-[clamp(1.9rem,5vw,2.75rem)] leading-tight text-ink">
+    Diese Seite gibt es nicht
+  </h1>
+  <p class="mt-4 max-w-prose text-ink-soft">
+    Vielleicht hat sich in der Adresse ein Zeichen verirrt. Wenn eine Frist
+    läuft, führt der erste Link zum Rechner.
+  </p>
+
+  <ul class="mt-8 flex flex-col divide-y divide-rule border-y border-rule">
+    {
+      wege.map((weg) => (
+        <li>
+          <a href={weg.href} class="block py-3 text-ink underline underline-offset-2">
+            {weg.text}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+
+  <p class="mt-8">
+    <a href="/" class="underline underline-offset-2">Zur Startseite</a>
+  </p>
+</BaseLayout>
