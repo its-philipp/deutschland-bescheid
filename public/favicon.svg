@@ -1,25 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <!-- Brand mark: a letter sheet with a black-red-gold accent bar. Sized for
-       16px legibility (large sheet, full-width bar). Deliberately NOT a flag
-       or coat of arms — the site must not read as an official government
-       service (see STATE.md).
+  <!-- Der markierte Bescheid — das Signature-Element dieser Seite (STATE.md):
+       ein Behördenschreiben mit einem Textmarkerstrich darauf.
 
-       Colours follow the site palette (design direction E, 2026-08-02):
-       Stempelblau ground, Aktendeckelgrün rules, and the three stripes in the
-       desaturated black-red-gold the accent palette is drawn from. Keep in
-       sync with public/logo.svg. -->
-  <rect width="64" height="64" rx="14" fill="#2B4C7E" />
-  <g>
-    <clipPath id="sheet">
-      <rect x="13" y="7" width="38" height="50" rx="5" />
-    </clipPath>
-    <rect x="13" y="7" width="38" height="50" rx="5" fill="#ffffff" />
-    <g clip-path="url(#sheet)">
-      <rect x="20" y="16" width="24" height="5" rx="2.5" fill="#C7CFC9" />
-      <rect x="20" y="26" width="16" height="5" rx="2.5" fill="#C7CFC9" />
-      <rect x="13" y="40" width="38" height="5" fill="#1F2421" />
-      <rect x="13" y="45" width="38" height="5" fill="#8C2F2A" />
-      <rect x="13" y="50" width="38" height="5" fill="#B08419" />
-    </g>
-  </g>
+       **Vorher stand hier eine byte-identische Kopie des Favicons von
+       deutschland-vorlagen.** Beide Seiten sind live, und zwei gleiche
+       Reitersymbole sind der sichtbarste Hinweis darauf, dass die Seiten
+       einem Eigentümer gehören — genau das, was die Portfolio-Regel in der
+       Root-CLAUDE.md ausschließt. Gefunden am 2026-08-17 beim Nachsehen der
+       Favicon-Größen.
+
+       Farben aus der eigenen Palette: Tinte #1B1D21 als Grund, Papier #FFFFFF
+       für das Blatt, Markerrot #B03A1A für den Strich. Auf 16 px gerechnet:
+       Blatt 66 % der Kachel, Markerstrich 8 Einheiten hoch — bei 16 px zwei
+       Pixel, also noch sichtbar. -->
+  <rect width="64" height="64" rx="14" fill="#1B1D21" />
+  <rect x="11" y="8" width="42" height="48" rx="4" fill="#FFFFFF" />
+  <rect x="18" y="16" width="28" height="4" rx="2" fill="#D5D7D3" />
+  <!-- Der Markerstrich: die eine Zeile, um die es geht. -->
+  <rect x="18" y="26" width="28" height="8" rx="1" fill="#B03A1A" />
+  <rect x="18" y="40" width="20" height="4" rx="2" fill="#D5D7D3" />
 </svg>
