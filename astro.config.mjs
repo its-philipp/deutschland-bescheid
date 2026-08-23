@@ -4,6 +4,7 @@ import preact from '@astrojs/preact';
 import sitemap from '@astrojs/sitemap';
 import tailwindcss from '@tailwindcss/vite';
 import checkPlaceholders from './scripts/check-placeholders.mjs';
+import checkUrls from './scripts/check-urls.mjs';
 
 // Impressum und Datenschutz tragen `noindex` und gehören deshalb aus der
 // Sitemap gefiltert — Google eine URL zum Crawlen anzubieten und ihr zugleich
@@ -17,6 +18,10 @@ export default defineConfig({
     // hat. Cloudflare Pages baut mit `npm run build`, ein roter Build ist also
     // ein Deploy, der nicht stattfindet.
     checkPlaceholders(),
+    // Bricht den Build ab, wenn canonical, og:url, ein interner Link oder ein
+    // Sitemap-Eintrag auf eine Adresse zeigt, die Pages weiterleitet — die
+    // Ursache der Search-Console-Meldung „Page with redirect" vom 2026-08-23.
+    checkUrls(),
 
     sitemap({
       filter: (page) => !page.includes('/impressum/') && !page.includes('/datenschutz/'),
