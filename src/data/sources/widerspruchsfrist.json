@@ -145,5 +145,42 @@
       "fristende_wochentag": "Do"
     }
   ],
-  "beispiel_erlaeuterung": "Die Beispiele decken die Fälle ab, an denen ein naiv gebauter Rechner scheitert: ein Monatsende ohne entsprechenden Tag, ein Fristende am Wochenende und der Jahreswechsel."
+  "beispiel_erlaeuterung": "Die Beispiele decken die Fälle ab, an denen ein naiv gebauter Rechner scheitert: ein Monatsende ohne entsprechenden Tag, ein Fristende am Wochenende und der Jahreswechsel.",
+  "aufschiebende_wirkung": {
+    "_hinweis": "Am Primaertext gelesen 2026-08-28: gesetze-im-internet.de, § 80 VwGO, § 86a SGG, § 39 SGB II.",
+    "grundsatz": [
+      {
+        "bereich": "Verwaltungsverfahren (z. B. BAföG, Wohngeld)",
+        "regel": "Widerspruch und Anfechtungsklage haben aufschiebende Wirkung. Der Bescheid darf bis zur Entscheidung nicht vollzogen werden.",
+        "legal_basis": "§ 80 Abs. 1 VwGO"
+      },
+      {
+        "bereich": "Sozialverfahren (z. B. Rente, Grundsicherung)",
+        "regel": "Widerspruch und Anfechtungsklage haben aufschiebende Wirkung.",
+        "legal_basis": "§ 86a Abs. 1 SGG"
+      }
+    ],
+    "ausnahmen": [
+      {
+        "fall": "Anforderung von öffentlichen Abgaben und Kosten",
+        "folge": "Die aufschiebende Wirkung entfällt. Ein Rückforderungs- oder Gebührenbescheid bleibt trotz Widerspruch fällig; wer nicht zahlt, riskiert Mahnung und Vollstreckung.",
+        "legal_basis": "§ 80 Abs. 2 Satz 1 Nr. 1 VwGO"
+      },
+      {
+        "fall": "Grundsicherung: Aufhebung, Rücknahme, Widerruf oder Entziehung von Leistungen, Feststellung einer Pflichtverletzung und Minderung",
+        "folge": "Keine aufschiebende Wirkung. Die Leistung wird trotz Widerspruch gekürzt oder eingestellt — wer damit rechnet, dass zunächst weitergezahlt wird, plant mit Geld, das nicht kommt. Weiterzahlung gibt es nur, wenn das Sozialgericht sie auf Antrag anordnet.",
+        "legal_basis": "§ 39 Nr. 1 SGB II"
+      },
+      {
+        "fall": "Sozialversicherung: Anfechtungsklage gegen einen Bescheid, der eine laufende Leistung herabsetzt oder entzieht",
+        "folge": "Die aufschiebende Wirkung entfällt für die Klage; ebenso bei Entscheidungen über Beitragspflichten und der Anforderung von Beiträgen.",
+        "legal_basis": "§ 86a Abs. 2 Nr. 1 und 3 SGG"
+      },
+      {
+        "fall": "Die Behörde ordnet die sofortige Vollziehung besonders an",
+        "folge": "Die aufschiebende Wirkung entfällt. Das muss im Bescheid stehen und schriftlich begründet sein.",
+        "legal_basis": "§ 80 Abs. 2 Satz 1 Nr. 4 VwGO, § 86a Abs. 2 Nr. 5 SGG"
+      }
+    ]
+  }
 }
