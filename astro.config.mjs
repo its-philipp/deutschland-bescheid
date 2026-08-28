@@ -23,8 +23,17 @@ export default defineConfig({
     // Ursache der Search-Console-Meldung „Page with redirect" vom 2026-08-23.
     checkUrls(),
 
+/**
+     * Impressum und Datenschutz sind seit 2026-08-28 indexierbar und in der
+     * Sitemap. Die frühere Begründung — ein Rechtstext konkurriere um nichts und
+     * verdünne nur die indexierte Fläche — war teuer: deutschland-vorlagen wurde
+     * von AdSense mit „Low value content" abgelehnt, und der erste Befund der
+     * Diagnose lautete, im Index stehe nirgends, wer die Seite betreibt. Googles
+     * Mindestanforderungen nennen genau das. Der Fund war portfolioweit: alle
+     * sechs Seiten trugen dieselbe Einstellung.
+     */
     sitemap({
-      filter: (page) => !page.includes('/impressum/') && !page.includes('/datenschutz/'),
+      filter: () => true,
     }),
   ],
   vite: { plugins: [tailwindcss()] },
