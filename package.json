@@ -8,7 +8,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "check": "astro check",
-    "check:fristen": "tsx scripts/check-fristen.ts",
+    "check:fristen": "node scripts/check-fristen.mjs",
     "check:links": "node scripts/check-links.mjs deutschland-bescheid.de"
   },
   "dependencies": {
