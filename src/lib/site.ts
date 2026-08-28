@@ -36,8 +36,22 @@ export const GITHUB_REPO = 'https://github.com/its-philipp/deutschland-bescheid'
 
 export const CURRENT_YEAR = 2026;
 
-/** Die Schwesterseite mit den Widerspruchs-Vorlagen. */
-export const VORLAGEN_URL = 'https://deutschland-vorlagen.de';
+/*
+ * Hier stand bis zum 2026-08-28 `VORLAGEN_URL` — ein Verweis auf
+ * deutschland-vorlagen.de, im Kommentar ausdrücklich „die Schwesterseite", und
+ * auf `/ueber-uns/` stand der Satz „Die Schwesterseite mit den Musterschreiben
+ * ist Deutschlandvorlagen" direkt neben dem Namen des Betreibers.
+ *
+ * Das widerspricht der Owner-Entscheidung vom 2026-08-03 (Root-CLAUDE.md):
+ * Besucher sollen nicht erkennen, dass diese Seiten einem gehören, und keine
+ * verlinkt eine andere als Schwesterseite.
+ *
+ * Die Konstante ist ersatzlos entfallen — und zwar ersatzlos mit Absicht: Den
+ * Link zu behalten und nur die Offenlegung zu streichen, wäre unbenannte
+ * Eigenwerbung und damit schlechter als der offene Hinweis. Wo vorher auf ein
+ * Musterschreiben verwiesen wurde, steht jetzt, was ein Widerspruch enthalten
+ * muss — das ist ohnehin die Antwort, wegen der jemand hier ist.
+ */
 
 export function absoluteUrl(path: string): string {
   return `${SITE_URL}${path}`;

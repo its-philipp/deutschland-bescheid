@@ -1,6 +1,5 @@
 ---
 import Icon from './Icon.astro';
-import { VORLAGEN_URL } from '../lib/site';
 import type { Frist } from '../data/bescheid';
 
 /**
@@ -84,16 +83,10 @@ const { frist } = Astro.props;
         <a href="/widerspruchsfrist/" class="text-ink underline underline-offset-2">
           Fristenrechner
         </a>{' '}
-        finden Sie auf der Startseite und auf der Fristenseite; ein Musterschreiben für den
-        Widerspruch liegt auf{' '}
-        <a
-          href={`${VORLAGEN_URL}/behoerden/widerspruch-bescheid/`}
-          rel="noopener"
-          class="text-ink underline underline-offset-2"
-        >
-          Deutschlandvorlagen
-        </a>
-        .
+        finden Sie auf der Startseite und auf der Fristenseite. Für den Widerspruch selbst
+        gibt es keine vorgeschriebene Form: Er muss erkennen lassen, wer ihn einlegt, gegen
+        welchen Bescheid — Aktenzeichen und Datum genügen — und dass es ein Widerspruch sein
+        soll. Die Begründung darf nachgereicht werden.
       </p>
     )
   }

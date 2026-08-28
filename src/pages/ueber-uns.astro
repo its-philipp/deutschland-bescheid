@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { ERHOBEN_AM, QUELLEN } from '../data/grundsicherungsgeld';
-import { CONTACT_EMAIL, CURRENT_YEAR, SITE_NAME, VORLAGEN_URL } from '../lib/site';
+import { CONTACT_EMAIL, CURRENT_YEAR, SITE_NAME } from '../lib/site';
 import { adsEnabled } from '../lib/ads';
 import { isoToGerman } from '../lib/format';
 
@@ -35,10 +35,6 @@ import { isoToGerman } from '../lib/format';
         § 18 Abs. 2 MStV bin ebenfalls ich; die vollständige
         Anbieterkennzeichnung steht im{' '}
         <a href="/impressum/" class="underline underline-offset-2">Impressum</a>.
-        Die Schwesterseite mit den Musterschreiben ist{' '}
-        <a href={VORLAGEN_URL} rel="noopener" class="underline underline-offset-2">
-          Deutschlandvorlagen</a
-        >.
       </p>
       <p class="mt-3 text-ink-soft">
         Zwei Dinge zur Einordnung: Hier schreibt <strong>keine Juristin und kein
