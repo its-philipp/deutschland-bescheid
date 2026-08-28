@@ -83,14 +83,14 @@
     ],
     "BEFUND_1_die_zahl_im_gesetz_ist_nicht_die_zahl_die_gilt": {
       "sachverhalt": "§ 23 Abs. 1 Satz 1 Nr. 1 BAföG nennt einen Freibetrag von 353 Euro — „vorbehaltlich einer Bekanntmachung nach Absatz 6 Satz 3“. Dieser Betrag ist seit 2024 an die Minijob-Grenze gekoppelt und wird jährlich neu festgesetzt. Für 2026 gilt nach der Bekanntmachung vom 18. November 2025 (BGBl. 2025 I Nr. 279): „Der Freibetrag für Auszubildende nach § 23 Absatz 1 Satz 1 Nummer 1 des Bundesausbildungsförderungsgesetzes wird zum 1. Januar 2026 auf 389 Euro festgesetzt.“",
-      "folge_fuer_das_projekt": "Wer den Gesetzestext liest, liest die falsche Zahl — und zwar eine, die 36 Euro im Monat danebenliegt. Der Datensatz führt beide: den Wert im Gesetz und den bekanntgemachten Wert samt Fundstelle. Übertragbar auf das ganze Portfolio: **ein Betrag im Paragraphentext kann ein Platzhalter sein.** Steht dort ein Vorbehalt („vorbehaltlich einer Bekanntmachung“, „soweit nichts anderes bestimmt ist“), ist die Erhebung erst mit der Bekanntmachung fertig, nicht mit dem Gesetz."
+      "folge_fuer_das_projekt": "Wer den Gesetzestext liest, liest die falsche Zahl — und zwar eine, die 36 Euro im Monat danebenliegt. Der Datensatz führt beide: den Wert im Gesetz und den bekanntgemachten Wert samt Fundstelle. Übertragbar auf das ganze Portfolio: ein Betrag im Paragraphentext kann ein Platzhalter sein. Steht dort ein Vorbehalt („vorbehaltlich einer Bekanntmachung“, „soweit nichts anderes bestimmt ist“), ist die Erhebung erst mit der Bekanntmachung fertig, nicht mit dem Gesetz."
     },
     "BEFUND_2_der_bescheid_muss_seine_eigene_rechnung_offenlegen": {
-      "sachverhalt": "§ 50 Abs. 2 BAföG zählt auf, was in einem BAföG-Bescheid anzugeben ist: Höhe und Zusammensetzung des Bedarfs, die Einkommen von Auszubildenden, Ehegatten und Eltern, die berücksichtigten Steuern und Sozialpauschalen, die gewährten Freibeträge und die angerechneten Beträge. Bei Hochschulen ist zusätzlich in **jedem** Bescheid das Ende der Förderungshöchstdauer anzugeben.",
+      "sachverhalt": "§ 50 Abs. 2 BAföG zählt auf, was in einem BAföG-Bescheid anzugeben ist: Höhe und Zusammensetzung des Bedarfs, die Einkommen von Auszubildenden, Ehegatten und Eltern, die berücksichtigten Steuern und Sozialpauschalen, die gewährten Freibeträge und die angerechneten Beträge. Bei Hochschulen ist zusätzlich in jedem Bescheid das Ende der Förderungshöchstdauer anzugeben.",
       "folge_fuer_das_projekt": "Das ist die stärkste Aussage, die eine Erklärseite zu diesem Bescheidtyp machen kann: Der Gesetzgeber schreibt vor, dass die Rechnung im Bescheid nachvollziehbar sein muss. Fehlt eine dieser Angaben, ist das kein Formfehler ohne Folgen, sondern der Punkt, an dem man nachfragen kann. Die Ausnahme steht daneben: Bei einer Ablehnung dem Grunde nach gilt die Aufzählung nicht (§ 50 Abs. 2 Satz 2)."
     },
     "BEFUND_3_das_massgebliche_einkommen_ist_zwei_jahre_alt": {
-      "sachverhalt": "Für das Einkommen der Eltern und des Ehegatten ist nach § 24 Abs. 1 BAföG das **vorletzte Kalenderjahr** vor Beginn des Bewilligungszeitraums maßgebend. Sinkt das Einkommen im Bewilligungszeitraum, geschieht von selbst nichts: § 24 Abs. 3 verlangt einen **besonderen Antrag**, und Anträge nach Ende des Bewilligungszeitraums werden ausdrücklich nicht mehr berücksichtigt.",
+      "sachverhalt": "Für das Einkommen der Eltern und des Ehegatten ist nach § 24 Abs. 1 BAföG das vorletzte Kalenderjahr vor Beginn des Bewilligungszeitraums maßgebend. Sinkt das Einkommen im Bewilligungszeitraum, geschieht von selbst nichts: § 24 Abs. 3 verlangt einen besonderen Antrag, und Anträge nach Ende des Bewilligungszeitraums werden ausdrücklich nicht mehr berücksichtigt.",
       "folge_fuer_das_projekt": "Der häufigste Grund für einen zu niedrigen BAföG-Bescheid ist damit kein Rechenfehler des Amtes, sondern ein nicht gestellter Antrag — und er ist mit Ablauf des Bewilligungszeitraums endgültig verloren. Diese Frist ist wichtiger als die Widerspruchsfrist und steht in keiner Rechtsbehelfsbelehrung."
     }
   },
@@ -327,7 +327,7 @@
       }
     ],
     "achtung": "Ob gegen einen BAföG-Bescheid ein Widerspruch statthaft ist oder unmittelbar Klage zu erheben wäre, hängt vom Landesrecht ab — § 68 Abs. 1 Satz 2 VwGO erlaubt den Ländern, das Vorverfahren abzuschaffen. Was gilt, muss die Rechtsbehelfsbelehrung des Bescheids benennen.",
-    "wichtiger_als_die_widerspruchsfrist": "Zwei Anträge im BAföG sind an das **Ende des Bewilligungszeitraums** gebunden und danach unwiderruflich verloren: der Aktualisierungsantrag (§ 24 Abs. 3) und die Vorausleistung (§ 36 Abs. 1). Diese Frist steht in keiner Rechtsbehelfsbelehrung."
+    "wichtiger_als_die_widerspruchsfrist": "Zwei Anträge im BAföG sind an das Ende des Bewilligungszeitraums gebunden und danach unwiderruflich verloren: der Aktualisierungsantrag (§ 24 Abs. 3) und die Vorausleistung (§ 36 Abs. 1). Diese Frist steht in keiner Rechtsbehelfsbelehrung."
   },
   "rdg_grenze": "Diese Prüfpunkte beschreiben den Bescheidtyp und bekannte Fehlerbilder. Sie sind keine Prüfung eines einzelnen Bescheids und keine Aussage über die Erfolgsaussichten eines Widerspruchs.",
   "noch_offen": [

@@ -42,11 +42,11 @@
       }
     ],
     "BEFUND_1_die_leistung_heisst_nicht_mehr_buergergeld": {
-      "sachverhalt": "Das SGB II nennt die Leistung durchgehend **Grundsicherungsgeld** (41 Fundstellen im Gesetzestext) und nur noch an drei Stellen Bürgergeld. § 19 Abs. 1 lautet: „Erwerbsfähige Leistungsberechtigte erhalten Grundsicherungsgeld.“",
-      "folge_fuer_das_projekt": "Der gesamte Abschnitt 5 der QUEUE ist auf „Bürgergeld“ geschrieben. Das ist für die **Suche** weiterhin richtig — danach suchen die Leute — aber der Bescheid, den jemand in der Hand hält, sagt Grundsicherungsgeld. Genau diese Lücke ist der Daseinszweck von bescheid-checker: die Seite muss beide Wörter führen, unter „Bürgergeld“ ranken und im Text erklären, dass das Amt es anders nennt. Für die Bescheidprüfung ist der Gesetzesbegriff maßgeblich."
+      "sachverhalt": "Das SGB II nennt die Leistung durchgehend Grundsicherungsgeld (41 Fundstellen im Gesetzestext) und nur noch an drei Stellen Bürgergeld. § 19 Abs. 1 lautet: „Erwerbsfähige Leistungsberechtigte erhalten Grundsicherungsgeld.“",
+      "folge_fuer_das_projekt": "Der gesamte Abschnitt 5 der QUEUE ist auf „Bürgergeld“ geschrieben. Das ist für die Suche weiterhin richtig — danach suchen die Leute — aber der Bescheid, den jemand in der Hand hält, sagt Grundsicherungsgeld. Genau diese Lücke ist der Daseinszweck von bescheid-checker: die Seite muss beide Wörter führen, unter „Bürgergeld“ ranken und im Text erklären, dass das Amt es anders nennt. Für die Bescheidprüfung ist der Gesetzesbegriff maßgeblich."
     },
     "BEFUND_2_2026_gab_es_keine_erhoehung": {
-      "sachverhalt": "§ 1 Abs. 2 RBSFV 2026: die fortgeschriebenen Beträge wären **niedriger** als die für 2025 geltenden. Nach § 28a Abs. 5 SGB XII gelten deshalb die Beträge von 2025 auch zum 1. Januar 2026 weiter.",
+      "sachverhalt": "§ 1 Abs. 2 RBSFV 2026: die fortgeschriebenen Beträge wären niedriger als die für 2025 geltenden. Nach § 28a Abs. 5 SGB XII gelten deshalb die Beträge von 2025 auch zum 1. Januar 2026 weiter.",
       "folge_fuer_das_projekt": "Die Regelsätze 2026 sind identisch mit denen von 2025 — es gab keine Nullrunde „aus politischer Entscheidung“, sondern eine gesetzlich angeordnete Besitzstandswahrung, weil die Rechnung nach unten zeigte. Das ist eine belegbare Aussage, die kaum ein Ratgeber sauber erklärt, und sie beantwortet die naheliegende Leserfrage „warum steht da dasselbe wie letztes Jahr“."
     }
   },
@@ -70,7 +70,7 @@
       "stufe_5": "Kinder von 6 bis 13 Jahren",
       "stufe_6": "Kinder bis 5 Jahre"
     },
-    "hinweis": "Die Zuordnung der Stufen 3 bis 6 folgt der Systematik von § 20 Abs. 2 SGB II und der Anlage zu § 28 SGB XII. Die Altersgrenzen wurden hier **nicht** einzeln am Anlagentext geprüft — vor Veröffentlichung nachlesen."
+    "hinweis": "Die Zuordnung der Stufen 3 bis 6 folgt der Systematik von § 20 Abs. 2 SGB II und der Anlage zu § 28 SGB XII. Die Altersgrenzen entsprechen dem Wortlaut der Anlage: Stufe 4 gilt vom Beginn des 15. bis zur Vollendung des 18. Lebensjahres (also für 14- bis 17-Jährige), Stufe 5 vom Beginn des siebten bis zur Vollendung des 14. Lebensjahres (6 bis 13 Jahre), Stufe 6 bis zur Vollendung des sechsten Lebensjahres (bis 5 Jahre)."
   },
   "pruefpunkte": [
     {
@@ -116,17 +116,17 @@
         "Läuft noch die Karenzzeit? Dann sind die tatsächlichen Kosten anzuerkennen, nicht die Angemessenheitsgrenze.",
         "Wurde die Karenzzeit um Monate ohne Leistungsbezug verlängert?",
         "Wird die Grenze des Eineinhalbfachen überhaupt überschritten? Unterhalb davon greift die Karenzzeit uneingeschränkt.",
-        "Nach der Karenzzeit: liegt eine Kostensenkungsaufforderung vor, und sind die sechs Monate schon abgelaufen — gerechnet **ab dem Ende der Karenzzeit**, nicht ab Leistungsbeginn?",
+        "Nach der Karenzzeit: liegt eine Kostensenkungsaufforderung vor, und sind die sechs Monate schon abgelaufen — gerechnet ab dem Ende der Karenzzeit, nicht ab Leistungsbeginn?",
         "Bei einer zu hohen Miete: hat der Träger zur Rüge nach der Mietpreisbremse aufgefordert, statt nur zu kürzen?"
       ],
       "hinweis": "Die abstrakt angemessenen Aufwendungen legen die Kommunen fest — sie stehen nicht im Gesetz und sind deshalb hier nicht beziffert. Eine Seite darf keine Grenze nennen, die sie nicht für den konkreten Kreis belegt hat.",
       "karenzzeit": {
         "legal_basis": "§ 22 Abs. 1 Sätze 2 bis 5 SGB II",
         "dauer": "ein Jahr ab Beginn des Monats, für den erstmals Leistungen bezogen werden",
-        "wirkung": "In der Karenzzeit werden die Aufwendungen für die Unterkunft in **tatsächlicher Höhe** anerkannt, ohne Angemessenheitsprüfung.",
+        "wirkung": "In der Karenzzeit werden die Aufwendungen für die Unterkunft in tatsächlicher Höhe anerkannt, ohne Angemessenheitsprüfung.",
         "verlaengerung": "Wird der Leistungsbezug in der Karenzzeit für mindestens einen Monat unterbrochen, verlängert sie sich um die vollen Monate ohne Bezug.",
         "neubeginn": "Eine neue Karenzzeit beginnt, wenn zuvor mindestens drei Jahre keine Leistungen nach dem SGB II oder SGB XII bezogen wurden.",
-        "grenze_trotz_karenzzeit": "Aufwendungen werden **nicht** anerkannt, soweit sie mehr als das Eineinhalbfache der abstrakt angemessenen Aufwendungen betragen (§ 22 Abs. 1 Satz 6).",
+        "grenze_trotz_karenzzeit": "Aufwendungen werden nicht anerkannt, soweit sie mehr als das Eineinhalbfache der abstrakt angemessenen Aufwendungen betragen (§ 22 Abs. 1 Satz 6).",
         "ausnahme_nach_oben": "In der Karenzzeit können im Einzelfall höhere Aufwendungen anerkannt werden, wenn sie unabweisbar sind oder in Bedarfsgemeinschaften mit Kindern anfallen (Satz 7)."
       },
       "unangemessen_kraft_gesetzes": {
@@ -139,8 +139,8 @@
       },
       "kostensenkung": {
         "legal_basis": "§ 22 Abs. 1 Sätze 9 und 10 SGB II",
-        "regel": "Übersteigen die Aufwendungen den angemessenen Umfang, sind sie so lange als Bedarf anzuerkennen, wie eine Senkung nicht möglich oder nicht zuzumuten ist — **in der Regel längstens sechs Monate**.",
-        "wichtig": "Der Zeitraum der Karenzzeit wird auf diese sechs Monate **nicht angerechnet**. Ein Bescheid, der die Kostensenkungsfrist mit dem Ende der Karenzzeit zusammenfallen lässt, verkürzt sie also unzulässig."
+        "regel": "Übersteigen die Aufwendungen den angemessenen Umfang, sind sie so lange als Bedarf anzuerkennen, wie eine Senkung nicht möglich oder nicht zuzumuten ist — in der Regel längstens sechs Monate.",
+        "wichtig": "Der Zeitraum der Karenzzeit wird auf diese sechs Monate nicht angerechnet. Ein Bescheid, der die Kostensenkungsfrist mit dem Ende der Karenzzeit zusammenfallen lässt, verkürzt sie also unzulässig."
       }
     },
     {
