@@ -5,6 +5,7 @@ import sitemap from '@astrojs/sitemap';
 import tailwindcss from '@tailwindcss/vite';
 import checkPlaceholders from './scripts/check-placeholders.mjs';
 import checkUrls from './scripts/check-urls.mjs';
+import checkSeo from './scripts/check-seo.mjs';
 
 // Impressum und Datenschutz tragen `noindex` und gehören deshalb aus der
 // Sitemap gefiltert — Google eine URL zum Crawlen anzubieten und ihr zugleich
@@ -13,6 +14,7 @@ export default defineConfig({
   site: 'https://deutschland-bescheid.de',
   output: 'static',
   integrations: [
+    checkSeo({ domain: 'deutschland-bescheid.de' }),
     preact(),
     // Bricht den Build ab, wenn ein Deploy-Platzhalter es ins `dist/` geschafft
     // hat. Cloudflare Pages baut mit `npm run build`, ein roter Build ist also
