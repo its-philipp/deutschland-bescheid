@@ -14,7 +14,7 @@ export default defineConfig({
   site: 'https://deutschland-bescheid.de',
   output: 'static',
   integrations: [
-    checkSeo({ domain: 'deutschland-bescheid.de' }),
+    checkSeo({ domain: 'deutschland-bescheid.de', jahrImTitel: true }),
     preact(),
     // Bricht den Build ab, wenn ein Deploy-Platzhalter es ins `dist/` geschafft
     // hat. Cloudflare Pages baut mit `npm run build`, ein roter Build ist also
