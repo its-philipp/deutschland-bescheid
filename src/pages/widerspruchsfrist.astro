@@ -18,6 +18,10 @@ const daten = regeln as unknown as {
   rechenregeln: { schritt: number; regel: string; legal_basis: string; ausnahme?: string; hinweis?: string }[];
   fristwahrung: { legal_basis: string; form: string[]; auch_gewahrt_bei: string };
   anschlussfristen: { name: string; legal_basis: string; frist: string }[];
+  aufschiebende_wirkung: {
+    grundsatz: { bereich: string; regel: string; legal_basis: string }[];
+    ausnahmen: { fall: string; folge: string; legal_basis: string }[];
+  };
 };
 ---
 
