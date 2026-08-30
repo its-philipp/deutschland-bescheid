@@ -14,13 +14,29 @@ import { isoToGerman } from '../lib/format';
  * und § 28a Abs. 5 SGB XII den Besitzstand wahrt. Wer seinen Bescheid mit dem
  * Vorjahr vergleicht und keinen Unterschied findet, sucht sonst einen Fehler,
  * der keiner ist.
+ *
+ * **Der Begriffsabschnitt kam am 2026-08-31 dazu, und zwar aus den eigenen
+ * Suchdaten.** Die Seite hatte 51 Impressionen — die meiste Nachfrage im
+ * Projekt — stand aber auf Position 64. Der Grund lag im Wortschatz: Gesucht
+ * wird nach „Regelsatz 2026" und „Bürgergeld", die Seite schrieb ausschliesslich
+ * „Regelbedarf" und „Grundsicherungsgeld". Beides ist korrekt (§ 20, § 19
+ * SGB II), aber es ist die Sprache des Gesetzes, nicht die der Betroffenen.
+ *
+ * Der Abschnitt ist deshalb kein Zugeständnis an die Suchmaschine, sondern die
+ * Antwort auf eine echte Frage: Wer einen Bescheid bekommt, auf dem
+ * „Grundsicherungsgeld" steht, und nach „Bürgergeld" sucht, will wissen, ob das
+ * dasselbe ist. Jede Zuordnung darin steht am Primärtext:
+ *   - Regelbedarf  = der Bedarf selbst (§ 20 Abs. 1 SGB II, § 27a Abs. 2 SGB XII)
+ *   - Regelsatz    = der Betrag, mit dem er in der Sozialhilfe gedeckt wird
+ *                    (§ 27a Abs. 3 SGB XII — „monatlicher Pauschalbetrag")
+ *   - Grundsicherungsgeld = die Leistung fuer Erwerbsfaehige (§ 19 Abs. 1 SGB II)
  */
 const jahr = REGELBEDARF.gueltig_ab.slice(0, 4);
 ---
 
 <BaseLayout
-  title={`Regelbedarf ${jahr}: alle sechs Stufen im Bescheid`}
-  description={`Die Regelbedarfsstufen ${jahr} mit Betrag und Zuordnung — und warum sie dieselben sind wie im Vorjahr. Mit Fundstelle zu jeder Zahl.`}
+  title={`Regelbedarf und Regelsatz ${jahr}: die sechs Stufen`}
+  description={`Die sechs Regelbedarfsstufen ${jahr} mit Betrag und Zuordnung, der Unterschied zwischen Regelbedarf und Regelsatz — und warum die Beträge nicht gestiegen sind.`}
   path="/regelbedarf/"
 >
   <nav class="text-[14px] text-ink-mute" aria-label="Sie sind hier">
@@ -94,6 +110,50 @@ const jahr = REGELBEDARF.gueltig_ab.slice(0, 4);
       </section>
     )
   }
+
+  <section class="mt-14 max-w-prose">
+    <h2 class="font-display text-2xl text-ink">
+      Regelbedarf, Regelsatz, Grundsicherungsgeld — was heißt was?
+    </h2>
+    <p class="mt-3 text-ink-soft">
+      Drei Wörter für Dinge, die zusammengehören, aber nicht dasselbe sind. Auf
+      Ihrem Bescheid steht meist nur eines davon.
+    </p>
+    <dl class="mt-5 flex flex-col divide-y divide-rule border-y border-rule">
+      <div class="py-3">
+        <dt class="font-medium text-ink">Regelbedarf</dt>
+        <dd class="mt-1 text-[15px] text-ink-soft">
+          Der Bedarf selbst: Ernährung, Kleidung, Körperpflege, Hausrat,
+          Haushaltsenergie ohne Heizung und Warmwasser, dazu die persönlichen
+          Bedürfnisse des täglichen Lebens einschließlich einer Teilhabe am
+          sozialen und kulturellen Leben. Er ist in sechs Stufen unterteilt —
+          die Tabelle oben.
+        </dd>
+        <dd class="mt-1 text-[14px] text-ink-mute">§ 20 Abs. 1 SGB II · § 27a Abs. 1 und 2 SGB XII</dd>
+      </div>
+      <div class="py-3">
+        <dt class="font-medium text-ink">Regelsatz</dt>
+        <dd class="mt-1 text-[15px] text-ink-soft">
+          Der Betrag, mit dem dieser Bedarf in der Sozialhilfe gedeckt wird —
+          ein „monatlicher Pauschalbetrag zur Bestreitung des Regelbedarfs", über
+          dessen Verwendung Sie selbst entscheiden. Im SGB II heißt derselbe
+          Betrag schlicht Regelbedarf; deshalb finden Sie je nach Bescheidart
+          das eine oder das andere Wort.
+        </dd>
+        <dd class="mt-1 text-[14px] text-ink-mute">§ 27a Abs. 3 SGB XII</dd>
+      </div>
+      <div class="py-3">
+        <dt class="font-medium text-ink">Grundsicherungsgeld</dt>
+        <dd class="mt-1 text-[15px] text-ink-soft">
+          Die Leistung, die erwerbsfähige Leistungsberechtigte erhalten — der
+          Regelbedarf ist einer ihrer Bestandteile, nicht ihr Ganzes. Wer den
+          Begriff auf seinem Bescheid zum ersten Mal liest: Es ist die Leistung,
+          die das Gesetz heute so benennt.
+        </dd>
+        <dd class="mt-1 text-[14px] text-ink-mute">§ 19 Abs. 1 SGB II</dd>
+      </div>
+    </dl>
+  </section>
 
   <section class="mt-14 max-w-prose">
     <h2 class="font-display text-2xl text-ink">Quellen</h2>
