@@ -105,7 +105,7 @@
     {
       "name": "Untätigkeitsklage",
       "legal_basis": "§ 88 Abs. 2 SGG",
-      "frist": "wenn über einen Widerspruch nicht entschieden wurde — siehe die dort genannte angemessene Frist"
+      "frist": "frühestens drei Monate nach Einlegung des Widerspruchs, wenn bis dahin nicht entschieden wurde"
     }
   ],
   "rechenbeispiele": [
@@ -147,7 +147,7 @@
   ],
   "beispiel_erlaeuterung": "Die Beispiele decken die Fälle ab, an denen ein naiv gebauter Rechner scheitert: ein Monatsende ohne entsprechenden Tag, ein Fristende am Wochenende und der Jahreswechsel.",
   "aufschiebende_wirkung": {
-    "_hinweis": "Am Primaertext gelesen 2026-08-28: gesetze-im-internet.de, § 80 VwGO, § 86a SGG, § 39 SGB II.",
+    "_hinweis": "Am Primaertext gelesen 2026-08-28: gesetze-im-internet.de, § 80 VwGO, § 86a SGG, § 39 SGB II. Erneut gelesen 2026-09-13 und korrigiert: § 39 SGB II war nur mit dem ersten Halbsatz von Nr. 1 wiedergegeben (Eingliederung sowie Nr. 2 und 3 fehlten); unter § 80 Abs. 2 Nr. 1 VwGO stand \"Rückforderungsbescheid\", die Norm nennt nur öffentliche Abgaben und Kosten; § 88 Abs. 2 SGG nennt drei Monate.",
     "grundsatz": [
       {
         "bereich": "Verwaltungsverfahren (z. B. BAföG, Wohngeld)",
@@ -163,13 +163,13 @@
     "ausnahmen": [
       {
         "fall": "Anforderung von öffentlichen Abgaben und Kosten",
-        "folge": "Die aufschiebende Wirkung entfällt. Ein Rückforderungs- oder Gebührenbescheid bleibt trotz Widerspruch fällig; wer nicht zahlt, riskiert Mahnung und Vollstreckung.",
+        "folge": "Die aufschiebende Wirkung entfällt. Ein Gebühren- oder Beitragsbescheid bleibt trotz Widerspruch fällig; wer nicht zahlt, riskiert Mahnung und Vollstreckung.",
         "legal_basis": "§ 80 Abs. 2 Satz 1 Nr. 1 VwGO"
       },
       {
-        "fall": "Grundsicherung: Aufhebung, Rücknahme, Widerruf oder Entziehung von Leistungen, Feststellung einer Pflichtverletzung und Minderung",
-        "folge": "Keine aufschiebende Wirkung. Die Leistung wird trotz Widerspruch gekürzt oder eingestellt — wer damit rechnet, dass zunächst weitergezahlt wird, plant mit Geld, das nicht kommt. Weiterzahlung gibt es nur, wenn das Sozialgericht sie auf Antrag anordnet.",
-        "legal_basis": "§ 39 Nr. 1 SGB II"
+        "fall": "Grundsicherung: Aufhebung, Rücknahme, Widerruf oder Entziehung von Leistungen; Feststellung einer Pflichtverletzung und Minderung; Regelung von Leistungen oder Pflichten zur Eingliederung in Arbeit; Aufforderung, eine vorrangige Leistung zu beantragen oder sich persönlich bei der Agentur für Arbeit zu melden",
+        "folge": "Keine aufschiebende Wirkung. Der Bescheid gilt, während der Widerspruch läuft; eine Kürzung oder Einstellung greift sofort — wer damit rechnet, dass zunächst weitergezahlt wird, plant mit Geld, das nicht kommt. Weiterzahlung gibt es nur, wenn das Sozialgericht sie auf Antrag anordnet.",
+        "legal_basis": "§ 39 Nr. 1 bis 3 SGB II"
       },
       {
         "fall": "Sozialversicherung: Anfechtungsklage gegen einen Bescheid, der eine laufende Leistung herabsetzt oder entzieht",

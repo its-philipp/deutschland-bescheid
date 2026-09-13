@@ -253,7 +253,7 @@
   "frist": {
     "rechtsweg": "Sozialgericht",
     "rechtsweg_begruendung": "§ 51 Abs. 1 Nr. 1 SGG: Angelegenheiten der gesetzlichen Rentenversicherung gehören vor die Gerichte der Sozialgerichtsbarkeit.",
-    "rechtsbehelf": "Widerspruch nach §§ 78 ff. SGG — hier ist das Vorverfahren bundesrechtlich geregelt und findet immer statt",
+    "rechtsbehelf": "Widerspruch nach §§ 78 ff. SGG — das Vorverfahren ist bundesrechtlich vorgeschrieben; die Ausnahmen in § 78 Abs. 1 Satz 2 SGG (etwa Bescheide oberster Bundesbehörden) betreffen den Rentenbescheid an Versicherte nicht",
     "dauer": "ein Monat ab Bekanntgabe, bei Bekanntgabe im Ausland drei Monate",
     "kette": [
       { "schritt": "Bekanntgabe am vierten Tag nach Aufgabe zur Post", "legal_basis": "§ 37 Abs. 2 Satz 1 SGB X" },
