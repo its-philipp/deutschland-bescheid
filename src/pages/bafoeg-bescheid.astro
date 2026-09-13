@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { jahrAus } from '../lib/jahr';
 import AdSlot from '../components/AdSlot.astro';
 import Bescheidauszug from '../components/Bescheidauszug.astro';
 import Disclaimer from '../components/Disclaimer.astro';
@@ -71,9 +72,12 @@ const hochschule = nachFundstelle(BEDARFSSAETZE.studierende, '§ 13 Abs. 1 Nr. 2
 const auswaerts = nachFundstelle(BEDARFSSAETZE.wohnzuschlag, '§ 13 Abs. 2 Nr. 2');
 ---
 
+{/* Jahr aus dem Erhebungsdatum, nicht aus `gilt_ab` und nicht aus der Uhr. Diese
+    Leistung wird nicht jährlich neu festgesetzt — ein Geltungsjahr fiele auf das
+    der letzten Anpassung zurück, obwohl die Beträge gelten (lib/jahr.ts). */}
 <BaseLayout
-  title="BAföG-Bescheid verstehen: Bedarf, Freibeträge, Widerspruch 2026"
-  description="Was Bedarf, Elterneinkommen und Freibeträge im BAföG-Bescheid bedeuten — mit den Beträgen für 2026 und den Anträgen, die stillschweigend verfallen."
+  title={`BAföG-Bescheid verstehen: Bedarf, Freibeträge, Widerspruch ${jahrAus(ERHOBEN_AM)}`}
+  description={`Was Bedarf, Elterneinkommen und Freibeträge im BAföG-Bescheid bedeuten — mit den Beträgen für ${jahrAus(ERHOBEN_AM)} und den Anträgen, die stillschweigend verfallen.`}
   path="/bafoeg-bescheid/"
 >
   <nav class="text-[14px] text-ink-mute" aria-label="Sie sind hier">

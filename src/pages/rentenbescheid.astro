@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { jahrAus } from '../lib/jahr';
 import AdSlot from '../components/AdSlot.astro';
 import Bescheidauszug from '../components/Bescheidauszug.astro';
 import Disclaimer from '../components/Disclaimer.astro';
@@ -41,8 +42,11 @@ import {
 const einEntgeltpunkt = RENTENWERT.betrag_eur;
 ---
 
+{/* Jahr aus dem Erhebungsdatum, nicht aus `gilt_ab` und nicht aus der Uhr. Diese
+    Leistung wird nicht jährlich neu festgesetzt — ein Geltungsjahr fiele auf das
+    der letzten Anpassung zurück, obwohl die Beträge gelten (lib/jahr.ts). */}
 <BaseLayout
-  title="Rentenbescheid verstehen: Entgeltpunkte, Abschläge, Frist 2026"
+  title={`Rentenbescheid verstehen: Entgeltpunkte, Abschläge, Frist ${jahrAus(ERHOBEN_AM)}`}
   description="Was Entgeltpunkte, Zugangsfaktor und Rentenartfaktor im Rentenbescheid bedeuten, wo die typischen Lücken im Versicherungsverlauf sitzen."
   path="/rentenbescheid/"
 >
