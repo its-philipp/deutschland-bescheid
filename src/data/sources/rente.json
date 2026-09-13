@@ -197,7 +197,7 @@
     "grundrentenzuschlag": {
       "legal_basis": "§ 76g SGB VI",
       "voraussetzung": "mindestens 33 Jahre mit Grundrentenzeiten",
-      "hinweis": "Zeiten mit Pflichtbeiträgen oder Anrechnungszeiten wegen Arbeitslosengeldbezugs zählen ausdrücklich nicht als Grundrentenzeiten (§ 76g Abs. 2 Satz 3). Der Zuschlag wird von Amts wegen geprüft."
+      "hinweis": "Pflichtbeitragszeiten und Anrechnungszeiten, die auf den Bezug von Arbeitslosengeld zurückgehen, zählen ausdrücklich nicht als Grundrentenzeiten (§ 76g Abs. 2 Satz 3) — Pflichtbeiträge für eine versicherte Beschäftigung oder Tätigkeit zählen dagegen (§ 51 Abs. 3a Satz 1 Nr. 1, auf den § 76g Abs. 2 verweist). Der Zuschlag wird von Amts wegen geprüft."
     }
   },
   "pruefpunkte": [
@@ -210,7 +210,7 @@
         "Sind Kindererziehungs- und Berücksichtigungszeiten für jedes Kind erfasst und dem richtigen Elternteil zugeordnet?",
         "Sind Zeiten der Arbeitslosigkeit, Krankheit, Ausbildungssuche und Pflege als Anrechnungszeiten erfasst?"
       ],
-      "hinweis": "Der Versicherungsverlauf ist selbst kein Bescheid. Wer ihm nicht innerhalb von sechs Kalendermonaten widerspricht, dessen mehr als sechs Jahre zurückliegende Daten stellt der Träger anschließend durch Bescheid fest (§ 149 Abs. 5)."
+      "hinweis": "Der Versicherungsverlauf ist selbst kein Bescheid. Wer ihm nicht innerhalb von sechs Kalendermonaten widerspricht, dessen mehr als sechs Kalenderjahre zurückliegende Daten stellt der Träger anschließend durch Bescheid fest (§ 149 Abs. 5)."
     },
     {
       "bestandteil": "Entgeltpunkte",

@@ -232,7 +232,7 @@
       "legal_basis": "§ 7 WoGG",
       "pruefen": [
         "Wurde Wohngeld abgelehnt, weil ein Haushaltsmitglied Grundsicherungsgeld, Grundsicherung im Alter oder Hilfe zum Lebensunterhalt bezieht? Der Ausschluss greift nur, wenn dort Kosten der Unterkunft berücksichtigt wurden.",
-        "Kann Wohngeld die Hilfebedürftigkeit vermeiden oder beseitigen? Dann besteht der Ausschluss nicht (§ 7 Abs. 1 Satz 3 Nr. 2) — das ist der sogenannte Wohngeldvorrang.",
+        "Kann Wohngeld die Hilfebedürftigkeit vermeiden oder beseitigen, und ist die andere Leistung während des Verfahrens noch nicht erbracht worden oder erbringt der Träger sie nur als nachrangig verpflichteter Leistungsträger nach § 104 SGB X? Dann besteht der Ausschluss nicht (§ 7 Abs. 1 Satz 3 Nr. 2) — das ist der sogenannte Wohngeldvorrang. Die Vermeidung der Hilfebedürftigkeit allein genügt nicht.",
         "Werden die anderen Leistungen ausschließlich als Darlehen gewährt? Dann greift der Ausschluss ebenfalls nicht."
       ],
       "hinweis": "Diese Vorschrift entscheidet oft darüber, ob überhaupt Wohngeld in Betracht kommt — und sie ist der Grund, warum ein abgelehnter Antrag nicht immer bedeutet, dass kein Anspruch besteht."
@@ -243,7 +243,7 @@
       "pruefen": [
         "Beginnt der Bewilligungszeitraum am Ersten des Antragsmonats? Ein späterer Beginn braucht einen Grund aus § 25.",
         "Hat sich die Miete um mehr als 10 Prozent erhöht, das Einkommen um mehr als 10 Prozent verringert oder die Zahl der Haushaltsmitglieder erhöht? Dann ist auf Antrag neu zu bewilligen (§ 27 Abs. 1) — von selbst geschieht das nicht.",
-        "Wurde von Amts wegen zu Ihren Lasten neu entschieden? Das setzt eine Änderung von mehr als 15 Prozent voraus und muss binnen eines Jahres nach Kenntnis der Behörde geschehen (§ 27 Abs. 2)."
+        "Wurde von Amts wegen zu Ihren Lasten neu entschieden? Das setzt eine nicht nur vorübergehende Änderung voraus: Miete oder Belastung um mehr als 15 Prozent gesunken, Gesamteinkommen um mehr als 15 Prozent gestiegen — oder weniger Haushaltsmitglieder, und dafür gilt keine Prozentschwelle. Die Neuentscheidung muss binnen eines Jahres nach Kenntnis der Behörde geschehen (§ 27 Abs. 2)."
       ],
       "hinweis": "Der Unterschied zwischen den 10 Prozent zu Ihren Gunsten und den 15 Prozent zu Ihren Lasten ist kein Druckfehler, sondern die Systematik des § 27."
     },
