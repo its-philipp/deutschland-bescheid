@@ -64,13 +64,13 @@
     },
     "zuordnung": {
       "stufe_1": "Alleinstehende, Alleinerziehende, sowie Personen, deren Partner minderjährig ist (§ 20 Abs. 2 Satz 1 SGB II)",
-      "stufe_2": "Partner in einer Bedarfsgemeinschaft, beide volljährig",
-      "stufe_3": "Erwachsene ohne eigenen Haushalt",
+      "stufe_2": "Partner in einer Bedarfsgemeinschaft, beide volljährig (§ 20 Abs. 4 SGB II)",
+      "stufe_3": "Volljährige unter 25, die als unverheiratete Kinder zur Bedarfsgemeinschaft der Eltern gehören (§ 20 Abs. 2 Satz 2 Nr. 2, § 7 Abs. 3 Nr. 4 SGB II); ebenso unter 25-Jährige, die ohne Zusicherung umgezogen sind (§ 20 Abs. 3). In der Sozialhilfe: Erwachsene in einer Einrichtung (§ 27b SGB XII)",
       "stufe_4": "Jugendliche von 14 bis 17 Jahren",
       "stufe_5": "Kinder von 6 bis 13 Jahren",
       "stufe_6": "Kinder bis 5 Jahre"
     },
-    "hinweis": "Die Zuordnung der Stufen 3 bis 6 folgt der Systematik von § 20 Abs. 2 SGB II und der Anlage zu § 28 SGB XII. Die Altersgrenzen entsprechen dem Wortlaut der Anlage: Stufe 4 gilt vom Beginn des 15. bis zur Vollendung des 18. Lebensjahres (also für 14- bis 17-Jährige), Stufe 5 vom Beginn des siebten bis zur Vollendung des 14. Lebensjahres (6 bis 13 Jahre), Stufe 6 bis zur Vollendung des sechsten Lebensjahres (bis 5 Jahre)."
+    "hinweis": "Die Zuordnung der Stufen 3 bis 6 folgt der Systematik von § 20 Abs. 2 SGB II und der Anlage zu § 28 SGB XII. Stufe 3 ist in beiden Büchern verschieden geregelt: Beim Grundsicherungsgeld gilt sie für Volljährige unter 25, die als Kinder zur Bedarfsgemeinschaft der Eltern gehören — ab 25 gehört man nach § 7 Abs. 3 Nr. 4 SGB II nicht mehr zur Bedarfsgemeinschaft der Eltern, auch wenn man bei ihnen wohnt. In der Sozialhilfe gilt Stufe 3 für Erwachsene in einer Einrichtung. Die Altersgrenzen entsprechen dem Wortlaut der Anlage: Stufe 4 gilt vom Beginn des 15. bis zur Vollendung des 18. Lebensjahres (also für 14- bis 17-Jährige), Stufe 5 vom Beginn des siebten bis zur Vollendung des 14. Lebensjahres (6 bis 13 Jahre), Stufe 6 bis zur Vollendung des sechsten Lebensjahres (bis 5 Jahre)."
   },
   "pruefpunkte": [
     {
