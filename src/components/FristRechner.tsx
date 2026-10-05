@@ -60,7 +60,7 @@ export default function FristRechner() {
         value={datum}
         max={heuteIso()}
         onInput={(e) => setDatum((e.currentTarget as HTMLInputElement).value)}
-        class="mt-3 w-full max-w-xs border-[1.5px] border-ink bg-paper px-3 py-2.5 text-ink outline-none"
+        class="mt-3 w-full max-w-xs border-[1.5px] border-ink bg-paper px-3 py-2.5 text-ink"
       />
 
       <fieldset class="mt-5">
