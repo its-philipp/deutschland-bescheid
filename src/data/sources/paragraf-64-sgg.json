@@ -1,0 +1,167 @@
+{
+  "_meta": {
+    "topic": "paragraf-64-sgg",
+    "retrieved": "2026-11-15",
+    "collector": "local session (owner's machine)",
+    "method": "§ 64 SGG und die angrenzenden Vorschriften (§§ 63, 65, 66, 67, 84, 87, 151 SGG, § 37 SGB X) als Einzelnormen bei gesetze-im-internet.de abgerufen und im Volltext gelesen. Der Wortlaut des § 64 ist wörtlich übernommen. Die Rechenbeispiele werden beim Bauen der Seite von lib/frist.ts gerechnet, nicht von Hand eingesetzt.",
+    "sources": [
+      {
+        "label": "SGG § 64",
+        "url": "https://www.gesetze-im-internet.de/sgg/__64.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGG § 63",
+        "url": "https://www.gesetze-im-internet.de/sgg/__63.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGG § 65",
+        "url": "https://www.gesetze-im-internet.de/sgg/__65.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGG § 66",
+        "url": "https://www.gesetze-im-internet.de/sgg/__66.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGG § 67",
+        "url": "https://www.gesetze-im-internet.de/sgg/__67.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGG § 84",
+        "url": "https://www.gesetze-im-internet.de/sgg/__84.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGG § 87",
+        "url": "https://www.gesetze-im-internet.de/sgg/__87.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGG § 151",
+        "url": "https://www.gesetze-im-internet.de/sgg/__151.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB X § 37 – Bekanntgabe des Verwaltungsaktes",
+        "url": "https://www.gesetze-im-internet.de/sgb_10/__37.html",
+        "retrieved": "2026-11-15"
+      }
+    ]
+  },
+  "absaetze": [
+    {
+      "nr": 1,
+      "thema": "Wann die Frist zu laufen beginnt",
+      "wortlaut": "Der Lauf einer Frist beginnt, soweit nichts anderes bestimmt ist, mit dem Tag nach der Zustellung oder, wenn diese nicht vorgeschrieben ist, mit dem Tag nach der Eröffnung oder Verkündung.",
+      "erklaerung": [
+        "Der Tag, an dem etwas zugeht, zählt selbst nicht mit. Die Frist beginnt erst am folgenden Tag um null Uhr.",
+        "Bei einem Bescheid, der mit einfachem Brief kommt, ist das maßgebende Ereignis die Bekanntgabe. Wann sie als erfolgt gilt, steht nicht in § 64, sondern in § 37 Abs. 2 SGB X: am vierten Tag nach der Aufgabe zur Post.",
+        "„Soweit nichts anderes bestimmt ist“ lässt Sonderregeln zu. Die wichtigste steht zwei Paragrafen weiter: Ohne richtige Rechtsbehelfsbelehrung beginnt die Frist nach § 66 Abs. 1 gar nicht zu laufen."
+      ]
+    },
+    {
+      "nr": 2,
+      "thema": "An welchem Tag sie endet",
+      "wortlaut": "Eine nach Tagen bestimmte Frist endet mit dem Ablauf ihres letzten Tages, eine nach Wochen oder Monaten bestimmte Frist mit dem Ablauf desjenigen Tages der letzten Woche oder des letzten Monats, welcher nach Benennung oder Zahl dem Tag entspricht, in den das Ereignis oder der Zeitpunkt fällt. Fehlt dem letzten Monat der entsprechende Tag, so endet die Frist mit dem Monat.",
+      "erklaerung": [
+        "Eine Monatsfrist wird nicht in Tagen gezählt. Sie endet an dem Tag des Folgemonats, der dieselbe Zahl trägt wie der Tag der Bekanntgabe — bei Bekanntgabe am 6. also am 6. des nächsten Monats, gleich ob der Monat 28 oder 31 Tage hat.",
+        "Eine Wochenfrist endet am gleich benannten Wochentag: Bekanntgabe an einem Dienstag, Ende am Dienstag der letzten Woche.",
+        "„Mit dem Ablauf“ heißt: bis 24 Uhr dieses Tages. Was bis dahin bei der zuständigen Stelle eingegangen ist, ist rechtzeitig.",
+        "Der zweite Satz regelt die Monatsenden: Gibt es den Tag im Folgemonat nicht, endet die Frist am letzten Tag dieses Monats."
+      ]
+    },
+    {
+      "nr": 3,
+      "thema": "Was am Wochenende und an Feiertagen gilt",
+      "wortlaut": "Fällt das Ende einer Frist auf einen Sonntag, einen gesetzlichen Feiertag oder einen Sonnabend, so endet die Frist mit Ablauf des nächsten Werktags.",
+      "erklaerung": [
+        "Verschoben wird nur das Ende, nie der Anfang. Dass die Bekanntgabe auf ein Wochenende fällt, verlängert die Frist nach diesem Absatz nicht.",
+        "Welche Tage gesetzliche Feiertage sind, bestimmt überwiegend das Landesrecht. Derselbe Bescheid kann deshalb in zwei Ländern an verschiedenen Tagen fristgerecht angefochten sein.",
+        "Der nächste Werktag ist der nächste Tag, der weder Sonnabend noch Sonntag noch Feiertag ist — nach einem Ende am Sonnabend also in der Regel der Montag."
+      ]
+    }
+  ],
+  "beispiele": [
+    {
+      "titel": "Der Regelfall",
+      "aufgabe_zur_post": "2026-11-10",
+      "zeigt": "Absatz 1 und Absatz 2 Satz 1: Die Frist endet am gleich bezifferten Tag des Folgemonats."
+    },
+    {
+      "titel": "Das Ende fällt auf einen Sonntag",
+      "aufgabe_zur_post": "2026-11-02",
+      "zeigt": "Absatz 3: Das rechnerische Ende liegt auf einem Sonntag und wandert auf den Montag."
+    },
+    {
+      "titel": "Der Folgemonat ist kürzer",
+      "aufgabe_zur_post": "2027-01-27",
+      "zeigt": "Absatz 2 Satz 2: Dem Februar fehlt der 31., die Frist endet mit dem Monat — und weil das ein Sonntag ist, nach Absatz 3 am Montag."
+    },
+    {
+      "titel": "Über den Jahreswechsel",
+      "aufgabe_zur_post": "2026-12-23",
+      "zeigt": "Die Feiertage zwischen den Jahren liegen mitten in der Frist und verlängern sie nicht; es zählt allein, auf welchen Tag das Ende fällt."
+    }
+  ],
+  "gilt_fuer": [
+    {
+      "frist": "Widerspruch gegen einen Bescheid",
+      "dauer": "ein Monat nach Bekanntgabe, bei Bekanntgabe im Ausland drei Monate",
+      "norm": "§ 84 Abs. 1 SGG"
+    },
+    {
+      "frist": "Klage zum Sozialgericht",
+      "dauer": "ein Monat nach Bekanntgabe des Widerspruchsbescheids",
+      "norm": "§ 87 Abs. 1 und 2 SGG"
+    },
+    {
+      "frist": "Berufung zum Landessozialgericht",
+      "dauer": "ein Monat nach Zustellung des Urteils",
+      "norm": "§ 151 Abs. 1 SGG"
+    },
+    {
+      "frist": "Rechtsbehelf bei fehlender oder unrichtiger Belehrung",
+      "dauer": "ein Jahr",
+      "norm": "§ 66 Abs. 2 SGG"
+    },
+    {
+      "frist": "Antrag auf Wiedereinsetzung",
+      "dauer": "ein Monat nach Wegfall des Hindernisses",
+      "norm": "§ 67 Abs. 2 SGG"
+    }
+  ],
+  "regelt_nicht": [
+    {
+      "frage": "Wann ein Bescheid als bekannt gegeben gilt",
+      "antwort": "Am vierten Tag nach der Aufgabe zur Post; im Zweifel muss die Behörde Zugang und Zeitpunkt nachweisen.",
+      "norm": "§ 37 Abs. 2 SGB X"
+    },
+    {
+      "frage": "Wie lang die Frist ist",
+      "antwort": "Das sagt die Vorschrift, die die jeweilige Frist anordnet — für den Widerspruch § 84.",
+      "norm": "§ 84 Abs. 1 SGG"
+    },
+    {
+      "frage": "Ob die Frist überhaupt läuft",
+      "antwort": "Nur, wenn schriftlich oder elektronisch über Rechtsbehelf, Stelle, Sitz und Frist belehrt wurde.",
+      "norm": "§ 66 Abs. 1 SGG"
+    },
+    {
+      "frage": "Ob eine Frist verlängert werden kann",
+      "antwort": "Nur richterliche Fristen kann der Vorsitzende auf Antrag verlängern. Die gesetzlichen Fristen für Widerspruch, Klage und Berufung gehören nicht dazu.",
+      "norm": "§ 65 SGG"
+    },
+    {
+      "frage": "Was nach einer versäumten Frist bleibt",
+      "antwort": "Wiedereinsetzung, wenn die Frist ohne Verschulden versäumt wurde — mit Antrag binnen eines Monats und nachgeholter Handlung.",
+      "norm": "§ 67 Abs. 1 und 2 SGG"
+    }
+  ],
+  "noch_offen": [
+    "Landesfeiertage: Das Rechenbeispiel und der Rechner berücksichtigen nur Sonnabend und Sonntag."
+  ]
+}

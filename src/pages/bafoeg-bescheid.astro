@@ -20,6 +20,11 @@ import {
   QUELLEN,
   RDG_GRENZE,
 } from '../data/bafoeg';
+import {
+  BESCHEID_BEGRIFF,
+  WIDERSPRUCH_ERHOBEN_AM,
+  WIDERSPRUCH_QUELLEN,
+} from '../data/bafoegWiderspruch';
 
 /**
  * Die Erklärseite zum BAföG-Bescheid (queue task 5.4).
@@ -70,6 +75,19 @@ function nachFundstelle<T extends { legal_basis?: string }>(saetze: T[], fundste
 const hochschule = nachFundstelle(BEDARFSSAETZE.studierende, '§ 13 Abs. 1 Nr. 2');
 /** Nicht bei den Eltern wohnend. */
 const auswaerts = nachFundstelle(BEDARFSSAETZE.wohnzuschlag, '§ 13 Abs. 2 Nr. 2');
+
+/**
+ * Der Abschnitt „Was ein BAföG-Bescheid ist" kam am 2026-11-15 aus den
+ * Suchdaten dazu: „was ist ein bafög bescheid" (23 Impressionen, Position 9)
+ * und die Gruppe um „bescheid erteilt bafög bedeutung" trafen auf eine Seite,
+ * die sofort in die Rechnung einstieg. Er steht bewusst vor dem Bedarf — wer
+ * diese Frage hat, braucht die Antwort vor den Tabellen.
+ *
+ * Die Quellen des zweiten Datensatzes werden angehängt, jede Adresse einmal.
+ */
+const alleQuellen = [...QUELLEN, ...WIDERSPRUCH_QUELLEN].filter(
+  (q, i, alle) => alle.findIndex((x) => x.url === q.url) === i,
+);
 ---
 
 {/* Jahr aus dem Erhebungsdatum, nicht aus `gilt_ab` und nicht aus der Uhr. Diese
@@ -77,7 +95,7 @@ const auswaerts = nachFundstelle(BEDARFSSAETZE.wohnzuschlag, '§ 13 Abs. 2 Nr. 2
     der letzten Anpassung zurück, obwohl die Beträge gelten (lib/jahr.ts). */}
 <BaseLayout
   title={`BAföG-Bescheid verstehen: Bedarf, Freibeträge, Widerspruch ${jahrAus(ERHOBEN_AM)}`}
-  description={`Was Bedarf, Elterneinkommen und Freibeträge im BAföG-Bescheid bedeuten — mit den Beträgen für ${jahrAus(ERHOBEN_AM)} und den Anträgen, die stillschweigend verfallen.`}
+  description={`Was ein BAföG-Bescheid enthalten muss, was „Bescheid erteilt“ bedeutet und wie Bedarf, Elterneinkommen und Freibeträge gerechnet werden — Beträge ${jahrAus(ERHOBEN_AM)}.`}
   path="/bafoeg-bescheid/"
 >
   <nav class="text-[14px] text-ink-mute" aria-label="Sie sind hier">
@@ -134,6 +152,66 @@ const auswaerts = nachFundstelle(BEDARFSSAETZE.wohnzuschlag, '§ 13 Abs. 2 Nr. 2
   <div class="mt-10">
     <AdSlot />
   </div>
+
+  <section class="mt-14">
+    <h2 class="font-display text-2xl text-ink">
+      Was ein BAföG-Bescheid ist — und was „Bescheid erteilt" bedeutet
+    </h2>
+    <p class="mt-3 max-w-prose text-ink-soft">
+      {BESCHEID_BEGRIFF.definition}
+      <span class="block text-[14px] text-ink-mute">{BESCHEID_BEGRIFF.legal_basis}</span>
+    </p>
+    <p class="mt-3 max-w-prose text-ink-soft">{BESCHEID_BEGRIFF.bescheid_erteilt}</p>
+    <p class="mt-3 flex max-w-prose gap-2.5 text-[15px] text-ink">
+      <Icon name="hinweis" class="mt-0.5 h-5 w-5 shrink-0 text-marker" />
+      <span>{BESCHEID_BEGRIFF.bescheid_erteilt_grenze}</span>
+    </p>
+
+    <h3 class="mt-8 font-display text-xl text-ink">Was in jedem Bewilligungsbescheid stehen muss</h3>
+    <ol class="mt-4 flex max-w-prose flex-col divide-y divide-rule border-y border-rule">
+      {
+        BESCHEID_BEGRIFF.pflichtangaben.map((angabe, i) => (
+          <li class="flex gap-3 py-2.5 text-[15px] text-ink">
+            <span class="font-display text-lg font-semibold text-marker">{i + 1}</span>
+            <span>{angabe}</span>
+          </li>
+        ))
+      }
+    </ol>
+    <p class="mt-2 text-[14px] text-ink-mute">{BESCHEID_BEGRIFF.pflichtangaben_legal_basis}</p>
+    <p class="mt-3 max-w-prose text-[15px] text-ink-soft">
+      {BESCHEID_BEGRIFF.pflichtangaben_ausnahmen}
+      <span class="block text-[14px] text-ink-mute">
+        {BESCHEID_BEGRIFF.pflichtangaben_ausnahmen_legal_basis}
+      </span>
+    </p>
+
+    <h3 class="mt-8 font-display text-xl text-ink">Welche Bescheide es im BAföG gibt</h3>
+    <div class="mt-4 grid gap-5 sm:grid-cols-2">
+      {
+        BESCHEID_BEGRIFF.arten.map((art) => (
+          <article class="border-t-4 border-marker bg-paper p-5">
+            <h4 class="flex items-center gap-2 font-display text-lg text-ink">
+              <Icon name="bescheid" class="h-5 w-5 shrink-0 text-marker" />
+              {art.name}
+            </h4>
+            <p class="mt-2 text-[15px] text-ink-soft">{art.text}</p>
+            <p class="mt-2 text-[14px] text-ink-mute">{art.legal_basis}</p>
+          </article>
+        ))
+      }
+    </div>
+    <p class="mt-5 max-w-prose text-[15px] text-ink-soft">
+      {BESCHEID_BEGRIFF.ohne_neuen_bescheid.text}
+      <span class="block text-[14px] text-ink-mute">
+        {BESCHEID_BEGRIFF.ohne_neuen_bescheid.legal_basis}
+      </span>
+    </p>
+    <p class="mt-3 max-w-prose text-[15px] text-ink-soft">
+      {BESCHEID_BEGRIFF.zahlung.text}
+      <span class="block text-[14px] text-ink-mute">{BESCHEID_BEGRIFF.zahlung.legal_basis}</span>
+    </p>
+  </section>
 
   <section class="mt-14">
     <h2 class="font-display text-2xl text-ink">Der Bedarf: woraus die Summe entsteht</h2>
@@ -268,9 +346,23 @@ const auswaerts = nachFundstelle(BEDARFSSAETZE.wohnzuschlag, '§ 13 Abs. 2 Nr. 2
 
   <Fristkette frist={FRIST} />
 
+  <p class="mt-6 max-w-prose border-l-4 border-marker bg-marker-tint px-4 py-3 text-ink">
+    Widerspruch, Aktualisierungsantrag, Vorausleistung oder Überprüfungsantrag — welcher Weg
+    zu welcher Lage passt, wie der Widerspruch eingelegt wird und was er kostet, steht auf
+    der Seite{' '}
+    <a href="/bafoeg-bescheid-widerspruch/" class="font-medium underline underline-offset-2">
+      Widerspruch gegen den BAföG-Bescheid
+    </a>
+    .
+  </p>
+
   <p class="mt-5 max-w-prose text-[15px] text-ink-mute">{RDG_GRENZE}</p>
 
-  <Quellen quellen={QUELLEN} erhobenAm={ERHOBEN_AM} />
+  <Quellen
+    quellen={alleQuellen}
+    erhobenAm={ERHOBEN_AM}
+    einleitung={`Die Beträge auf dieser Seite stammen aus dem Volltext der Vorschriften; der Abschnitt über Bescheidarten wurde am ${isoToGerman(WIDERSPRUCH_ERHOBEN_AM)} gelesen, alles Übrige am`}
+  />
 
   <Disclaimer />
 

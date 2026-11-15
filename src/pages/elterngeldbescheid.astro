@@ -1,0 +1,322 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import AdSlot from '../components/AdSlot.astro';
+import Bescheidauszug from '../components/Bescheidauszug.astro';
+import Disclaimer from '../components/Disclaimer.astro';
+import Fristkette from '../components/Fristkette.astro';
+import Icon from '../components/Icon.astro';
+import Pruefpunkte from '../components/Pruefpunkte.astro';
+import Quellen from '../components/Quellen.astro';
+import { euro, isoLang } from '../lib/format';
+import { jahrAus } from '../lib/jahr';
+import {
+  ABZUEGE,
+  ANRECHNUNG,
+  ANTRAGSFRIST,
+  BEMESSUNGSZEITRAUM,
+  EINKOMMENSGRENZE,
+  ERHOBEN_AM,
+  FRIST,
+  GLEICHZEITIGER_BEZUG,
+  GRENZEN_MIT_BETRAG,
+  HOEHE,
+  MUSTERAUSZUG,
+  PRUEFPUNKTE,
+  QUELLEN,
+  RDG_GRENZE,
+  VARIANTEN,
+  VORLAEUFIG,
+  ZUSCHLAEGE,
+} from '../data/elterngeld';
+
+/**
+ * Die Erklärseite zum Elterngeldbescheid (2026-11-15).
+ *
+ * Drei Dinge, die diese Seite trägt und die beim Weiterbauen bleiben müssen:
+ *
+ * 1. **Lebensmonate, nicht Kalendermonate.** Fast jede Verwirrung über einen
+ *    Elterngeldbescheid beginnt hier; die erste Markierung im Musterauszug
+ *    erklärt es.
+ * 2. **Vorläufig ist der Normalfall.** Ein vorläufiger Bescheid kündigt eine
+ *    zweite Entscheidung an — mit Nachzahlung oder Rückforderung.
+ * 3. **Der Widerspruch schiebt nichts auf** (§ 13 Abs. 2 BEEG), und die Grenze,
+ *    die wirklich Geld kostet, ist die Drei-Monats-Rückwirkung des Antrags.
+ *
+ * Die Zahlen gelten für Geburten ab dem 1. Mai 2025 (§ 28 BEEG) — steht
+ * sichtbar an der Tabelle, nicht nur im Datensatz.
+ */
+const ganzeEuro = (n: number) => euro(n).replace(',00', '');
+---
+
+<BaseLayout
+  title={`Elterngeldbescheid verstehen: Berechnung, Lebensmonate ${jahrAus(ERHOBEN_AM)}`}
+  description="Bemessungszeitraum, Abzüge, Lebensmonate und Vorläufigkeit: wie der Elterngeldbescheid rechnet, was angerechnet wird, warum der Widerspruch nichts aufschiebt."
+  path="/elterngeldbescheid/"
+>
+  <nav class="text-[14px] text-ink-mute" aria-label="Sie sind hier">
+    <a href="/" class="underline underline-offset-2">Startseite</a> · Elterngeldbescheid
+  </nav>
+
+  <h1 class="mt-2 font-display text-[clamp(1.9rem,5vw,2.75rem)] leading-tight text-ink">
+    Der Elterngeldbescheid: zwölf Monate zurück, Lebensmonat für Lebensmonat voraus
+  </h1>
+  <p class="mt-4 max-w-prose text-ink-soft">
+    Ein Elterngeldbescheid blickt in zwei Richtungen. Zurück auf das Einkommen
+    vor der Geburt, aus dem er einen Monatsbetrag errechnet — und voraus auf
+    die Lebensmonate des Kindes, für die dieser Betrag gezahlt wird. Die
+    meisten Fragen entstehen an der Naht dazwischen: welche Monate zählen,
+    welche Steuerklasse gilt, und warum der Bescheid „vorläufig" heißt.
+  </p>
+  <p class="mt-3 flex max-w-prose gap-2.5 text-[15px] text-ink">
+    <Icon name="hinweis" class="mt-0.5 h-5 w-5 shrink-0 text-marker" />
+    <span>
+      Die Beträge und Regeln auf dieser Seite gelten für Kinder, die ab dem 1. Mai 2025
+      geboren sind. Für früher geborene Kinder gelten nach § 28 BEEG ältere Fassungen
+      des Gesetzes weiter.
+    </span>
+  </p>
+
+  <div class="mt-10">
+    <Bescheidauszug
+      titel="Aus einem Elterngeldbescheid"
+      absaetze={MUSTERAUSZUG.absaetze}
+      markierungen={MUSTERAUSZUG.markierungen}
+    />
+  </div>
+
+  <div class="mt-10">
+    <AdSlot />
+  </div>
+
+  <section class="mt-14">
+    <h2 class="font-display text-2xl text-ink">Die Höhe: Ersatzrate, Mindest- und Höchstbetrag</h2>
+    <ul class="mt-5 flex flex-col divide-y divide-rule border-y border-rule">
+      <li class="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 py-3">
+        <span class="min-w-0 flex-1 text-ink-soft">Ersatzrate des Einkommens vor der Geburt</span>
+        <span class="font-display text-xl font-semibold text-ink">{HOEHE.ersatzrate_prozent} %</span>
+      </li>
+      <li class="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 py-3">
+        <span class="min-w-0 flex-1 text-ink-soft">Mindestbetrag im Monat</span>
+        <span class="font-display text-xl font-semibold text-ink">{ganzeEuro(HOEHE.mindestbetrag_eur)}</span>
+      </li>
+      <li class="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 py-3">
+        <span class="min-w-0 flex-1 text-ink-soft">Höchstbetrag im Monat</span>
+        <span class="font-display text-xl font-semibold text-ink">{ganzeEuro(HOEHE.hoechstbetrag_eur)}</span>
+      </li>
+      <li class="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 py-3">
+        <span class="min-w-0 flex-1 text-ink-soft">
+          {HOEHE.absenkung.regel}
+          <span class="block text-[14px] text-ink-mute">Untergrenze der Ersatzrate</span>
+        </span>
+        <span class="font-display text-xl font-semibold text-ink">{HOEHE.absenkung.untergrenze_prozent} %</span>
+      </li>
+      <li class="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 py-3">
+        <span class="min-w-0 flex-1 text-ink-soft">
+          {HOEHE.anhebung.regel}
+          <span class="block text-[14px] text-ink-mute">Obergrenze der Ersatzrate</span>
+        </span>
+        <span class="font-display text-xl font-semibold text-ink">{HOEHE.anhebung.obergrenze_prozent} %</span>
+      </li>
+    </ul>
+    <p class="mt-3 text-[14px] text-ink-mute">{HOEHE.norm}</p>
+    <p class="mt-3 max-w-prose text-[15px] text-ink-soft">{HOEHE.hinweis}</p>
+
+    <div class="mt-8 grid gap-6 sm:grid-cols-2">
+      {
+        ZUSCHLAEGE.map((z) => (
+          <article class="border-t-4 border-marker bg-paper p-5">
+            <h3 class="font-display text-xl text-ink">{z.name}</h3>
+            <p class="mt-1 text-[14px] text-ink-mute">{z.norm}</p>
+            <p class="mt-3 text-[15px] text-ink">{z.betrag_oder_regel}</p>
+            <p class="mt-2 text-[15px] text-ink-soft">{z.voraussetzung}</p>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="mt-14">
+    <h2 class="font-display text-2xl text-ink">Der Bemessungszeitraum: welche Monate zählen</h2>
+    <dl class="mt-5 flex flex-col divide-y divide-rule border-y border-rule">
+      <div class="flex flex-wrap gap-x-6 gap-y-1 py-3">
+        <dt class="w-full shrink-0 text-[14px] text-ink-mute sm:w-40">Angestellte</dt>
+        <dd class="min-w-0 flex-1 text-ink">{BEMESSUNGSZEITRAUM.regel_nichtselbstaendig}</dd>
+      </div>
+      <div class="flex flex-wrap gap-x-6 gap-y-1 py-3">
+        <dt class="w-full shrink-0 text-[14px] text-ink-mute sm:w-40">Selbständige</dt>
+        <dd class="min-w-0 flex-1 text-ink">{BEMESSUNGSZEITRAUM.regel_selbstaendig}</dd>
+      </div>
+    </dl>
+    <h3 class="mt-8 font-display text-xl text-ink">Monate, die übersprungen werden</h3>
+    <ul class="mt-4 flex max-w-prose flex-col gap-2">
+      {
+        BEMESSUNGSZEITRAUM.ausgeklammerte_monate.map((m) => (
+          <li class="flex gap-2.5 text-[15px] text-ink">
+            <Icon name="pruefen" class="mt-1 h-4 w-4 shrink-0 text-marker" />
+            <span>{m}</span>
+          </li>
+        ))
+      }
+    </ul>
+    <p class="mt-4 max-w-prose text-[15px] text-ink-soft">{BEMESSUNGSZEITRAUM.verzicht_auf_ausklammerung}</p>
+    <p class="mt-3 max-w-prose text-[15px] text-ink-soft">{BEMESSUNGSZEITRAUM.hinweis}</p>
+    <p class="mt-2 text-[14px] text-ink-mute">{BEMESSUNGSZEITRAUM.norm}</p>
+  </section>
+
+  <section class="mt-14">
+    <h2 class="font-display text-2xl text-ink">Vom Brutto zum Elterngeld-Netto: die Abzüge</h2>
+    <p class="mt-3 max-w-prose text-ink-soft">
+      Das Elterngeld rechnet nicht mit Ihrem tatsächlichen Nettolohn, sondern mit
+      einem eigenen, pauschal ermittelten. Deshalb stimmt die Zahl im Bescheid
+      fast nie mit der auf der Lohnabrechnung überein — das ist so vorgesehen.
+    </p>
+    <div class="mt-6 grid gap-6 sm:grid-cols-2">
+      <article class="border-t-4 border-marker bg-paper p-5">
+        <h3 class="font-display text-xl text-ink">Steuern</h3>
+        <p class="mt-3 text-[15px] text-ink-soft">{ABZUEGE.steuern.regel}</p>
+        <p class="mt-3 text-[15px] text-ink">
+          <strong>Welche Steuerklasse zählt:</strong> {ABZUEGE.steuern.massgebliche_steuerklasse}
+        </p>
+      </article>
+      <article class="border-t-4 border-marker bg-paper p-5">
+        <h3 class="font-display text-xl text-ink">Sozialabgaben, pauschal</h3>
+        <ul class="mt-3 flex flex-col divide-y divide-rule border-y border-rule">
+          {
+            ABZUEGE.sozialabgaben.map((s) => (
+              <li class="flex items-baseline justify-between gap-4 py-2.5 text-[15px]">
+                <span class="text-ink-soft">
+                  {s.zweig}
+                  <span class="block text-[14px] text-ink-mute">{s.norm}</span>
+                </span>
+                <span class="font-semibold tabular-nums text-ink">{s.pauschale_prozent} %</span>
+              </li>
+            ))
+          }
+        </ul>
+        <p class="mt-3 text-[15px] text-ink-soft">{ABZUEGE.sozialabgaben_hinweis}</p>
+      </article>
+    </div>
+    <p class="mt-4 max-w-prose text-[15px] text-ink-soft">
+      {ABZUEGE.arbeitnehmer_pauschbetrag.regel}
+      <span class="block text-[14px] text-ink-mute">{ABZUEGE.arbeitnehmer_pauschbetrag.norm}</span>
+    </p>
+    <p class="mt-3 max-w-prose text-[15px] text-ink-soft">
+      {ABZUEGE.selbstaendige_betriebsausgaben.regel}
+      <span class="block text-[14px] text-ink-mute">{ABZUEGE.selbstaendige_betriebsausgaben.norm}</span>
+    </p>
+  </section>
+
+  <section class="mt-14">
+    <h2 class="font-display text-2xl text-ink">
+      Basiselterngeld, Elterngeld Plus, Partnerschaftsbonus
+    </h2>
+    <div class="mt-6 flex flex-col gap-6">
+      {
+        VARIANTEN.map((v) => (
+          <article class="border-t-4 border-marker bg-paper p-5 sm:p-6">
+            <h3 class="font-display text-xl text-ink">{v.name}</h3>
+            <p class="mt-1 text-[14px] text-ink-mute">{v.norm}</p>
+            <dl class="mt-4 flex flex-col divide-y divide-rule border-y border-rule text-[15px]">
+              <div class="flex flex-wrap gap-x-6 gap-y-1 py-2.5">
+                <dt class="w-full shrink-0 text-[14px] text-ink-mute sm:w-32">Dauer</dt>
+                <dd class="min-w-0 flex-1 text-ink">{v.dauer_oder_monate}</dd>
+              </div>
+              <div class="flex flex-wrap gap-x-6 gap-y-1 py-2.5">
+                <dt class="w-full shrink-0 text-[14px] text-ink-mute sm:w-32">Höhe</dt>
+                <dd class="min-w-0 flex-1 text-ink-soft">{v.hoehe_regel}</dd>
+              </div>
+              <div class="flex flex-wrap gap-x-6 gap-y-1 py-2.5">
+                <dt class="w-full shrink-0 text-[14px] text-ink-mute sm:w-32">Voraussetzung</dt>
+                <dd class="min-w-0 flex-1 text-ink-soft">{v.voraussetzungen}</dd>
+              </div>
+            </dl>
+          </article>
+        ))
+      }
+    </div>
+    <h3 class="mt-8 font-display text-xl text-ink">Beide Eltern gleichzeitig</h3>
+    <p class="mt-3 max-w-prose text-ink-soft">{GLEICHZEITIGER_BEZUG.regel}</p>
+    <p class="mt-3 max-w-prose text-[15px] text-ink-soft">Ausnahmen nennt das Gesetz für:</p>
+    <ul class="mt-2 flex max-w-prose list-disc flex-col gap-1 pl-5 text-[15px] text-ink-soft">
+      {GLEICHZEITIGER_BEZUG.ausnahmen.map((a) => <li>{a}</li>)}
+    </ul>
+    <p class="mt-2 text-[14px] text-ink-mute">{GLEICHZEITIGER_BEZUG.norm}</p>
+  </section>
+
+  <section class="mt-14 max-w-prose">
+    <h2 class="font-display text-2xl text-ink">Die Einkommensgrenze</h2>
+    <ul class="mt-5 flex flex-col divide-y divide-rule border-y border-rule">
+      {
+        GRENZEN_MIT_BETRAG.map((g) => (
+          <li class="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 py-3">
+            <span class="min-w-0 flex-1 text-ink-soft">
+              Geburten {g.fuer_geburten_ab && `ab ${isoLang(g.fuer_geburten_ab)}`}
+              {g.fuer_geburten_bis && ` bis ${isoLang(g.fuer_geburten_bis)}`}
+            </span>
+            <span class="font-display text-xl font-semibold text-ink">{ganzeEuro(g.betrag_eur)}</span>
+          </li>
+        ))
+      }
+    </ul>
+    <p class="mt-3 text-[15px] text-ink-soft">{GRENZEN_MIT_BETRAG[0].bezug}</p>
+    <p class="mt-3 text-[15px] text-ink-soft">{EINKOMMENSGRENZE.hinweis}</p>
+    <p class="mt-3 text-[15px] text-ink-mute">{EINKOMMENSGRENZE.uebergangsvorschrift}</p>
+    <p class="mt-2 text-[14px] text-ink-mute">{EINKOMMENSGRENZE.norm}</p>
+  </section>
+
+  <section class="mt-14">
+    <h2 class="font-display text-2xl text-ink">Was auf das Elterngeld angerechnet wird</h2>
+    <ul class="mt-5 flex flex-col divide-y divide-rule border-y border-rule">
+      {
+        ANRECHNUNG.map((a) => (
+          <li class="py-3">
+            <p class="font-medium text-ink">{a.leistung}</p>
+            <p class="mt-1 max-w-prose text-[15px] text-ink-soft">{a.regel}</p>
+            <p class="mt-1 text-[14px] text-ink-mute">{a.norm}</p>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <section class="mt-14 max-w-prose">
+    <h2 class="font-display text-2xl text-ink">Warum der Bescheid „vorläufig" ist</h2>
+    <p class="mt-3 text-ink-soft">Das Gesetz sieht eine vorläufige Entscheidung vor, wenn:</p>
+    <ul class="mt-3 flex flex-col gap-2">
+      {
+        VORLAEUFIG.wann_vorlaeufig.map((w) => (
+          <li class="flex gap-2.5 text-[15px] text-ink">
+            <Icon name="pruefen" class="mt-1 h-4 w-4 shrink-0 text-marker" />
+            <span>{w}</span>
+          </li>
+        ))
+      }
+    </ul>
+    <p class="mt-4 text-ink-soft">{VORLAEUFIG.folge}</p>
+    <p class="mt-3 text-[15px] text-ink-soft">{VORLAEUFIG.hinweis}</p>
+    <p class="mt-2 text-[14px] text-ink-mute">{VORLAEUFIG.norm}</p>
+  </section>
+
+  <section class="mt-14 max-w-prose">
+    <h2 class="font-display text-2xl text-ink">Die Frist, die vor der Widerspruchsfrist zählt</h2>
+    <p class="mt-4 border-l-4 border-marker bg-marker-tint px-4 py-3 text-ink">
+      „{ANTRAGSFRIST.wortlaut_kurz}"
+      <span class="mt-1 block text-[14px] text-ink-soft">{ANTRAGSFRIST.norm}</span>
+    </p>
+    <p class="mt-3 text-[15px] text-ink-soft">{ANTRAGSFRIST.regel}</p>
+  </section>
+
+  <Pruefpunkte punkte={PRUEFPUNKTE} />
+
+  <Fristkette frist={FRIST} />
+
+  <p class="mt-5 max-w-prose text-[15px] text-ink-mute">{RDG_GRENZE}</p>
+
+  <Quellen quellen={QUELLEN} erhobenAm={ERHOBEN_AM} />
+
+  <Disclaimer />
+
+  <div class="mt-10">
+    <AdSlot />
+  </div>
+</BaseLayout>

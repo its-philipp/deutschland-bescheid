@@ -1,0 +1,1140 @@
+{
+  "_meta": {
+    "topic": "elterngeldbescheid",
+    "retrieved": "2026-11-15",
+    "collector": "data-researcher subagent (Sonnet 5.5), Auftrag des Orchestrators",
+    "method": "Alle genannten Einzelnormen am 2026-11-15 als HTML direkt von gesetze-im-internet.de gezogen (BEEG, SGG, SGB X) sowie OZG § 9 und im Volltext gelesen. Jeder wörtliche Auszug im Block belege wurde per Skript als Teilstring gegen den abgerufenen Normtext geprüft. Die Fassung, die der Datensatz abbildet, ist die heute auf gesetze-im-internet.de stehende; nach § 28 Abs. 1b BEEG gilt sie für Kinder, die ab dem 1. Mai 2025 geboren oder mit dem Ziel der Adoption aufgenommen wurden. Für frühere Geburten gelten ältere Gesetzesfassungen, die hier nicht gelesen wurden (siehe noch_offen). Ableitungen, die nicht im Wortlaut stehen, sind nicht aufgenommen.",
+    "sources": [
+      {
+        "label": "BEEG § 1 – Berechtigte",
+        "url": "https://www.gesetze-im-internet.de/beeg/__1.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "BEEG § 2 – Höhe des Elterngeldes",
+        "url": "https://www.gesetze-im-internet.de/beeg/__2.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "BEEG § 2a – Geschwisterbonus und Mehrlingszuschlag",
+        "url": "https://www.gesetze-im-internet.de/beeg/__2a.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "BEEG § 2b – Bemessungszeitraum",
+        "url": "https://www.gesetze-im-internet.de/beeg/__2b.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "BEEG § 2c – Einkommen aus nichtselbstständiger Erwerbstätigkeit",
+        "url": "https://www.gesetze-im-internet.de/beeg/__2c.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "BEEG § 2d – Einkommen aus selbstständiger Erwerbstätigkeit",
+        "url": "https://www.gesetze-im-internet.de/beeg/__2d.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "BEEG § 2e – Abzüge für Steuern",
+        "url": "https://www.gesetze-im-internet.de/beeg/__2e.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "BEEG § 2f – Abzüge für Sozialabgaben",
+        "url": "https://www.gesetze-im-internet.de/beeg/__2f.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "BEEG § 3 – Anrechnung von anderen Einnahmen",
+        "url": "https://www.gesetze-im-internet.de/beeg/__3.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "BEEG § 4 – Bezugsdauer, Anspruchsumfang",
+        "url": "https://www.gesetze-im-internet.de/beeg/__4.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "BEEG § 4a – Berechnung von Basiselterngeld und Elterngeld Plus",
+        "url": "https://www.gesetze-im-internet.de/beeg/__4a.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "BEEG § 4b – Partnerschaftsbonus",
+        "url": "https://www.gesetze-im-internet.de/beeg/__4b.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "BEEG § 4c – Alleiniger Bezug durch einen Elternteil",
+        "url": "https://www.gesetze-im-internet.de/beeg/__4c.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "BEEG § 4d – Weitere Berechtigte",
+        "url": "https://www.gesetze-im-internet.de/beeg/__4d.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "BEEG § 5 – Zusammentreffen von Ansprüchen",
+        "url": "https://www.gesetze-im-internet.de/beeg/__5.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "BEEG § 7 – Antragstellung",
+        "url": "https://www.gesetze-im-internet.de/beeg/__7.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "BEEG § 8 – Auskunftspflicht, Nebenbestimmungen",
+        "url": "https://www.gesetze-im-internet.de/beeg/__8.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "BEEG § 10 – Verhältnis zu anderen Sozialleistungen",
+        "url": "https://www.gesetze-im-internet.de/beeg/__10.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "BEEG § 13 – Rechtsweg",
+        "url": "https://www.gesetze-im-internet.de/beeg/__13.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "BEEG § 26 – Anwendung der Bücher des Sozialgesetzbuches",
+        "url": "https://www.gesetze-im-internet.de/beeg/__26.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "BEEG § 28 – Übergangsvorschrift",
+        "url": "https://www.gesetze-im-internet.de/beeg/__28.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGG § 51",
+        "url": "https://www.gesetze-im-internet.de/sgg/__51.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGG § 64",
+        "url": "https://www.gesetze-im-internet.de/sgg/__64.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGG § 66",
+        "url": "https://www.gesetze-im-internet.de/sgg/__66.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGG § 67",
+        "url": "https://www.gesetze-im-internet.de/sgg/__67.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGG § 84",
+        "url": "https://www.gesetze-im-internet.de/sgg/__84.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGG § 86a",
+        "url": "https://www.gesetze-im-internet.de/sgg/__86a.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGG § 87",
+        "url": "https://www.gesetze-im-internet.de/sgg/__87.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB X § 37 – Bekanntgabe des Verwaltungsaktes",
+        "url": "https://www.gesetze-im-internet.de/sgb_10/__37.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB X § 44 – Rücknahme eines rechtswidrigen nicht begünstigenden Verwaltungsaktes",
+        "url": "https://www.gesetze-im-internet.de/sgb_10/__44.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "OZG § 9 – Bekanntgabe des Verwaltungsaktes",
+        "url": "https://www.gesetze-im-internet.de/ozg/__9.html",
+        "retrieved": "2026-11-15"
+      }
+    ]
+  },
+  "hoehe": {
+    "norm": "§ 2 BEEG",
+    "ersatzrate_prozent": 67,
+    "mindestbetrag_eur": 300,
+    "hoechstbetrag_eur": 1800,
+    "absenkung": {
+      "ab_einkommen_eur": 1200,
+      "regel": "Lag das Einkommen aus Erwerbstätigkeit vor der Geburt über 1 200 Euro im Monat, sinkt der Prozentsatz um 0,1 Prozentpunkte für je 2 Euro, um die das Einkommen diesen Betrag überschreitet.",
+      "untergrenze_prozent": 65
+    },
+    "anhebung": {
+      "unter_einkommen_eur": 1000,
+      "regel": "Lag das Einkommen aus Erwerbstätigkeit vor der Geburt unter 1 000 Euro im Monat, erhöht sich der Prozentsatz um 0,1 Prozentpunkte für je 2 Euro, um die das Einkommen diesen Betrag unterschreitet, bis auf höchstens 100 Prozent.",
+      "obergrenze_prozent": 100
+    },
+    "beruecksichtigtes_einkommen_hoechstens_eur": 2770,
+    "hinweis": "Der Höchstbetrag von 1 800 Euro nennt § 2 Abs. 1 für volle Lebensmonate ohne Einkommen aus Erwerbstätigkeit. Für Lebensmonate mit Einkommen nach der Geburt rechnet § 2 Abs. 3 mit dem Unterschiedsbetrag zum Einkommen vor der Geburt, das dabei höchstens mit 2 770 Euro angesetzt wird. Der Mindestbetrag von 300 Euro gilt auch dann, wenn vor der Geburt kein Einkommen aus Erwerbstätigkeit bestand. Beim Elterngeld Plus halbiert § 4a Abs. 2 den Mindestbetrag, die Höhe ist auf die Hälfte des Basiselterngeldes begrenzt. Die Beträge gelten in der heutigen Gesetzesfassung für Kinder ab dem 1. Mai 2025; für frühere Geburten gelten nach § 28 Abs. 1 bis 1b ältere Fassungen."
+  },
+  "zuschlaege": [
+    {
+      "name": "Geschwisterbonus",
+      "betrag_oder_regel": "Das Elterngeld erhöht sich um 10 Prozent, mindestens jedoch um 75 Euro. Beim Elterngeld Plus halbiert sich der Mindestbetrag (§ 4a Abs. 2).",
+      "voraussetzung": "Die berechtigte Person lebt in einem Haushalt mit zwei Kindern unter drei Jahren oder mit drei oder mehr Kindern unter sechs Jahren. Für Kinder mit Behinderung liegt die Altersgrenze bei 14 Jahren, für angenommene Kinder unter 14 Jahren zählt die Zeit seit der Aufnahme in den Haushalt. Der Anspruch endet mit Ablauf des Monats, in dem eine Voraussetzung entfällt.",
+      "norm": "§ 2a Abs. 1 bis 3 BEEG"
+    },
+    {
+      "name": "Mehrlingszuschlag",
+      "betrag_oder_regel": "Bei Mehrlingsgeburten erhöht sich das Elterngeld um je 300 Euro für das zweite und jedes weitere Kind, auch neben einem Geschwisterbonus. Beim Elterngeld Plus halbiert sich der Zuschlag (§ 4a Abs. 2).",
+      "voraussetzung": "Mehrlingsgeburt; es besteht trotzdem nur ein Anspruch auf Elterngeld (§ 1 Abs. 1 Satz 2).",
+      "norm": "§ 2a Abs. 4 BEEG"
+    }
+  ],
+  "bemessungszeitraum": {
+    "norm": "§ 2b BEEG",
+    "regel_nichtselbstaendig": "Maßgeblich sind die zwölf Kalendermonate vor dem Kalendermonat der Geburt. Das Einkommen ergibt sich aus den Lohn- und Gehaltsbescheinigungen des Arbeitgebers für diese Monate (§ 2c Abs. 2). Sonstige Bezüge im Sinne des Lohnsteuerabzugs zählen nicht mit (§ 2c Abs. 1).",
+    "regel_selbstaendig": "Maßgeblich sind die steuerlichen Gewinnermittlungszeiträume, die dem letzten abgeschlossenen Veranlagungszeitraum vor der Geburt zugrunde liegen; die Gewinne stammen aus dem Einkommensteuerbescheid (§ 2d Abs. 2). Hatte die Person im Bemessungszeitraum auch Gewinneinkünfte, gilt nach § 2b Abs. 3 auch für das Arbeitseinkommen der letzte abgeschlossene Veranlagungszeitraum, es sei denn, die Gewinneinkünfte lagen in den beiden in § 2b Abs. 4 genannten Zeiträumen durchschnittlich unter 35 Euro im Monat und es wird ein Antrag gestellt.",
+    "ausgeklammerte_monate": [
+      "Monate, in denen die Person Elterngeld für ein älteres Kind bezogen hat (im Zeitraum nach § 4 Abs. 1 Satz 2 und 3 und Abs. 5 Satz 3 Nr. 1 Buchst. b, Nr. 2 Buchst. b, Nr. 3 Buchst. b und Nr. 4 Buchst. b)",
+      "Monate, in denen wegen der Schutzfristen nach § 3 Mutterschutzgesetz nicht gearbeitet werden durfte oder Mutterschaftsgeld (SGB V, KVLG) beziehungsweise Krankentagegeld nach § 192 Abs. 5 Satz 2 VVG bezogen wurde",
+      "Monate mit einer Krankheit, die maßgeblich durch eine Schwangerschaft bedingt war",
+      "Monate mit Wehrdienst nach dem Wehrpflichtgesetz oder dem Soldatengesetz oder mit Zivildienst",
+      "auf Antrag zusätzlich: Monate zwischen dem 1. März 2020 und dem 23. September 2022 mit pandemiebedingt geringerem Einkommen, wenn dies glaubhaft gemacht wird"
+    ],
+    "verzicht_auf_ausklammerung": "Die Monate nach Satz 2 Nr. 1 bis 4 sind auf Antrag der berechtigten Person abweichend dennoch zu berücksichtigen (§ 2b Abs. 1 Satz 3). Ohne Antrag werden sie ausgeklammert.",
+    "hinweis": "Dass ein Monat ausgeklammert wird, bestimmt das Gesetz von Amts wegen; nur der umgekehrte Weg, die Berücksichtigung trotz Ausklammerung, setzt einen Antrag voraus. Ob ein Verzicht auf die Ausklammerung günstiger ist, lässt sich nur im Einzelfall rechnen und wird hier nicht beurteilt."
+  },
+  "abzuege": {
+    "norm": "§§ 2c bis 2f BEEG",
+    "steuern": {
+      "regel": "Abgezogen werden Einkommensteuer, Solidaritätszuschlag und, bei Kirchensteuerpflicht, Kirchensteuer. Sie werden einheitlich für Arbeitseinkommen und Gewinneinkünfte nach dem Programmablaufplan für den Lohnsteuerabzug berechnet, der am 1. Januar des Kalenderjahres vor der Geburt für dieses Jahr galt (§ 2e Abs. 1). Es werden der Arbeitnehmer-Pauschbetrag und eine Vorsorgepauschale als Pauschalen berücksichtigt (§ 2e Abs. 2). Der Kirchensteuersatz beträgt 8 Prozent (§ 2e Abs. 5). Andere Freibeträge und Pauschalen zählen nur, wenn sie ohne weitere Voraussetzung jeder berechtigten Person zustehen (§ 2e Abs. 6).",
+      "massgebliche_steuerklasse": "Es zählt die Steuerklasse samt Faktor nach § 39f EStG aus der Lohn- und Gehaltsbescheinigung des letzten Kalendermonats im Bemessungszeitraum mit Einnahmen. Hat sich eine Angabe im Bemessungszeitraum geändert, gilt die abweichende Angabe, wenn sie in der überwiegenden Zahl der Kalendermonate galt (§ 2c Abs. 3). Die Steuerklasse VI bleibt unberücksichtigt. War die Person im Bemessungszeitraum in keine Steuerklasse eingereiht oder ist der Gewinn höher als der Überschuss der Einnahmen, wird die Steuerklasse IV ohne Faktor angesetzt (§ 2e Abs. 3)."
+    },
+    "sozialabgaben": [
+      {
+        "zweig": "Kranken- und Pflegeversicherung",
+        "pauschale_prozent": 9,
+        "norm": "§ 2f Abs. 1 Satz 2 Nr. 1 BEEG"
+      },
+      {
+        "zweig": "Rentenversicherung",
+        "pauschale_prozent": 10,
+        "norm": "§ 2f Abs. 1 Satz 2 Nr. 2 BEEG"
+      },
+      {
+        "zweig": "Arbeitsförderung",
+        "pauschale_prozent": 2,
+        "norm": "§ 2f Abs. 1 Satz 2 Nr. 3 BEEG"
+      }
+    ],
+    "sozialabgaben_hinweis": "Jede Pauschale greift nur, wenn die Person im jeweiligen Zweig versicherungspflichtig war (Krankenversicherung nach § 5 Abs. 1 Nr. 1 bis 12 SGB V). Einnahmen aus geringfügigen Beschäftigungen nach §§ 8, 8a SGB IV und aus Beschäftigungen nach § 20 Abs. 3 Satz 1 SGB IV bleiben für die Bemessungsgrundlage der Sozialabgaben außer Ansatz (§ 2f Abs. 2). Andere Maßgaben zur Beitragsbemessung werden nicht berücksichtigt (§ 2f Abs. 3).",
+    "arbeitnehmer_pauschbetrag": {
+      "norm": "§ 2c Abs. 1 BEEG",
+      "regel": "Vom Einnahmenüberschuss wird ein Zwölftel des Arbeitnehmer-Pauschbetrags nach § 9a Satz 1 Nr. 1 Buchst. a EStG in der Fassung abgezogen, die am 1. Januar des Kalenderjahres vor der Geburt für dieses Jahr galt.",
+      "betrag_eur": null,
+      "hinweis": "Die Höhe steht in § 9a EStG, nicht im BEEG; sie wurde nicht gelesen und bleibt deshalb leer."
+    },
+    "selbstaendige_betriebsausgaben": {
+      "norm": "§ 2d Abs. 3 BEEG",
+      "regel": "Für die Gewinnermittlung in den Bezugsmonaten sind 25 Prozent der Einnahmen als Betriebsausgaben anzusetzen, auf Antrag stattdessen die tatsächlichen Betriebsausgaben."
+    }
+  },
+  "varianten": [
+    {
+      "name": "Basiselterngeld",
+      "dauer_oder_monate": "Die Eltern haben gemeinsam Anspruch auf zwölf Monatsbeträge, bei gemindertem Einkommen eines Elternteils in zwei Lebensmonaten auf zwei weitere (Partnermonate). Ein Elternteil kann höchstens zwölf Monatsbeträge beziehen. Bezug mindestens für zwei Lebensmonate, bis zur Vollendung des 14. Lebensmonats des Kindes. Bei Geburt mindestens sechs Wochen vor dem errechneten Termin steigt der gemeinsame Anspruch auf 13 Monatsbeträge, bei mindestens 16 Wochen auf 16.",
+      "hoehe_regel": "Berechnung allein nach §§ 2 bis 3: 67 Prozent des Einkommens vor der Geburt mit Anhebung und Absenkung, zwischen 300 und 1 800 Euro im Monat.",
+      "voraussetzungen": "Berechtigung nach § 1; Antrag mit Angabe der Lebensmonate (§ 7 Abs. 1 Satz 3).",
+      "norm": "§ 4 Abs. 1, 3 bis 5, § 4a Abs. 1 BEEG"
+    },
+    {
+      "name": "ElterngeldPlus",
+      "dauer_oder_monate": "Statt eines Lebensmonats Basiselterngeld können zwei Lebensmonate Elterngeld Plus bezogen werden. Bezug bis zur Vollendung des 32. Lebensmonats, solange es ab dem 15. Lebensmonat in aufeinander folgenden Lebensmonaten von mindestens einem Elternteil bezogen wird.",
+      "hoehe_regel": "Höchstens die Hälfte des Basiselterngeldes, das ohne Einkommen im Bezug zustünde; Mindestbetrag, Mindestbetrag des Geschwisterbonus, Mehrlingszuschlag und Anrechnungsfreibetrag halbieren sich.",
+      "voraussetzungen": "Berechtigung nach § 1; Basiselterngeld und Elterngeld Plus werden bei Einkommen im Bezug getrennt berechnet (§ 2 Abs. 3 Satz 3).",
+      "norm": "§ 4 Abs. 1 Satz 4, Abs. 3 Satz 3, § 4a Abs. 2 BEEG"
+    },
+    {
+      "name": "Partnerschaftsbonus",
+      "dauer_oder_monate": "Je Elternteil höchstens vier zusätzliche Monatsbeträge Elterngeld Plus, mindestens zwei, in aufeinander folgenden Lebensmonaten und nur gleichzeitig.",
+      "hoehe_regel": "Ein zusätzlicher Monatsbetrag Elterngeld Plus je Bonusmonat, Berechnung nach § 4a Abs. 2.",
+      "voraussetzungen": "Beide Elternteile sind im Durchschnitt des Lebensmonats nicht weniger als 24 und nicht mehr als 32 Wochenstunden erwerbstätig und erfüllen die Voraussetzungen des § 1. Stellt sich nachträglich heraus, dass die Voraussetzungen nicht in allen beantragten Monaten vorlagen, gilt das Erfordernis aufeinander folgender Monate dennoch als erfüllt (§ 4b Abs. 5).",
+      "norm": "§ 4b BEEG"
+    },
+    {
+      "name": "Alleiniger Bezug der Partnermonate",
+      "dauer_oder_monate": "Ein Elternteil kann zusätzlich die Partnermonate beziehen; bei Teilzeit von 24 bis 32 Wochenstunden in zwei bis vier aufeinander folgenden Lebensmonaten gibt es zusätzliche Monatsbeträge Elterngeld Plus.",
+      "hoehe_regel": "wie beim jeweiligen Elterngeld",
+      "voraussetzungen": "Das Einkommen ist für zwei Lebensmonate gemindert und es liegt einer von drei Fällen vor: Alleinerziehende mit Entlastungsbetrag nach § 24b EStG und anderer Elternteil nicht in der Wohnung, Gefährdung des Kindeswohls bei Betreuung durch den anderen Elternteil oder Unmöglichkeit dieser Betreuung.",
+      "norm": "§ 4c BEEG"
+    }
+  ],
+  "gleichzeitiger_bezug": {
+    "norm": "§ 4 Abs. 6 BEEG",
+    "regel": "Beide Elternteile können Basiselterngeld nur in einem der ersten zwölf Lebensmonate des Kindes gleichzeitig beziehen. Wer Elterngeld Plus bezieht, darf es gleichzeitig zu Basiselterngeld oder Elterngeld Plus des anderen Elternteils beziehen. Der Partnerschaftsbonus bleibt davon unberührt.",
+    "ausnahmen": [
+      "Mehrlingsgeburten",
+      "Frühgeburten im Sinne von § 4 Abs. 5",
+      "Kinder, bei denen eine Behinderung im Sinne von § 2 Abs. 1 Satz 1 SGB IX ärztlich festgestellt wird",
+      "Kinder, die einen Geschwisterbonus nach § 2a Abs. 1 in Verbindung mit Abs. 2 Satz 3 auslösen (Kinder mit Behinderung)"
+    ]
+  },
+  "einkommensgrenze": {
+    "norm": "§ 1 Abs. 8 BEEG, § 28 Abs. 5 BEEG",
+    "grenzen": [
+      {
+        "fuer_geburten_ab": "2025-04-01",
+        "fuer_geburten_bis": null,
+        "betrag_eur": 175000,
+        "bezug": "Zu versteuerndes Einkommen nach § 2 Abs. 5 EStG im letzten abgeschlossenen Veranlagungszeitraum vor der Geburt; erfüllt auch eine andere Person die Voraussetzungen, zählt die Summe des zu versteuernden Einkommens beider Personen. Mehr als der Betrag lässt den Anspruch entfallen."
+      },
+      {
+        "fuer_geburten_ab": "2024-04-01",
+        "fuer_geburten_bis": "2025-03-31",
+        "betrag_eur": 200000,
+        "bezug": "Zu versteuerndes Einkommen nach § 2 Abs. 5 EStG im letzten abgeschlossenen Veranlagungszeitraum vor der Geburt; bei zwei Personen die Summe beider. Mehr als 200 000 Euro lässt den Anspruch entfallen."
+      },
+      {
+        "fuer_geburten_ab": null,
+        "fuer_geburten_bis": "2024-03-31",
+        "betrag_eur": null,
+        "bezug": "Nach § 28 Abs. 1 und 1a BEEG gelten für diese Geburten ältere Gesetzesfassungen weiter. Die Grenze steht nicht im heutigen Gesetzestext."
+      }
+    ],
+    "uebergangsvorschrift": "§ 28 Abs. 5 BEEG: § 1 Abs. 8 in der heutigen Fassung (175 000 Euro) ist auf Kinder anwendbar, die ab dem 1. April 2025 geboren oder mit dem Ziel der Adoption angenommen wurden. Für Kinder ab dem 1. April 2024 und vor dem 1. April 2025 gilt § 1 Abs. 8 mit der Maßgabe 200 000 Euro, auch als Summe beider Personen. Für Kinder aus dem April 2025 verweist § 28 Abs. 1b für das übrige Gesetz auf die Fassung bis 30. April 2025; die 175 000-Euro-Grenze gilt für sie nach Abs. 5 Satz 1 trotzdem. Für Kinder, die vor dem 1. April 2024 geboren wurden, gelten nach § 28 Abs. 1 und 1a die Fassungen bis 31. August 2021 beziehungsweise bis 31. März 2024 weiter.",
+    "hinweis": "Nach dem heutigen Wortlaut gilt dieselbe Zahl für Einzelpersonen und für die Summe zweier Personen; eine getrennte Grenze für Alleinerziehende und Paare enthält § 1 Abs. 8 nicht. Bei fehlendem Steuerbescheid wird die Einkommensgrenze zunächst nicht geprüft, sondern das Elterngeld unter Widerrufsvorbehalt gezahlt (§ 8 Abs. 2 Satz 2)."
+  },
+  "anrechnung": [
+    {
+      "leistung": "Mutterschaftsgeld (SGB V, KVLG) und Arbeitgeberzuschuss nach § 20 MuSchG",
+      "regel": "Wird auf das Elterngeld angerechnet, soweit es der berechtigten Person für die Zeit ab dem Tag der Geburt zusteht. Ausgenommen ist das Mutterschaftsgeld nach § 19 Abs. 2 MuSchG. Lebensmonate, in denen solche Leistungen zustehen, gelten als Monate mit Basiselterngeld. Stehen die Einnahmen nur für einen Teil des Lebensmonats zu, werden sie nur anteilig angerechnet.",
+      "norm": "§ 3 Abs. 1 Satz 1 Nr. 1, Satz 2, § 4 Abs. 4 Satz 3 BEEG"
+    },
+    {
+      "leistung": "Dienst- und Anwärterbezüge während eines Beschäftigungsverbots",
+      "regel": "Bezüge und Zuschüsse nach beamten- oder soldatenrechtlichen Vorschriften für die Zeit eines Beschäftigungsverbots ab dem Tag der Geburt werden angerechnet.",
+      "norm": "§ 3 Abs. 1 Satz 1 Nr. 2 BEEG"
+    },
+    {
+      "leistung": "Vergleichbare Leistungen aus dem Ausland, Elterngeld für ein älteres Kind, Ersatz für Erwerbseinkommen",
+      "regel": "Werden nach § 3 Abs. 1 Satz 1 Nr. 3 bis 5 angerechnet; für Einnahmen nach Nr. 4 und 5 mindert sich der Anrechnungsbetrag um ein Zwölftel für jeden Kalendermonat im Bemessungszeitraum, in dem sie bezogen wurden.",
+      "norm": "§ 3 Abs. 1 Satz 1 Nr. 3 bis 5, Satz 3 BEEG"
+    },
+    {
+      "leistung": "Einkommen aus Erwerbstätigkeit während des Bezugs",
+      "regel": "Wird nicht angerechnet, sondern über den Unterschiedsbetrag zum Einkommen vor der Geburt berücksichtigt; dieses wird dabei mit höchstens 2 770 Euro angesetzt. Bei Basiselterngeld und Elterngeld Plus wird der Unterschiedsbetrag getrennt berechnet.",
+      "norm": "§ 2 Abs. 3 BEEG"
+    },
+    {
+      "leistung": "Anrechnungsfreier Betrag beim Elterngeld",
+      "regel": "Bis zu 300 Euro des Elterngeldes bleiben von der Anrechnung nach § 3 Abs. 1 frei, soweit nicht Mutterschaftsleistungen und vergleichbare Auslandsleistungen nach Nr. 1 bis 3 anzurechnen sind. Der Betrag erhöht sich bei Mehrlingen um 300 Euro je weiterem Kind und halbiert sich beim Elterngeld Plus.",
+      "norm": "§ 3 Abs. 2, § 4a Abs. 2 BEEG"
+    },
+    {
+      "leistung": "Andere Sozialleistungen, die vom Einkommen abhängen",
+      "regel": "Das Elterngeld und die nach § 3 angerechneten Einnahmen bleiben bis zu 300 Euro im Monat als Einkommen unberücksichtigt. Beim Elterngeld Plus gilt nur die Hälfte, bei Mehrlingsgeburten vervielfacht sich der Betrag mit der Zahl der Kinder. Die Ausnahme steht in § 10 Abs. 5: Bei Leistungen nach dem SGB II, SGB XII, § 6a BKGG und dem Asylbewerberleistungsgesetz gilt dieser Freibetrag nicht; dort bleiben Elterngeld und angerechnete Einnahmen nur in Höhe des Einkommens vor der Geburt, höchstens bis 300 Euro, unberücksichtigt. Mutterschaftsgeld nach § 19 MuSchG bleibt dort voll unberücksichtigt.",
+      "norm": "§ 10 Abs. 1, 3 bis 5 BEEG"
+    }
+  ],
+  "vorlaeufig_und_endgueltig": {
+    "norm": "§ 8 BEEG",
+    "wann_vorlaeufig": [
+      "Der Steuerbescheid für den letzten abgeschlossenen Veranlagungszeitraum vor der Geburt liegt bei Antragstellung nicht vor und es kann noch nicht angegeben werden, ob die Einkommensgrenze überschritten wird (§ 8 Abs. 3 Nr. 1)",
+      "Das Einkommen aus Erwerbstätigkeit vor der Geburt kann nicht ermittelt werden (§ 8 Abs. 3 Nr. 2)",
+      "Nach den Angaben im Antrag hat die berechtigte Person im Bezugszeitraum voraussichtlich Einkommen aus Erwerbstätigkeit (§ 8 Abs. 3 Nr. 3)"
+    ],
+    "folge": "Über die Höhe wird vorläufig entschieden, bis die jeweils erforderlichen Angaben nachgewiesen sind. Wurden im Antrag Angaben zum voraussichtlichen Einkommen gemacht, ist nach Ablauf des Bezugszeitraums das tatsächliche Einkommen nachzuweisen (§ 8 Abs. 1). Die vorläufige Höhe wird dann durch die endgültige ersetzt; weicht sie ab, folgt daraus eine Nachzahlung oder eine Rückforderung. Zusätzlich wird Elterngeld unter Widerrufsvorbehalt gezahlt, wenn im Antrag kein Einkommen im Bezug angegeben wurde und doch welches entsteht, oder wenn der Steuerbescheid fehlt und die Einkommensgrenze nach den Antragsangaben nicht überschritten wird (§ 8 Abs. 2).",
+    "hinweis": "Viele Elterngeldbescheide sind deshalb vorläufig. Ein vorläufiger Bescheid ist nicht das letzte Wort; die Aufforderung, Einkommensnachweise einzureichen, ist Teil des Verfahrens. Wie Nachzahlung und Rückforderung im Einzelnen abgewickelt werden, regeln die in § 26 BEEG in Bezug genommenen Vorschriften des SGB X."
+  },
+  "antragsfrist": {
+    "norm": "§ 7 Abs. 1 Satz 2 BEEG",
+    "regel": "Elterngeld wird rückwirkend nur für die letzten drei Lebensmonate vor Beginn des Lebensmonats geleistet, in dem der Antrag eingegangen ist. Eine feste Ausschlussfrist ab Geburt nennt § 7 nicht; maßgeblich ist, wann der Antrag eingeht. Auch nachträgliche Änderungen der gewählten Lebensmonate wirken nach § 7 Abs. 2 rückwirkend nur für die letzten drei Lebensmonate.",
+    "wortlaut_kurz": "Es wird rückwirkend nur für die letzten drei Lebensmonate vor Beginn des Lebensmonats geleistet, in dem der Antrag auf Elterngeld eingegangen ist."
+  },
+  "musterauszug": {
+    "absaetze": [
+      "Für Ihr Kind, geboren am 14. Juni 2026, wird Ihnen auf Ihren Antrag Elterngeld bewilligt. Das Elterngeld wird in Monatsbeträgen für Lebensmonate des Kindes gezahlt; der 1. Lebensmonat beginnt am 14. Juni 2026 und endet am 13. Juli 2026. Bewilligt werden Basiselterngeld für den 1. bis 9. Lebensmonat und Elterngeld Plus für den 10. bis 13. Lebensmonat.",
+      "Grundlage der Berechnung ist Ihr durchschnittliches monatliches Einkommen aus nichtselbstständiger Erwerbstätigkeit in den zwölf Kalendermonaten vor dem Kalendermonat der Geburt (Bemessungszeitraum). Kalendermonate, in denen Sie Mutterschaftsgeld bezogen haben, bleiben dabei unberücksichtigt. Die Abzüge für Steuern wurden nach der Steuerklasse berechnet, die in der Lohnabrechnung des letzten Monats des Bemessungszeitraums eingetragen war; die Abzüge für Sozialabgaben wurden mit den gesetzlichen Pauschalsätzen angesetzt.",
+      "Die Höhe des Elterngeldes wird vorläufig festgesetzt, weil Sie im Bezugszeitraum voraussichtlich Einkommen aus Erwerbstätigkeit haben. Über die endgültige Höhe wird nach Vorlage der Nachweise über Ihr tatsächliches Einkommen entschieden; dabei kann sich eine Nachzahlung oder eine Rückforderung ergeben. Das Ihnen zustehende Mutterschaftsgeld wird auf das Elterngeld angerechnet; die entsprechenden Lebensmonate gelten als Monate mit Basiselterngeld."
+    ],
+    "markierungen": [
+      {
+        "stelle": "Monatsbeträgen für Lebensmonate des Kindes",
+        "erklaerung": "Elterngeld wird nicht nach Kalendermonaten gezahlt, sondern für Lebensmonate. Der erste beginnt am Geburtstag des Kindes und endet am Tag vor dem entsprechenden Tag des Folgemonats, die Monate laufen also quer zum Kalender. Wer Zahlungszeiträume nachrechnet, muss deshalb vom Geburtstag aus zählen.",
+        "fundstelle": "§ 4 Abs. 2 Satz 1 BEEG"
+      },
+      {
+        "stelle": "Die Höhe des Elterngeldes wird vorläufig festgesetzt",
+        "erklaerung": "Vorläufig heißt, dass die Behörde die Höhe erst nach Nachweis der Angaben endgültig bestimmt. Das Gesetz sieht dies unter anderem vor, wenn im Bezugszeitraum Einkommen aus Erwerbstätigkeit erwartet wird. Nach Ablauf des Bezugszeitraums ist das tatsächliche Einkommen nachzuweisen.",
+        "fundstelle": "§ 8 Abs. 3 Nr. 3 und Abs. 1 BEEG"
+      },
+      {
+        "stelle": "Das Ihnen zustehende Mutterschaftsgeld wird auf das Elterngeld angerechnet",
+        "erklaerung": "Mutterschaftsgeld und der Arbeitgeberzuschuss, die für die Zeit ab dem Tag der Geburt zustehen, werden auf das Elterngeld angerechnet. Die betroffenen Lebensmonate zählen nach dem Gesetz als Monate mit Basiselterngeld, auch wenn daneben kein Elterngeld ausgezahlt wird.",
+        "fundstelle": "§ 3 Abs. 1 Satz 1 Nr. 1, § 4 Abs. 4 Satz 3 BEEG"
+      }
+    ]
+  },
+  "pruefpunkte": [
+    {
+      "bestandteil": "Bemessungszeitraum und ausgeklammerte Monate",
+      "legal_basis": "§ 2b Abs. 1 BEEG",
+      "pruefen": [
+        "Nennt der Bescheid den Bemessungszeitraum, also die zwölf Kalendermonate vor dem Geburtsmonat, und stimmen die Monate mit den vorgelegten Lohnabrechnungen überein?",
+        "Wurden Monate mit Mutterschaftsgeld, Mutterschutzfrist, schwangerschaftsbedingter Krankheit oder Elterngeldbezug für ein älteres Kind ausgeklammert? Das Gesetz sieht das von Amts wegen vor.",
+        "Bei Selbstständigen oder gemischten Einkünften: stimmt der zugrunde gelegte Veranlagungszeitraum mit § 2b Abs. 2 und 3 überein?"
+      ],
+      "hinweis": "Ob ein Verzicht auf die Ausklammerung von Monaten rechnerisch günstiger wäre, ist nur im Einzelfall zu beurteilen; das Gesetz verlangt dafür einen Antrag (§ 2b Abs. 1 Satz 3)."
+    },
+    {
+      "bestandteil": "Einkommen aus nichtselbstständiger Arbeit",
+      "legal_basis": "§ 2c Abs. 1 und 2 BEEG",
+      "pruefen": [
+        "Sind die Einnahmen aus den Lohn- und Gehaltsbescheinigungen übernommen worden, und entsprechen sie den Bescheinigungen Ihres Arbeitgebers?",
+        "Bei diesem Bescheidtyp ist häufig strittig, was als laufender Arbeitslohn und was als sonstiger Bezug gilt. Sonstige Bezüge im Sinne des Lohnsteuerabzugs bleiben außer Ansatz: Ist die Einordnung im Bescheid nachvollziehbar?"
+      ],
+      "hinweis": "Die Angaben in den Bescheinigungen gelten nach § 2c Abs. 2 Satz 2 als richtig und vollständig, solange nichts anderes feststeht."
+    },
+    {
+      "bestandteil": "Maßgebliche Steuerklasse, Steuerabzug und Sozialabgaben-Pauschalen",
+      "legal_basis": "§ 2c Abs. 3, § 2e Abs. 3, § 2f Abs. 1 BEEG",
+      "pruefen": [
+        "Welche Steuerklasse legt der Bescheid zugrunde, und stimmt sie mit der Bescheinigung für den letzten Monat im Bemessungszeitraum oder mit der Steuerklasse überein, die in den meisten Monaten galt?",
+        "Wurde ein Faktor nach § 39f EStG berücksichtigt, falls er in der Bescheinigung eingetragen war?",
+        "War im Bemessungszeitraum keine Steuerklasse eingetragen oder liegen Gewinneinkünfte vor, die höher sind als der Überschuss der Einnahmen: dann setzt das Gesetz die Steuerklasse IV ohne Faktor an.",
+        "Sind die Sozialabgaben-Pauschalen nur für die Zweige angesetzt, in denen Sie versicherungspflichtig waren? Das Gesetz rechnet mit Pauschalsätzen, nicht mit den tatsächlich abgeführten Beiträgen."
+      ],
+      "hinweis": "Dies beschreibt nur, welche Steuerklasse das Gesetz zugrunde legt, und enthält keine Empfehlung zur Wahl einer Steuerklasse."
+    },
+    {
+      "bestandteil": "Lebensmonate statt Kalendermonate und Aufteilung der Bezugsmonate",
+      "legal_basis": "§ 4 Abs. 2 und 3, § 7 Abs. 1 und 2 BEEG",
+      "pruefen": [
+        "Zählt der Bescheid ab dem Geburtstag des Kindes in Lebensmonaten, und entsprechen die bewilligten Lebensmonate dem, was Sie im Antrag gewählt haben?",
+        "Sind Basiselterngeld und Elterngeld Plus so bewilligt, wie beantragt? Ein Basismonat entspricht zwei Plus-Monaten.",
+        "Stimmen die Zahl der Monate und der Bezugsmonate des anderen Elternteils mit den gesetzlichen Höchstgrenzen überein?"
+      ],
+      "hinweis": "Eine Änderung der Aufteilung ist nach § 7 Abs. 2 nur eingeschränkt möglich: rückwirkend nur für die letzten drei Lebensmonate, und nach bereits erfolgter Auszahlung außer in Härtefällen nicht."
+    },
+    {
+      "bestandteil": "Anrechnung von Mutterschaftsgeld und Arbeitgeberzuschuss",
+      "legal_basis": "§ 3 Abs. 1 Nr. 1, § 4 Abs. 4 Satz 3 BEEG",
+      "pruefen": [
+        "Weist der Bescheid aus, welche Mutterschaftsleistungen für welche Lebensmonate angerechnet wurden?",
+        "Stimmt der Anrechnungszeitraum mit der Zeit ab dem Tag der Geburt überein, oder wurde auch Mutterschaftsgeld für die Zeit vor der Geburt angerechnet?",
+        "Wurde Mutterschaftsgeld nach § 19 Abs. 2 MuSchG angerechnet? Dieses ist ausdrücklich ausgenommen."
+      ],
+      "hinweis": "Die Lebensmonate mit Mutterschaftsleistungen zählen nach dem Gesetz als Basiselterngeld-Monate, auch wenn daneben nichts ausgezahlt wird."
+    },
+    {
+      "bestandteil": "Geschwisterbonus und Mehrlingszuschlag",
+      "legal_basis": "§ 2a BEEG",
+      "pruefen": [
+        "Lebt im Haushalt ein weiteres Kind unter drei Jahren oder leben zwei weitere Kinder unter sechs Jahren? Ist der Bonus dann im Bescheid ausgewiesen?",
+        "Ist der Bonus mit mindestens dem gesetzlichen Mindestbetrag angesetzt, beim Elterngeld Plus mit dem halbierten Mindestbetrag?",
+        "Bei Mehrlingsgeburten: ist der Zuschlag für das zweite und jedes weitere Kind enthalten?"
+      ],
+      "hinweis": "Der Bonus endet mit Ablauf des Monats, in dem die Altersvoraussetzung entfällt; ein Bescheid kann ihn daher nur für einen Teil der Bezugsmonate enthalten."
+    },
+    {
+      "bestandteil": "Einkommen im Bezugszeitraum und Elterngeld Plus",
+      "legal_basis": "§ 2 Abs. 3, § 4a Abs. 2 BEEG",
+      "pruefen": [
+        "Wurde das Einkommen während des Bezugs mit dem Unterschiedsbetrag zum Einkommen vor der Geburt gerechnet, und für Basis- und Plus-Monate getrennt?",
+        "Ist das Einkommen vor der Geburt mit höchstens 2 770 Euro angesetzt?",
+        "Beim Elterngeld Plus: ist der Betrag auf die Hälfte des Basiselterngeldes begrenzt, das ohne Einkommen zustünde?"
+      ],
+      "hinweis": "Wer 24 bis 32 Wochenstunden arbeitet, kann nach § 4b Partnerschaftsbonus beziehen; die Voraussetzung gilt dann für beide Elternteile."
+    },
+    {
+      "bestandteil": "Vorläufigkeit und Widerrufsvorbehalt",
+      "legal_basis": "§ 8 Abs. 2 und 3 BEEG",
+      "pruefen": [
+        "Trägt der Bescheid den Zusatz vorläufig oder unter Vorbehalt des Widerrufs, und nennt er den Grund?",
+        "Welche Nachweise verlangt er, und bis wann sollen sie vorgelegt werden?",
+        "Bei diesem Bescheidtyp folgt auf einen vorläufigen Bescheid häufig eine Nachzahlung oder Rückforderung: Ist erkennbar, welche Angaben im Antrag die Vorläufigkeit ausgelöst haben?"
+      ],
+      "hinweis": "Die endgültige Entscheidung ist ein neuer Bescheid mit eigener Rechtsbehelfsbelehrung und eigener Frist."
+    }
+  ],
+  "frist": {
+    "rechtsweg": "Sozialgericht",
+    "rechtsweg_begruendung": "§ 13 Abs. 1 BEEG weist öffentlich-rechtliche Streitigkeiten in Angelegenheiten der §§ 1 bis 12 den Gerichten der Sozialgerichtsbarkeit zu; die Rechtswegeröffnung durch Gesetz steht in § 51 Abs. 1 Nr. 10 SGG. Anders als beim Wohngeld und BAföG ist also nicht das Verwaltungsgericht zuständig.",
+    "rechtsbehelf": "Widerspruch nach § 84 SGG bei der Stelle, die den Bescheid erlassen hat; danach gegebenenfalls Klage zum Sozialgericht",
+    "dauer": "ein Monat ab Bekanntgabe",
+    "kette": [
+      {
+        "schritt": "Bekanntgabe eines mit der Post übermittelten Bescheids am vierten Tag nach Aufgabe zur Post",
+        "legal_basis": "§ 37 Abs. 2 Satz 1 SGB X",
+        "hinweis": "Im Zweifel muss die Behörde Zugang und Zeitpunkt nachweisen (§ 37 Abs. 2 Satz 3 SGB X)."
+      },
+      {
+        "schritt": "Elektronische Bescheide in Elterngeldangelegenheiten richten sich nicht nach § 37 Abs. 2a SGB X, sondern nach § 9 OZG: Bei Abruf über das Postfach des Nutzerkontos gilt der Bescheid am vierten Tag nach der Bereitstellung zum Abruf als bekannt gegeben",
+        "legal_basis": "§ 37 Abs. 2b SGB X i. V. m. § 9 Abs. 1 OZG",
+        "hinweis": "Die Einwilligung gilt als erteilt, wenn der Nutzer die elektronische Bekanntgabe nicht ausgeschlossen hat. Der vierte Tag zählt hier ab Bereitstellung, nicht ab Absendung."
+      },
+      {
+        "schritt": "Widerspruch binnen eines Monats nach Bekanntgabe, schriftlich, elektronisch oder zur Niederschrift bei der Stelle, die den Bescheid erlassen hat; bei Bekanntgabe im Ausland drei Monate",
+        "legal_basis": "§ 84 Abs. 1 SGG",
+        "hinweis": "Die Frist gilt auch als gewahrt, wenn der Widerspruch bei einer anderen inländischen Behörde eingeht (§ 84 Abs. 2 SGG)."
+      },
+      {
+        "schritt": "Die Frist beginnt am Tag nach der Bekanntgabe; die Monatsfrist endet am gleichlautenden Tag des Folgemonats, fehlt dieser Tag, mit dem Monatsende",
+        "legal_basis": "§ 64 Abs. 1 und 2 SGG"
+      },
+      {
+        "schritt": "Fällt das Fristende auf Sonnabend, Sonntag oder einen gesetzlichen Feiertag, endet die Frist mit Ablauf des nächsten Werktags",
+        "legal_basis": "§ 64 Abs. 3 SGG"
+      },
+      {
+        "schritt": "Fehlt die Rechtsbehelfsbelehrung oder ist sie unrichtig, ist der Rechtsbehelf binnen eines Jahres zulässig",
+        "legal_basis": "§ 66 Abs. 2 SGG"
+      },
+      {
+        "schritt": "Wer ohne Verschulden gehindert war, kann Wiedereinsetzung beantragen, binnen eines Monats nach Wegfall des Hindernisses",
+        "legal_basis": "§ 67 Abs. 1 und 2 SGG"
+      },
+      {
+        "schritt": "Widerspruch und Anfechtungsklage haben keine aufschiebende Wirkung; die Zahlung läuft nach dem Bescheid weiter, bis anders entschieden ist",
+        "legal_basis": "§ 13 Abs. 2 BEEG",
+        "hinweis": "Das ist eine Abweichung von der Grundregel des § 86a Abs. 1 SGG, nach der Widerspruch und Anfechtungsklage aufschiebende Wirkung haben."
+      },
+      {
+        "schritt": "Hat ein Widerspruchsverfahren stattgefunden, ist die Klage binnen eines Monats nach Bekanntgabe des Widerspruchsbescheids zu erheben",
+        "legal_basis": "§ 87 Abs. 1 und 2 SGG"
+      }
+    ],
+    "achtung": "Bei Elterngeld ist der Widerspruch nach § 84 SGG der Regelweg. Ein Widerspruch hält die Auszahlung anders als im sonstigen Sozialrecht nicht an, ändert aber auch nichts an einer bereits laufenden Zahlung. Ist die Rechtsbehelfsbelehrung des Bescheids fehlerhaft oder fehlt sie, gilt nach § 66 Abs. 2 SGG die Jahresfrist.",
+    "besonderheit": "Elterngeld wird nach § 7 Abs. 1 Satz 2 rückwirkend nur für die letzten drei Lebensmonate vor dem Antragsmonat geleistet. Wer den Antrag später stellt, verliert die davorliegenden Monate; diese Grenze steht in keiner Rechtsbehelfsbelehrung. Dasselbe gilt für eine nachträgliche Änderung der gewählten Lebensmonate, die nur für die letzten drei Lebensmonate verlangt werden kann und nach erfolgter Auszahlung außer in Härtefällen unzulässig ist (§ 7 Abs. 2).",
+    "rechnung_identisch": "Die Fristrechnung ist Tag für Tag dieselbe wie bei den anderen Sozialleistungen im SGG: vier Tage bis zur Bekanntgabe, dann ein Monat, dann Verschiebung auf den nächsten Werktag. Nur bei elektronischen Bescheiden über das Nutzerkonto zählen die vier Tage ab Bereitstellung.",
+    "wichtiger_als_die_widerspruchsfrist": "Die Antragsgrenze nach § 7 Abs. 1 Satz 2 BEEG: Für Lebensmonate, die mehr als drei Lebensmonate vor dem Antragsmonat liegen, wird nichts geleistet. Eine verspätete Antragstellung lässt sich auch durch Widerspruch nicht nachholen. Die Möglichkeit, einen unanfechtbaren Bescheid auf Antrag zurücknehmen zu lassen, steht in § 44 SGB X; Sozialleistungen werden dann längstens für bis zu vier Jahre vor der Rücknahme erbracht."
+  },
+  "belege": [
+    {
+      "aussage": "Ersatzrate 67 Prozent",
+      "norm": "§ 2 Abs. 1 Satz 1 BEEG",
+      "wortlaut": "Elterngeld wird in Höhe von 67 Prozent des Einkommens aus Erwerbstätigkeit vor der Geburt des Kindes gewährt."
+    },
+    {
+      "aussage": "Höchstbetrag 1 800 Euro nur für volle Lebensmonate ohne Einkommen",
+      "norm": "§ 2 Abs. 1 Satz 2 BEEG",
+      "wortlaut": "Es wird bis zu einem Höchstbetrag von 1 800 Euro monatlich für volle Lebensmonate gezahlt, in denen die berechtigte Person kein Einkommen aus Erwerbstätigkeit hat."
+    },
+    {
+      "aussage": "Anhebung unter 1 000 Euro, bis zu 100 Prozent",
+      "norm": "§ 2 Abs. 2 Satz 1 BEEG",
+      "wortlaut": "In den Fällen, in denen das Einkommen aus Erwerbstätigkeit vor der Geburt geringer als 1 000 Euro war, erhöht sich der Prozentsatz von 67 Prozent um 0,1 Prozentpunkte für je 2 Euro … auf bis zu 100 Prozent."
+    },
+    {
+      "aussage": "Absenkung über 1 200 Euro, bis zu 65 Prozent",
+      "norm": "§ 2 Abs. 2 Satz 2 BEEG",
+      "wortlaut": "In den Fällen, in denen das Einkommen aus Erwerbstätigkeit vor der Geburt höher als 1 200 Euro war, sinkt der Prozentsatz von 67 Prozent um 0,1 Prozentpunkte für je 2 Euro … auf bis zu 65 Prozent."
+    },
+    {
+      "aussage": "Einkommen vor der Geburt höchstens 2 770 Euro anzusetzen; Unterschiedsbetrag",
+      "norm": "§ 2 Abs. 3 Satz 1 und 2 BEEG",
+      "wortlaut": "Als Einkommen aus Erwerbstätigkeit vor der Geburt ist dabei höchstens der Betrag von 2 770 Euro anzusetzen."
+    },
+    {
+      "aussage": "Unterschiedsbetrag bei Einkommen nach der Geburt",
+      "norm": "§ 2 Abs. 3 Satz 1 BEEG",
+      "wortlaut": "wird Elterngeld in Höhe des nach Absatz 1 oder 2 maßgeblichen Prozentsatzes des Unterschiedsbetrages dieser Einkommen aus Erwerbstätigkeit gezahlt"
+    },
+    {
+      "aussage": "Mindestbetrag 300 Euro, auch ohne Einkommen vor der Geburt",
+      "norm": "§ 2 Abs. 4 BEEG",
+      "wortlaut": "Elterngeld wird mindestens in Höhe von 300 Euro gezahlt. Dies gilt auch, wenn die berechtigte Person vor der Geburt des Kindes kein Einkommen aus Erwerbstätigkeit hat."
+    },
+    {
+      "aussage": "Geschwisterbonus 10 Prozent, mindestens 75 Euro",
+      "norm": "§ 2a Abs. 1 BEEG",
+      "wortlaut": "wird das Elterngeld um 10 Prozent, mindestens jedoch um 75 Euro erhöht (Geschwisterbonus)"
+    },
+    {
+      "aussage": "Geschwisterbonus: zwei Kinder unter drei Jahren",
+      "norm": "§ 2a Abs. 1 Satz 1 Nr. 1 BEEG",
+      "wortlaut": "zwei Kindern, die noch nicht drei Jahre alt sind"
+    },
+    {
+      "aussage": "Geschwisterbonus: drei oder mehr Kinder unter sechs Jahren",
+      "norm": "§ 2a Abs. 1 Satz 1 Nr. 2 BEEG",
+      "wortlaut": "drei oder mehr Kindern, die noch nicht sechs Jahre alt sind"
+    },
+    {
+      "aussage": "Altersgrenze 14 Jahre bei Kindern mit Behinderung",
+      "norm": "§ 2a Abs. 2 Satz 3 BEEG",
+      "wortlaut": "Für Kinder mit Behinderung im Sinne von § 2 Absatz 1 Satz 1 des Neunten Buches Sozialgesetzbuch liegt die Altersgrenze nach Absatz 1 Satz 1 bei 14 Jahren."
+    },
+    {
+      "aussage": "Geschwisterbonus endet mit Ablauf des Monats",
+      "norm": "§ 2a Abs. 3 BEEG",
+      "wortlaut": "Der Anspruch auf den Geschwisterbonus endet mit Ablauf des Monats, in dem eine der in Absatz 1 genannten Anspruchsvoraussetzungen entfällt."
+    },
+    {
+      "aussage": "Mehrlingszuschlag 300 Euro je weiterem Kind",
+      "norm": "§ 2a Abs. 4 BEEG",
+      "wortlaut": "Bei Mehrlingsgeburten erhöht sich das Elterngeld um je 300 Euro für das zweite und jedes weitere Kind (Mehrlingszuschlag)."
+    },
+    {
+      "aussage": "Bemessungszeitraum: zwölf Kalendermonate vor dem Geburtsmonat",
+      "norm": "§ 2b Abs. 1 Satz 1 BEEG",
+      "wortlaut": "sind die zwölf Kalendermonate vor dem Kalendermonat der Geburt des Kindes maßgeblich"
+    },
+    {
+      "aussage": "Ausgeklammert: Mutterschutzfristen, Mutterschaftsgeld",
+      "norm": "§ 2b Abs. 1 Satz 2 Nr. 2 BEEG",
+      "wortlaut": "während der Schutzfristen nach § 3 des Mutterschutzgesetzes nicht beschäftigt werden durfte oder Mutterschaftsgeld nach dem Fünften Buch Sozialgesetzbuch"
+    },
+    {
+      "aussage": "Ausgeklammert: Elterngeldbezug für älteres Kind",
+      "norm": "§ 2b Abs. 1 Satz 2 Nr. 1 BEEG",
+      "wortlaut": "Elterngeld für ein älteres Kind bezogen hat"
+    },
+    {
+      "aussage": "Ausgeklammert: schwangerschaftsbedingte Krankheit",
+      "norm": "§ 2b Abs. 1 Satz 2 Nr. 3 BEEG",
+      "wortlaut": "eine Krankheit hatte, die maßgeblich durch eine Schwangerschaft bedingt war"
+    },
+    {
+      "aussage": "Ausgeklammert: Wehr- oder Zivildienst",
+      "norm": "§ 2b Abs. 1 Satz 2 Nr. 4 BEEG",
+      "wortlaut": "Wehrdienst nach dem Wehrpflichtgesetz oder nach dem Vierten Abschnitt des Soldatengesetzes oder Zivildienst nach dem Zivildienstgesetz geleistet hat"
+    },
+    {
+      "aussage": "Verzicht auf Ausklammerung nur auf Antrag",
+      "norm": "§ 2b Abs. 1 Satz 3 BEEG",
+      "wortlaut": "Abweichend von Satz 2 sind Kalendermonate im Sinne des Satzes 2 Nummer 1 bis 4 auf Antrag der berechtigten Person zu berücksichtigen."
+    },
+    {
+      "aussage": "COVID-Ausklammerung auf Antrag, 1. März 2020 bis 23. September 2022",
+      "norm": "§ 2b Abs. 1 Satz 4 BEEG",
+      "wortlaut": "für die Zeit vom 1. März 2020 bis zum Ablauf des 23. September 2022 auch solche Kalendermonate unberücksichtigt"
+    },
+    {
+      "aussage": "Selbstständige: Gewinnermittlungszeiträume des letzten Veranlagungszeitraums",
+      "norm": "§ 2b Abs. 2 Satz 1 BEEG",
+      "wortlaut": "sind die jeweiligen steuerlichen Gewinnermittlungszeiträume maßgeblich, die dem letzten abgeschlossenen steuerlichen Veranlagungszeitraum vor der Geburt des Kindes zugrunde liegen"
+    },
+    {
+      "aussage": "Bei Gewinneinkünften im Bemessungszeitraum zählt der Veranlagungszeitraum",
+      "norm": "§ 2b Abs. 3 Satz 1 BEEG",
+      "wortlaut": "ist für die Ermittlung des Einkommens aus nichtselbstständiger Erwerbstätigkeit vor der Geburt der letzte abgeschlossene steuerliche Veranlagungszeitraum vor der Geburt maßgeblich"
+    },
+    {
+      "aussage": "Rückausnahme bei Gewinneinkünften unter 35 Euro im Monat",
+      "norm": "§ 2b Abs. 4 Satz 1 BEEG",
+      "wortlaut": "durchschnittlich weniger als 35 Euro im Kalendermonat betrug"
+    },
+    {
+      "aussage": "Überschuss über ein Zwölftel des Arbeitnehmer-Pauschbetrags",
+      "norm": "§ 2c Abs. 1 Satz 1 BEEG",
+      "wortlaut": "Der monatlich durchschnittlich zu berücksichtigende Überschuss der Einnahmen aus nichtselbstständiger Arbeit in Geld oder Geldeswert über ein Zwölftel des Arbeitnehmer-Pauschbetrags"
+    },
+    {
+      "aussage": "Sonstige Bezüge bleiben außer Ansatz",
+      "norm": "§ 2c Abs. 1 Satz 2 BEEG",
+      "wortlaut": "Nicht berücksichtigt werden Einnahmen, die im Lohnsteuerabzugsverfahren nach den lohnsteuerlichen Vorgaben als sonstige Bezüge zu behandeln sind."
+    },
+    {
+      "aussage": "Grundlage sind die Lohn- und Gehaltsbescheinigungen",
+      "norm": "§ 2c Abs. 2 BEEG",
+      "wortlaut": "Grundlage der Ermittlung der Einnahmen sind die Angaben in den für die maßgeblichen Kalendermonate erstellten Lohn- und Gehaltsbescheinigungen des Arbeitgebers."
+    },
+    {
+      "aussage": "Abzugsmerkmale aus der Bescheinigung des letzten Monats, sonst Mehrheit der Monate",
+      "norm": "§ 2c Abs. 3 BEEG",
+      "wortlaut": "sind die Angaben in der Lohn- und Gehaltsbescheinigung, die für den letzten Kalendermonat im Bemessungszeitraum mit Einnahmen nach Absatz 1 erstellt wurde."
+    },
+    {
+      "aussage": "Abweichende Angabe, wenn sie in der überwiegenden Zahl der Monate galt",
+      "norm": "§ 2c Abs. 3 Satz 2 BEEG",
+      "wortlaut": "ist die von der Angabe nach Satz 1 abweichende Angabe maßgeblich, wenn sie in der überwiegenden Zahl der Kalendermonate des Bemessungszeitraums gegolten hat"
+    },
+    {
+      "aussage": "Arbeitnehmer-Pauschbetrag nach Fassung am 1. Januar des Vorjahres der Geburt",
+      "norm": "§ 2c Abs. 1 Satz 4 BEEG",
+      "wortlaut": "in der am 1. Januar des Kalenderjahres vor der Geburt des Kindes für dieses Jahr geltenden Fassung"
+    },
+    {
+      "aussage": "Betriebsausgaben 25 Prozent oder tatsächliche auf Antrag",
+      "norm": "§ 2d Abs. 3 Satz 2 BEEG",
+      "wortlaut": "Als Betriebsausgaben sind 25 Prozent der zugrunde gelegten Einnahmen oder auf Antrag die damit zusammenhängenden tatsächlichen Betriebsausgaben anzusetzen."
+    },
+    {
+      "aussage": "Steuerabzüge: Einkommensteuer, Solidaritätszuschlag, Kirchensteuer",
+      "norm": "§ 2e Abs. 1 Satz 1 BEEG",
+      "wortlaut": "Als Abzüge für Steuern sind Beträge für die Einkommensteuer, den Solidaritätszuschlag und, wenn die berechtigte Person kirchensteuerpflichtig ist, die Kirchensteuer zu berücksichtigen."
+    },
+    {
+      "aussage": "Berechnung nach Programmablaufplan vom 1. Januar des Vorjahres der Geburt",
+      "norm": "§ 2e Abs. 1 Satz 2 BEEG",
+      "wortlaut": "auf Grundlage einer Berechnung anhand des am 1. Januar des Kalenderjahres vor der Geburt des Kindes für dieses Jahr geltenden Programmablaufplans"
+    },
+    {
+      "aussage": "Steuerklasse und Faktor; Steuerklasse VI bleibt unberücksichtigt",
+      "norm": "§ 2e Abs. 3 Satz 1 BEEG",
+      "wortlaut": "unter Berücksichtigung der Steuerklasse und des Faktors nach § 39f des Einkommensteuergesetzes nach § 2c Absatz 3 ergibt; die Steuerklasse VI bleibt unberücksichtigt"
+    },
+    {
+      "aussage": "Ersatzweise Steuerklasse IV ohne Faktor",
+      "norm": "§ 2e Abs. 3 Satz 2 BEEG",
+      "wortlaut": "ist als Abzug für die Einkommensteuer der Betrag anzusetzen, der sich unter Berücksichtigung der Steuerklasse IV ohne Berücksichtigung eines Faktors nach § 39f des Einkommensteuergesetzes ergibt"
+    },
+    {
+      "aussage": "Kirchensteuer mit 8 Prozent",
+      "norm": "§ 2e Abs. 5 BEEG",
+      "wortlaut": "unter Anwendung eines Kirchensteuersatzes von 8 Prozent für die Einkommensteuer nach Absatz 3 ergibt"
+    },
+    {
+      "aussage": "Vorsorgepauschale und Arbeitnehmer-Pauschbetrag als Pauschalen",
+      "norm": "§ 2e Abs. 2 Satz 2 BEEG",
+      "wortlaut": "der Arbeitnehmer-Pauschbetrag nach § 9a Satz 1 Nummer 1 Buchstabe a des Einkommensteuergesetzes, wenn die berechtigte Person von ihr zu versteuernde Einnahmen hat"
+    },
+    {
+      "aussage": "Sozialabgaben 9 Prozent Kranken- und Pflegeversicherung",
+      "norm": "§ 2f Abs. 1 Satz 2 Nr. 1 BEEG",
+      "wortlaut": "9 Prozent für die Kranken- und Pflegeversicherung, falls die berechtigte Person in der gesetzlichen Krankenversicherung"
+    },
+    {
+      "aussage": "Sozialabgaben 10 Prozent Rentenversicherung",
+      "norm": "§ 2f Abs. 1 Satz 2 Nr. 2 BEEG",
+      "wortlaut": "10 Prozent für die Rentenversicherung, falls die berechtigte Person in der gesetzlichen Rentenversicherung oder einer vergleichbaren Einrichtung versicherungspflichtig gewesen ist"
+    },
+    {
+      "aussage": "Sozialabgaben 2 Prozent Arbeitsförderung",
+      "norm": "§ 2f Abs. 1 Satz 2 Nr. 3 BEEG",
+      "wortlaut": "2 Prozent für die Arbeitsförderung, falls die berechtigte Person nach dem Dritten Buch Sozialgesetzbuch versicherungspflichtig gewesen ist"
+    },
+    {
+      "aussage": "Andere beitragsrechtliche Maßgaben bleiben außer Betracht",
+      "norm": "§ 2f Abs. 3 BEEG",
+      "wortlaut": "Andere Maßgaben zur Bestimmung der sozialversicherungsrechtlichen Beitragsbemessungsgrundlagen werden nicht berücksichtigt."
+    },
+    {
+      "aussage": "Mutterschaftsgeld wird ab dem Geburtstag angerechnet",
+      "norm": "§ 3 Abs. 1 Satz 1 Nr. 1 BEEG",
+      "wortlaut": "Mutterschaftsleistungen a) in Form des Mutterschaftsgeldes nach dem Fünften Buch Sozialgesetzbuch"
+    },
+    {
+      "aussage": "Mutterschaftsgeld und Arbeitgeberzuschuss nur für die Zeit ab dem Tag der Geburt",
+      "norm": "§ 3 Abs. 1 Satz 1 Nr. 1 BEEG",
+      "wortlaut": "die der berechtigten Person für die Zeit ab dem Tag der Geburt des Kindes zustehen"
+    },
+    {
+      "aussage": "Ausnahme: Mutterschaftsgeld nach § 19 Abs. 2 MuSchG",
+      "norm": "§ 3 Abs. 1 Satz 1 Nr. 1 Buchst. a BEEG",
+      "wortlaut": "mit Ausnahme des Mutterschaftsgeldes nach § 19 Absatz 2 des Mutterschutzgesetzes"
+    },
+    {
+      "aussage": "Zuschuss zum Mutterschaftsgeld nach § 20 MuSchG",
+      "norm": "§ 3 Abs. 1 Satz 1 Nr. 1 Buchst. b BEEG",
+      "wortlaut": "in Form des Zuschusses zum Mutterschaftsgeld nach § 20 des Mutterschutzgesetzes"
+    },
+    {
+      "aussage": "Ersatz für Erwerbseinkommen wird angerechnet",
+      "norm": "§ 3 Abs. 1 Satz 1 Nr. 5 BEEG",
+      "wortlaut": "Einnahmen, die der berechtigten Person als Ersatz für Erwerbseinkommen zustehen"
+    },
+    {
+      "aussage": "Teilmonatige Einnahmen nur anteilig",
+      "norm": "§ 3 Abs. 1 Satz 2 BEEG",
+      "wortlaut": "Stehen der berechtigten Person die Einnahmen nur für einen Teil des Lebensmonats des Kindes zu, sind sie nur auf den entsprechenden Teil des Elterngeldes anzurechnen."
+    },
+    {
+      "aussage": "Anrechnungsfreier Betrag 300 Euro, nicht bei Mutterschaftsleistungen",
+      "norm": "§ 3 Abs. 2 Satz 1 BEEG",
+      "wortlaut": "Bis zu einem Betrag von 300 Euro ist das Elterngeld von der Anrechnung nach Absatz 1 frei, soweit nicht Einnahmen nach Absatz 1 Satz 1 Nummer 1 bis 3 auf das Elterngeld anzurechnen sind."
+    },
+    {
+      "aussage": "Freibetrag bei Mehrlingen plus 300 Euro je weiterem Kind",
+      "norm": "§ 3 Abs. 2 Satz 2 BEEG",
+      "wortlaut": "Dieser Betrag erhöht sich bei Mehrlingsgeburten um je 300 Euro für das zweite und jedes weitere Kind."
+    },
+    {
+      "aussage": "Basiselterngeld bis 14. Lebensmonat, Elterngeld Plus bis 32. Lebensmonat",
+      "norm": "§ 4 Abs. 1 Satz 3 und 4 BEEG",
+      "wortlaut": "Basiselterngeld kann bis zur Vollendung des 14. Lebensmonats des Kindes bezogen werden. Elterngeld Plus kann bis zur Vollendung des 32. Lebensmonats bezogen werden"
+    },
+    {
+      "aussage": "Monatsbeträge für Lebensmonate des Kindes",
+      "norm": "§ 4 Abs. 2 Satz 1 BEEG",
+      "wortlaut": "Elterngeld wird in Monatsbeträgen für Lebensmonate des Kindes gezahlt."
+    },
+    {
+      "aussage": "Anspruch endet mit Ablauf des Lebensmonats, in dem eine Voraussetzung entfällt",
+      "norm": "§ 4 Abs. 2 Satz 2 BEEG",
+      "wortlaut": "Der Anspruch endet mit dem Ablauf des Lebensmonats, in dem eine Anspruchsvoraussetzung entfallen ist."
+    },
+    {
+      "aussage": "Zwölf Monatsbeträge gemeinsam",
+      "norm": "§ 4 Abs. 3 Satz 1 BEEG",
+      "wortlaut": "Die Eltern haben gemeinsam Anspruch auf zwölf Monatsbeträge Basiselterngeld."
+    },
+    {
+      "aussage": "Zwei Partnermonate bei gemindertem Einkommen",
+      "norm": "§ 4 Abs. 3 Satz 2 BEEG",
+      "wortlaut": "Ist das Einkommen aus Erwerbstätigkeit eines Elternteils in zwei Lebensmonaten gemindert, haben die Eltern gemeinsam Anspruch auf zwei weitere Monate Basiselterngeld (Partnermonate)."
+    },
+    {
+      "aussage": "Ein Basismonat gegen zwei Plus-Monate",
+      "norm": "§ 4 Abs. 3 Satz 3 BEEG",
+      "wortlaut": "Statt für einen Lebensmonat Basiselterngeld zu beanspruchen, kann die berechtigte Person jeweils zwei Lebensmonate Elterngeld Plus beziehen."
+    },
+    {
+      "aussage": "Je Elternteil höchstens zwölf Monate Basiselterngeld plus vier Bonusmonate",
+      "norm": "§ 4 Abs. 4 Satz 1 BEEG",
+      "wortlaut": "Ein Elternteil hat Anspruch auf höchstens zwölf Monatsbeträge Basiselterngeld zuzüglich der höchstens vier zustehenden Monatsbeträge Partnerschaftsbonus nach § 4b."
+    },
+    {
+      "aussage": "Mindestens zwei Lebensmonate",
+      "norm": "§ 4 Abs. 4 Satz 2 BEEG",
+      "wortlaut": "Ein Elternteil hat nur Anspruch auf Elterngeld, wenn er es mindestens für zwei Lebensmonate bezieht."
+    },
+    {
+      "aussage": "Monate mit Mutterschaftsleistungen gelten als Basiselterngeldmonate",
+      "norm": "§ 4 Abs. 4 Satz 3 BEEG",
+      "wortlaut": "Lebensmonate des Kindes, in denen einem Elternteil nach § 3 Absatz 1 Satz 1 Nummer 1 bis 3 anzurechnende Leistungen"
+    },
+    {
+      "aussage": "Verlängerung bei Frühgeburt: 13 Monatsbeträge ab sechs Wochen",
+      "norm": "§ 4 Abs. 5 Satz 1 Nr. 1 BEEG",
+      "wortlaut": "mindestens sechs Wochen vor dem voraussichtlichen Tag der Entbindung geboren wurde: 13 Monatsbeträge Basiselterngeld"
+    },
+    {
+      "aussage": "Verlängerung bei Frühgeburt: 16 Monatsbeträge ab 16 Wochen",
+      "norm": "§ 4 Abs. 5 Satz 1 Nr. 4 BEEG",
+      "wortlaut": "mindestens 16 Wochen vor dem voraussichtlichen Tag der Entbindung geboren wurde: 16 Monatsbeträge Basiselterngeld"
+    },
+    {
+      "aussage": "Gleichzeitiger Basiselterngeld-Bezug nur in einem der ersten zwölf Lebensmonate",
+      "norm": "§ 4 Abs. 6 Satz 1 BEEG",
+      "wortlaut": "Ein gleichzeitiger Bezug von Basiselterngeld beider Elternteile ist nur in einem der ersten zwölf Lebensmonate des Kindes möglich."
+    },
+    {
+      "aussage": "Elterngeld Plus darf gleichzeitig bezogen werden",
+      "norm": "§ 4 Abs. 6 Satz 2 BEEG",
+      "wortlaut": "so kann dieser Elternteil das Elterngeld Plus gleichzeitig zum Bezug von Basiselterngeld oder von Elterngeld Plus des anderen Elternteils beziehen"
+    },
+    {
+      "aussage": "Ausnahmen: Mehrlinge, Frühgeburten, Behinderung, Geschwisterbonus-Kinder",
+      "norm": "§ 4 Abs. 6 Satz 4 BEEG",
+      "wortlaut": "können bei Mehrlingsgeburten und Frühgeburten im Sinne des Absatzes 5 sowie bei Kindern, bei denen eine Behinderung im Sinne von § 2 Absatz 1 Satz 1 des Neunten Buches Sozialgesetzbuch ärztlich festgestellt wird"
+    },
+    {
+      "aussage": "Basiselterngeld wird allein nach §§ 2 bis 3 ermittelt",
+      "norm": "§ 4a Abs. 1 BEEG",
+      "wortlaut": "Basiselterngeld wird allein nach den Vorgaben der §§ 2 bis 3 ermittelt."
+    },
+    {
+      "aussage": "Elterngeld Plus höchstens halbes Basiselterngeld",
+      "norm": "§ 4a Abs. 2 Satz 2 BEEG",
+      "wortlaut": "Das Elterngeld Plus beträgt monatlich höchstens die Hälfte des Basiselterngeldes"
+    },
+    {
+      "aussage": "Beim Plus halbieren sich Mindestbetrag, Bonus-Mindestbetrag, Zuschlag, Freibetrag",
+      "norm": "§ 4a Abs. 2 Satz 3 BEEG",
+      "wortlaut": "halbieren sich: 1. der Mindestbetrag für das Elterngeld nach § 2 Absatz 4 Satz 1"
+    },
+    {
+      "aussage": "Partnerschaftsbonus: 24 bis 32 Wochenstunden",
+      "norm": "§ 4b Abs. 1 Nr. 1 BEEG",
+      "wortlaut": "nicht weniger als 24 und nicht mehr als 32 Wochenstunden im Durchschnitt des Lebensmonats erwerbstätig sind"
+    },
+    {
+      "aussage": "Partnerschaftsbonus: höchstens vier Monate, mindestens zwei",
+      "norm": "§ 4b Abs. 2 BEEG",
+      "wortlaut": "Die Eltern haben je Elternteil Anspruch auf höchstens vier Monatsbeträge Partnerschaftsbonus. … jeweils für mindestens zwei Lebensmonate in Anspruch nehmen."
+    },
+    {
+      "aussage": "Partnerschaftsbonus nur gleichzeitig und aufeinanderfolgend",
+      "norm": "§ 4b Abs. 3 BEEG",
+      "wortlaut": "Die Eltern können den Partnerschaftsbonus nur gleichzeitig und in aufeinander folgenden Lebensmonaten beziehen."
+    },
+    {
+      "aussage": "Alleiniger Bezug der Partnermonate unter Voraussetzungen",
+      "norm": "§ 4c Abs. 1 BEEG",
+      "wortlaut": "Ein Elternteil kann abweichend von § 4 Absatz 4 Satz 1 zusätzlich auch das Elterngeld für die Partnermonate nach § 4 Absatz 3 Satz 2 beziehen"
+    },
+    {
+      "aussage": "Alleiniger Bezug: zwei bis vier Monate mit 24 bis 32 Wochenstunden",
+      "norm": "§ 4c Abs. 2 BEEG",
+      "wortlaut": "in mindestens zwei bis höchstens vier aufeinander folgenden Lebensmonaten nicht weniger als 24 und nicht mehr als 32 Wochenstunden im Durchschnitt des Lebensmonats erwerbstätig ist"
+    },
+    {
+      "aussage": "Eltern bestimmen die Aufteilung der Monatsbeträge",
+      "norm": "§ 5 Abs. 1 BEEG",
+      "wortlaut": "bestimmen sie, wer von ihnen die Monatsbeträge für welche Lebensmonate des Kindes in Anspruch nimmt"
+    },
+    {
+      "aussage": "Rückwirkung nur für die letzten drei Lebensmonate vor dem Antragsmonat",
+      "norm": "§ 7 Abs. 1 Satz 2 BEEG",
+      "wortlaut": "Es wird rückwirkend nur für die letzten drei Lebensmonate vor Beginn des Lebensmonats geleistet, in dem der Antrag auf Elterngeld eingegangen ist."
+    },
+    {
+      "aussage": "Antrag schriftlich",
+      "norm": "§ 7 Abs. 1 Satz 1 BEEG",
+      "wortlaut": "Elterngeld ist schriftlich zu beantragen."
+    },
+    {
+      "aussage": "Änderung der Monatswahl bis Ende des Bezugszeitraums",
+      "norm": "§ 7 Abs. 2 Satz 1 BEEG",
+      "wortlaut": "Die im Antrag getroffenen Entscheidungen können bis zum Ende des Bezugszeitraums geändert werden."
+    },
+    {
+      "aussage": "Änderung rückwirkend nur drei Lebensmonate",
+      "norm": "§ 7 Abs. 2 Satz 2 BEEG",
+      "wortlaut": "Eine Änderung kann rückwirkend nur für die letzten drei Lebensmonate vor Beginn des Lebensmonats verlangt werden, in dem der Änderungsantrag eingegangen ist."
+    },
+    {
+      "aussage": "Änderung nach Auszahlung nur in Härtefällen",
+      "norm": "§ 7 Abs. 2 Satz 3 BEEG",
+      "wortlaut": "Sie ist außer in den Fällen besonderer Härte unzulässig, soweit Monatsbeträge bereits ausgezahlt sind."
+    },
+    {
+      "aussage": "Plus-Monat nachträglich in Basiselterngeld umwandelbar",
+      "norm": "§ 7 Abs. 2 Satz 4 BEEG",
+      "wortlaut": "kann für einen Lebensmonat, in dem bereits Elterngeld Plus bezogen wurde, nachträglich Basiselterngeld beantragt werden"
+    },
+    {
+      "aussage": "Nachweis des tatsächlichen Einkommens nach Ablauf des Bezugszeitraums",
+      "norm": "§ 8 Abs. 1 BEEG",
+      "wortlaut": "ist nach Ablauf des Bezugszeitraums für diese Zeit das tatsächliche Einkommen aus Erwerbstätigkeit nachzuweisen"
+    },
+    {
+      "aussage": "Widerrufsvorbehalt bei erwartetem Nulleinkommen",
+      "norm": "§ 8 Abs. 2 Satz 1 BEEG",
+      "wortlaut": "unter dem Vorbehalt des Widerrufs für den Fall gezahlt, dass sie entgegen ihren Angaben im Antrag Einkommen aus Erwerbstätigkeit hat"
+    },
+    {
+      "aussage": "Widerrufsvorbehalt bei fehlendem Steuerbescheid und Einkommensgrenze",
+      "norm": "§ 8 Abs. 2 Satz 2 BEEG",
+      "wortlaut": "wird das Elterngeld unter dem Vorbehalt des Widerrufs für den Fall gezahlt, dass entgegen den Angaben im Antrag die Beträge nach § 1 Absatz 8 überschritten werden"
+    },
+    {
+      "aussage": "Vorläufige Entscheidung bis zum Nachweis",
+      "norm": "§ 8 Abs. 3 BEEG",
+      "wortlaut": "Über die Höhe des Elterngeldes wird bis zum Nachweis der jeweils erforderlichen Angaben vorläufig unter Berücksichtigung der glaubhaft gemachten Angaben entschieden"
+    },
+    {
+      "aussage": "Vorläufig: Steuerbescheid liegt nicht vor",
+      "norm": "§ 8 Abs. 3 Nr. 1 BEEG",
+      "wortlaut": "zum Zeitpunkt der Antragstellung der Steuerbescheid für den letzten abgeschlossenen Veranlagungszeitraum vor der Geburt des Kindes nicht vorliegt"
+    },
+    {
+      "aussage": "Vorläufig: Einkommen vor der Geburt nicht ermittelbar",
+      "norm": "§ 8 Abs. 3 Nr. 2 BEEG",
+      "wortlaut": "das Einkommen aus Erwerbstätigkeit vor der Geburt nicht ermittelt werden kann"
+    },
+    {
+      "aussage": "Vorläufig: voraussichtliches Einkommen im Bezugszeitraum",
+      "norm": "§ 8 Abs. 3 Nr. 3 BEEG",
+      "wortlaut": "die berechtigte Person nach den Angaben im Antrag auf Elterngeld im Bezugszeitraum voraussichtlich Einkommen aus Erwerbstätigkeit hat"
+    },
+    {
+      "aussage": "Freibetrag nach § 10: 300 Euro im Monat",
+      "norm": "§ 10 Abs. 1 BEEG",
+      "wortlaut": "bis zu einer Höhe von insgesamt 300 Euro im Monat als Einkommen unberücksichtigt"
+    },
+    {
+      "aussage": "Bei Elterngeld Plus nur die Hälfte des Freibetrags",
+      "norm": "§ 10 Abs. 3 BEEG",
+      "wortlaut": "Soweit die berechtigte Person Elterngeld Plus bezieht, bleibt das Elterngeld nur bis zur Hälfte des Anrechnungsfreibetrags"
+    },
+    {
+      "aussage": "Freibetrag vervielfacht sich bei Mehrlingen",
+      "norm": "§ 10 Abs. 4 BEEG",
+      "wortlaut": "vervielfachen sich bei Mehrlingsgeburten mit der Zahl der geborenen Kinder"
+    },
+    {
+      "aussage": "Ausnahme: SGB II, SGB XII, Kinderzuschlag, AsylbLG",
+      "norm": "§ 10 Abs. 5 Satz 1 BEEG",
+      "wortlaut": "Die Absätze 1 bis 4 gelten nicht bei Leistungen nach dem Zweiten Buch Sozialgesetzbuch, dem Zwölften Buch Sozialgesetzbuch, § 6a des Bundeskindergeldgesetzes und dem Asylbewerberleistungsgesetz."
+    },
+    {
+      "aussage": "Bei diesen Leistungen Freibetrag nur in Höhe des früheren Erwerbseinkommens, bis 300 Euro",
+      "norm": "§ 10 Abs. 5 Satz 2 BEEG",
+      "wortlaut": "in Höhe des nach § 2 Absatz 1 berücksichtigten Einkommens aus Erwerbstätigkeit vor der Geburt bis zu 300 Euro im Monat als Einkommen unberücksichtigt"
+    },
+    {
+      "aussage": "Mutterschaftsgeld nach § 19 MuSchG bleibt voll unberücksichtigt",
+      "norm": "§ 10 Abs. 5 Satz 4 BEEG",
+      "wortlaut": "bleibt Mutterschaftsgeld gemäß § 19 des Mutterschutzgesetzes in voller Höhe unberücksichtigt"
+    },
+    {
+      "aussage": "Sozialgerichtsbarkeit zuständig",
+      "norm": "§ 13 Abs. 1 Satz 1 BEEG",
+      "wortlaut": "Über öffentlich-rechtliche Streitigkeiten in Angelegenheiten der §§ 1 bis 12 entscheiden die Gerichte der Sozialgerichtsbarkeit."
+    },
+    {
+      "aussage": "Keine aufschiebende Wirkung von Widerspruch und Anfechtungsklage",
+      "norm": "§ 13 Abs. 2 BEEG",
+      "wortlaut": "Widerspruch und Anfechtungsklage haben keine aufschiebende Wirkung."
+    },
+    {
+      "aussage": "SGG: Rechtsweg durch Gesetz eröffnet",
+      "norm": "§ 51 Abs. 1 Nr. 10 SGG",
+      "wortlaut": "für die durch Gesetz der Rechtsweg vor diesen Gerichten eröffnet wird"
+    },
+    {
+      "aussage": "Grundregel SGG: Widerspruch hat aufschiebende Wirkung",
+      "norm": "§ 86a Abs. 1 Satz 1 SGG",
+      "wortlaut": "Widerspruch und Anfechtungsklage haben aufschiebende Wirkung."
+    },
+    {
+      "aussage": "SGB I/X-Verfahren gilt, soweit das BEEG nichts regelt",
+      "norm": "§ 26 Abs. 1 BEEG",
+      "wortlaut": "Soweit dieses Gesetz zum Elterngeld keine ausdrückliche Regelung trifft, ist bei der Ausführung des Ersten und Zweiten Abschnitts das Erste Kapitel des Zehnten Buches Sozialgesetzbuch anzuwenden."
+    },
+    {
+      "aussage": "Einkommensgrenze 175 000 Euro, Summe beider Personen",
+      "norm": "§ 1 Abs. 8 BEEG",
+      "wortlaut": "im letzten abgeschlossenen Veranlagungszeitraum vor der Geburt des Kindes ein zu versteuerndes Einkommen nach § 2 Absatz 5 des Einkommensteuergesetzes in Höhe von mehr als 175 000 Euro erzielt hat"
+    },
+    {
+      "aussage": "Summe beider Personen über 175 000 Euro",
+      "norm": "§ 1 Abs. 8 Satz 2 BEEG",
+      "wortlaut": "entfällt abweichend von Satz 1 der Anspruch, wenn die Summe des zu versteuernden Einkommens beider Personen mehr als 175 000 Euro beträgt"
+    },
+    {
+      "aussage": "Grenze 175 000 Euro gilt ab Geburten ab 1. April 2025",
+      "norm": "§ 28 Abs. 5 Satz 1 BEEG",
+      "wortlaut": "§ 1 Absatz 8 ist auf Kinder anwendbar, die ab dem 1. April 2025 geboren oder mit dem Ziel der Adoption angenommen worden sind."
+    },
+    {
+      "aussage": "Grenze 200 000 Euro für Geburten 1. April 2024 bis 31. März 2025",
+      "norm": "§ 28 Abs. 5 Satz 2 BEEG",
+      "wortlaut": "Für die ab dem 1. April 2024 und vor dem 1. April 2025 geborenen oder mit dem Ziel der Adoption angenommenen Kinder gilt § 1 Absatz 8 mit der Maßgabe … in Höhe von mehr als 200 000 Euro erzielt hat."
+    },
+    {
+      "aussage": "200 000 Euro auch als Summe beider Personen",
+      "norm": "§ 28 Abs. 5 Satz 3 BEEG",
+      "wortlaut": "wenn die Summe des zu versteuernden Einkommens beider Personen mehr als 200 000 Euro beträgt"
+    },
+    {
+      "aussage": "Geburten vor dem 1. September 2021: Fassung bis 31. August 2021",
+      "norm": "§ 28 Abs. 1 BEEG",
+      "wortlaut": "Für die vor dem 1. September 2021 geborenen oder mit dem Ziel der Adoption aufgenommenen Kinder ist dieses Gesetz in der bis zum 31. August 2021 geltenden Fassung weiter anzuwenden."
+    },
+    {
+      "aussage": "Geburten 1. September 2021 bis 31. März 2024: Fassung bis 31. März 2024",
+      "norm": "§ 28 Abs. 1a BEEG",
+      "wortlaut": "Für die nach dem 31. August 2021 und vor dem 1. April 2024 geborenen oder mit dem Ziel der Adoption aufgenommenen Kinder ist dieses Gesetz in der bis zum 31. März 2024 geltenden Fassung weiter anzuwenden."
+    },
+    {
+      "aussage": "Geburten 1. April 2024 bis 30. April 2025: Fassung bis 30. April 2025",
+      "norm": "§ 28 Abs. 1b BEEG",
+      "wortlaut": "Für die nach dem 31. März 2024 und vor dem 1. Mai 2025 geborenen oder mit dem Ziel der Adoption aufgenommenen Kinder ist dieses Gesetz in der bis zum 30. April 2025 geltenden Fassung weiter anzuwenden."
+    },
+    {
+      "aussage": "Nicht voll erwerbstätig bis 32 Wochenstunden im Lebensmonatsdurchschnitt",
+      "norm": "§ 1 Abs. 6 Nr. 1 BEEG",
+      "wortlaut": "ihre Arbeitszeit 32 Wochenstunden im Durchschnitt des Lebensmonats nicht übersteigt"
+    },
+    {
+      "aussage": "Widerspruchsfrist ein Monat, schriftlich, elektronisch oder zur Niederschrift",
+      "norm": "§ 84 Abs. 1 Satz 1 SGG",
+      "wortlaut": "Der Widerspruch ist binnen eines Monats, nachdem der Verwaltungsakt dem Beschwerten bekanntgegeben worden ist"
+    },
+    {
+      "aussage": "Widerspruch bei der Stelle, die den Verwaltungsakt erlassen hat",
+      "norm": "§ 84 Abs. 1 Satz 1 SGG",
+      "wortlaut": "oder zur Niederschrift bei der Stelle einzureichen, die den Verwaltungsakt erlassen hat"
+    },
+    {
+      "aussage": "Drei Monate bei Bekanntgabe im Ausland",
+      "norm": "§ 84 Abs. 1 Satz 2 SGG",
+      "wortlaut": "Die Frist beträgt bei Bekanntgabe im Ausland drei Monate."
+    },
+    {
+      "aussage": "Fristwahrung bei Eingang bei anderer inländischer Behörde",
+      "norm": "§ 84 Abs. 2 Satz 1 SGG",
+      "wortlaut": "Die Frist zur Erhebung des Widerspruchs gilt auch dann als gewahrt, wenn die Widerspruchsschrift bei einer anderen inländischen Behörde"
+    },
+    {
+      "aussage": "Bekanntgabe am vierten Tag nach Aufgabe zur Post",
+      "norm": "§ 37 Abs. 2 Satz 1 SGB X",
+      "wortlaut": "Ein schriftlicher Verwaltungsakt, der im Inland durch die Post übermittelt wird, gilt am vierten Tag nach der Aufgabe zur Post als bekannt gegeben."
+    },
+    {
+      "aussage": "Zweifelsregel: Behörde weist Zugang nach",
+      "norm": "§ 37 Abs. 2 Satz 3 SGB X",
+      "wortlaut": "im Zweifel hat die Behörde den Zugang des Verwaltungsaktes und den Zeitpunkt des Zugangs nachzuweisen"
+    },
+    {
+      "aussage": "Elektronische Bescheide im Elterngeld: Bekanntgabe nach § 9 OZG",
+      "norm": "§ 37 Abs. 2b SGB X",
+      "wortlaut": "In Angelegenheiten nach dem Abschnitt 1 des Bundeselterngeld- und Elternzeitgesetzes gilt abweichend von Absatz 2a für die Bekanntgabe von elektronischen Verwaltungsakten § 9 des Onlinezugangsgesetzes."
+    },
+    {
+      "aussage": "Bekanntgabe über das Postfach am vierten Tag nach Bereitstellung",
+      "norm": "§ 9 Abs. 1 Satz 4 OZG",
+      "wortlaut": "Der Verwaltungsakt gilt am vierten Tag nach der Bereitstellung zum Abruf als bekannt gegeben."
+    },
+    {
+      "aussage": "Einwilligung zur Postfach-Bekanntgabe gilt als erteilt",
+      "norm": "§ 9 Abs. 1 Satz 2 OZG",
+      "wortlaut": "Die Einwilligung nach Satz 1 gilt als erteilt, sofern der Nutzer nicht … eine elektronische Bekanntgabe über ein Postfach im Sinne des § 2 Absatz 7 ausschließt."
+    },
+    {
+      "aussage": "Fristbeginn am Tag nach der Bekanntgabe/Eröffnung",
+      "norm": "§ 64 Abs. 1 SGG",
+      "wortlaut": "Der Lauf einer Frist beginnt, soweit nichts anderes bestimmt ist, mit dem Tag nach der Zustellung oder, wenn diese nicht vorgeschrieben ist, mit dem Tag nach der Eröffnung oder Verkündung."
+    },
+    {
+      "aussage": "Monatsfrist endet am gleichen Tag des Folgemonats, sonst Monatsende",
+      "norm": "§ 64 Abs. 2 SGG",
+      "wortlaut": "Fehlt dem letzten Monat der entsprechende Tag, so endet die Frist mit dem Monat."
+    },
+    {
+      "aussage": "Fristende auf Sonn-, Feier- oder Sonnabend: nächster Werktag",
+      "norm": "§ 64 Abs. 3 SGG",
+      "wortlaut": "Fällt das Ende einer Frist auf einen Sonntag, einen gesetzlichen Feiertag oder einen Sonnabend, so endet die Frist mit Ablauf des nächsten Werktags."
+    },
+    {
+      "aussage": "Ohne Belehrung läuft die Frist nicht; ein Jahr bei fehlender oder falscher Belehrung",
+      "norm": "§ 66 SGG",
+      "wortlaut": "Ist die Belehrung unterblieben oder unrichtig erteilt, so ist die Einlegung des Rechtsbehelfs nur innerhalb eines Jahres seit Zustellung, Eröffnung oder Verkündung zulässig"
+    },
+    {
+      "aussage": "Wiedereinsetzung bei unverschuldeter Fristversäumnis, Antrag binnen eines Monats",
+      "norm": "§ 67 Abs. 1 und 2 SGG",
+      "wortlaut": "Wenn jemand ohne Verschulden verhindert war, eine gesetzliche Verfahrensfrist einzuhalten, so ist ihm auf Antrag Wiedereinsetzung in den vorigen Stand zu gewähren."
+    },
+    {
+      "aussage": "Wiedereinsetzungsantrag binnen eines Monats nach Wegfall des Hindernisses",
+      "norm": "§ 67 Abs. 2 Satz 1 SGG",
+      "wortlaut": "Der Antrag ist binnen eines Monats nach Wegfall des Hindernisses zu stellen."
+    },
+    {
+      "aussage": "Klagefrist ein Monat; nach Widerspruchsverfahren ab Widerspruchsbescheid",
+      "norm": "§ 87 SGG",
+      "wortlaut": "Die Klage ist binnen eines Monats nach Bekanntgabe des Verwaltungsakts zu erheben. … Hat ein Vorverfahren stattgefunden, so beginnt die Frist mit der Bekanntgabe des Widerspruchsbescheids."
+    },
+    {
+      "aussage": "Rücknahme auch nach Unanfechtbarkeit, mit Wirkung für die Vergangenheit",
+      "norm": "§ 44 Abs. 1 Satz 1 SGB X",
+      "wortlaut": "ist der Verwaltungsakt, auch nachdem er unanfechtbar geworden ist, mit Wirkung für die Vergangenheit zurückzunehmen"
+    },
+    {
+      "aussage": "Nachzahlung längstens vier Jahre vor der Rücknahme",
+      "norm": "§ 44 Abs. 4 Satz 1 SGB X",
+      "wortlaut": "werden Sozialleistungen nach den Vorschriften der besonderen Teile dieses Gesetzbuches längstens für einen Zeitraum bis zu vier Jahren vor der Rücknahme erbracht"
+    }
+  ],
+  "rdg_grenze": "Diese Prüfpunkte beschreiben, was in einem Elterngeldbescheid steht und welche Fehlerbilder bei diesem Bescheidtyp bekannt sind. Sie sind keine Prüfung des einzelnen Bescheids, keine Steuerberatung und keine Aussage darüber, ob ein Widerspruch Erfolg hätte.",
+  "noch_offen": [
+    "Für Kinder, die vor dem 1. Mai 2025 geboren wurden, gelten nach § 28 Abs. 1 bis 1b BEEG ältere Gesetzesfassungen (bis 31. August 2021, bis 31. März 2024, bis 30. April 2025). Deren Wortlaut wurde nicht gelesen. Alle Aussagen dieses Datensatzes beruhen auf der heute abrufbaren Fassung; für frühere Geburten können Beträge, Monatszahlen und Bezugsregeln abweichen. Ausgenommen ist nur die Einkommensgrenze, deren Übergang § 28 Abs. 5 selbst regelt.",
+    "Die Einkommensgrenze für Geburten vor dem 1. April 2024 steht nicht im heutigen Gesetzestext und ist im Datensatz mit null geführt.",
+    "Der Betrag des Arbeitnehmer-Pauschbetrags (§ 9a EStG), der Programmablaufplan (§ 39b EStG), die Vorsorgepauschale und das Solidaritätszuschlagsgesetz wurden nicht gelesen; das BEEG verweist nur darauf.",
+    "BEEG § 1 Abs. 7 (ausländische Berechtigte), § 6 (Auszahlung), § 9 (Einkommens- und Arbeitszeitnachweis, Auskunftspflicht des Arbeitgebers), § 11 (Unterhaltspflichten), § 12 (Zuständigkeit der Elterngeldstellen) und § 27 (COVID-19) wurden nicht gelesen.",
+    "Die Erstattungs- und Aufhebungsvorschriften des SGB X (insbesondere zu Rückforderung und Aufhebung vorläufiger Bescheide) und § 85 SGG (Widerspruchsbescheid) wurden nicht gelesen; wie genau eine Rückforderung abläuft, ist deshalb nicht belegt.",
+    "Ob ein Widerspruch oder eine Klage gegen einen vorläufigen Bescheid zulässig ist oder die endgültige Entscheidung abgewartet werden sollte, ist aus den gelesenen Normen nicht ableitbar und nicht aufgenommen.",
+    "Wie die Elterngeldstellen der Länder elektronische Bescheide tatsächlich bekanntgeben (Postfach, Post, Fristbeginn) und was eine Rechtsbehelfsbelehrung dort konkret nennt, ist aus dem Gesetzestext nicht belegbar.",
+    "Die Höhe des Mutterschaftsgeldes (§ 19 MuSchG) und die Voraussetzungen des Arbeitgeberzuschusses (§ 20 MuSchG) wurden nicht gelesen.",
+    "Die genauen Prozentwerte, bei denen die Absenkung auf 65 Prozent oder die Anhebung auf 100 Prozent erreicht wird, sind aus dem Wortlaut nur ableitbar und deshalb nicht angegeben."
+  ]
+}

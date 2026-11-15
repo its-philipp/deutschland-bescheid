@@ -1,0 +1,1427 @@
+{
+  "_meta": {
+    "topic": "arbeitslosengeld-bescheid",
+    "retrieved": "2026-11-15",
+    "collector": "Claude Sonnet 5.5 (data-researcher subagent), Sitzung auf dem Rechner des Eigentümers",
+    "method": "Jede Norm als Einzelnorm-Seite von gesetze-im-internet.de am 2026-11-15 abgerufen und im heutigen Volltext gelesen (SGB III Stand: zuletzt geändert durch Art. 1a G v. 24.7.2026, BGBl. 2026 I Nr. 228; SGG, SGB X und SVBezGrV 2026 ebenso). Die Tabellen in § 147 Abs. 2 und 3 stammen aus der HTML-Tabellenstruktur der Norm, nicht aus dem Fließtext. Alle wörtlichen Auszüge unter belege wurden maschinell als Teilstring des abgerufenen Normtexts geprüft (Ausnahme: die beiden Tabellenzeilen-Belege zu § 147, die aus der HTML-Tabelle gelesen sind). Zusätzlich die Übergangsvorschriften §§ 420 bis 463 SGB III auf Abweichungen zu §§ 142 bis 153 durchgesehen; einschlägig war § 447 Abs. 1. Nicht herangezogen: Fachliche Weisungen der Bundesagentur, Ratgeber, Rechtsprechung.",
+    "sources": [
+      {
+        "label": "SGB III § 38 – Rechte und Pflichten der Ausbildung- und Arbeitsuchenden",
+        "url": "https://www.gesetze-im-internet.de/sgb_3/__38.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB III § 136 – Anspruch auf Arbeitslosengeld",
+        "url": "https://www.gesetze-im-internet.de/sgb_3/__136.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB III § 137 – Anspruchsvoraussetzungen bei Arbeitslosigkeit",
+        "url": "https://www.gesetze-im-internet.de/sgb_3/__137.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB III § 138 – Arbeitslosigkeit",
+        "url": "https://www.gesetze-im-internet.de/sgb_3/__138.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB III § 141 – Arbeitslosmeldung",
+        "url": "https://www.gesetze-im-internet.de/sgb_3/__141.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB III § 142 – Anwartschaftszeit",
+        "url": "https://www.gesetze-im-internet.de/sgb_3/__142.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB III § 143 – Rahmenfrist",
+        "url": "https://www.gesetze-im-internet.de/sgb_3/__143.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB III § 147 – Grundsatz",
+        "url": "https://www.gesetze-im-internet.de/sgb_3/__147.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB III § 148 – Minderung und Verlängerung der Anspruchsdauer",
+        "url": "https://www.gesetze-im-internet.de/sgb_3/__148.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB III § 149 – Grundsatz",
+        "url": "https://www.gesetze-im-internet.de/sgb_3/__149.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB III § 150 – Bemessungszeitraum und Bemessungsrahmen",
+        "url": "https://www.gesetze-im-internet.de/sgb_3/__150.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB III § 151 – Bemessungsentgelt",
+        "url": "https://www.gesetze-im-internet.de/sgb_3/__151.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB III § 152 – Fiktive Bemessung",
+        "url": "https://www.gesetze-im-internet.de/sgb_3/__152.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB III § 153 – Leistungsentgelt",
+        "url": "https://www.gesetze-im-internet.de/sgb_3/__153.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB III § 154 – Berechnung und Leistung",
+        "url": "https://www.gesetze-im-internet.de/sgb_3/__154.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB III § 155 – Anrechnung von Nebeneinkommen",
+        "url": "https://www.gesetze-im-internet.de/sgb_3/__155.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB III § 156 – Ruhen des Anspruchs bei anderen Sozialleistungen",
+        "url": "https://www.gesetze-im-internet.de/sgb_3/__156.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB III § 157 – Ruhen des Anspruchs bei Arbeitsentgelt und Urlaubsabgeltung",
+        "url": "https://www.gesetze-im-internet.de/sgb_3/__157.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB III § 158 – Ruhen des Anspruchs bei Entlassungsentschädigung",
+        "url": "https://www.gesetze-im-internet.de/sgb_3/__158.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB III § 159 – Ruhen bei Sperrzeit",
+        "url": "https://www.gesetze-im-internet.de/sgb_3/__159.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB III § 160 – Ruhen bei Arbeitskämpfen",
+        "url": "https://www.gesetze-im-internet.de/sgb_3/__160.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB III § 161 – Erlöschen des Anspruchs",
+        "url": "https://www.gesetze-im-internet.de/sgb_3/__161.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB III § 309 – Allgemeine Meldepflicht",
+        "url": "https://www.gesetze-im-internet.de/sgb_3/__309.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB III § 310 – Meldepflicht bei Wechsel der Zuständigkeit",
+        "url": "https://www.gesetze-im-internet.de/sgb_3/__310.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB III § 323 – Antragserfordernis",
+        "url": "https://www.gesetze-im-internet.de/sgb_3/__323.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB III § 324 – Antrag vor Leistung",
+        "url": "https://www.gesetze-im-internet.de/sgb_3/__324.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB III § 328 – Vorläufige Entscheidung",
+        "url": "https://www.gesetze-im-internet.de/sgb_3/__328.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB III § 330 – Sonderregelungen für die Aufhebung von Verwaltungsakten",
+        "url": "https://www.gesetze-im-internet.de/sgb_3/__330.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB III § 337 – Auszahlung im Regelfall",
+        "url": "https://www.gesetze-im-internet.de/sgb_3/__337.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB III § 341 – Beitragssatz und Beitragsbemessung",
+        "url": "https://www.gesetze-im-internet.de/sgb_3/__341.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB III § 447 – Gesetz zur Stärkung der Chancen für Qualifizierung und für mehr Schutz in der Arbeitslosenversicherung",
+        "url": "https://www.gesetze-im-internet.de/sgb_3/__447.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGG § 51",
+        "url": "https://www.gesetze-im-internet.de/sgg/__51.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGG § 64",
+        "url": "https://www.gesetze-im-internet.de/sgg/__64.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGG § 66",
+        "url": "https://www.gesetze-im-internet.de/sgg/__66.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGG § 78",
+        "url": "https://www.gesetze-im-internet.de/sgg/__78.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGG § 84",
+        "url": "https://www.gesetze-im-internet.de/sgg/__84.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGG § 86a",
+        "url": "https://www.gesetze-im-internet.de/sgg/__86a.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB X § 37 – Bekanntgabe des Verwaltungsaktes",
+        "url": "https://www.gesetze-im-internet.de/sgb_10/__37.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB X § 44 – Rücknahme eines rechtswidrigen nicht begünstigenden Verwaltungsaktes",
+        "url": "https://www.gesetze-im-internet.de/sgb_10/__44.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SVBezGrV 2026 § 1 – Bezugsgröße in der Sozialversicherung",
+        "url": "https://www.gesetze-im-internet.de/svbezgrv_2026/__1.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SVBezGrV 2026 § 4 – Beitragsbemessungsgrenzen in der Rentenversicherung",
+        "url": "https://www.gesetze-im-internet.de/svbezgrv_2026/__4.html",
+        "retrieved": "2026-11-15"
+      }
+    ]
+  },
+  "rechenweg": {
+    "legal_basis": "§§ 149 bis 154 SGB III",
+    "schritte": [
+      {
+        "nr": 1,
+        "name": "Bemessungsrahmen und Bemessungszeitraum",
+        "norm": "§ 150 SGB III",
+        "erklaerung": "Der Bemessungsrahmen umfasst ein Jahr und endet mit dem letzten Tag des letzten Versicherungspflichtverhältnisses vor der Entstehung des Anspruchs. Der Bemessungszeitraum besteht aus den im Bemessungsrahmen abgerechneten Entgeltabrechnungszeiträumen. Enthält er weniger als 150 Tage mit Anspruch auf Arbeitsentgelt, wird der Rahmen auf zwei Jahre erweitert. Bestimmte Zeiten, etwa Elterngeldbezug oder Kinderbetreuung unter drei Jahren, bleiben außer Betracht (§ 150 Abs. 2)."
+      },
+      {
+        "nr": 2,
+        "name": "Bemessungsentgelt",
+        "norm": "§ 151 SGB III",
+        "erklaerung": "Bemessungsentgelt ist das durchschnittlich auf den Tag entfallende beitragspflichtige Arbeitsentgelt im Bemessungszeitraum. Abfindungen und andere wegen der Beendigung des Arbeitsverhältnisses erhaltene Entgelte bleiben außer Betracht (§ 151 Abs. 2 Nr. 1). Beitragspflichtige Einnahmen zählen nach § 341 Abs. 3 nur bis zur Beitragsbemessungsgrenze der allgemeinen Rentenversicherung (Abs. 4), pro Kalendertag also bis zu einem Dreihundertsechzigstel dieser Grenze. Kann kein Bemessungszeitraum von mindestens 150 Tagen festgestellt werden, gilt ein fiktives Entgelt nach § 152."
+      },
+      {
+        "nr": 3,
+        "name": "Leistungsentgelt",
+        "norm": "§ 153 SGB III",
+        "erklaerung": "Vom Bemessungsentgelt werden drei pauschalierte Abzüge vorgenommen: die Sozialversicherungspauschale (20 Prozent des Bemessungsentgelts), die Lohnsteuer nach Programmablaufplan und Lohnsteuerklasse sowie der Solidaritätszuschlag. Das Ergebnis ist das Leistungsentgelt."
+      },
+      {
+        "nr": 4,
+        "name": "Leistungssatz",
+        "norm": "§ 149 SGB III",
+        "erklaerung": "Das Arbeitslosengeld beträgt 67 Prozent des Leistungsentgelts (erhöhter Leistungssatz, Kind im Sinne von § 32 Abs. 1, 3 bis 5 EStG) oder 60 Prozent (allgemeiner Leistungssatz) für die übrigen Arbeitslosen."
+      },
+      {
+        "nr": 5,
+        "name": "Täglicher Betrag",
+        "norm": "§ 149, § 154 SGB III",
+        "erklaerung": "Das Arbeitslosengeld wird für Kalendertage berechnet und geleistet. Der tägliche Leistungsbetrag ist das Leistungsentgelt mal Leistungssatz; der Bescheid weist ihn als Betrag je Kalendertag aus."
+      },
+      {
+        "nr": 6,
+        "name": "Monat = 30 Tage und Auszahlung",
+        "norm": "§ 154, § 337 Abs. 2 SGB III",
+        "erklaerung": "Ist das Arbeitslosengeld für einen vollen Kalendermonat zu zahlen, wird dieser mit 30 Tagen angesetzt. Laufende Geldleistungen werden regelmäßig monatlich nachträglich ausgezahlt."
+      }
+    ],
+    "rechengroessen_2026": {
+      "fundstelle": "Sozialversicherungsrechengrößen-Verordnung 2026 vom 24. November 2025 (BGBl. 2025 I Nr. 278), in Kraft seit 1. Januar 2026",
+      "bezugsgroesse_jaehrlich_eur": 47460,
+      "bezugsgroesse_monatlich_eur": 3955,
+      "beitragsbemessungsgrenze_allgemeine_rv_jaehrlich_eur": 101400,
+      "beitragsbemessungsgrenze_allgemeine_rv_monatlich_eur": 8450,
+      "gilt_fuer": "Ansprüche, die im Jahr 2026 entstehen; die Verordnung wird jährlich neu erlassen, der Wert für 2027 ist hier nicht erfasst.",
+      "norm": "§ 1 und § 4 SVBezGrV 2026"
+    },
+    "hinweis": "§ 153 Abs. 1 Satz 2 SGB III nennt als Abzüge nur die Sozialversicherungspauschale, die Lohnsteuer und den Solidaritätszuschlag; Kirchensteuer steht dort nicht. Die Pauschale beträgt nach dem heute geltenden Text 20 Prozent des Bemessungsentgelts. Die Lohnsteuer wird aus dem Programmablaufplan des Bundesfinanzministeriums nach der zu Beginn des Jahres der Anspruchsentstehung gebildeten Lohnsteuerklasse ermittelt; diese Tabelle ist hier nicht abgebildet, der Eurobetrag lässt sich deshalb auf dieser Seite nicht nachrechnen."
+  },
+  "leistungssatz": {
+    "norm": "§ 149 SGB III",
+    "saetze": [
+      {
+        "fall": "Erhöhter Leistungssatz: Arbeitslose mit mindestens einem Kind im Sinne von § 32 Abs. 1, 3 bis 5 EStG, sowie Arbeitslose, deren Ehegattin, Ehegatte, Lebenspartnerin oder Lebenspartner ein solches Kind hat, wenn beide unbeschränkt einkommensteuerpflichtig sind und nicht dauernd getrennt leben",
+        "prozent": 67
+      },
+      {
+        "fall": "Allgemeiner Leistungssatz: die übrigen Arbeitslosen",
+        "prozent": 60
+      }
+    ]
+  },
+  "leistungsentgelt_abzuege": {
+    "norm": "§ 153 SGB III",
+    "posten": [
+      {
+        "abzug": "Sozialversicherungspauschale",
+        "hoehe_oder_regel": "20 Prozent des Bemessungsentgelts",
+        "norm": "§ 153 Abs. 1 Satz 2 Nr. 1 SGB III"
+      },
+      {
+        "abzug": "Lohnsteuer",
+        "hoehe_oder_regel": "Nach dem vom Bundesministerium der Finanzen bekannt gegebenen Programmablaufplan unter Berücksichtigung der Vorsorgepauschale, nach dem Stand zu Beginn des Jahres, in dem der Anspruch entstanden ist. Maßgeblich ist die Lohnsteuerklasse, die zu diesem Zeitpunkt als Lohnsteuerabzugsmerkmal gebildet war; Freibeträge und Pauschalen, die nicht jeder Arbeitnehmerin oder jedem Arbeitnehmer zustehen, bleiben unberücksichtigt; ein als Lohnsteuerabzugsmerkmal gebildeter Faktor nach § 39f EStG wird berücksichtigt.",
+        "norm": "§ 153 Abs. 1 Satz 2 Nr. 2 und Satz 3, Abs. 2 SGB III"
+      },
+      {
+        "abzug": "Solidaritätszuschlag",
+        "hoehe_oder_regel": "Wird als dritter pauschalierter Abzug berücksichtigt; Satz und Freigrenze stehen nicht in § 153.",
+        "norm": "§ 153 Abs. 1 Satz 2 Nr. 3 SGB III"
+      },
+      {
+        "abzug": "Wechsel der Lohnsteuerklasse bei Ehegatten und Lebenspartnern",
+        "hoehe_oder_regel": "Eine neu gebildete Lohnsteuerklasse gilt von dem Tag an, an dem sie wirksam wird, wenn sie dem Verhältnis der monatlichen Arbeitsentgelte beider entspricht oder sich daraus ein geringeres Arbeitslosengeld ergibt als ohne den Wechsel; andernfalls bleibt es bei der Klasse vom Jahresbeginn. Sonstige spätere Änderungen gelten mit Wirkung des Tages, an dem erstmals die Voraussetzungen für die Änderung vorlagen.",
+        "norm": "§ 153 Abs. 2 und 3 SGB III"
+      },
+      {
+        "abzug": "Abzüge entfallen bei Besteuerungsrecht des Ansässigkeitsstaats",
+        "hoehe_oder_regel": "Lohnsteuer und Solidaritätszuschlag werden nicht berücksichtigt bei Personen, deren Ansässigkeitsstaat nach einem Doppelbesteuerungsabkommen das Besteuerungsrecht zusteht und deren Arbeitslosengeld dort der Steuer unterliegt.",
+        "norm": "§ 153 Abs. 4 SGB III"
+      }
+    ]
+  },
+  "anspruchsdauer": {
+    "norm": "§ 147 Abs. 2 SGB III",
+    "zeilen": [
+      {
+        "versicherungspflicht_monate": 12,
+        "lebensalter_ab": null,
+        "dauer_monate": 6
+      },
+      {
+        "versicherungspflicht_monate": 16,
+        "lebensalter_ab": null,
+        "dauer_monate": 8
+      },
+      {
+        "versicherungspflicht_monate": 20,
+        "lebensalter_ab": null,
+        "dauer_monate": 10
+      },
+      {
+        "versicherungspflicht_monate": 24,
+        "lebensalter_ab": null,
+        "dauer_monate": 12
+      },
+      {
+        "versicherungspflicht_monate": 30,
+        "lebensalter_ab": 50,
+        "dauer_monate": 15
+      },
+      {
+        "versicherungspflicht_monate": 36,
+        "lebensalter_ab": 55,
+        "dauer_monate": 18
+      },
+      {
+        "versicherungspflicht_monate": 48,
+        "lebensalter_ab": 58,
+        "dauer_monate": 24
+      }
+    ],
+    "hinweis": "Maßgeblich sind die Versicherungspflichtverhältnisse innerhalb der um 30 Monate erweiterten Rahmenfrist (§ 147 Abs. 1 Nr. 1) und das Lebensalter, das bei der Entstehung des Anspruchs vollendet ist (Nr. 2). Die Rahmenfrist selbst beträgt 30 Monate (§ 143 Abs. 1). Die Dauer verlängert sich um die Restdauer eines wegen eines neuen Anspruchs erloschenen Anspruchs, wenn seit dessen Entstehung noch nicht fünf Jahre verstrichen sind, höchstens bis zur Höchstdauer des Lebensalters (§ 147 Abs. 4). Wer das für die Regelaltersrente erforderliche Lebensjahr vollendet hat, hat vom Beginn des folgenden Monats an keinen Anspruch (§ 136 Abs. 2). Der Gesetzestext nennt die Dauer in Monaten; der Bescheid gibt sie in Kalendertagen an (§ 154), wie die Umrechnung erfolgt, steht in § 147 nicht. Nach § 447 Abs. 1 gelten für Personen, die nach dem 31. Dezember 2019 nicht in einem Versicherungspflichtverhältnis gestanden haben, die §§ 142, 143 und 147 in der bis zum 31. Dezember 2019 geltenden Fassung; diese ältere Fassung gibt die Seite nicht wieder.",
+    "kurze_anwartschaft": {
+      "norm": "§ 142 Abs. 2, § 147 Abs. 3 SGB III",
+      "anwartschaft_monate": 6,
+      "voraussetzungen": [
+        "Die in der Rahmenfrist zurückgelegten Beschäftigungstage ergeben sich überwiegend aus versicherungspflichtigen Beschäftigungen, die auf nicht mehr als 14 Wochen im Voraus durch Arbeitsvertrag zeit- oder zweckbefristet sind.",
+        "Das in den letzten zwölf Monaten vor der Beschäftigungslosigkeit erzielte Arbeitsentgelt übersteigt das 1,5fache der zum Zeitpunkt der Anspruchsentstehung maßgeblichen Bezugsgröße nach § 18 Abs. 1 SGB IV nicht (Bezugsgröße 2026: 47.460 Euro jährlich, 3.955 Euro monatlich, SVBezGrV 2026 § 1).",
+        "Die arbeitslose Person muss beides darlegen und nachweisen."
+      ],
+      "zeilen": [
+        {
+          "versicherungspflicht_monate": 6,
+          "dauer_monate": 3
+        },
+        {
+          "versicherungspflicht_monate": 8,
+          "dauer_monate": 4
+        },
+        {
+          "versicherungspflicht_monate": 10,
+          "dauer_monate": 5
+        }
+      ],
+      "hinweis": "Die Dauer gilt unabhängig vom Lebensalter; berücksichtigt werden nur Versicherungspflichtverhältnisse innerhalb der Rahmenfrist des § 143 (§ 147 Abs. 3 Satz 2). Für diese Fälle ist auch die Mindestdauer des Bemessungszeitraums auf 90 statt 150 Tage herabgesetzt (§ 150 Abs. 3 Nr. 2, § 152 Abs. 1 Satz 2)."
+    }
+  },
+  "sperrzeit": {
+    "norm": "§ 159 SGB III",
+    "tatbestaende": [
+      {
+        "grund": "Arbeitsaufgabe: Lösung des Beschäftigungsverhältnisses oder arbeitsvertragswidriges Verhalten, das Anlass für die Lösung gibt, mit vorsätzlicher oder grob fahrlässiger Herbeiführung der Arbeitslosigkeit",
+        "dauer": "12 Wochen; verkürzt auf 3 Wochen, wenn das Arbeitsverhältnis innerhalb von 6 Wochen nach dem Ereignis ohne Sperrzeit geendet hätte; verkürzt auf 6 Wochen, wenn es innerhalb von 12 Wochen ohne Sperrzeit geendet hätte oder wenn 12 Wochen eine besondere Härte bedeuten würden",
+        "norm": "§ 159 Abs. 1 Satz 2 Nr. 1, Abs. 3 SGB III"
+      },
+      {
+        "grund": "Arbeitsablehnung: Nichtannahme oder Nichtantritt einer von der Agentur unter Benennung des Arbeitgebers und der Art der Tätigkeit angebotenen Beschäftigung trotz Belehrung über die Rechtsfolgen, oder Verhinderung der Anbahnung (insbesondere eines Vorstellungsgesprächs)",
+        "dauer": "1. Mal 3 Wochen, 2. Mal 6 Wochen, danach 12 Wochen (jeweils gleichartiges Verhalten)",
+        "norm": "§ 159 Abs. 1 Satz 2 Nr. 2, Abs. 4 SGB III"
+      },
+      {
+        "grund": "Unzureichende Eigenbemühungen: Nachweis der geforderten Eigenbemühungen trotz Belehrung nicht erbracht",
+        "dauer": "2 Wochen",
+        "norm": "§ 159 Abs. 1 Satz 2 Nr. 3, Abs. 5 SGB III"
+      },
+      {
+        "grund": "Ablehnung einer beruflichen Eingliederungsmaßnahme: Weigerung, an einer Maßnahme zur Aktivierung und beruflichen Eingliederung, zur beruflichen Ausbildung oder Weiterbildung oder zur Teilhabe am Arbeitsleben teilzunehmen",
+        "dauer": "1. Mal 3 Wochen, 2. Mal 6 Wochen, danach 12 Wochen",
+        "norm": "§ 159 Abs. 1 Satz 2 Nr. 4, Abs. 4 SGB III"
+      },
+      {
+        "grund": "Abbruch einer beruflichen Eingliederungsmaßnahme oder Anlass für den Ausschluss durch maßnahmewidriges Verhalten",
+        "dauer": "1. Mal 3 Wochen, 2. Mal 6 Wochen, danach 12 Wochen",
+        "norm": "§ 159 Abs. 1 Satz 2 Nr. 5, Abs. 4 SGB III"
+      },
+      {
+        "grund": "Ablehnung eines Integrationskurses oder einer berufsbezogenen Deutschsprachförderung nach Aufforderung der Agentur",
+        "dauer": "1. Mal 3 Wochen, 2. Mal 6 Wochen, danach 12 Wochen",
+        "norm": "§ 159 Abs. 1 Satz 2 Nr. 6, Abs. 4 SGB III"
+      },
+      {
+        "grund": "Abbruch eines Integrationskurses oder einer berufsbezogenen Deutschsprachförderung oder Anlass für den Ausschluss",
+        "dauer": "1. Mal 3 Wochen, 2. Mal 6 Wochen, danach 12 Wochen",
+        "norm": "§ 159 Abs. 1 Satz 2 Nr. 7, Abs. 4 SGB III"
+      },
+      {
+        "grund": "Meldeversäumnis: Nichtbefolgung einer Aufforderung, sich zu melden oder zu einem ärztlichen oder psychologischen Untersuchungstermin zu erscheinen, trotz Belehrung über die Rechtsfolgen",
+        "dauer": "1 Woche",
+        "norm": "§ 159 Abs. 1 Satz 2 Nr. 8, Abs. 6, § 309 SGB III"
+      },
+      {
+        "grund": "Verspätete Arbeitsuchendmeldung: Meldepflicht nach § 38 Abs. 1 nicht erfüllt",
+        "dauer": "1 Woche",
+        "norm": "§ 159 Abs. 1 Satz 2 Nr. 9, Abs. 6, § 38 SGB III"
+      }
+    ],
+    "allgemein": "Eine Sperrzeit tritt nur ein, wenn kein wichtiger Grund vorliegt. Die Person, die sich versicherungswidrig verhalten hat, muss die für den wichtigen Grund maßgebenden Tatsachen darlegen und nachweisen, wenn diese in ihrer Sphäre oder ihrem Verantwortungsbereich liegen (§ 159 Abs. 1 Satz 3). Die Sperrzeit beginnt mit dem Tag nach dem Ereignis oder, wenn dieser Tag in eine Sperrzeit fällt, mit deren Ende (Abs. 2). Nach Abs. 4 Satz 2 gilt die Staffel auch bei Arbeitsablehnung oder Ablehnung einer Eingliederungsmaßnahme nach der Meldung zur frühzeitigen Arbeitsuche im Zusammenhang mit der Entstehung des Anspruchs.",
+    "folge_fuer_anspruchsdauer": "Nach § 148 Abs. 1 mindert sich die Anspruchsdauer um die Anzahl der Tage der Sperrzeit (Nr. 3 für Arbeitsablehnung, unzureichende Eigenbemühungen, Ablehnung oder Abbruch einer Eingliederungsmaßnahme, Ablehnung oder Abbruch eines Integrationskurses, Meldeversäumnis und verspätete Arbeitsuchendmeldung; Nr. 4 für Arbeitsaufgabe). Bei einer Sperrzeit wegen Arbeitsaufgabe von zwölf Wochen mindert sich die Dauer mindestens um ein Viertel der Anspruchsdauer, die bei erstmaliger Erfüllung der Voraussetzungen nach dem Ereignis zusteht (Nr. 4). Die Minderung entfällt bei Abbruch einer Eingliederungsmaßnahme, bei Abbruch eines Integrationskurses oder einer Deutschsprachförderung und bei Arbeitsaufgabe, wenn das Ereignis bei Erfüllung der Anspruchsvoraussetzungen länger als ein Jahr zurückliegt (§ 148 Abs. 2 Satz 2). Ist ein neuer Anspruch entstanden, erstreckt sich die Minderung nur auf die Restdauer des erloschenen Anspruchs (§ 148 Abs. 2 Satz 4).",
+    "erloeschen": "Der Anspruch erlischt nach § 161 Abs. 1 Nr. 2, wenn Anlass für Sperrzeiten mit einer Dauer von insgesamt mindestens 21 Wochen gegeben wurde, über den Eintritt der Sperrzeiten schriftliche Bescheide ergangen sind und auf die Rechtsfolgen von Sperrzeiten von insgesamt mindestens 21 Wochen hingewiesen wurde; Sperrzeiten aus den zwölf Monaten vor der Entstehung des Anspruchs zählen mit, soweit sie nicht schon zum Erlöschen eines Anspruchs geführt haben. Zeiten vor dem Tag, an dem ein Anspruch wegen einer Sperrzeit erloschen ist, zählen nicht zur Anwartschaftszeit (§ 142 Abs. 1 Satz 2)."
+  },
+  "ruhen": [
+    {
+      "grund": "Entlassungsentschädigung (Abfindung, Entschädigung oder ähnliche Leistung) bei Beendigung ohne Einhaltung der ordentlichen Kündigungsfrist des Arbeitgebers",
+      "norm": "§ 158 SGB III",
+      "erlaeuterung": "Der Anspruch ruht nach dem Gesetzeswortlaut nur, wenn eine Entlassungsentschädigung gezahlt wird oder zu beanspruchen ist und das Arbeitsverhältnis ohne Einhaltung einer der ordentlichen Arbeitgeberkündigungsfrist entsprechenden Frist endete. Das Ruhen läuft vom Ende des Arbeitsverhältnisses bis zu dem Tag, an dem es bei Einhaltung dieser Frist geendet hätte. Gilt für den Arbeitgeber ein Ausschluss der ordentlichen Kündigung, wird bei zeitlich unbegrenztem Ausschluss eine Kündigungsfrist von 18 Monaten, bei Kündigungsmöglichkeit nur gegen Entlassungsentschädigung von einem Jahr zugrunde gelegt. Das Ruhen dauert längstens ein Jahr und endet früher, wenn 60 Prozent der Entlassungsentschädigung als Arbeitsentgelt verdient wären; dieser Anteil sinkt für je fünf Jahre Betriebszugehörigkeit und je fünf Lebensjahre nach dem 35. Lebensjahr um je 5 Prozent, nicht unter 25 Prozent (§ 158 Abs. 2). Wird die Entlassungsentschädigung tatsächlich nicht gezahlt, wird das Arbeitslosengeld trotzdem geleistet (Abs. 4)."
+    },
+    {
+      "grund": "Arbeitsentgelt und Urlaubsabgeltung",
+      "norm": "§ 157 SGB III",
+      "erlaeuterung": "Der Anspruch ruht, solange die arbeitslose Person Arbeitsentgelt erhält oder zu beanspruchen hat (Abs. 1). Bei einer Urlaubsabgeltung wegen Beendigung des Arbeitsverhältnisses ruht er für die Zeit des abgegoltenen Urlaubs, beginnend mit dem Ende des Arbeitsverhältnisses (Abs. 2). Wird das Entgelt tatsächlich nicht gezahlt, wird das Arbeitslosengeld geleistet (Abs. 3)."
+    },
+    {
+      "grund": "Sperrzeit",
+      "norm": "§ 159 SGB III",
+      "erlaeuterung": "Während einer Sperrzeit ruht der Anspruch; Tatbestände und Dauern stehen im Abschnitt zur Sperrzeit."
+    },
+    {
+      "grund": "Andere Sozialleistungen: Berufsausbildungsbeihilfe für Arbeitslose, Krankengeld, Verletztengeld, Mutterschaftsgeld, Übergangsgeld (bei Leistung zur Teilhabe), Rente wegen voller Erwerbsminderung, Altersrente und ähnliche Leistungen",
+      "norm": "§ 156 SGB III",
+      "erlaeuterung": "Der Anspruch ruht für die Zeit, für die ein Anspruch auf eine dieser Leistungen zuerkannt ist, mit den Ausnahmen in Abs. 2 (etwa bei der Rente wegen voller Erwerbsminderung erst vom Beginn der laufenden Zahlung an). Bei zuerkannter Rente wegen teilweiser Erwerbsminderung kann die Agentur zur Antragstellung auf Rente wegen voller Erwerbsminderung innerhalb eines Monats auffordern (Abs. 1 Satz 2). Vorruhestandsgeld oder vergleichbare Arbeitgeberleistungen von mindestens 65 Prozent des Bemessungsentgelts lassen den Anspruch ebenfalls ruhen (Abs. 4)."
+    },
+    {
+      "grund": "Arbeitskampf",
+      "norm": "§ 160 SGB III",
+      "erlaeuterung": "Wer durch Beteiligung an einem inländischen Arbeitskampf arbeitslos geworden ist, dessen Anspruch ruht bis zur Beendigung des Arbeitskampfes (Abs. 2); für nicht beteiligte Arbeitslose gelten die Voraussetzungen des Abs. 3."
+    }
+  ],
+  "nebeneinkommen": {
+    "norm": "§ 155 SGB III (Erwerbstätigkeit im Sinne von § 138 Abs. 3)",
+    "freibetrag_eur": 165,
+    "regel": "Wer neben dem Arbeitslosengeld eine Erwerbstätigkeit von weniger als 15 Stunden wöchentlich ausübt (mehrere Tätigkeiten werden zusammengerechnet, § 138 Abs. 3), muss das daraus erzielte Einkommen nach Abzug der Steuern, der Sozialversicherungsbeiträge und der Werbungskosten sowie eines Freibetrags von 165 Euro im Kalendermonat der Ausübung anrechnen lassen. Bei selbständiger Tätigkeit werden pauschal 30 Prozent der Betriebseinnahmen als Betriebsausgaben abgesetzt, sofern nicht höhere nachgewiesen werden (Abs. 1). Wer in den letzten 18 Monaten vor Entstehung des Anspruchs neben einem Versicherungspflichtverhältnis mindestens zwölf Monate lang eine Erwerbstätigkeit ausgeübt hat, dem bleibt Einkommen bis zum monatlichen Durchschnitt der letzten zwölf Monate anrechnungsfrei, mindestens aber in Höhe des Freibetrags (Abs. 2). Für Arbeitslosengeld bei beruflicher Weiterbildung gilt für bestimmte Leistungen des Arbeitgebers oder Trägers ein Freibetrag von 400 Euro monatlich (Abs. 3). Ab 15 Wochenstunden entfällt nach § 138 Abs. 3 die Beschäftigungslosigkeit."
+  },
+  "meldefristen": [
+    {
+      "pflicht": "Arbeitsuchendmeldung bei Ende eines Arbeits- oder Ausbildungsverhältnisses",
+      "frist": "Spätestens drei Monate vor der Beendigung; wenn zwischen der Kenntnis des Beendigungszeitpunkts und der Beendigung weniger als drei Monate liegen, innerhalb von drei Tagen nach der Kenntnis. Die Pflicht besteht unabhängig davon, ob der Fortbestand gerichtlich geltend gemacht oder vom Arbeitgeber in Aussicht gestellt wird; sie gilt nicht bei einem betrieblichen Ausbildungsverhältnis.",
+      "norm": "§ 38 Abs. 1 SGB III",
+      "folge": "Bei Verstoß Sperrzeit von einer Woche (§ 159 Abs. 1 Satz 2 Nr. 9, Abs. 6); sie mindert die Anspruchsdauer um die Zahl ihrer Tage (§ 148 Abs. 1 Nr. 3)."
+    },
+    {
+      "pflicht": "Arbeitslosmeldung",
+      "frist": "Persönlich bei der zuständigen Agentur oder elektronisch im Fachportal der Bundesagentur; zulässig auch, wenn die Arbeitslosigkeit innerhalb der nächsten drei Monate zu erwarten ist. War die Agentur am ersten Tag der Beschäftigungslosigkeit nicht dienstbereit, wirkt die Meldung am nächsten dienstbereiten Tag zurück.",
+      "norm": "§ 141 Abs. 1 und 2, § 137 Abs. 1 Nr. 2 SGB III",
+      "folge": "Die Arbeitslosmeldung ist Anspruchsvoraussetzung. Arbeitslosengeld gilt mit ihr als beantragt, wenn keine andere Erklärung abgegeben wird (§ 323 Abs. 1 Satz 2)."
+    },
+    {
+      "pflicht": "Unterbrechung der Arbeitslosigkeit und Aufnahme einer Tätigkeit",
+      "frist": "Die Wirkung der Meldung erlischt bei mehr als sechswöchiger Unterbrechung der Arbeitslosigkeit; und mit der Aufnahme einer Beschäftigung oder selbständigen Tätigkeit, wenn diese der Agentur nicht unverzüglich mitgeteilt wurde.",
+      "norm": "§ 141 Abs. 3 SGB III",
+      "folge": "Die Wirkung der Arbeitslosmeldung erlischt; eine neue Meldung ist nötig."
+    },
+    {
+      "pflicht": "Meldung oder Erscheinen auf Aufforderung der Agentur",
+      "frist": "Zu der in der Aufforderung bestimmten Zeit und Stelle; die Pflicht besteht auch in Zeiten, in denen der Anspruch ruht.",
+      "norm": "§ 309 SGB III",
+      "folge": "Bei Nichtbefolgung trotz Belehrung Sperrzeit von einer Woche (§ 159 Abs. 1 Satz 2 Nr. 8, Abs. 6)."
+    },
+    {
+      "pflicht": "Meldung bei Wechsel der Zuständigkeit",
+      "frist": "Unverzüglich bei der nunmehr zuständigen Agentur",
+      "norm": "§ 310 SGB III",
+      "folge": "Das Gesetz knüpft an § 310 selbst keine Folge."
+    },
+    {
+      "pflicht": "Geltendmachung des Anspruchs",
+      "frist": "Nicht mehr möglich, wenn nach der Entstehung vier Jahre verstrichen sind.",
+      "norm": "§ 161 Abs. 2 SGB III",
+      "folge": "Der Anspruch kann nicht mehr geltend gemacht werden."
+    }
+  ],
+  "musterauszug": {
+    "absaetze": [
+      "Sie haben ab dem [Datum] Anspruch auf Arbeitslosengeld. Die Dauer Ihres Anspruchs beträgt [Anzahl] Kalendertage. Sie richtet sich nach der Dauer Ihrer Versicherungspflichtverhältnisse innerhalb der erweiterten Rahmenfrist und nach dem Lebensalter, das Sie bei der Entstehung des Anspruchs vollendet hatten.",
+      "Der Berechnung liegt ein tägliches Bemessungsentgelt von [Betrag] Euro zugrunde. Es wurde aus den Entgeltabrechnungszeiträumen der letzten zwölf Monate vor Ihrem Ausscheiden ermittelt. Für die Lohnsteuer wurde die Lohnsteuerklasse 3 berücksichtigt, die zu Beginn des Jahres, in dem der Anspruch entstanden ist, gebildet war.",
+      "Das Arbeitslosengeld beträgt 67 Prozent des Leistungsentgelts (erhöhter Leistungssatz). Das Leistungsentgelt ergibt sich aus dem Bemessungsentgelt nach Abzug der Sozialversicherungspauschale, der Lohnsteuer und des Solidaritätszuschlags. Der tägliche Leistungsbetrag beträgt [Betrag] Euro; für einen vollen Kalendermonat wird er mit 30 Tagen angesetzt."
+    ],
+    "hinweis": "Erfundener, neutraler Mustertext; Platzhalter in eckigen Klammern stehen für Daten und Beträge, die in einem echten Bescheid ausgefüllt sind. Wortlaut und Aufbau echter Bescheide der Agenturen für Arbeit können abweichen.",
+    "markierungen": [
+      {
+        "stelle": "Entgeltabrechnungszeiträumen der letzten zwölf Monate",
+        "erklaerung": "Der Bemessungszeitraum besteht aus den abgerechneten Entgeltabrechnungszeiträumen im Bemessungsrahmen, der ein Jahr umfasst und mit dem letzten Tag des letzten Versicherungspflichtverhältnisses endet. Bei weniger als 150 Tagen mit Anspruch auf Arbeitsentgelt wird er auf zwei Jahre erweitert. Prüfen Sie, welche Zeiträume der Bescheid benennt.",
+        "fundstelle": "§ 150 Abs. 1 und 3 SGB III"
+      },
+      {
+        "stelle": "Lohnsteuerklasse 3 berücksichtigt, die zu Beginn des Jahres, in dem der Anspruch entstanden ist",
+        "erklaerung": "Für die pauschale Lohnsteuer zählt die Klasse, die zu Beginn des Kalenderjahres der Anspruchsentstehung als Lohnsteuerabzugsmerkmal gebildet war. Spätere Änderungen gelten mit Wirkung des Tages, an dem erstmals die Voraussetzungen vorlagen; für den Wechsel unter Ehegatten und Lebenspartnern enthält § 153 Abs. 3 eine eigene Regel.",
+        "fundstelle": "§ 153 Abs. 2 und 3 SGB III"
+      },
+      {
+        "stelle": "67 Prozent des Leistungsentgelts (erhöhter Leistungssatz)",
+        "erklaerung": "Der erhöhte Satz gilt für Arbeitslose mit mindestens einem Kind im Sinne des § 32 Abs. 1, 3 bis 5 EStG und unter den Voraussetzungen des § 149 Nr. 1 auch bei einem Kind der Ehegattin, des Ehegatten, der Lebenspartnerin oder des Lebenspartners. Für alle übrigen Arbeitslosen gilt der allgemeine Satz von 60 Prozent.",
+        "fundstelle": "§ 149 SGB III"
+      }
+    ]
+  },
+  "pruefpunkte": [
+    {
+      "bestandteil": "Bemessungszeitraum und Bemessungsentgelt",
+      "legal_basis": "§§ 150, 151 SGB III",
+      "pruefen": [
+        "Bei diesem Bescheidtyp ist häufig strittig, welche Entgeltabrechnungszeiträume zählen: Prüfen Sie, ob der im Bescheid genannte Bemessungsrahmen von einem Jahr mit dem letzten Tag des letzten Versicherungspflichtverhältnisses endet und ob der Zeitraum mindestens 150 Tage mit Anspruch auf Arbeitsentgelt enthält.",
+        "Prüfen Sie, ob Zeiten, die nach § 150 Abs. 2 außer Betracht bleiben (etwa Elterngeldbezug, Betreuung eines Kindes unter drei Jahren, Pflegezeit), im Bescheid unberücksichtigt geblieben sind.",
+        "Prüfen Sie, ob Entgelt, das Ihnen beim Ausscheiden zustand, im Bemessungsentgelt enthalten ist, und ob wegen der Beendigung gezahlte Abfindungen richtig außen vor blieben (§ 151 Abs. 2 Nr. 1)."
+      ],
+      "hinweis": "Eine Erweiterung des Bemessungsrahmens auf zwei Jahre wegen unbilliger Härte wird nach § 150 Abs. 3 Satz 2 nur angewandt, wenn die arbeitslose Person dies verlangt und die erforderlichen Unterlagen vorlegt."
+    },
+    {
+      "bestandteil": "Leistungsentgelt, Abzüge und Lohnsteuerklasse",
+      "legal_basis": "§ 153 SGB III",
+      "pruefen": [
+        "Prüfen Sie, welche Lohnsteuerklasse der Bescheid angibt und ob sie der Klasse entspricht, die zu Beginn des Jahres der Anspruchsentstehung als Lohnsteuerabzugsmerkmal gebildet war (§ 153 Abs. 2).",
+        "Falls Sie oder Ihre Ehegattin, Ihr Ehegatte oder Ihre Lebenspartnerin oder Ihr Lebenspartner die Steuerklasse gewechselt haben: Prüfen Sie, ob der Bescheid angibt, ab wann die neue Klasse berücksichtigt wurde, und ob die Voraussetzungen des § 153 Abs. 3 benannt sind.",
+        "Prüfen Sie, ob nur die drei in § 153 Abs. 1 genannten Abzüge (Sozialversicherungspauschale, Lohnsteuer, Solidaritätszuschlag) angesetzt wurden."
+      ],
+      "hinweis": "Diese Seite erläutert nur, was § 153 SGB III zur Lohnsteuerklasse regelt; eine steuerliche Beratung zur Wahl der Klasse ist damit nicht verbunden."
+    },
+    {
+      "bestandteil": "Leistungssatz 67 oder 60 Prozent",
+      "legal_basis": "§ 149 SGB III",
+      "pruefen": [
+        "Bei diesem Bescheidtyp wird ein Kind häufig nicht berücksichtigt: Prüfen Sie, ob der Bescheid den erhöhten Satz von 67 Prozent oder den allgemeinen Satz von 60 Prozent ausweist und ob alle Kinder im Sinne von § 32 Abs. 1, 3 bis 5 EStG erfasst sind.",
+        "Prüfen Sie, ob ein Kind der Ehegattin, des Ehegatten, der Lebenspartnerin oder des Lebenspartners berücksichtigt wurde und ob die Voraussetzungen (beide unbeschränkt einkommensteuerpflichtig, nicht dauernd getrennt lebend) im Bescheid zutreffend angenommen sind."
+      ]
+    },
+    {
+      "bestandteil": "Anspruchsdauer",
+      "legal_basis": "§§ 142, 143, 147 SGB III",
+      "pruefen": [
+        "Prüfen Sie, ob alle Versicherungspflichtverhältnisse der erweiterten Rahmenfrist (30 Monate plus 30 Monate nach § 147 Abs. 1) in die Dauer eingerechnet wurden und ob das bei Anspruchsentstehung vollendete Lebensalter stimmt.",
+        "Prüfen Sie anhand der Tabelle in § 147 Abs. 2, welche Dauer sich aus Ihren Versicherungsmonaten ergibt, und ob der Bescheid eine Restdauer aus einem früheren Anspruch berücksichtigt (§ 147 Abs. 4).",
+        "Bei befristeten Beschäftigungen: Prüfen Sie, ob die kurze Anwartschaftszeit von sechs Monaten nach § 142 Abs. 2 geprüft wurde; die Dauer beträgt dann 3 bis 5 Monate (§ 147 Abs. 3)."
+      ],
+      "hinweis": "Die Dauer wird im Gesetz in Monaten genannt, der Bescheid nennt Kalendertage; die Umrechnung ist nicht im Gesetzestext geregelt."
+    },
+    {
+      "bestandteil": "Sperrzeit und Minderung der Anspruchsdauer",
+      "legal_basis": "§§ 159, 148, 161 SGB III",
+      "pruefen": [
+        "Bei diesem Bescheidtyp wird häufig die Sperrzeit wegen Arbeitsaufgabe geprüft: Prüfen Sie, ob der Bescheid das Ereignis, den Beginn (Tag nach dem Ereignis) und die Dauer benennt und ob die Verkürzungstatbestände des § 159 Abs. 3 geprüft wurden.",
+        "Prüfen Sie, ob ein wichtiger Grund gewürdigt wurde und ob Sie die dafür maßgebenden Tatsachen vollständig vorgetragen haben; sie sind bei Tatsachen aus Ihrer Sphäre von Ihnen darzulegen und nachzuweisen (§ 159 Abs. 1 Satz 3).",
+        "Prüfen Sie, um wie viele Tage der Bescheid die Anspruchsdauer mindert; bei zwölf Wochen Sperrzeit wegen Arbeitsaufgabe beträgt die Minderung mindestens ein Viertel der Anspruchsdauer (§ 148 Abs. 1 Nr. 4).",
+        "Prüfen Sie, ob bei mehreren Sperrzeiten die Summe von 21 Wochen erreicht ist und ob der Hinweis auf die Rechtsfolge des Erlöschens schriftlich erfolgt war (§ 161 Abs. 1 Nr. 2)."
+      ]
+    },
+    {
+      "bestandteil": "Ruhen wegen Entlassungsentschädigung oder Urlaubsabgeltung",
+      "legal_basis": "§§ 157, 158 SGB III",
+      "pruefen": [
+        "Bei diesem Bescheidtyp wird häufig ein Ruhen wegen einer Abfindung angenommen: Prüfen Sie, ob der Bescheid darlegt, dass das Arbeitsverhältnis ohne Einhaltung der ordentlichen Kündigungsfrist des Arbeitgebers endete; ohne diese Voraussetzung tritt nach dem Wortlaut des § 158 Abs. 1 kein Ruhen ein.",
+        "Prüfen Sie, welche Kündigungsfrist der Bescheid zugrunde legt (bei ausgeschlossener ordentlicher Kündigung 18 Monate oder ein Jahr) und ob der Ruhenszeitraum die Obergrenze von einem Jahr und die 60-Prozent-Grenze nach § 158 Abs. 2 einhält.",
+        "Prüfen Sie bei einer Urlaubsabgeltung, ob nur die Zeit des abgegoltenen Urlaubs als Ruhenszeitraum angesetzt ist (§ 157 Abs. 2)."
+      ]
+    },
+    {
+      "bestandteil": "Fiktive Bemessung",
+      "legal_basis": "§ 152 SGB III",
+      "pruefen": [
+        "Prüfen Sie, ob der Bescheid ausdrücklich ein fiktives Bemessungsentgelt ansetzt und ob dies damit begründet ist, dass auch im auf zwei Jahre erweiterten Bemessungsrahmen keine 150 Tage mit Anspruch auf Arbeitsentgelt festgestellt werden konnten.",
+        "Prüfen Sie, welcher der Qualifikationsgruppen 1 bis 4 Sie zugeordnet wurden und ob diese der Beschäftigung entspricht, auf die die Agentur ihre Vermittlungsbemühungen in erster Linie erstreckt (§ 152 Abs. 2).",
+        "Prüfen Sie, welche Bezugsgröße zugrunde liegt; für 2026 beträgt sie 47.460 Euro jährlich (SVBezGrV 2026 § 1)."
+      ]
+    },
+    {
+      "bestandteil": "Nebeneinkommen",
+      "legal_basis": "§ 155, § 138 Abs. 3 SGB III",
+      "pruefen": [
+        "Prüfen Sie, ob der Bescheid Einkommen aus einer Erwerbstätigkeit von unter 15 Wochenstunden anrechnet und ob davon Steuern, Sozialversicherungsbeiträge, Werbungskosten und der Freibetrag von 165 Euro abgezogen sind.",
+        "Prüfen Sie bei selbständiger Tätigkeit, ob die Betriebsausgabenpauschale von 30 Prozent der Betriebseinnahmen oder höher nachgewiesene Ausgaben angesetzt wurden.",
+        "Prüfen Sie, ob eine Nebentätigkeit aus den letzten 18 Monaten vor dem Anspruch den höheren anrechnungsfreien Betrag nach § 155 Abs. 2 begründet."
+      ]
+    }
+  ],
+  "frist": {
+    "rechtsweg": "Sozialgericht",
+    "rechtsweg_begruendung": "§ 51 Abs. 1 Nr. 4 SGG: Die Gerichte der Sozialgerichtsbarkeit entscheiden in Angelegenheiten der Arbeitsförderung einschließlich der übrigen Aufgaben der Bundesagentur für Arbeit.",
+    "rechtsbehelf": "Widerspruch nach § 84 SGG bei der Stelle, die den Bescheid erlassen hat; das Vorverfahren ist vor der Anfechtungsklage vorgeschrieben (§ 78 Abs. 1 Satz 1 SGG). Die Ausnahme für Bescheide des Vorstands der Bundesagentur für Arbeit (§ 78 Abs. 1 Satz 2 Nr. 2) betrifft den Bewilligungsbescheid einer Agentur für Arbeit nicht.",
+    "dauer": "ein Monat ab Bekanntgabe, bei Bekanntgabe im Ausland drei Monate",
+    "kette": [
+      {
+        "schritt": "Bekanntgabe am vierten Tag nach Aufgabe zur Post; bei elektronischer Übermittlung am vierten Tag nach Absendung",
+        "legal_basis": "§ 37 Abs. 2 Satz 1 und 2 SGB X",
+        "hinweis": "Dies gilt nicht, wenn der Bescheid nicht oder später zugegangen ist; im Zweifel muss die Behörde Zugang und Zeitpunkt nachweisen."
+      },
+      {
+        "schritt": "Bekanntgabe bei Bereitstellung zum Abruf: vierter Tag nach Absendung der Benachrichtigung",
+        "legal_basis": "§ 37 Abs. 2a SGB X",
+        "hinweis": "Nur mit Einwilligung der Person; kann die Behörde den bestrittenen Zugang der Benachrichtigung nicht nachweisen, gilt der Tag des Abrufs."
+      },
+      {
+        "schritt": "Der Fristlauf beginnt am Tag nach der Bekanntgabe",
+        "legal_basis": "§ 64 Abs. 1 SGG"
+      },
+      {
+        "schritt": "Ein Monat, bei Bekanntgabe im Ausland drei Monate; Einreichung schriftlich, elektronisch oder zur Niederschrift bei der erlassenden Stelle",
+        "legal_basis": "§ 84 Abs. 1 SGG"
+      },
+      {
+        "schritt": "Die Frist gilt auch bei Eingang bei einer anderen inländischen Behörde als gewahrt",
+        "legal_basis": "§ 84 Abs. 2 SGG",
+        "hinweis": "Die Schrift ist unverzüglich an die zuständige Stelle weiterzuleiten."
+      },
+      {
+        "schritt": "Monatsende nach der Zahl des Bekanntgabetages, sonst mit dem Monatsende",
+        "legal_basis": "§ 64 Abs. 2 SGG"
+      },
+      {
+        "schritt": "Sonnabend, Sonntag oder gesetzlicher Feiertag verschiebt das Fristende auf den nächsten Werktag",
+        "legal_basis": "§ 64 Abs. 3 SGG"
+      },
+      {
+        "schritt": "Fehlende oder unrichtige Rechtsbehelfsbelehrung: ein Jahr",
+        "legal_basis": "§ 66 Abs. 2 SGG",
+        "hinweis": "Die Frist läuft nach § 66 Abs. 1 nur, wenn über Rechtsbehelf, Stelle, Sitz und Frist belehrt wurde."
+      },
+      {
+        "schritt": "Aufschiebende Wirkung von Widerspruch und Anfechtungsklage; sie entfällt bei Bescheiden der Bundesagentur für Arbeit, die eine laufende Leistung entziehen oder herabsetzen",
+        "legal_basis": "§ 86a Abs. 1 und 2 Nr. 2 SGG",
+        "hinweis": "In diesen Fällen kann die erlassende oder die Widerspruchsstelle die sofortige Vollziehung aussetzen (§ 86a Abs. 3). Ob ein bestimmter Bescheid darunter fällt, ist eine Einzelfallfrage, die diese Seite nicht beantwortet."
+      }
+    ],
+    "achtung": "Bei diesem Bescheidtyp tragen nicht nur der Bewilligungsbescheid, sondern auch gesonderte Bescheide zu Sperrzeit, Ruhen oder Minderung eigene Fristen; jeder Bescheid hat seine eigene Rechtsbehelfsbelehrung und Frist.",
+    "besonderheit": "Eine vorläufige Entscheidung nach § 328 SGB III muss Umfang und Grund der Vorläufigkeit angeben; sie wird nur auf Antrag für endgültig erklärt (§ 328 Abs. 1 Satz 2, Abs. 2).",
+    "rechnung_identisch": "Die Rechnung ist dieselbe wie bei den übrigen SGG-Bescheiden dieser Seite: vier Tage bis zur Bekanntgabe, dann ein Monat, dann Verschiebung auf den nächsten Werktag. Der Fristenrechner dieser Seite gilt hier unverändert.",
+    "wichtiger_als_die_widerspruchsfrist": "Ist der Bescheid bestandskräftig geworden, bleibt ein Antrag auf Überprüfung nach § 44 SGB X: Ein rechtswidriger nicht begünstigender Verwaltungsakt ist danach auch nach Unanfechtbarkeit mit Wirkung für die Vergangenheit zurückzunehmen, wenn das Recht unrichtig angewandt oder von einem unrichtigen Sachverhalt ausgegangen wurde und deshalb Sozialleistungen zu Unrecht nicht erbracht wurden (§ 44 Abs. 1 Satz 1). Das gilt nicht, wenn der Bescheid auf vorsätzlich unrichtigen oder unvollständigen Angaben beruht (Satz 2). Leistungen werden dann längstens für bis zu vier Jahre vor der Rücknahme erbracht; der Zeitraum wird vom Beginn des Jahres an gerechnet, in dem zurückgenommen wird, bei einer Rücknahme auf Antrag vom Beginn des Jahres der Antragstellung (§ 44 Abs. 4). Eine eigene, kürzere Rückwirkungsgrenze für das SGB III enthält § 330 SGB III nicht; sein Absatz 1 regelt nur den Fall einer Norm, die nach Erlass des Bescheids für nichtig oder unvereinbar mit dem Grundgesetz erklärt oder in ständiger Rechtsprechung anders als durch die Agentur ausgelegt wurde: Dann wird nur mit Wirkung für die Zeit nach der Entscheidung des Bundesverfassungsgerichts oder ab dem Bestehen der ständigen Rechtsprechung zurückgenommen."
+  },
+  "belege": [
+    {
+      "aussage": "Erhöhter Leistungssatz 67 Prozent bei Kind",
+      "norm": "§ 149 SGB III",
+      "wortlaut": "für Arbeitslose, die mindestens ein Kind im Sinne des § 32 Absatz 1, 3 bis 5 des Einkommensteuergesetzes haben"
+    },
+    {
+      "aussage": "67 Prozent erhöhter, 60 Prozent allgemeiner Leistungssatz",
+      "norm": "§ 149 SGB III",
+      "wortlaut": "67 Prozent (erhöhter Leistungssatz)"
+    },
+    {
+      "aussage": "60 Prozent allgemeiner Leistungssatz",
+      "norm": "§ 149 SGB III",
+      "wortlaut": "für die übrigen Arbeitslosen 60 Prozent (allgemeiner Leistungssatz)"
+    },
+    {
+      "aussage": "Bezugsgröße des Prozentsatzes ist das Leistungsentgelt",
+      "norm": "§ 149 SGB III",
+      "wortlaut": "des pauschalierten Nettoentgelts (Leistungsentgelt), das sich aus dem Bruttoentgelt ergibt, das die oder der Arbeitslose im Bemessungszeitraum erzielt hat (Bemessungsentgelt)"
+    },
+    {
+      "aussage": "Erhöhter Satz auch bei Kind der Ehegattin oder des Ehegatten, wenn beide unbeschränkt einkommensteuerpflichtig sind und nicht dauernd getrennt leben",
+      "norm": "§ 149 SGB III",
+      "wortlaut": "wenn beide Ehegatten oder Lebenspartner unbeschränkt einkommensteuerpflichtig sind und nicht dauernd getrennt leben"
+    },
+    {
+      "aussage": "Sozialversicherungspauschale 20 Prozent des Bemessungsentgelts",
+      "norm": "§ 153 Abs. 1 SGB III",
+      "wortlaut": "eine Sozialversicherungspauschale in Höhe von 20 Prozent des Bemessungsentgelts"
+    },
+    {
+      "aussage": "Leistungsentgelt = um pauschalierte Abzüge vermindertes Bemessungsentgelt",
+      "norm": "§ 153 Abs. 1 SGB III",
+      "wortlaut": "Leistungsentgelt ist das um pauschalierte Abzüge verminderte Bemessungsentgelt."
+    },
+    {
+      "aussage": "Lohnsteuer nach Programmablaufplan zu Beginn des Jahres der Anspruchsentstehung",
+      "norm": "§ 153 Abs. 1 SGB III",
+      "wortlaut": "die sich nach dem vom Bundesministerium der Finanzen auf Grund des § 51 Absatz 4 Nummer 1a des Einkommensteuergesetzes bekannt gegebenen Programmablaufplan"
+    },
+    {
+      "aussage": "Zeitpunkt für die Lohnsteuerberechnung",
+      "norm": "§ 153 Abs. 1 SGB III",
+      "wortlaut": "zu Beginn des Jahres, in dem der Anspruch entstanden ist, ergibt und"
+    },
+    {
+      "aussage": "Solidaritätszuschlag als dritter Abzug",
+      "norm": "§ 153 Abs. 1 SGB III",
+      "wortlaut": "der Solidaritätszuschlag."
+    },
+    {
+      "aussage": "Freibeträge und Pauschalen, die nicht jedem zustehen, bleiben unberücksichtigt; Faktor nach § 39f EStG wird berücksichtigt",
+      "norm": "§ 153 Abs. 1 SGB III",
+      "wortlaut": "Freibeträge und Pauschalen, die nicht jeder Arbeitnehmerin oder jedem Arbeitnehmer zustehen, nicht zu berücksichtigen"
+    },
+    {
+      "aussage": "Lohnsteuerklasse maßgeblich: die zu Beginn des Jahres der Anspruchsentstehung gebildete",
+      "norm": "§ 153 Abs. 2 SGB III",
+      "wortlaut": "Die Feststellung der Lohnsteuer richtet sich nach der Lohnsteuerklasse, die zu Beginn des Jahres, in dem der Anspruch entstanden ist, als Lohnsteuerabzugsmerkmal gebildet war."
+    },
+    {
+      "aussage": "Spätere Änderungen der Lohnsteuerklasse",
+      "norm": "§ 153 Abs. 2 SGB III",
+      "wortlaut": "Spätere Änderungen der als Lohnsteuerabzugsmerkmal gebildeten Lohnsteuerklasse werden mit Wirkung des Tages berücksichtigt, an dem erstmals die Voraussetzungen für die Änderung vorlagen."
+    },
+    {
+      "aussage": "Wechsel der Lohnsteuerklassen unter Ehegatten und Lebenspartnern",
+      "norm": "§ 153 Abs. 3 SGB III",
+      "wortlaut": "Haben Ehegatten oder Lebenspartner die Lohnsteuerklassen gewechselt, so werden die als Lohnsteuerabzugsmerkmal neu gebildeten Lohnsteuerklassen von dem Tag an berücksichtigt, an dem sie wirksam werden, wenn"
+    },
+    {
+      "aussage": "Voraussetzung 1 für Berücksichtigung des Klassenwechsels",
+      "norm": "§ 153 Abs. 3 SGB III",
+      "wortlaut": "die neuen Lohnsteuerklassen dem Verhältnis der monatlichen Arbeitsentgelte beider Ehegatten oder Lebenspartner entsprechen oder"
+    },
+    {
+      "aussage": "Voraussetzung 2 für Berücksichtigung des Klassenwechsels",
+      "norm": "§ 153 Abs. 3 SGB III",
+      "wortlaut": "sich auf Grund der neuen Lohnsteuerklassen ein Arbeitslosengeld ergibt, das geringer ist als das Arbeitslosengeld, das sich ohne den Wechsel der Lohnsteuerklassen ergäbe."
+    },
+    {
+      "aussage": "Beitragsbemessungsgrenze der allgemeinen Rentenversicherung in der Vorsorgepauschale",
+      "norm": "§ 153 Abs. 1 SGB III",
+      "wortlaut": "als Beitragsbemessungsgrenze die maßgebliche Beitragsbemessungsgrenze der allgemeinen Rentenversicherung"
+    },
+    {
+      "aussage": "Berechnung für Kalendertage, Monat mit 30 Tagen",
+      "norm": "§ 154 SGB III",
+      "wortlaut": "Das Arbeitslosengeld wird für Kalendertage berechnet und geleistet. Ist es für einen vollen Kalendermonat zu zahlen, ist dieser mit 30 Tagen anzusetzen."
+    },
+    {
+      "aussage": "Auszahlung monatlich nachträglich",
+      "norm": "§ 337 Abs. 2 SGB III",
+      "wortlaut": "Laufende Geldleistungen werden regelmäßig monatlich nachträglich ausgezahlt."
+    },
+    {
+      "aussage": "Bemessungsrahmen ein Jahr, endet mit letztem Tag des letzten Versicherungspflichtverhältnisses",
+      "norm": "§ 150 Abs. 1 SGB III",
+      "wortlaut": "Der Bemessungsrahmen umfasst ein Jahr; er endet mit dem letzten Tag des letzten Versicherungspflichtverhältnisses vor der Entstehung des Anspruchs."
+    },
+    {
+      "aussage": "Bemessungszeitraum = abgerechnete Entgeltabrechnungszeiträume im Bemessungsrahmen",
+      "norm": "§ 150 Abs. 1 SGB III",
+      "wortlaut": "Der Bemessungszeitraum umfasst die beim Ausscheiden aus dem jeweiligen Beschäftigungsverhältnis abgerechneten Entgeltabrechnungszeiträume der versicherungspflichtigen Beschäftigungen im Bemessungsrahmen."
+    },
+    {
+      "aussage": "Erweiterung auf zwei Jahre bei weniger als 150 Tagen",
+      "norm": "§ 150 Abs. 3 SGB III",
+      "wortlaut": "Der Bemessungsrahmen wird auf zwei Jahre erweitert, wenn"
+    },
+    {
+      "aussage": "150-Tage-Grenze",
+      "norm": "§ 150 Abs. 3 SGB III",
+      "wortlaut": "der Bemessungszeitraum weniger als 150 Tage mit Anspruch auf Arbeitsentgelt enthält,"
+    },
+    {
+      "aussage": "90-Tage-Grenze bei kurzer Anwartschaftszeit",
+      "norm": "§ 150 Abs. 3 SGB III",
+      "wortlaut": "in den Fällen des § 142 Absatz 2 der Bemessungszeitraum weniger als 90 Tage mit Anspruch auf Arbeitsentgelt enthält oder"
+    },
+    {
+      "aussage": "Erweiterung bei unbilliger Härte nur auf Verlangen",
+      "norm": "§ 150 Abs. 3 SGB III",
+      "wortlaut": "Satz 1 Nummer 3 ist nur anzuwenden, wenn die oder der Arbeitslose dies verlangt und die zur Bemessung erforderlichen Unterlagen vorlegt."
+    },
+    {
+      "aussage": "Außer Betracht bleibende Zeiten, u. a. Elterngeld und Betreuung eines Kindes unter drei Jahren",
+      "norm": "§ 150 Abs. 2 SGB III",
+      "wortlaut": "Zeiten, in denen Arbeitslose Elterngeld oder Erziehungsgeld bezogen oder nur wegen der Berücksichtigung von Einkommen nicht bezogen haben oder ein Kind unter drei Jahren betreut und erzogen haben"
+    },
+    {
+      "aussage": "Außer Betracht bleibende Teilzeitzeiten (80 Prozent, fünf Stunden, dreieinhalb Jahre, sechs Monate)",
+      "norm": "§ 150 Abs. 2 SGB III",
+      "wortlaut": "auf weniger als 80 Prozent der durchschnittlichen regelmäßigen Arbeitszeit einer vergleichbaren Vollzeitbeschäftigung, mindestens um fünf Stunden wöchentlich, vermindert war"
+    },
+    {
+      "aussage": "Teilzeit-Ausnahme: dreieinhalb Jahre, sechs Monate zusammenhängend",
+      "norm": "§ 150 Abs. 2 SGB III",
+      "wortlaut": "innerhalb der letzten dreieinhalb Jahre vor der Entstehung des Anspruchs während eines sechs Monate umfassenden zusammenhängenden Zeitraums ausgeübt hat"
+    },
+    {
+      "aussage": "Bemessungsentgelt = durchschnittlich auf den Tag entfallendes beitragspflichtiges Arbeitsentgelt",
+      "norm": "§ 151 Abs. 1 SGB III",
+      "wortlaut": "Bemessungsentgelt ist das durchschnittlich auf den Tag entfallende beitragspflichtige Arbeitsentgelt, das die oder der Arbeitslose im Bemessungszeitraum erzielt hat"
+    },
+    {
+      "aussage": "Abfindungen bleiben außer Betracht",
+      "norm": "§ 151 Abs. 2 SGB III",
+      "wortlaut": "die Arbeitslose wegen der Beendigung des Arbeitsverhältnisses erhalten oder die im Hinblick auf die Arbeitslosigkeit vereinbart worden sind"
+    },
+    {
+      "aussage": "Mindestbemessungsentgelt bei Vorbezug innerhalb von zwei Jahren",
+      "norm": "§ 151 Abs. 4 SGB III",
+      "wortlaut": "Haben Arbeitslose innerhalb der letzten zwei Jahre vor der Entstehung des Anspruchs Arbeitslosengeld bezogen, ist Bemessungsentgelt mindestens das Entgelt, nach dem das Arbeitslosengeld zuletzt bemessen worden ist"
+    },
+    {
+      "aussage": "Minderung des Bemessungsentgelts bei geringerer Arbeitsbereitschaft",
+      "norm": "§ 151 Abs. 5 SGB III",
+      "wortlaut": "Ist die oder der Arbeitslose nicht mehr bereit oder in der Lage, die im Bemessungszeitraum durchschnittlich auf die Woche entfallende Zahl von Arbeitsstunden zu leisten, vermindert sich das Bemessungsentgelt"
+    },
+    {
+      "aussage": "Beitragspflichtige Einnahmen nur bis zur Beitragsbemessungsgrenze; Tagesbetrag ein Dreihundertsechzigstel",
+      "norm": "§ 341 Abs. 3 SGB III",
+      "wortlaut": "Beitragspflichtige Einnahmen sind bis zu einem Betrag von einem Dreihundertsechzigstel der Beitragsbemessungsgrenze für den Kalendertag zu berücksichtigen."
+    },
+    {
+      "aussage": "Beitragsbemessungsgrenze = die der allgemeinen Rentenversicherung",
+      "norm": "§ 341 Abs. 4 SGB III",
+      "wortlaut": "Beitragsbemessungsgrenze ist die Beitragsbemessungsgrenze der allgemeinen Rentenversicherung."
+    },
+    {
+      "aussage": "Beitragsbemessungsgrenze allgemeine Rentenversicherung 2026: 101.400 Euro jährlich, 8.450 Euro monatlich",
+      "norm": "§ 4 SVBezGrV 2026",
+      "wortlaut": "in der allgemeinen Rentenversicherung auf 101 400 Euro jährlich; umgerechnet auf den Monat ergeben sich 8 450 Euro"
+    },
+    {
+      "aussage": "Bezugsgröße 2026: 47.460 Euro jährlich, 3.955 Euro monatlich",
+      "norm": "§ 1 SVBezGrV 2026",
+      "wortlaut": "beträgt 47 460 Euro. Umgerechnet auf den Monat ergeben sich 3 955 Euro."
+    },
+    {
+      "aussage": "Fiktive Bemessung ab weniger als 150 Tagen im auf zwei Jahre erweiterten Rahmen",
+      "norm": "§ 152 Abs. 1 SGB III",
+      "wortlaut": "Kann ein Bemessungszeitraum von mindestens 150 Tagen mit Anspruch auf Arbeitsentgelt innerhalb des auf zwei Jahre erweiterten Bemessungsrahmens nicht festgestellt werden, ist als Bemessungsentgelt ein fiktives Arbeitsentgelt zugrunde zu legen."
+    },
+    {
+      "aussage": "Bei kurzer Anwartschaftszeit 90 Tage",
+      "norm": "§ 152 Abs. 1 SGB III",
+      "wortlaut": "In den Fällen des § 142 Absatz 2 gilt Satz 1 mit der Maßgabe, dass ein Bemessungszeitraum von mindestens 90 Tagen nicht festgestellt werden kann."
+    },
+    {
+      "aussage": "Qualifikationsgruppe 1: ein Dreihundertstel der Bezugsgröße",
+      "norm": "§ 152 Abs. 2 SGB III",
+      "wortlaut": "eine Hochschul- oder Fachhochschulausbildung erfordern (Qualifikationsgruppe 1), ein Arbeitsentgelt in Höhe von einem Dreihundertstel der Bezugsgröße"
+    },
+    {
+      "aussage": "Qualifikationsgruppe 2: ein Dreihundertsechzigstel der Bezugsgröße",
+      "norm": "§ 152 Abs. 2 SGB III",
+      "wortlaut": "Abschluss in einer vergleichbaren Einrichtung erfordern (Qualifikationsgruppe 2), ein Arbeitsentgelt in Höhe von einem Dreihundertsechzigstel der Bezugsgröße"
+    },
+    {
+      "aussage": "Qualifikationsgruppe 3: ein Vierhundertfünfzigstel der Bezugsgröße",
+      "norm": "§ 152 Abs. 2 SGB III",
+      "wortlaut": "eine abgeschlossene Ausbildung in einem Ausbildungsberuf erfordern (Qualifikationsgruppe 3), ein Arbeitsentgelt in Höhe von einem Vierhundertfünfzigstel der Bezugsgröße"
+    },
+    {
+      "aussage": "Qualifikationsgruppe 4: ein Sechshundertstel der Bezugsgröße, mindestens Mindestlohn-Betrag",
+      "norm": "§ 152 Abs. 2 SGB III",
+      "wortlaut": "keine Ausbildung erfordern (Qualifikationsgruppe 4), ein Arbeitsentgelt in Höhe von einem Sechshundertstel der Bezugsgröße, mindestens jedoch"
+    },
+    {
+      "aussage": "Zuordnung nach der Beschäftigung, auf die die Vermittlung in erster Linie zu erstrecken ist",
+      "norm": "§ 152 Abs. 2 SGB III",
+      "wortlaut": "auf die die Agentur für Arbeit die Vermittlungsbemühungen für die Arbeitslose oder den Arbeitslosen in erster Linie zu erstrecken hat"
+    },
+    {
+      "aussage": "Freibetrag 165 Euro im Kalendermonat der Ausübung",
+      "norm": "§ 155 Abs. 1 SGB III",
+      "wortlaut": "sowie eines Freibetrags in Höhe von 165 Euro in dem Kalendermonat der Ausübung anzurechnen"
+    },
+    {
+      "aussage": "Selbständige: 30 Prozent der Betriebseinnahmen als Pauschale",
+      "norm": "§ 155 Abs. 1 SGB III",
+      "wortlaut": "sind pauschal 30 Prozent der Betriebseinnahmen als Betriebsausgaben abzusetzen"
+    },
+    {
+      "aussage": "Anrechnung nach Abzug von Steuern, Sozialversicherungsbeiträgen und Werbungskosten",
+      "norm": "§ 155 Abs. 1 SGB III",
+      "wortlaut": "das daraus erzielte Einkommen nach Abzug der Steuern, der Sozialversicherungsbeiträge und der Werbungskosten"
+    },
+    {
+      "aussage": "Bestandsschutz: 18 Monate, zwölf Monate",
+      "norm": "§ 155 Abs. 2 SGB III",
+      "wortlaut": "in den letzten 18 Monaten vor der Entstehung des Anspruchs neben einem Versicherungspflichtverhältnis eine Erwerbstätigkeit (§ 138 Absatz 3) mindestens zwölf Monate lang ausgeübt"
+    },
+    {
+      "aussage": "Anrechnungsfrei bis zum durchschnittlichen Monatsbetrag der letzten zwölf Monate, mindestens Freibetrag",
+      "norm": "§ 155 Abs. 2 SGB III",
+      "wortlaut": "mindestens jedoch ein Betrag in Höhe des Freibetrags, der sich nach Absatz 1 ergeben würde"
+    },
+    {
+      "aussage": "Freibetrag 400 Euro bei Arbeitslosengeld bei beruflicher Weiterbildung",
+      "norm": "§ 155 Abs. 3 SGB III",
+      "wortlaut": "eines Freibetrags von 400 Euro monatlich auf das Arbeitslosengeld angerechnet"
+    },
+    {
+      "aussage": "Erwerbstätigkeit unter 15 Stunden wöchentlich schließt Beschäftigungslosigkeit nicht aus",
+      "norm": "§ 138 Abs. 3 SGB III",
+      "wortlaut": "wenn die Arbeits- oder Tätigkeitszeit (Arbeitszeit) weniger als 15 Stunden wöchentlich umfasst"
+    },
+    {
+      "aussage": "Arbeitszeiten mehrerer Tätigkeiten werden zusammengerechnet",
+      "norm": "§ 138 Abs. 3 SGB III",
+      "wortlaut": "Die Arbeitszeiten mehrerer Erwerbstätigkeiten werden zusammengerechnet."
+    },
+    {
+      "aussage": "Verfügbarkeit: mindestens 15 Stunden wöchentlich",
+      "norm": "§ 138 Abs. 5 SGB III",
+      "wortlaut": "eine versicherungspflichtige, mindestens 15 Stunden wöchentlich umfassende zumutbare Beschäftigung"
+    },
+    {
+      "aussage": "Drei Merkmale der Arbeitslosigkeit",
+      "norm": "§ 138 Abs. 1 SGB III",
+      "wortlaut": "nicht in einem Beschäftigungsverhältnis steht (Beschäftigungslosigkeit),"
+    },
+    {
+      "aussage": "Kein Anspruch ab Beginn des Monats nach Vollendung des Regelaltersrenten-Lebensjahres",
+      "norm": "§ 136 Abs. 2 SGB III",
+      "wortlaut": "hat vom Beginn des folgenden Monats an keinen Anspruch auf Arbeitslosengeld"
+    },
+    {
+      "aussage": "Anspruchsvoraussetzungen: arbeitslos, arbeitslos gemeldet, Anwartschaftszeit",
+      "norm": "§ 137 Abs. 1 SGB III",
+      "wortlaut": "sich bei der Agentur für Arbeit arbeitslos gemeldet und"
+    },
+    {
+      "aussage": "Antragstellende können den Anspruchsbeginn bis zur Entscheidung hinausschieben",
+      "norm": "§ 137 Abs. 2 SGB III",
+      "wortlaut": "Bis zur Entscheidung über den Anspruch kann die antragstellende Person bestimmen, dass der Anspruch nicht oder zu einem späteren Zeitpunkt entstehen soll."
+    },
+    {
+      "aussage": "Anwartschaftszeit: zwölf Monate in der Rahmenfrist",
+      "norm": "§ 142 Abs. 1 SGB III",
+      "wortlaut": "mindestens zwölf Monate in einem Versicherungspflichtverhältnis gestanden hat"
+    },
+    {
+      "aussage": "Zeiten vor dem Erlöschen wegen Sperrzeit zählen nicht",
+      "norm": "§ 142 Abs. 1 SGB III",
+      "wortlaut": "Zeiten, die vor dem Tag liegen, an dem der Anspruch auf Arbeitslosengeld wegen des Eintritts einer Sperrzeit erloschen ist, dienen nicht zur Erfüllung der Anwartschaftszeit."
+    },
+    {
+      "aussage": "Kurze Anwartschaftszeit: sechs Monate",
+      "norm": "§ 142 Abs. 2 SGB III",
+      "wortlaut": "beträgt die Anwartschaftszeit sechs Monate"
+    },
+    {
+      "aussage": "Befristung auf nicht mehr als 14 Wochen im Voraus",
+      "norm": "§ 142 Abs. 2 SGB III",
+      "wortlaut": "die auf nicht mehr als 14 Wochen im Voraus durch Arbeitsvertrag zeit- oder zweckbefristet sind"
+    },
+    {
+      "aussage": "Entgeltgrenze: 1,5fache der Bezugsgröße in den letzten zwölf Monaten",
+      "norm": "§ 142 Abs. 2 SGB III",
+      "wortlaut": "das in den letzten zwölf Monaten vor der Beschäftigungslosigkeit erzielte Arbeitsentgelt das 1,5fache der zum Zeitpunkt der Anspruchsentstehung maßgeblichen Bezugsgröße nach § 18 Absatz 1 des Vierten Buches nicht übersteigt"
+    },
+    {
+      "aussage": "Darlegungs- und Nachweislast bei der kurzen Anwartschaftszeit",
+      "norm": "§ 142 Abs. 2 SGB III",
+      "wortlaut": "sowie darlegen und nachweisen, dass"
+    },
+    {
+      "aussage": "Rahmenfrist 30 Monate, beginnt am Tag vor Erfüllung aller sonstigen Voraussetzungen",
+      "norm": "§ 143 Abs. 1 SGB III",
+      "wortlaut": "Die Rahmenfrist beträgt 30 Monate und beginnt mit dem Tag vor der Erfüllung aller sonstigen Voraussetzungen für den Anspruch auf Arbeitslosengeld."
+    },
+    {
+      "aussage": "Übergangsgeld-Zeiten zählen nicht; Rahmenfrist endet spätestens fünf Jahre nach Beginn",
+      "norm": "§ 143 Abs. 3 SGB III",
+      "wortlaut": "In diesem Fall endet die Rahmenfrist spätestens fünf Jahre nach ihrem Beginn."
+    },
+    {
+      "aussage": "Anspruchsdauer richtet sich nach Versicherungspflichtverhältnissen in der um 30 Monate erweiterten Rahmenfrist und dem bei Entstehung vollendeten Lebensalter",
+      "norm": "§ 147 Abs. 1 SGB III",
+      "wortlaut": "der Dauer der Versicherungspflichtverhältnisse innerhalb der um 30 Monate erweiterten Rahmenfrist"
+    },
+    {
+      "aussage": "Lebensalter bei Entstehung des Anspruchs",
+      "norm": "§ 147 Abs. 1 SGB III",
+      "wortlaut": "dem Lebensalter, das die oder der Arbeitslose bei der Entstehung des Anspruchs vollendet hat"
+    },
+    {
+      "aussage": "Tabelle Anspruchsdauer, 7 Zeilen (Mindestmonate Versicherungspflicht | nach Vollendung des Lebensjahres | Monate Anspruchsdauer): 12 | - | 6; 16 | - | 8; 20 | - | 10; 24 | - | 12; 30 | 50. | 15; 36 | 55. | 18; 48 | 58. | 24",
+      "norm": "§ 147 Abs. 2 SGB III",
+      "wortlaut": "TABELLENZEILEN laut Normtext (HTML-Tabelle, nicht Fließtext): 12/–/6, 16/–/8, 20/–/10, 24/–/12, 30/50./15, 36/55./18, 48/58./24"
+    },
+    {
+      "aussage": "Kurze Anwartschaftszeit: Tabelle 6 -> 3, 8 -> 4, 10 -> 5 Monate, unabhängig vom Lebensalter",
+      "norm": "§ 147 Abs. 3 SGB III",
+      "wortlaut": "TABELLENZEILEN laut Normtext (HTML-Tabelle, nicht Fließtext): 6/3, 8/4, 10/5; Satz davor: unabhängig vom Lebensalter"
+    },
+    {
+      "aussage": "Bei kurzer Anwartschaftszeit nur Zeiten innerhalb der Rahmenfrist von § 143",
+      "norm": "§ 147 Abs. 3 SGB III",
+      "wortlaut": "Abweichend von Absatz 1 sind nur die Versicherungspflichtverhältnisse innerhalb der Rahmenfrist des § 143 zu berücksichtigen."
+    },
+    {
+      "aussage": "Verlängerung um Restdauer eines erloschenen Anspruchs, wenn noch nicht fünf Jahre verstrichen sind",
+      "norm": "§ 147 Abs. 4 SGB III",
+      "wortlaut": "wenn nach der Entstehung des erloschenen Anspruchs noch nicht fünf Jahre verstrichen sind; sie verlängert sich längstens bis zu der dem Lebensalter der oder des Arbeitslosen zugeordneten Höchstdauer."
+    },
+    {
+      "aussage": "Minderung um die Tage, für die Arbeitslosengeld erfüllt wurde",
+      "norm": "§ 148 Abs. 1 Nr. 1 SGB III",
+      "wortlaut": "die Anzahl von Tagen, für die der Anspruch auf Arbeitslosengeld bei Arbeitslosigkeit erfüllt worden ist,"
+    },
+    {
+      "aussage": "Minderung um die Tage der Sperrzeit (Arbeitsablehnung, Eigenbemühungen, Maßnahme, Integrationskurs, Meldeversäumnis, verspätete Meldung)",
+      "norm": "§ 148 Abs. 1 Nr. 3 SGB III",
+      "wortlaut": "die Anzahl von Tagen einer Sperrzeit wegen Arbeitsablehnung, unzureichender Eigenbemühungen, Ablehnung oder Abbruch einer beruflichen Eingliederungsmaßnahme"
+    },
+    {
+      "aussage": "Sperrzeit bei Arbeitsaufgabe mindert um die Tage, bei zwölf Wochen mindestens um ein Viertel",
+      "norm": "§ 148 Abs. 1 Nr. 4 SGB III",
+      "wortlaut": "die Anzahl von Tagen einer Sperrzeit wegen Arbeitsaufgabe; in Fällen einer Sperrzeit von zwölf Wochen mindestens jedoch um ein Viertel der Anspruchsdauer"
+    },
+    {
+      "aussage": "Minderung entfällt bei Arbeitsaufgabe (u. a.), wenn das Ereignis länger als ein Jahr zurückliegt",
+      "norm": "§ 148 Abs. 2 SGB III",
+      "wortlaut": "bei Abbruch eines Integrationskurses oder einer berufsbezogenen Deutschsprachförderung oder bei Arbeitsaufgabe, wenn das Ereignis, das die Sperrzeit begründet, bei Erfüllung der Voraussetzungen für den Anspruch auf Arbeitslosengeld länger als ein Jahr zurückliegt"
+    },
+    {
+      "aussage": "Fehlende Mitwirkung und Arbeitsunbereitschaft mindern höchstens um vier Wochen",
+      "norm": "§ 148 Abs. 2 SGB III",
+      "wortlaut": "mindert sich die Dauer des Anspruchs auf Arbeitslosengeld höchstens um vier Wochen"
+    },
+    {
+      "aussage": "Teilarbeitslosengeld mindert einen Tag je zwei Tage innerhalb der letzten zwei Jahre",
+      "norm": "§ 148 Abs. 1 Nr. 2 SGB III",
+      "wortlaut": "jeweils einen Tag für jeweils zwei Tage, für die ein Anspruch auf Teilarbeitslosengeld innerhalb der letzten zwei Jahre vor der Entstehung des Anspruchs erfüllt worden ist"
+    },
+    {
+      "aussage": "Sperrzeit setzt versicherungswidriges Verhalten ohne wichtigen Grund voraus",
+      "norm": "§ 159 Abs. 1 SGB III",
+      "wortlaut": "Hat die Arbeitnehmerin oder der Arbeitnehmer sich versicherungswidrig verhalten, ohne dafür einen wichtigen Grund zu haben, ruht der Anspruch für die Dauer einer Sperrzeit."
+    },
+    {
+      "aussage": "Darlegungs- und Nachweislast für den wichtigen Grund",
+      "norm": "§ 159 Abs. 1 SGB III",
+      "wortlaut": "hat die für die Beurteilung eines wichtigen Grundes maßgebenden Tatsachen darzulegen und nachzuweisen, wenn diese Tatsachen in ihrer Sphäre oder in ihrem Verantwortungsbereich liegen"
+    },
+    {
+      "aussage": "Beginn der Sperrzeit",
+      "norm": "§ 159 Abs. 2 SGB III",
+      "wortlaut": "Die Sperrzeit beginnt mit dem Tag nach dem Ereignis, das die Sperrzeit begründet, oder, wenn dieser Tag in eine Sperrzeit fällt, mit dem Ende dieser Sperrzeit."
+    },
+    {
+      "aussage": "Sperrzeit bei Arbeitsaufgabe zwölf Wochen",
+      "norm": "§ 159 Abs. 3 SGB III",
+      "wortlaut": "Die Dauer der Sperrzeit bei Arbeitsaufgabe beträgt zwölf Wochen."
+    },
+    {
+      "aussage": "Verkürzung auf drei Wochen",
+      "norm": "§ 159 Abs. 3 SGB III",
+      "wortlaut": "auf drei Wochen, wenn das Arbeitsverhältnis innerhalb von sechs Wochen nach dem Ereignis, das die Sperrzeit begründet, ohne eine Sperrzeit geendet hätte"
+    },
+    {
+      "aussage": "Verkürzung auf sechs Wochen (zwölf Wochen / besondere Härte)",
+      "norm": "§ 159 Abs. 3 SGB III",
+      "wortlaut": "auf sechs Wochen, wenn"
+    },
+    {
+      "aussage": "Verkürzung auf sechs Wochen bei Beendigung innerhalb von zwölf Wochen",
+      "norm": "§ 159 Abs. 3 SGB III",
+      "wortlaut": "das Arbeitsverhältnis innerhalb von zwölf Wochen nach dem Ereignis, das die Sperrzeit begründet, ohne eine Sperrzeit geendet hätte oder"
+    },
+    {
+      "aussage": "Verkürzung auf sechs Wochen bei besonderer Härte",
+      "norm": "§ 159 Abs. 3 SGB III",
+      "wortlaut": "eine Sperrzeit von zwölf Wochen für die arbeitslose Person nach den für den Eintritt der Sperrzeit maßgebenden Tatsachen eine besondere Härte bedeuten würde"
+    },
+    {
+      "aussage": "Staffel 3 / 6 / 12 Wochen",
+      "norm": "§ 159 Abs. 4 SGB III",
+      "wortlaut": "im Fall des erstmaligen versicherungswidrigen Verhaltens dieser Art drei Wochen,"
+    },
+    {
+      "aussage": "Zweites Verhalten: sechs Wochen",
+      "norm": "§ 159 Abs. 4 SGB III",
+      "wortlaut": "im Fall des zweiten versicherungswidrigen Verhaltens dieser Art sechs Wochen,"
+    },
+    {
+      "aussage": "Übrige Fälle: zwölf Wochen",
+      "norm": "§ 159 Abs. 4 SGB III",
+      "wortlaut": "in den übrigen Fällen zwölf Wochen."
+    },
+    {
+      "aussage": "Staffel gilt auch nach der Meldung zur frühzeitigen Arbeitsuche",
+      "norm": "§ 159 Abs. 4 SGB III",
+      "wortlaut": "nach der Meldung zur frühzeitigen Arbeitsuche (§ 38 Absatz 1) im Zusammenhang mit der Entstehung des Anspruchs gilt Satz 1 entsprechend"
+    },
+    {
+      "aussage": "Unzureichende Eigenbemühungen: zwei Wochen",
+      "norm": "§ 159 Abs. 5 SGB III",
+      "wortlaut": "Die Dauer einer Sperrzeit bei unzureichenden Eigenbemühungen beträgt zwei Wochen."
+    },
+    {
+      "aussage": "Meldeversäumnis und verspätete Arbeitsuchendmeldung: eine Woche",
+      "norm": "§ 159 Abs. 6 SGB III",
+      "wortlaut": "Die Dauer einer Sperrzeit bei Meldeversäumnis oder bei verspäteter Arbeitsuchendmeldung beträgt eine Woche."
+    },
+    {
+      "aussage": "Erlöschen bei Sperrzeiten von insgesamt mindestens 21 Wochen",
+      "norm": "§ 161 Abs. 1 Nr. 2 SGB III",
+      "wortlaut": "wenn die oder der Arbeitslose Anlass für den Eintritt von Sperrzeiten mit einer Dauer von insgesamt mindestens 21 Wochen gegeben hat"
+    },
+    {
+      "aussage": "Erlöschen setzt schriftliche Bescheide und Hinweis auf die Rechtsfolge voraus",
+      "norm": "§ 161 Abs. 1 Nr. 2 SGB III",
+      "wortlaut": "über den Eintritt der Sperrzeiten schriftliche Bescheide erhalten hat und auf die Rechtsfolgen des Eintritts von Sperrzeiten mit einer Dauer von insgesamt mindestens 21 Wochen hingewiesen worden ist"
+    },
+    {
+      "aussage": "Sperrzeiten der letzten zwölf Monate vor Entstehung zählen mit",
+      "norm": "§ 161 Abs. 1 Nr. 2 SGB III",
+      "wortlaut": "die in einem Zeitraum von zwölf Monaten vor der Entstehung des Anspruchs eingetreten sind und nicht bereits zum Erlöschen eines Anspruchs geführt haben"
+    },
+    {
+      "aussage": "Geltendmachung nach vier Jahren nicht mehr möglich",
+      "norm": "§ 161 Abs. 2 SGB III",
+      "wortlaut": "Der Anspruch auf Arbeitslosengeld kann nicht mehr geltend gemacht werden, wenn nach seiner Entstehung vier Jahre verstrichen sind."
+    },
+    {
+      "aussage": "Ruhen bei Entlassungsentschädigung nur, wenn die ordentliche Kündigungsfrist des Arbeitgebers nicht eingehalten wurde",
+      "norm": "§ 158 Abs. 1 SGB III",
+      "wortlaut": "und ist das Arbeitsverhältnis ohne Einhaltung einer der ordentlichen Kündigungsfrist des Arbeitgebers entsprechenden Frist beendet worden, so ruht der Anspruch auf Arbeitslosengeld"
+    },
+    {
+      "aussage": "Ruhenszeitraum: Ende des Arbeitsverhältnisses bis zum Tag, an dem es bei Einhaltung der Frist geendet hätte",
+      "norm": "§ 158 Abs. 1 SGB III",
+      "wortlaut": "von dem Ende des Arbeitsverhältnisses an bis zu dem Tag, an dem das Arbeitsverhältnis bei Einhaltung dieser Frist geendet hätte"
+    },
+    {
+      "aussage": "Fiktive Kündigungsfrist 18 Monate bei zeitlich unbegrenztem Ausschluss der ordentlichen Kündigung",
+      "norm": "§ 158 Abs. 1 SGB III",
+      "wortlaut": "zeitlich unbegrenztem Ausschluss eine Kündigungsfrist von 18 Monaten"
+    },
+    {
+      "aussage": "Fiktive Kündigungsfrist ein Jahr, wenn nur gegen Entlassungsentschädigung ordentlich gekündigt werden kann",
+      "norm": "§ 158 Abs. 1 SGB III",
+      "wortlaut": "so gilt eine Kündigungsfrist von einem Jahr"
+    },
+    {
+      "aussage": "Ruhen längstens ein Jahr",
+      "norm": "§ 158 Abs. 2 SGB III",
+      "wortlaut": "Der Anspruch auf Arbeitslosengeld ruht nach Absatz 1 längstens ein Jahr."
+    },
+    {
+      "aussage": "Ruhen endet, wenn 60 Prozent der Entlassungsentschädigung als Arbeitsentgelt verdient wären",
+      "norm": "§ 158 Abs. 2 SGB III",
+      "wortlaut": "einen Betrag in Höhe von 60 Prozent der nach Absatz 1 zu berücksichtigenden Entlassungsentschädigung als Arbeitsentgelt verdient hätte"
+    },
+    {
+      "aussage": "Minderung des Anteils um je 5 Prozent je fünf Jahre Betriebszugehörigkeit und je fünf Lebensjahre nach 35, nicht unter 25 Prozent",
+      "norm": "§ 158 Abs. 2 SGB III",
+      "wortlaut": "vermindert sich sowohl für je fünf Jahre des Arbeitsverhältnisses in demselben Betrieb oder Unternehmen als auch für je fünf Lebensjahre nach Vollendung des 35. Lebensjahres um je 5 Prozent; er beträgt nicht weniger als 25 Prozent"
+    },
+    {
+      "aussage": "Arbeitgeberleistungen an die Rentenversicherung bei Beendigung ab dem 50. Lebensjahr bleiben unberücksichtigt",
+      "norm": "§ 158 Abs. 1 SGB III",
+      "wortlaut": "deren Arbeitsverhältnis frühestens mit Vollendung des 50. Lebensjahres beendet wird"
+    },
+    {
+      "aussage": "Wird die Entlassungsentschädigung tatsächlich nicht gezahlt, wird Arbeitslosengeld geleistet",
+      "norm": "§ 158 Abs. 4 SGB III",
+      "wortlaut": "Soweit die oder der Arbeitslose die Entlassungsentschädigung (Arbeitsentgelt im Sinne des § 115 des Zehnten Buches) tatsächlich nicht erhält, wird das Arbeitslosengeld auch für die Zeit geleistet, in der der Anspruch auf Arbeitslosengeld ruht."
+    },
+    {
+      "aussage": "Ruhen für die Zeit des abgegoltenen Urlaubs",
+      "norm": "§ 157 Abs. 2 SGB III",
+      "wortlaut": "so ruht der Anspruch auf Arbeitslosengeld für die Zeit des abgegoltenen Urlaubs"
+    },
+    {
+      "aussage": "Ruhen bei Arbeitsentgelt",
+      "norm": "§ 157 Abs. 1 SGB III",
+      "wortlaut": "Der Anspruch auf Arbeitslosengeld ruht während der Zeit, für die die oder der Arbeitslose Arbeitsentgelt erhält oder zu beanspruchen hat."
+    },
+    {
+      "aussage": "Ruhen bei Krankengeld, Mutterschaftsgeld, Übergangsgeld u. a.",
+      "norm": "§ 156 Abs. 1 SGB III",
+      "wortlaut": "Krankengeld, Krankengeld der Sozialen Entschädigung, Krankengeld der Soldatenentschädigung, Verletztengeld, Mutterschaftsgeld oder Übergangsgeld"
+    },
+    {
+      "aussage": "Ruhen bei Rente wegen voller Erwerbsminderung und Altersrente",
+      "norm": "§ 156 Abs. 1 SGB III",
+      "wortlaut": "Rente wegen voller Erwerbsminderung aus der gesetzlichen Rentenversicherung oder"
+    },
+    {
+      "aussage": "Ruhen bei Vorruhestandsgeld ab 65 Prozent des Bemessungsentgelts",
+      "norm": "§ 156 Abs. 4 SGB III",
+      "wortlaut": "mindestens in Höhe von 65 Prozent des Bemessungsentgelts bezieht"
+    },
+    {
+      "aussage": "Aufforderung zum Antrag auf Erwerbsminderungsrente, Frist ein Monat",
+      "norm": "§ 156 Abs. 1 SGB III",
+      "wortlaut": "innerhalb eines Monats einen Antrag auf Rente wegen voller Erwerbsminderung zu stellen"
+    },
+    {
+      "aussage": "Ruhen bei Arbeitskampf",
+      "norm": "§ 160 Abs. 2 SGB III",
+      "wortlaut": "Ist die Arbeitnehmerin oder der Arbeitnehmer durch Beteiligung an einem inländischen Arbeitskampf arbeitslos geworden, so ruht der Anspruch auf Arbeitslosengeld bis zur Beendigung des Arbeitskampfes."
+    },
+    {
+      "aussage": "Arbeitsuchendmeldung spätestens drei Monate vor Beendigung",
+      "norm": "§ 38 Abs. 1 SGB III",
+      "wortlaut": "sich spätestens drei Monate vor dessen Beendigung bei der Agentur für Arbeit unter Angabe der persönlichen Daten und des Beendigungszeitpunktes des Ausbildungs- oder Arbeitsverhältnisses arbeitsuchend zu melden"
+    },
+    {
+      "aussage": "Bei weniger als drei Monaten Vorlauf innerhalb von drei Tagen nach Kenntnis",
+      "norm": "§ 38 Abs. 1 SGB III",
+      "wortlaut": "haben sie sich innerhalb von drei Tagen nach Kenntnis des Beendigungszeitpunktes zu melden"
+    },
+    {
+      "aussage": "Meldepflicht unabhängig von gerichtlicher Geltendmachung oder Inaussichtstellen des Fortbestands",
+      "norm": "§ 38 Abs. 1 SGB III",
+      "wortlaut": "Die Pflicht zur Meldung besteht unabhängig davon, ob der Fortbestand des Ausbildungs- oder Arbeitsverhältnisses gerichtlich geltend gemacht oder vom Arbeitgeber in Aussicht gestellt wird."
+    },
+    {
+      "aussage": "Keine Meldepflicht bei betrieblichem Ausbildungsverhältnis",
+      "norm": "§ 38 Abs. 1 SGB III",
+      "wortlaut": "Die Pflicht zur Meldung gilt nicht bei einem betrieblichen Ausbildungsverhältnis."
+    },
+    {
+      "aussage": "Arbeitslosmeldung elektronisch im Fachportal oder persönlich; bis drei Monate vor Eintritt der Arbeitslosigkeit zulässig",
+      "norm": "§ 141 Abs. 1 SGB III",
+      "wortlaut": "Eine Meldung ist auch zulässig, wenn die Arbeitslosigkeit noch nicht eingetreten, der Eintritt der Arbeitslosigkeit aber innerhalb der nächsten drei Monate zu erwarten ist."
+    },
+    {
+      "aussage": "Meldeweg: elektronisch im Fachportal oder persönlich",
+      "norm": "§ 141 Abs. 1 SGB III",
+      "wortlaut": "hat sich elektronisch im Fachportal der Bundesagentur oder persönlich bei der zuständigen Agentur für Arbeit arbeitslos zu melden"
+    },
+    {
+      "aussage": "Wirkung der Meldung erlischt bei mehr als sechswöchiger Unterbrechung",
+      "norm": "§ 141 Abs. 3 SGB III",
+      "wortlaut": "bei einer mehr als sechswöchigen Unterbrechung der Arbeitslosigkeit"
+    },
+    {
+      "aussage": "Wirkung erlischt bei Aufnahme einer Tätigkeit, die nicht unverzüglich mitgeteilt wird",
+      "norm": "§ 141 Abs. 3 SGB III",
+      "wortlaut": "wenn die oder der Arbeitslose diese der Agentur für Arbeit nicht unverzüglich mitgeteilt hat"
+    },
+    {
+      "aussage": "Rückwirkung der Meldung, wenn die Agentur am ersten Tag nicht dienstbereit war",
+      "norm": "§ 141 Abs. 2 SGB III",
+      "wortlaut": "wirkt eine Meldung an dem nächsten Tag, an dem die Agentur für Arbeit dienstbereit ist, auf den Tag zurück, an dem die Agentur für Arbeit nicht dienstbereit war"
+    },
+    {
+      "aussage": "Arbeitslosengeld gilt mit der Arbeitslosmeldung als beantragt",
+      "norm": "§ 323 Abs. 1 SGB III",
+      "wortlaut": "Arbeitslosengeld gilt mit der Arbeitslosmeldung als beantragt, wenn die oder der Arbeitslose keine andere Erklärung abgibt."
+    },
+    {
+      "aussage": "Arbeitslosengeld kann auch nachträglich beantragt werden",
+      "norm": "§ 324 Abs. 2 SGB III",
+      "wortlaut": "Berufsausbildungsbeihilfe, Ausbildungsgeld und Arbeitslosengeld können auch nachträglich beantragt werden."
+    },
+    {
+      "aussage": "Persönliche Meldung oder ärztlicher Untersuchungstermin auf Aufforderung",
+      "norm": "§ 309 Abs. 1 SGB III",
+      "wortlaut": "persönlich zu melden oder zu einem ärztlichen oder psychologischen Untersuchungstermin zu erscheinen, wenn die Agentur für Arbeit sie dazu auffordert"
+    },
+    {
+      "aussage": "Meldepflicht besteht auch während des Ruhens",
+      "norm": "§ 309 Abs. 1 SGB III",
+      "wortlaut": "Die allgemeine Meldepflicht besteht auch in Zeiten, in denen der Anspruch auf Arbeitslosengeld ruht."
+    },
+    {
+      "aussage": "Unverzügliche Meldung bei Zuständigkeitswechsel",
+      "norm": "§ 310 SGB III",
+      "wortlaut": "hat sie oder er sich bei der nunmehr zuständigen Agentur für Arbeit unverzüglich zu melden"
+    },
+    {
+      "aussage": "Vorläufige Entscheidung; Umfang und Grund der Vorläufigkeit sind anzugeben",
+      "norm": "§ 328 Abs. 1 SGB III",
+      "wortlaut": "Umfang und Grund der Vorläufigkeit sind anzugeben."
+    },
+    {
+      "aussage": "Vorläufige Entscheidung wird nur auf Antrag für endgültig erklärt",
+      "norm": "§ 328 Abs. 2 SGB III",
+      "wortlaut": "Eine vorläufige Entscheidung ist nur auf Antrag der berechtigten Person für endgültig zu erklären, wenn sie nicht aufzuheben oder zu ändern ist."
+    },
+    {
+      "aussage": "Erstattung, soweit abschließend weniger zuerkannt wird",
+      "norm": "§ 328 Abs. 3 SGB III",
+      "wortlaut": "Soweit mit der abschließenden Entscheidung ein Leistungsanspruch nicht oder nur in geringerer Höhe zuerkannt wird, sind auf Grund der vorläufigen Entscheidung erbrachte Leistungen zu erstatten"
+    },
+    {
+      "aussage": "Auf Antrag ist vorläufig zu entscheiden (Nr. 3)",
+      "norm": "§ 328 Abs. 1 SGB III",
+      "wortlaut": "In den Fällen des Satzes 1 Nr. 3 ist auf Antrag vorläufig zu entscheiden."
+    },
+    {
+      "aussage": "Sonderregel für unanfechtbare Bescheide, die auf später für nichtig erklärter oder anders ausgelegter Norm beruhen: Rücknahme nur für die Zeit nach der Entscheidung",
+      "norm": "§ 330 Abs. 1 SGB III",
+      "wortlaut": "nur mit Wirkung für die Zeit nach der Entscheidung des Bundesverfassungsgerichts oder ab dem Bestehen der ständigen Rechtsprechung zurückzunehmen"
+    },
+    {
+      "aussage": "Rücknahme auch nach Unanfechtbarkeit, mit Wirkung für die Vergangenheit",
+      "norm": "§ 44 Abs. 1 SGB X",
+      "wortlaut": "ist der Verwaltungsakt, auch nachdem er unanfechtbar geworden ist, mit Wirkung für die Vergangenheit zurückzunehmen"
+    },
+    {
+      "aussage": "Ausnahme bei vorsätzlich unrichtigen oder unvollständigen Angaben",
+      "norm": "§ 44 Abs. 1 SGB X",
+      "wortlaut": "Dies gilt nicht, wenn der Verwaltungsakt auf Angaben beruht, die der Betroffene vorsätzlich in wesentlicher Beziehung unrichtig oder unvollständig gemacht hat."
+    },
+    {
+      "aussage": "Nachzahlung längstens für vier Jahre vor der Rücknahme",
+      "norm": "§ 44 Abs. 4 SGB X",
+      "wortlaut": "werden Sozialleistungen nach den Vorschriften der besonderen Teile dieses Gesetzbuches längstens für einen Zeitraum bis zu vier Jahren vor der Rücknahme erbracht"
+    },
+    {
+      "aussage": "Vierjahreszeitraum wird vom Beginn des Jahres der Rücknahme gerechnet, bei Antrag ab Antragsjahr",
+      "norm": "§ 44 Abs. 4 SGB X",
+      "wortlaut": "Dabei wird der Zeitpunkt der Rücknahme von Beginn des Jahres an gerechnet, in dem der Verwaltungsakt zurückgenommen wird. Erfolgt die Rücknahme auf Antrag, tritt bei der Berechnung des Zeitraumes, für den rückwirkend Leistungen zu erbringen sind, anstelle der Rücknahme der Antrag."
+    },
+    {
+      "aussage": "Bekanntgabe am vierten Tag nach Aufgabe zur Post",
+      "norm": "§ 37 Abs. 2 SGB X",
+      "wortlaut": "Ein schriftlicher Verwaltungsakt, der im Inland durch die Post übermittelt wird, gilt am vierten Tag nach der Aufgabe zur Post als bekannt gegeben."
+    },
+    {
+      "aussage": "Elektronisch übermittelter Verwaltungsakt: vierter Tag nach Absendung",
+      "norm": "§ 37 Abs. 2 SGB X",
+      "wortlaut": "Ein Verwaltungsakt, der im Inland oder Ausland elektronisch übermittelt wird, gilt am vierten Tag nach der Absendung als bekannt gegeben."
+    },
+    {
+      "aussage": "Zweifelsregel: Behörde muss Zugang und Zeitpunkt nachweisen",
+      "norm": "§ 37 Abs. 2 SGB X",
+      "wortlaut": "im Zweifel hat die Behörde den Zugang des Verwaltungsaktes und den Zeitpunkt des Zugangs nachzuweisen"
+    },
+    {
+      "aussage": "Bereitgestellter Verwaltungsakt: vierter Tag nach Absendung der Benachrichtigung",
+      "norm": "§ 37 Abs. 2a SGB X",
+      "wortlaut": "Ein zum Abruf bereitgestellter Verwaltungsakt gilt am vierten Tag nach Absendung der elektronischen Benachrichtigung über die Bereitstellung des Verwaltungsaktes an die abrufberechtigte Person als bekannt gegeben."
+    },
+    {
+      "aussage": "Widerspruchsfrist ein Monat ab Bekanntgabe; Form; bei der erlassenden Stelle",
+      "norm": "§ 84 Abs. 1 SGG",
+      "wortlaut": "Der Widerspruch ist binnen eines Monats, nachdem der Verwaltungsakt dem Beschwerten bekanntgegeben worden ist"
+    },
+    {
+      "aussage": "Bei Bekanntgabe im Ausland drei Monate",
+      "norm": "§ 84 Abs. 1 SGG",
+      "wortlaut": "Die Frist beträgt bei Bekanntgabe im Ausland drei Monate."
+    },
+    {
+      "aussage": "Einzureichen bei der Stelle, die den Verwaltungsakt erlassen hat",
+      "norm": "§ 84 Abs. 1 SGG",
+      "wortlaut": "oder zur Niederschrift bei der Stelle einzureichen, die den Verwaltungsakt erlassen hat"
+    },
+    {
+      "aussage": "Frist auch gewahrt bei Eingang bei anderer inländischer Behörde",
+      "norm": "§ 84 Abs. 2 SGG",
+      "wortlaut": "Die Frist zur Erhebung des Widerspruchs gilt auch dann als gewahrt, wenn die Widerspruchsschrift bei einer anderen inländischen Behörde"
+    },
+    {
+      "aussage": "Fristlauf beginnt am Tag nach Zustellung bzw. Eröffnung",
+      "norm": "§ 64 Abs. 1 SGG",
+      "wortlaut": "Der Lauf einer Frist beginnt, soweit nichts anderes bestimmt ist, mit dem Tag nach der Zustellung"
+    },
+    {
+      "aussage": "Monatsfrist endet mit dem Tag, der nach Zahl dem Ereignistag entspricht; fehlt er, mit dem Monatsende",
+      "norm": "§ 64 Abs. 2 SGG",
+      "wortlaut": "Fehlt dem letzten Monat der entsprechende Tag, so endet die Frist mit dem Monat."
+    },
+    {
+      "aussage": "Fristende auf Sonnabend, Sonntag, Feiertag verschiebt sich auf den nächsten Werktag",
+      "norm": "§ 64 Abs. 3 SGG",
+      "wortlaut": "Fällt das Ende einer Frist auf einen Sonntag, einen gesetzlichen Feiertag oder einen Sonnabend, so endet die Frist mit Ablauf des nächsten Werktags."
+    },
+    {
+      "aussage": "Fehlende oder unrichtige Rechtsbehelfsbelehrung: ein Jahr",
+      "norm": "§ 66 Abs. 2 SGG",
+      "wortlaut": "so ist die Einlegung des Rechtsbehelfs nur innerhalb eines Jahres seit Zustellung, Eröffnung oder Verkündung zulässig"
+    },
+    {
+      "aussage": "Frist läuft nur bei Belehrung über Rechtsbehelf, Stelle, Sitz und Frist",
+      "norm": "§ 66 Abs. 1 SGG",
+      "wortlaut": "Die Frist für ein Rechtsmittel oder einen anderen Rechtsbehelf beginnt nur dann zu laufen, wenn der Beteiligte über den Rechtsbehelf, die Verwaltungsstelle oder das Gericht, bei denen der Rechtsbehelf anzubringen ist, den Sitz und die einzuhaltende Frist schriftlich oder elektronisch belehrt worden ist."
+    },
+    {
+      "aussage": "Sozialgerichte entscheiden in Angelegenheiten der Arbeitsförderung",
+      "norm": "§ 51 Abs. 1 Nr. 4 SGG",
+      "wortlaut": "in Angelegenheiten der Arbeitsförderung einschließlich der übrigen Aufgaben der Bundesagentur für Arbeit"
+    },
+    {
+      "aussage": "Vorverfahren vor Erhebung der Anfechtungsklage",
+      "norm": "§ 78 Abs. 1 SGG",
+      "wortlaut": "Vor Erhebung der Anfechtungsklage sind Rechtmäßigkeit und Zweckmäßigkeit des Verwaltungsakts in einem Vorverfahren nachzuprüfen."
+    },
+    {
+      "aussage": "Widerspruch und Anfechtungsklage haben aufschiebende Wirkung",
+      "norm": "§ 86a Abs. 1 SGG",
+      "wortlaut": "Widerspruch und Anfechtungsklage haben aufschiebende Wirkung."
+    },
+    {
+      "aussage": "Aufschiebende Wirkung entfällt bei Bescheiden der Bundesagentur für Arbeit, die eine laufende Leistung entziehen oder herabsetzen",
+      "norm": "§ 86a Abs. 2 Nr. 2 SGG",
+      "wortlaut": "in Angelegenheiten des Sozialen Entschädigungsrechts, des Soldatenentschädigungsrechts und der Bundesagentur für Arbeit bei Verwaltungsakten, die eine laufende Leistung entziehen oder herabsetzen"
+    },
+    {
+      "aussage": "Aussetzung der sofortigen Vollziehung durch erlassende oder Widerspruchsstelle möglich",
+      "norm": "§ 86a Abs. 3 SGG",
+      "wortlaut": "kann die Stelle, die den Verwaltungsakt erlassen oder die über den Widerspruch zu entscheiden hat, die sofortige Vollziehung ganz oder teilweise aussetzen"
+    },
+    {
+      "aussage": "Übergangsregel: für Personen, die nach 31.12.2019 nicht versicherungspflichtig waren, gelten §§ 142, 143, 147 in alter Fassung",
+      "norm": "§ 447 Abs. 1 SGB III",
+      "wortlaut": "Für Personen, die nach dem 31. Dezember 2019 nicht in einem Versicherungspflichtverhältnis gestanden haben, finden die §§ 142, 143 und 147 in der bis zum 31. Dezember 2019 geltenden Fassung Anwendung."
+    }
+  ],
+  "rdg_grenze": "Diese Prüfpunkte beschreiben, wie ein Bewilligungsbescheid über Arbeitslosengeld aufgebaut ist und welche Fehlerbilder bei diesem Bescheidtyp bekannt sind; sie sind keine Prüfung des einzelnen Bescheids, keine Berechnung Ihres Arbeitslosengeldes, keine Steuerberatung und keine Aussage über die Erfolgsaussichten eines Widerspruchs.",
+  "noch_offen": [
+    "Die Fachlichen Weisungen der Bundesagentur für Arbeit zum SGB III wurden nicht gelesen. Wie die Agentur die Anspruchsdauer von Monaten in Kalendertage umrechnet und wie sie Einzelfragen (etwa den wichtigen Grund bei der Sperrzeit) handhabt, steht nicht im Gesetzestext und ist deshalb nicht im Datensatz.",
+    "Der Programmablaufplan für die Lohnsteuer (§ 51 Abs. 4 Nr. 1a EStG, § 39b EStG), der Satz des Solidaritätszuschlags samt Freigrenze (SolZG), der ermäßigte Beitragssatz nach § 243 SGB V, der durchschnittliche Zusatzbeitragssatz nach § 242a SGB V und der Beitragssatz nach § 55 SGB XI wurden nicht gelesen. Aus diesem Datensatz lässt sich daher kein Eurobetrag des Leistungsentgelts errechnen.",
+    "Der Mindestlohn nach der aktuellen Mindestlohnverordnung und die tarifliche Wochenarbeitszeit für Tarifbeschäftigte des Bundes, die § 152 Abs. 2 Nr. 4 für die Qualifikationsgruppe 4 voraussetzt, wurden nicht erhoben; die Mindestbeträge der Gruppe 4 sind daher nicht beziffert. Die Beträge der Gruppen 1 bis 3 (ein Dreihundertstel, ein Dreihundertsechzigstel, ein Vierhundertfünfzigstel der Bezugsgröße) sind als Bruchteile belegt, aber nicht in Euro umgerechnet.",
+    "Die Bezugsgröße (47.460 Euro jährlich) und die Beitragsbemessungsgrenze der allgemeinen Rentenversicherung (101.400 Euro jährlich) sind für 2026 mit amtlicher Fundstelle (SVBezGrV 2026, BGBl. 2025 I Nr. 278) belegt. Für Ansprüche, die ab 2027 entstehen, gilt die neue Verordnung; sie liegt am 2026-11-15 noch nicht vor und ist nicht erfasst. Der Datensatz muss zum Jahreswechsel aktualisiert werden.",
+    "Die Verknüpfung von § 151 Abs. 1 (beitragspflichtiges Arbeitsentgelt) mit der Beitragsbemessungsgrenze folgt aus dem Wortlaut von § 151 Abs. 1 in Verbindung mit § 341 Abs. 3 und 4 SGB III; eine Bestätigung aus Verwaltungsvorschriften oder Rechtsprechung wurde nicht gesucht.",
+    "§ 447 Abs. 1 SGB III ordnet für Personen, die nach dem 31. Dezember 2019 nicht in einem Versicherungspflichtverhältnis gestanden haben, die Anwendung der §§ 142, 143 und 147 in der bis zum 31. Dezember 2019 geltenden Fassung an. Diese Fassung ist nicht gelesen und nicht erfasst; die hier genannten Werte gelten für den Regelfall nach heutigem Text.",
+    "Anspruch bei beruflicher Weiterbildung (§ 144), Leistungsfortzahlung bei Krankheit (§ 146), Nahtlosigkeit (§ 145), Teilarbeitslosengeld, Erstattungs- und Aufhebungsbescheide (§§ 45, 48 SGB X, § 330 Abs. 2 und 3 SGB III) sowie Zuständigkeiten innerhalb der Widerspruchsstelle der Bundesagentur sind nicht erhoben; der Datensatz betrifft den Bewilligungsbescheid.",
+    "Die Bekanntgabe in Fristberechnung bei Bescheiden, die über das Online-Postfach der Bundesagentur bereitgestellt werden, folgt § 37 Abs. 2a SGB X. Welche Bescheide die Bundesagentur tatsächlich so zustellt und ob die Einwilligung nach Abs. 2a Satz 1 jeweils vorliegt, ist nicht geprüft.",
+    "Die Reichweite von § 86a Abs. 2 Nr. 2 SGG (was als Entziehung oder Herabsetzung einer laufenden Leistung gilt, etwa bei Sperrzeit- oder Ruhensbescheiden) wurde nur dem Wortlaut nach gelesen; Rechtsprechung dazu ist nicht erhoben und wird nicht bewertet.",
+    "Einige Belege überschreiten die Richtgröße von rund 200 Zeichen (bis etwa 300), weil der Satz sonst nicht trägt. Die beiden Belege zu den Tabellen in § 147 sind keine Fließtext-Zitate, sondern aus der HTML-Tabelle der Norm gelesene Zeilen."
+  ]
+}

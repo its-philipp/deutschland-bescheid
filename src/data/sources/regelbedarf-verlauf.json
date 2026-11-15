@@ -1,0 +1,223 @@
+{
+  "_meta": {
+    "topic": "regelbedarf-verlauf",
+    "retrieved": "2026-11-15",
+    "collector": "local session (owner's machine)",
+    "method": "Anlage zu § 28 SGB XII bei gesetze-im-internet.de abgerufen und die Tabelle „Regelbedarfsstufen nach § 28 in Euro“ zeilenweise übernommen (16 Zeilen, 1. Januar 2011 bis 1. Januar 2026). Dazu § 28 und § 28a SGB XII sowie § 1 und § 8 RBEG im Volltext gelesen.",
+    "sources": [
+      {
+        "label": "SGB XII Anlage (zu § 28) – Regelbedarfsstufen nach § 28 in Euro",
+        "url": "https://www.gesetze-im-internet.de/sgb_12/anlage.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB XII § 28 – Ermittlung der Regelbedarfe",
+        "url": "https://www.gesetze-im-internet.de/sgb_12/__28.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB XII § 28a – Fortschreibung der Regelbedarfsstufen",
+        "url": "https://www.gesetze-im-internet.de/sgb_12/__28a.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "RBEG § 1 – Grundsatz",
+        "url": "https://www.gesetze-im-internet.de/rbeg_2021/__1.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "RBEG § 8 – Regelbedarfsstufen",
+        "url": "https://www.gesetze-im-internet.de/rbeg_2021/__8.html",
+        "retrieved": "2026-11-15"
+      }
+    ]
+  },
+  "legal_basis": "Anlage zu § 28 SGB XII",
+  "einheit": "Euro im Monat",
+  "jahre": [
+    {
+      "gueltig_ab": "2011-01-01",
+      "betraege": [
+        364,
+        328,
+        291,
+        287,
+        251,
+        215
+      ]
+    },
+    {
+      "gueltig_ab": "2012-01-01",
+      "betraege": [
+        374,
+        337,
+        299,
+        287,
+        251,
+        219
+      ]
+    },
+    {
+      "gueltig_ab": "2013-01-01",
+      "betraege": [
+        382,
+        345,
+        306,
+        289,
+        255,
+        224
+      ]
+    },
+    {
+      "gueltig_ab": "2014-01-01",
+      "betraege": [
+        391,
+        353,
+        313,
+        296,
+        261,
+        229
+      ]
+    },
+    {
+      "gueltig_ab": "2015-01-01",
+      "betraege": [
+        399,
+        360,
+        320,
+        302,
+        267,
+        234
+      ]
+    },
+    {
+      "gueltig_ab": "2016-01-01",
+      "betraege": [
+        404,
+        364,
+        324,
+        306,
+        270,
+        237
+      ]
+    },
+    {
+      "gueltig_ab": "2017-01-01",
+      "betraege": [
+        409,
+        368,
+        327,
+        311,
+        291,
+        237
+      ]
+    },
+    {
+      "gueltig_ab": "2018-01-01",
+      "betraege": [
+        416,
+        374,
+        332,
+        316,
+        296,
+        240
+      ]
+    },
+    {
+      "gueltig_ab": "2019-01-01",
+      "betraege": [
+        424,
+        382,
+        339,
+        322,
+        302,
+        245
+      ]
+    },
+    {
+      "gueltig_ab": "2020-01-01",
+      "betraege": [
+        432,
+        389,
+        345,
+        328,
+        308,
+        250
+      ]
+    },
+    {
+      "gueltig_ab": "2021-01-01",
+      "betraege": [
+        446,
+        401,
+        357,
+        373,
+        309,
+        283
+      ]
+    },
+    {
+      "gueltig_ab": "2022-01-01",
+      "betraege": [
+        449,
+        404,
+        360,
+        376,
+        311,
+        285
+      ]
+    },
+    {
+      "gueltig_ab": "2023-01-01",
+      "betraege": [
+        502,
+        451,
+        402,
+        420,
+        348,
+        318
+      ]
+    },
+    {
+      "gueltig_ab": "2024-01-01",
+      "betraege": [
+        563,
+        506,
+        451,
+        471,
+        390,
+        357
+      ]
+    },
+    {
+      "gueltig_ab": "2025-01-01",
+      "betraege": [
+        563,
+        506,
+        451,
+        471,
+        390,
+        357
+      ]
+    },
+    {
+      "gueltig_ab": "2026-01-01",
+      "betraege": [
+        563,
+        506,
+        451,
+        471,
+        390,
+        357
+      ]
+    }
+  ],
+  "neuermittlung": {
+    "jahr": 2021,
+    "legal_basis": "§ 28 Abs. 1 SGB XII, § 1 Abs. 1 und § 8 RBEG",
+    "grundlage": "Einkommens- und Verbrauchsstichprobe 2018"
+  },
+  "noch_offen": [
+    "Für die Sprünge einzelner Stufen zum 1. Januar 2017 ist das damalige Regelbedarfs-Ermittlungsgesetz nicht mehr bei gesetze-im-internet.de abrufbar; die Seite nennt als Neuermittlung deshalb nur 2021."
+  ]
+}

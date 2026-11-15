@@ -1,0 +1,964 @@
+{
+  "_meta": {
+    "topic": "aufhebung-erstattung",
+    "retrieved": "2026-11-15",
+    "collector": "data-researcher subagent (Sonnet 5.5), Auftrag des Orchestrators",
+    "method": "Alle genannten Normen wurden am 2026-11-15 als Einzelnormseiten bei gesetze-im-internet.de abgerufen und im heute geltenden Volltext gelesen: SGB X §§ 24, 33, 35, 37, 41, 42, 44, 45, 48, 50; SGB II §§ 19, 38, 39, 40, 41a, 42, 42a, 43, 44; SGB III § 330; SGB I § 60; BGB § 1629a; SGG §§ 51, 64, 66, 67, 78, 84, 86a, 86b, 87. Die Wortlautauszüge im Block belege wurden maschinell als Teilstring gegen den abgerufenen Normtext geprüft. Aussagen zu Rechtsprechung, Ratgebern oder Verwaltungsanweisungen der Bundesagentur für Arbeit sind nicht enthalten. Der Gesetzesstand ist der des Abrufdatums; die Leistung heißt im SGB II Grundsicherungsgeld, die Suche nach Bürgergeld bleibt davon unberührt. Nachbearbeitung durch den Orchestrator am selben Tag: § 39, § 40 Abs. 1, 9 und 10, § 41a Abs. 5 und 6, § 43 SGB II sowie § 45 Abs. 3 und 4 und § 50 Abs. 4 SGB X im Volltext gegengelesen; zwei redaktionelle Anmerkungen aus den Hinweistexten entfernt.",
+    "sources": [
+      {
+        "label": "SGB X § 24 – Anhörung Beteiligter",
+        "url": "https://www.gesetze-im-internet.de/sgb_10/__24.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB X § 33 – Bestimmtheit und Form des Verwaltungsaktes",
+        "url": "https://www.gesetze-im-internet.de/sgb_10/__33.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB X § 35 – Begründung des Verwaltungsaktes",
+        "url": "https://www.gesetze-im-internet.de/sgb_10/__35.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB X § 37 – Bekanntgabe des Verwaltungsaktes",
+        "url": "https://www.gesetze-im-internet.de/sgb_10/__37.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB X § 41 – Heilung von Verfahrens- und Formfehlern",
+        "url": "https://www.gesetze-im-internet.de/sgb_10/__41.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB X § 42 – Folgen von Verfahrens- und Formfehlern",
+        "url": "https://www.gesetze-im-internet.de/sgb_10/__42.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB X § 44 – Rücknahme eines rechtswidrigen nicht begünstigenden Verwaltungsaktes",
+        "url": "https://www.gesetze-im-internet.de/sgb_10/__44.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB X § 45 – Rücknahme eines rechtswidrigen begünstigenden Verwaltungsaktes",
+        "url": "https://www.gesetze-im-internet.de/sgb_10/__45.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB X § 48 – Aufhebung eines Verwaltungsaktes mit Dauerwirkung bei Änderung der Verhältnisse",
+        "url": "https://www.gesetze-im-internet.de/sgb_10/__48.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB X § 50 – Erstattung zu Unrecht erbrachter Leistungen",
+        "url": "https://www.gesetze-im-internet.de/sgb_10/__50.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB II § 38 – Vertretung der Bedarfsgemeinschaft",
+        "url": "https://www.gesetze-im-internet.de/sgb_2/__38.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB II § 39 – Sofortige Vollziehbarkeit",
+        "url": "https://www.gesetze-im-internet.de/sgb_2/__39.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB II § 40 – Anwendung von Verfahrensvorschriften",
+        "url": "https://www.gesetze-im-internet.de/sgb_2/__40.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB II § 41a – Vorläufige Entscheidung",
+        "url": "https://www.gesetze-im-internet.de/sgb_2/__41a.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB II § 42a – Darlehen",
+        "url": "https://www.gesetze-im-internet.de/sgb_2/__42a.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB II § 43 – Aufrechnung",
+        "url": "https://www.gesetze-im-internet.de/sgb_2/__43.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB II § 44 – Veränderung von Ansprüchen",
+        "url": "https://www.gesetze-im-internet.de/sgb_2/__44.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB III § 330 – Sonderregelungen für die Aufhebung von Verwaltungsakten",
+        "url": "https://www.gesetze-im-internet.de/sgb_3/__330.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB I § 60 – Angabe von Tatsachen",
+        "url": "https://www.gesetze-im-internet.de/sgb_1/__60.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "BGB § 1629a – Beschränkung der Minderjährigenhaftung",
+        "url": "https://www.gesetze-im-internet.de/bgb/__1629a.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGG § 51",
+        "url": "https://www.gesetze-im-internet.de/sgg/__51.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGG § 64",
+        "url": "https://www.gesetze-im-internet.de/sgg/__64.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGG § 66",
+        "url": "https://www.gesetze-im-internet.de/sgg/__66.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGG § 67",
+        "url": "https://www.gesetze-im-internet.de/sgg/__67.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGG § 78",
+        "url": "https://www.gesetze-im-internet.de/sgg/__78.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGG § 84",
+        "url": "https://www.gesetze-im-internet.de/sgg/__84.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGG § 86a",
+        "url": "https://www.gesetze-im-internet.de/sgg/__86a.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGG § 86b",
+        "url": "https://www.gesetze-im-internet.de/sgg/__86b.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGG § 87",
+        "url": "https://www.gesetze-im-internet.de/sgg/__87.html",
+        "retrieved": "2026-11-15"
+      }
+    ]
+  },
+  "ueberblick": {
+    "was_ist_das": "Ein Aufhebungs- und Erstattungsbescheid des Jobcenters fasst zwei Entscheidungen in einem Schreiben zusammen: Zuerst wird eine frühere Bewilligung von Grundsicherungsgeld ganz oder teilweise aufgehoben oder zurückgenommen, danach wird der Betrag, der aufgrund dieser Bewilligung bereits ausgezahlt wurde, zur Erstattung festgesetzt. Das Gesetz verlangt, dass die Erstattung durch schriftlichen Verwaltungsakt festgesetzt wird und dass die Festsetzung in der Regel mit der Aufhebung verbunden wird (§ 50 Abs. 3 SGB X). Für jede der beiden Entscheidungen gelten eigene Voraussetzungen, Fristen und Rechtsfolgen.",
+    "rechtsgrundlagen": [
+      {
+        "fall": "Rücknahme, weil die Bewilligung von Anfang an rechtswidrig war",
+        "norm": "§ 45 SGB X in Verbindung mit § 40 Abs. 2 Nr. 3 SGB II und § 330 Abs. 2 SGB III",
+        "voraussetzungen": [
+          "Die ursprüngliche Bewilligung war bereits bei ihrem Erlass rechtswidrig (§ 45 Abs. 1).",
+          "Kein schutzwürdiges Vertrauen des Begünstigten auf den Bestand der Bewilligung (Abs. 2 Satz 1); in der Regel schutzwürdig, wenn Leistungen verbraucht oder nicht mehr rückgängig zu machende Vermögensentscheidungen getroffen wurden (Satz 2).",
+          "Für die Vergangenheit nur, wenn einer der Fälle des Abs. 2 Satz 3 vorliegt: Nr. 1 arglistige Täuschung, Drohung oder Bestechung; Nr. 2 vorsätzlich oder grob fahrlässig unrichtige oder unvollständige Angaben in wesentlicher Beziehung; Nr. 3 Kenntnis oder grob fahrlässige Unkenntnis der Rechtswidrigkeit (§ 45 Abs. 4 Satz 1).",
+          "Fristen: ein Jahr ab Kenntnis der maßgebenden Tatsachen (Abs. 4 Satz 2), zwei Jahre ab Bekanntgabe (Abs. 3 Satz 1), in den Fällen von Nr. 2 und 3 bis zu zehn Jahre (Abs. 3 Satz 3)."
+        ],
+        "wirkung_fuer": "Vergangenheit und Zukunft",
+        "hinweis": "Im SGB II gilt § 330 Abs. 2 SGB III entsprechend (§ 40 Abs. 2 Nr. 3 SGB II): Liegen die Voraussetzungen des § 45 Abs. 2 Satz 3 SGB X vor, ist die Bewilligung auch mit Wirkung für die Vergangenheit zurückzunehmen. Die Behörde hat dann nach dem Wortlaut kein Ermessen."
+      },
+      {
+        "fall": "Aufhebung wegen wesentlicher Änderung der Verhältnisse, nur für die Zukunft",
+        "norm": "§ 48 Abs. 1 Satz 1 SGB X",
+        "voraussetzungen": [
+          "Die Bewilligung ist ein Verwaltungsakt mit Dauerwirkung.",
+          "In den tatsächlichen oder rechtlichen Verhältnissen, die beim Erlass vorlagen, tritt eine wesentliche Änderung ein."
+        ],
+        "wirkung_fuer": "Zukunft",
+        "hinweis": "Dieser Satz trägt nur eine Aufhebung für die Zeit nach dem Bescheid. Für eine Rückforderung bereits gezahlter Beträge braucht die Behörde Satz 2 (nächste Einträge) oder § 45 SGB X."
+      },
+      {
+        "fall": "Aufhebung ab Änderung der Verhältnisse: Änderung zugunsten des Betroffenen",
+        "norm": "§ 48 Abs. 1 Satz 2 Nr. 1 SGB X",
+        "voraussetzungen": [
+          "Die Änderung erfolgt zugunsten des Betroffenen."
+        ],
+        "wirkung_fuer": "Vergangenheit (ab Zeitpunkt der Änderung)",
+        "hinweis": "Die Jahresfrist des § 45 Abs. 4 Satz 2 gilt in diesem Fall nicht (§ 48 Abs. 4 Satz 2)."
+      },
+      {
+        "fall": "Aufhebung ab Änderung der Verhältnisse: Mitteilungspflicht verletzt",
+        "norm": "§ 48 Abs. 1 Satz 2 Nr. 2 SGB X",
+        "voraussetzungen": [
+          "Es besteht eine durch Rechtsvorschrift vorgeschriebene Pflicht, wesentliche, für den Betroffenen nachteilige Änderungen mitzuteilen (im SGB II insbesondere § 60 Abs. 1 Satz 1 Nr. 2 SGB I).",
+          "Der Betroffene ist dieser Pflicht vorsätzlich oder grob fahrlässig nicht nachgekommen."
+        ],
+        "wirkung_fuer": "Vergangenheit (ab Zeitpunkt der Änderung)",
+        "hinweis": "Im SGB II wandelt § 330 Abs. 3 Satz 1 SGB III (über § 40 Abs. 2 Nr. 3 SGB II) die Sollvorschrift in eine Pflicht zur Aufhebung ab dem Änderungszeitpunkt um."
+      },
+      {
+        "fall": "Aufhebung ab Änderung der Verhältnisse: Einkommen oder Vermögen nach Antragstellung oder Erlass",
+        "norm": "§ 48 Abs. 1 Satz 2 Nr. 3 SGB X",
+        "voraussetzungen": [
+          "Nach Antragstellung oder Erlass des Bescheids wurde Einkommen oder Vermögen erzielt.",
+          "Dieses Einkommen oder Vermögen hätte zum Wegfall oder zur Minderung des Anspruchs geführt."
+        ],
+        "wirkung_fuer": "Vergangenheit (ab Zeitpunkt der Änderung)",
+        "hinweis": "Dies ist der Fall, in dem das Gesetz eine geringere Aufrechnung vorsieht: 10 statt 30 Prozent des Regelbedarfs (§ 43 Abs. 2 Satz 1 SGB II). Verschulden verlangt Nr. 3 dem Wortlaut nach nicht."
+      },
+      {
+        "fall": "Aufhebung ab Änderung der Verhältnisse: Kenntnis vom Wegfall des Anspruchs",
+        "norm": "§ 48 Abs. 1 Satz 2 Nr. 4 SGB X",
+        "voraussetzungen": [
+          "Der Anspruch aus dem Bescheid ist kraft Gesetzes zum Ruhen gekommen oder ganz oder teilweise weggefallen.",
+          "Der Betroffene wusste das oder wusste es nur deshalb nicht, weil er die erforderliche Sorgfalt in besonders schwerem Maße verletzt hat."
+        ],
+        "wirkung_fuer": "Vergangenheit (ab Zeitpunkt der Änderung)",
+        "hinweis": "Die Aufrechnung beträgt hier 30 Prozent, nicht 10, weil § 43 Abs. 2 Satz 1 SGB II die Absenkung nur für Nr. 3 nennt."
+      },
+      {
+        "fall": "Abschließende Festsetzung, nachdem zunächst nur vorläufig bewilligt wurde",
+        "norm": "§ 41a Abs. 3 SGB II",
+        "voraussetzungen": [
+          "Die Bewilligung war nach § 41a Abs. 1 vorläufig, etwa weil die Höhe des Anspruchs voraussichtlich längere Zeit nicht feststellbar war.",
+          "Die vorläufig bewilligte Leistung entspricht nicht der abschließend festzustellenden, oder die leistungsberechtigte Person beantragt die abschließende Entscheidung (Abs. 3 Satz 1).",
+          "Die abschließende Entscheidung soll nach Ablauf des Bewilligungszeitraums ergehen (Abs. 4)."
+        ],
+        "wirkung_fuer": "Vergangenheit (der gesamte Bewilligungszeitraum, monatsweise)",
+        "hinweis": "Hier ist weder § 45 noch § 48 SGB X die Rechtsgrundlage der Rückforderung. Überzahlungen werden zunächst mit Nachzahlungen aus anderen Monaten desselben Bewilligungszeitraums verrechnet und nur erstattet, wenn sie insgesamt mindestens 50 Euro für die Gesamtheit der Bedarfsgemeinschaft betragen (Abs. 6 Satz 2 und 3). Werden Nachweise nicht oder nicht fristgemäß vorgelegt, kann für einzelne Monate festgestellt werden, dass kein Leistungsanspruch bestand (Abs. 3 Satz 3 und 4)."
+      },
+      {
+        "fall": "Erstattung der bereits gezahlten Leistung",
+        "norm": "§ 50 SGB X",
+        "voraussetzungen": [
+          "Der Verwaltungsakt, aufgrund dessen gezahlt wurde, ist aufgehoben worden (Abs. 1 Satz 1); oder die Leistung wurde ohne Verwaltungsakt zu Unrecht erbracht (Abs. 2).",
+          "Die Erstattung wird durch schriftlichen Verwaltungsakt festgesetzt (Abs. 3 Satz 1)."
+        ],
+        "wirkung_fuer": "Vergangenheit (Rückzahlung)",
+        "hinweis": "Die Erstattung folgt der Aufhebung: Ohne wirksame Aufhebung für den betreffenden Zeitraum fehlt § 50 Abs. 1 Satz 1 die Voraussetzung."
+      }
+    ]
+  },
+  "fristen_der_behoerde": [
+    {
+      "frist": "Ein Jahr ab Kenntnis der Tatsachen (Rücknahme für die Vergangenheit)",
+      "norm": "§ 45 Abs. 4 Satz 2 SGB X; entsprechend bei § 48 nach § 48 Abs. 4 Satz 1 SGB X",
+      "erlaeuterung": "Die Behörde muss die Rücknahme für die Vergangenheit innerhalb eines Jahres seit Kenntnis der Tatsachen aussprechen, die sie rechtfertigen. Bei der Aufhebung nach § 48 gilt die Jahresfrist entsprechend, jedoch nicht, wenn die Änderung zugunsten des Betroffenen erfolgt ist (§ 48 Abs. 4 Satz 2). Wann die Behörde Kenntnis hatte, ergibt sich nicht aus dem Bescheid selbst; der Gesetzestext definiert den Begriff nicht."
+    },
+    {
+      "frist": "Zwei Jahre ab Bekanntgabe der Bewilligung (Rücknahme eines Dauerverwaltungsakts)",
+      "norm": "§ 45 Abs. 3 Satz 1 SGB X",
+      "erlaeuterung": "Ein rechtswidriger begünstigender Verwaltungsakt mit Dauerwirkung kann nach Abs. 2 nur bis zum Ablauf von zwei Jahren nach seiner Bekanntgabe zurückgenommen werden. Das gilt nicht bei Wiederaufnahmegründen entsprechend § 580 ZPO (Satz 2)."
+    },
+    {
+      "frist": "Zehn Jahre ab Bekanntgabe der Bewilligung",
+      "norm": "§ 45 Abs. 3 Satz 3 und 4 SGB X; über § 48 Abs. 4 Satz 1 SGB X auch bei Aufhebung nach § 48",
+      "erlaeuterung": "Bis zu zehn Jahre kann zurückgenommen werden, wenn die Voraussetzungen von § 45 Abs. 2 Satz 3 Nr. 2 oder 3 vorliegen oder der Bescheid mit einem zulässigen Widerrufsvorbehalt erlassen wurde. Eine laufende Geldleistung kann auch danach zurückgenommen werden, wenn sie mindestens bis zum Beginn des Rücknahmeverfahrens gezahlt wurde (Satz 4)."
+    },
+    {
+      "frist": "Ein Jahr nach Ablauf des Bewilligungszeitraums (Fiktion der abschließenden Festsetzung)",
+      "norm": "§ 41a Abs. 5 SGB II",
+      "erlaeuterung": "Ergeht innerhalb eines Jahres nach Ablauf des Bewilligungszeitraums keine abschließende Entscheidung, gelten die vorläufig bewilligten Leistungen als abschließend festgesetzt (Satz 1). Das gilt nicht, wenn die leistungsberechtigte Person innerhalb der Frist die abschließende Entscheidung beantragt (Satz 2 Nr. 1) oder wenn aus einem anderen als dem angegebenen Vorläufigkeitsgrund weniger oder kein Anspruch besteht und das Jobcenter innerhalb eines Jahres seit Kenntnis dieser Tatsachen, spätestens zehn Jahre nach Bekanntgabe der vorläufigen Entscheidung, abschließend entscheidet (Satz 2 Nr. 2)."
+    },
+    {
+      "frist": "Vier Jahre nach Ablauf des Kalenderjahres der Unanfechtbarkeit (Verjährung des Erstattungsanspruchs)",
+      "norm": "§ 50 Abs. 4 SGB X",
+      "erlaeuterung": "Maßgeblich ist das Kalenderjahr, in dem der Erstattungsbescheid unanfechtbar geworden ist, nicht das Jahr der Überzahlung. Hemmung, Ablaufhemmung, Neubeginn und Wirkung der Verjährung richten sich sinngemäß nach dem BGB (Satz 2). Wie sich Aufrechnung oder Vollstreckung darauf auswirken, steht nicht im Text der gelesenen Normen."
+    },
+    {
+      "frist": "Längstens drei Jahre Aufrechnung nach dem Monat, der auf die Bestandskraft folgt",
+      "norm": "§ 43 Abs. 4 Satz 2 und 3 SGB II",
+      "erlaeuterung": "Zeiten, in denen die Aufrechnung nicht vollziehbar ist, verlängern den Aufrechnungszeitraum entsprechend."
+    },
+    {
+      "frist": "Ein Jahr: Verlangen einer Begründung, wo sie ursprünglich entbehrlich war",
+      "norm": "§ 35 Abs. 3 SGB X",
+      "erlaeuterung": "In den Fällen von § 35 Abs. 2 Nr. 1 bis 3 ist der Bescheid schriftlich oder elektronisch zu begründen, wenn der Beteiligte es innerhalb eines Jahres seit Bekanntgabe verlangt. Ob eine dieser Ausnahmen bei einem Aufhebungs- und Erstattungsbescheid greift, hängt vom Bescheid ab und wird hier nicht bewertet."
+    }
+  ],
+  "aufrechnung": {
+    "norm": "§ 43 SGB II",
+    "saetze": [
+      {
+        "fall": "Erstattungsansprüche, die auf § 41a SGB II beruhen (abschließende Festsetzung nach vorläufiger Bewilligung)",
+        "prozent_des_regelbedarfs": 10,
+        "norm": "§ 43 Abs. 2 Satz 1 SGB II",
+        "art": "satz"
+      },
+      {
+        "fall": "Erstattungsansprüche aus § 48 Abs. 1 Satz 2 Nr. 3 in Verbindung mit § 50 SGB X (Einkommen oder Vermögen nach Antragstellung oder Erlass)",
+        "prozent_des_regelbedarfs": 10,
+        "norm": "§ 43 Abs. 2 Satz 1 SGB II",
+        "art": "satz"
+      },
+      {
+        "fall": "Alle übrigen Erstattungsansprüche, etwa nach § 45 SGB X oder nach § 48 Abs. 1 Satz 2 Nr. 2 und 4 SGB X",
+        "prozent_des_regelbedarfs": 30,
+        "norm": "§ 43 Abs. 2 Satz 1 SGB II",
+        "art": "satz"
+      },
+      {
+        "fall": "Gesamtgrenze aller laufenden Aufrechnungen nach § 43 Abs. 1 und § 42a Abs. 2 SGB II zusammen",
+        "prozent_des_regelbedarfs": 30,
+        "norm": "§ 43 Abs. 2 Satz 2 SGB II",
+        "art": "grenze"
+      },
+      {
+        "fall": "Keine Aufrechnung in Zeiträumen, in denen der Auszahlungsanspruch um mindestens 30 Prozent des Regelbedarfs gemindert ist; bei geringerer Minderung nur die Differenz",
+        "prozent_des_regelbedarfs": 30,
+        "norm": "§ 43 Abs. 3 SGB II",
+        "art": "grenze"
+      },
+      {
+        "fall": "Ratenzahlung bei Erstattung, die auf die Aufnahme einer bedarfsdeckenden sozialversicherungspflichtigen Beschäftigung zurückgeht (zu tilgen in monatlichen Raten; entfällt bei erneuter Hilfebedürftigkeit vor vollständiger Tilgung)",
+        "prozent_des_regelbedarfs": 10,
+        "norm": "§ 40 Abs. 10 SGB II",
+        "art": "grenze"
+      }
+    ],
+    "hoechstdauer": "Die Aufrechnung endet spätestens drei Jahre nach dem Monat, der auf die Bestandskraft der Entscheidung folgt; Zeiten, in denen die Aufrechnung nicht vollziehbar ist, verlängern den Zeitraum (§ 43 Abs. 4 Satz 2 und 3 SGB II).",
+    "hinweis": "Die Aufrechnung ist ein eigener Verwaltungsakt und muss schriftlich erklärt werden (§ 43 Abs. 4 Satz 1). Maßgeblich ist der Regelbedarf der Person, gegen deren Anspruch aufgerechnet wird. Nach § 43 Abs. 1 Satz 2 rechnet das Jobcenter auf, wenn nach § 24 Abs. 2 Nr. 7 SGB X von einer Anhörung abgesehen werden kann (Ansprüche unter 70 Euro). Daneben darf das Jobcenter nach § 44 SGB II Ansprüche erlassen, wenn ihre Einziehung unbillig wäre; die Vorschrift ist eine Kann-Regelung, kein Anspruch."
+  },
+  "bagatellgrenze": {
+    "gibt_es": true,
+    "betrag_eur": 50,
+    "norm": "§ 40 Abs. 1 Satz 3 bis 5 SGB II; für die abschließende Festsetzung zusätzlich § 41a Abs. 6 Satz 3 SGB II",
+    "wortlaut_kurz": "Ein Verwaltungsakt wird für die Vergangenheit nicht aufgehoben, wenn sich ausschließlich Erstattungsforderungen nach § 50 Abs. 1 SGB X von insgesamt weniger als 50 Euro für die Gesamtheit der Mitglieder der Bedarfsgemeinschaft ergäben. Bei der abschließenden Festsetzung nach vorläufiger Bewilligung werden Überzahlungen erstattet, wenn sie insgesamt mindestens 50 Euro für die Gesamtheit der Bedarfsgemeinschaft betragen.",
+    "hinweis": "Die Grenze bemisst sich nach der Summe für die gesamte Bedarfsgemeinschaft, nicht je Person, und gilt für Erstattungsforderungen aus Aufhebungen. Satz 4 schließt aus, bereits nach Satz 3 geprüfte Umstände erneut in die Prüfung einzubeziehen. Satz 5 erstreckt die Regel auf Erstattungen ohne Verwaltungsakt nach § 50 Abs. 2 SGB X. Eine Erstattungsforderung von exakt 50 Euro liegt nicht unter der Grenze."
+  },
+  "aufschiebende_wirkung": {
+    "aufhebung": {
+      "norm": "§ 39 Nr. 1 SGB II",
+      "aussage": "Widerspruch und Anfechtungsklage gegen einen Verwaltungsakt, der Leistungen der Grundsicherung für Arbeitsuchende aufhebt, zurücknimmt, widerruft oder entzieht, haben keine aufschiebende Wirkung. Die Aufhebung gilt damit trotz Widerspruch zunächst weiter, und laufende Zahlungen können eingestellt oder gekürzt bleiben."
+    },
+    "erstattung": {
+      "norm": "§ 39 SGB II; § 86a Abs. 1 SGG",
+      "aussage": "Die Erstattungsfestsetzung nach § 50 Abs. 3 SGB X wird in § 39 SGB II nicht genannt. Der Wortlaut von § 39 Nr. 1 erfasst Verwaltungsakte, die Leistungen aufheben, zurücknehmen, widerrufen oder entziehen. Nach dem Grundsatz des § 86a Abs. 1 Satz 1 SGG haben Widerspruch und Anfechtungsklage aufschiebende Wirkung. Wie sich das auswirkt, wenn Aufhebung und Erstattung in einem Schreiben stehen, sagt der Gesetzestext nicht; das ist eine Frage für die Beratung im Einzelfall."
+    },
+    "hinweis": "Wegen § 86a Abs. 2 Nr. 4 SGG ist § 39 SGB II ein Fall, in dem die aufschiebende Wirkung durch Bundesgesetz entfällt. Dann kann die Behörde die sofortige Vollziehung aussetzen (§ 86a Abs. 3 Satz 1 SGG), und das Gericht der Hauptsache kann auf Antrag die aufschiebende Wirkung anordnen (§ 86b Abs. 1 Satz 1 Nr. 2 SGG); dieser Antrag ist schon vor Klageerhebung zulässig (§ 86b Abs. 3 SGG). Auch die Aufrechnung wird in § 39 nicht erwähnt; § 43 Abs. 4 Satz 3 SGB II setzt aber voraus, dass es Zeiten geben kann, in denen sie nicht vollziehbar ist."
+  },
+  "musterauszug": {
+    "absaetze": [
+      "Bescheid über die Aufhebung der Entscheidung über die Bewilligung von Grundsicherungsgeld und über die Erstattung überzahlter Leistungen. Die Entscheidung über die Bewilligung von Grundsicherungsgeld vom 12.03.2026 wird für die Zeit vom 01.05.2026 bis 31.07.2026 in Höhe von monatlich 412,00 Euro aufgehoben.",
+      "Begründung: Nach Erlass des Bewilligungsbescheides ist in Ihren Verhältnissen eine wesentliche Änderung eingetreten. Sie haben ab dem 01.05.2026 Erwerbseinkommen erzielt, das zum Wegfall des Leistungsanspruchs in dieser Höhe geführt hat. Die Aufhebung beruht auf § 48 Abs. 1 Satz 2 Nr. 3 SGB X in Verbindung mit § 40 Abs. 2 Nr. 3 SGB II und § 330 Abs. 3 SGB III. Die Anhörung ist mit Schreiben vom 02.10.2026 erfolgt.",
+      "Erstattung: Die für den genannten Zeitraum gezahlten Leistungen in Höhe von 1.236,00 Euro sind nach § 50 Abs. 1 SGB X zu erstatten. Die Erstattung wird hiermit festgesetzt. Der Betrag wird mit monatlich 10 Prozent des Regelbedarfs gegen Ihren laufenden Anspruch aufgerechnet. Widerspruch und Anfechtungsklage gegen die Aufhebung haben nach § 39 SGB II keine aufschiebende Wirkung."
+    ],
+    "markierungen": [
+      {
+        "stelle": "§ 48 Abs. 1 Satz 2 Nr. 3 SGB X",
+        "erklaerung": "Diese Zeile nennt die Rechtsgrundlage der Rückwirkung. Nr. 3 betrifft Einkommen oder Vermögen, das nach Antragstellung oder Erlass erzielt wurde, und verlangt dem Wortlaut nach kein Verschulden. Bei § 45 SGB X oder § 48 Abs. 1 Satz 2 Nr. 2 und 4 SGB X wären die Voraussetzungen und die Aufrechnungshöhe andere, deshalb lohnt der Blick, ob die genannte Vorschrift zum geschilderten Sachverhalt passt.",
+        "fundstelle": "§ 48 Abs. 1 Satz 2 Nr. 3 SGB X; § 330 Abs. 3 Satz 1 SGB III"
+      },
+      {
+        "stelle": "nach § 50 Abs. 1 SGB X zu erstatten",
+        "erklaerung": "Dies ist die zweite der beiden Entscheidungen im Schreiben. Die Erstattung setzt voraus, dass die Aufhebung für den genannten Zeitraum Bestand hat; sie ist durch schriftlichen Verwaltungsakt festzusetzen. Betrag und Zeitraum sollten sich nachvollziehbar aus dem Bescheid ergeben, damit erkennbar ist, was zurückgefordert wird (Bestimmtheitsgebot, § 33 Abs. 1 SGB X).",
+        "fundstelle": "§ 50 Abs. 1 und 3 SGB X; § 33 Abs. 1 SGB X"
+      },
+      {
+        "stelle": "monatlich 10 Prozent des Regelbedarfs",
+        "erklaerung": "Die Aufrechnung ist ein eigener Verwaltungsakt mit eigener Höhe: 10 Prozent bei Erstattungen aus § 41a SGB II und § 48 Abs. 1 Satz 2 Nr. 3 SGB X, sonst 30 Prozent. Alle laufenden Aufrechnungen zusammen dürfen 30 Prozent nicht übersteigen, und sie endet spätestens drei Jahre nach dem Monat, der auf die Bestandskraft folgt.",
+        "fundstelle": "§ 43 Abs. 2 und 4 SGB II"
+      }
+    ]
+  },
+  "pruefpunkte": [
+    {
+      "bestandteil": "Anhörung vor dem Bescheid",
+      "legal_basis": "§ 24 SGB X; §§ 41, 42 SGB X",
+      "pruefen": [
+        "Ist dem Bescheid ein Anhörungsschreiben vorausgegangen, in dem die erheblichen Tatsachen genannt waren und Gelegenheit zur Äußerung bestand?",
+        "Falls nicht: nennt der Bescheid einen Grund, warum von der Anhörung abgesehen wurde, etwa nach § 24 Abs. 2 SGB X?",
+        "Wurde die Anhörung nachgeholt, und ab wann ist das geschehen?"
+      ],
+      "hinweis": "Ein Anhörungsmangel kann nach § 41 Abs. 1 Nr. 3 SGB X bis zur letzten Tatsacheninstanz nachgeholt werden. Hat er dazu geführt, dass die Widerspruchsfrist versäumt wurde, gilt die Versäumung als unverschuldet; die Wiedereinsetzungsfrist beginnt erst mit der Nachholung (§ 41 Abs. 3). Das Gesetz lässt das Absehen von der Anhörung unter anderem zu, wenn einkommensabhängige Leistungen den geänderten Verhältnissen angepasst werden sollen (§ 24 Abs. 2 Nr. 5)."
+    },
+    {
+      "bestandteil": "Bestimmtheit, Zeitraum und Betrag",
+      "legal_basis": "§ 33 Abs. 1 SGB X; § 35 Abs. 1 SGB X; § 50 Abs. 3 SGB X",
+      "pruefen": [
+        "Nennt der Bescheid, für welche Kalendermonate die Bewilligung aufgehoben wird?",
+        "Ist erkennbar, welcher Betrag je Monat aufgehoben und welcher insgesamt erstattet werden soll?",
+        "Sind die wesentlichen tatsächlichen und rechtlichen Gründe mitgeteilt, also welche Tatsache sich geändert hat und welche Vorschrift gelten soll?",
+        "Ist ein Berechnungsblatt beigefügt, aus dem die Neuberechnung nachvollziehbar ist?"
+      ],
+      "hinweis": "Das Gesetz verlangt nur, dass der Verwaltungsakt inhaltlich hinreichend bestimmt ist und eine Begründung mit den wesentlichen tatsächlichen und rechtlichen Gründen enthält. Welche Angaben im Einzelnen genügen, regelt der Gesetzestext nicht. Ob je Monat und je Person getrennt auszuweisen ist, entscheidet die Rechtsprechung; diese Seite gibt nur den Gesetzestext wieder."
+    },
+    {
+      "bestandteil": "Rechtsgrundlage: § 45, § 48 oder § 41a",
+      "legal_basis": "§ 45, § 48 SGB X; § 41a SGB II; § 40 Abs. 2 Nr. 3 SGB II",
+      "pruefen": [
+        "Welche Vorschrift nennt der Bescheid als Grundlage der Aufhebung, und passt sie zu dem Sachverhalt, der in der Begründung beschrieben wird?",
+        "War die ursprüngliche Bewilligung ausdrücklich vorläufig? Dann ist § 41a die Grundlage der Rückforderung, nicht § 45 oder § 48.",
+        "Bei § 48: ist nur ein Zeitraum nach dem Bescheid betroffen (Satz 1), oder wird rückwirkend aufgehoben (Satz 2, dann mit der Nummer)?"
+      ],
+      "hinweis": "Bei diesem Bescheidtyp ist ein mögliches Fehlerbild, dass die Rechtsgrundlage nicht zum geschilderten Sachverhalt passt oder gar nicht genannt wird. Die Wahl der Grundlage bestimmt Vertrauensschutz, Fristen und die Höhe der Aufrechnung."
+    },
+    {
+      "bestandteil": "Vertrauensschutz und Verschulden",
+      "legal_basis": "§ 45 Abs. 2 SGB X; § 48 Abs. 1 Satz 2 Nr. 2 und 4 SGB X; § 330 Abs. 2 SGB III; § 41a Abs. 2 Satz 5 SGB II",
+      "pruefen": [
+        "Stützt sich der Bescheid auf § 45 SGB X, und nennt er, aus welchem Grund des Absatzes 2 Satz 3 Vertrauensschutz ausscheiden soll?",
+        "Wird Vorsatz oder grobe Fahrlässigkeit behauptet, und welche Tatsachen führt der Bescheid dafür an?",
+        "Passt die Beschreibung des Fehlers zu dem, was die Norm verlangt, nämlich besonders schwere Verletzung der Sorgfalt (§ 45 Abs. 2 Satz 3 Nr. 3)?"
+      ],
+      "hinweis": "Bei einer vorläufigen Bewilligung gilt § 45 Abs. 2 SGB X nach § 41a Abs. 2 Satz 5 SGB II nicht; dort wird für die Zukunft zurückgenommen. Bei § 48 Abs. 1 Satz 2 Nr. 3 verlangt der Wortlaut kein Verschulden."
+    },
+    {
+      "bestandteil": "Fristen der Behörde",
+      "legal_basis": "§ 45 Abs. 3 und 4 SGB X; § 48 Abs. 4 SGB X; § 41a Abs. 5 SGB II",
+      "pruefen": [
+        "Wann ist die Bewilligung bekanntgegeben worden, und liegt der Bescheid innerhalb der Frist von zwei oder zehn Jahren?",
+        "Seit wann kannte das Jobcenter die Tatsachen, und ist die Jahresfrist des § 45 Abs. 4 Satz 2 SGB X gewahrt?",
+        "Bei vorläufiger Bewilligung: ist der Bewilligungszeitraum länger als ein Jahr zu Ende, und wurde in der Zwischenzeit eine abschließende Entscheidung beantragt?"
+      ],
+      "hinweis": "Der Zeitpunkt der Kenntnis steht nicht im Bescheid und ist im Streitfall eine Tatsachenfrage; die Seite kann nur die Fristen nennen, nicht beurteilen, ob sie eingehalten sind."
+    },
+    {
+      "bestandteil": "Erstattungsbetrag und Bagatellgrenze",
+      "legal_basis": "§ 40 Abs. 1 Satz 3 bis 5 SGB II; § 41a Abs. 6 SGB II; § 50 Abs. 1 SGB X",
+      "pruefen": [
+        "Liegt die Summe der Erstattungsforderungen für die gesamte Bedarfsgemeinschaft unter 50 Euro?",
+        "Bei abschließender Festsetzung: wurden Überzahlungen einzelner Monate mit Nachzahlungen anderer Monate verrechnet, bevor ein Erstattungsbetrag errechnet wurde?",
+        "Stimmt die Summe der aufgehobenen Monatsbeträge mit dem Erstattungsbetrag überein?"
+      ],
+      "hinweis": "Die Frage, ob und wie die Erstattung auf die einzelnen Personen der Bedarfsgemeinschaft zu verteilen ist, wird hier bewusst nicht beantwortet: Der gelesene Gesetzestext enthält dazu keine Regel. Er spricht für die Bagatellgrenze lediglich von der Gesamtheit der Mitglieder."
+    },
+    {
+      "bestandteil": "Aufrechnung",
+      "legal_basis": "§ 43 SGB II; § 42a Abs. 2 SGB II; § 40 Abs. 10 SGB II",
+      "pruefen": [
+        "Ist die Aufrechnung in einem eigenen schriftlichen Verwaltungsakt oder in einem erkennbar abgegrenzten Teil des Bescheids erklärt?",
+        "Beträgt sie 10 oder 30 Prozent des Regelbedarfs, und passt das zur genannten Rechtsgrundlage?",
+        "Werden mehrere Aufrechnungen oder die Darlehenstilgung nach § 42a Abs. 2 zusammen über 30 Prozent hinaus gerechnet?",
+        "Ist in einem Zeitraum mit einer Leistungsminderung von mindestens 30 Prozent aufgerechnet worden?"
+      ],
+      "hinweis": "Mögliche Fehlerbilder sind ein Prozentsatz, der nicht zur genannten Rechtsgrundlage passt, und mehrere sich überlagernde Aufrechnungen. Beides lässt sich nur anhand der Zahlen im Bescheid klären."
+    },
+    {
+      "bestandteil": "Kinder, Bedarfsgemeinschaft und Bekanntgabe",
+      "legal_basis": "§ 40 Abs. 9 SGB II; § 1629a BGB; § 38 SGB II; § 37 Abs. 1 SGB X",
+      "pruefen": [
+        "Ist eine minderjährige Person der Bedarfsgemeinschaft betroffen, und fordert der Bescheid von ihr eine Erstattung?",
+        "Ist erkennbar, an wen sich die Entscheidung richtet, und wurde sie jeder betroffenen Person bekanntgegeben?",
+        "Wann ist der Bescheid zur Post gegeben worden, damit der vierte Tag der Bekanntgabe berechnet werden kann?"
+      ],
+      "hinweis": "Für Kinder gilt nach § 40 Abs. 9 SGB II die Haftungsbeschränkung des § 1629a BGB mit der Maßgabe, dass sich die Haftung auf das Vermögen beschränkt, das bei Eintritt der Volljährigkeit 15 000 Euro übersteigt. Das Gesetz vermutet zudem, dass die erwerbsfähige leistungsberechtigte Person für die Bedarfsgemeinschaft bevollmächtigt ist (§ 38 Abs. 1 Satz 1 SGB II); die Vermutung gilt nur, soweit keine Anhaltspunkte entgegenstehen."
+    }
+  ],
+  "frist": {
+    "rechtsweg": "Sozialgericht",
+    "rechtsweg_begruendung": "§ 51 Abs. 1 Nr. 4a SGG weist Angelegenheiten der Grundsicherung für Arbeitsuchende den Gerichten der Sozialgerichtsbarkeit zu.",
+    "rechtsbehelf": "Widerspruch nach §§ 78 ff. SGG; das Vorverfahren ist vor der Anfechtungsklage vorgeschrieben (§ 78 Abs. 1 Satz 1 SGG), wenn keine der Ausnahmen des Satzes 2 greift",
+    "dauer": "ein Monat ab Bekanntgabe, bei Bekanntgabe im Ausland drei Monate",
+    "kette": [
+      {
+        "schritt": "Bekanntgabe am vierten Tag nach Aufgabe zur Post",
+        "legal_basis": "§ 37 Abs. 2 Satz 1 SGB X",
+        "hinweis": "Im Zweifel muss die Behörde Zugang und Zeitpunkt nachweisen (Satz 3)."
+      },
+      {
+        "schritt": "Der Fristlauf beginnt am Tag nach der Bekanntgabe",
+        "legal_basis": "§ 64 Abs. 1 SGG"
+      },
+      {
+        "schritt": "Ein Monat, bei Bekanntgabe im Ausland drei Monate; schriftlich, elektronisch oder zur Niederschrift bei der Stelle, die den Bescheid erlassen hat",
+        "legal_basis": "§ 84 Abs. 1 SGG"
+      },
+      {
+        "schritt": "Monatsende nach der Zahl des Bekanntgabetages, sonst mit dem Monatsende",
+        "legal_basis": "§ 64 Abs. 2 SGG"
+      },
+      {
+        "schritt": "Sonnabend, Sonntag oder Feiertag verschieben das Fristende auf den nächsten Werktag",
+        "legal_basis": "§ 64 Abs. 3 SGG"
+      },
+      {
+        "schritt": "Fehlende oder unrichtige Rechtsbehelfsbelehrung: ein Jahr",
+        "legal_basis": "§ 66 Abs. 2 SGG"
+      },
+      {
+        "schritt": "Wiedereinsetzung bei unverschuldeter Versäumung: Antrag binnen eines Monats nach Wegfall des Hindernisses",
+        "legal_basis": "§ 67 Abs. 1 und 2 SGG",
+        "hinweis": "Wurde wegen fehlender Anhörung oder Begründung die Frist versäumt, gilt das als nicht verschuldet; das maßgebende Ereignis tritt mit der Nachholung ein (§ 41 Abs. 3 SGB X)."
+      },
+      {
+        "schritt": "Nach dem Widerspruchsbescheid: Klage binnen eines Monats ab dessen Bekanntgabe",
+        "legal_basis": "§ 87 Abs. 1 Satz 1 und Abs. 2 SGG"
+      },
+      {
+        "schritt": "Nach Unanfechtbarkeit: Antrag auf Rücknahme eines rechtswidrigen nicht begünstigenden Bescheids; im SGB II nur bis vier Jahre nach Ablauf des Jahres der Bekanntgabe, der Antrag genügt",
+        "legal_basis": "§ 44 SGB X in Verbindung mit § 40 Abs. 1 Satz 2 Nr. 1 SGB II",
+        "hinweis": "Das betrifft Bescheide, die eine Leistung zu Unrecht verweigern oder kürzen. Ob ein Aufhebungs- und Erstattungsbescheid darunter fällt, gehört in die Einzelfallberatung."
+      }
+    ],
+    "achtung": "Der Widerspruch hat gegen die Aufhebung keine aufschiebende Wirkung (§ 39 Nr. 1 SGB II). Die Widerspruchsfrist läuft trotzdem weiter. Wer die Folgen der Aufhebung vorläufig abwenden will, hat nach dem Gesetz einen eigenen Weg (§ 86a Abs. 3 SGG, § 86b Abs. 1 Satz 1 Nr. 2 SGG), der mit der Widerspruchsfrist nichts zu tun hat.",
+    "besonderheit": "Ein Bescheid kann mehrere Verwaltungsakte enthalten: Aufhebung, Erstattungsfestsetzung und Aufrechnung. Jeder wird bekanntgegeben und kann eigene Rechtsbehelfsbelehrung und eigene Fristen haben; die Belehrung muss Rechtsbehelf, Stelle, Sitz und Frist nennen (§ 66 Abs. 1 SGG).",
+    "rechnung_identisch": "Die Rechnung ist dieselbe wie beim Grundsicherungsgeld-Bescheid: vier Tage, dann ein Monat, dann die Verschiebung auf den nächsten Werktag.",
+    "wichtiger_als_die_widerspruchsfrist": "Die Fristen der Behörde (Jahresfrist ab Kenntnis, Fiktion der abschließenden Festsetzung nach einem Jahr) betreffen nicht Ihre Widerspruchsfrist, sondern die Frage, ob der Bescheid überhaupt noch ergehen durfte. Sie sind unabhängig von der Monatsfrist zu betrachten."
+  },
+  "belege": [
+    {
+      "aussage": "Rücknahme auch nach Unanfechtbarkeit, nur unter den Einschränkungen der Absätze 2 bis 4, für Zukunft oder Vergangenheit",
+      "norm": "§ 45 Abs. 1 SGB X",
+      "wortlaut": "darf er, auch nachdem er unanfechtbar geworden ist, nur unter den Einschränkungen der Absätze 2 bis 4 ganz oder teilweise mit Wirkung für die Zukunft oder für die Vergangenheit zurückgenommen werden"
+    },
+    {
+      "aussage": "Vertrauensschutz als Grundsatz",
+      "norm": "§ 45 Abs. 2 Satz 1 SGB X",
+      "wortlaut": "darf nicht zurückgenommen werden, soweit der Begünstigte auf den Bestand des Verwaltungsaktes vertraut hat und sein Vertrauen unter Abwägung mit dem öffentlichen Interesse an einer Rücknahme schutzwürdig ist"
+    },
+    {
+      "aussage": "Regelbeispiel für schutzwürdiges Vertrauen",
+      "norm": "§ 45 Abs. 2 Satz 2 SGB X",
+      "wortlaut": "Das Vertrauen ist in der Regel schutzwürdig, wenn der Begünstigte erbrachte Leistungen verbraucht oder eine Vermögensdisposition getroffen hat"
+    },
+    {
+      "aussage": "Kein Vertrauensschutz bei falschen Angaben",
+      "norm": "§ 45 Abs. 2 Satz 3 Nr. 2 SGB X",
+      "wortlaut": "der Verwaltungsakt auf Angaben beruht, die der Begünstigte vorsätzlich oder grob fahrlässig in wesentlicher Beziehung unrichtig oder unvollständig gemacht hat"
+    },
+    {
+      "aussage": "Kein Vertrauensschutz bei Kenntnis oder grob fahrlässiger Unkenntnis der Rechtswidrigkeit; Definition grobe Fahrlässigkeit",
+      "norm": "§ 45 Abs. 2 Satz 3 Nr. 3 SGB X",
+      "wortlaut": "er die Rechtswidrigkeit des Verwaltungsaktes kannte oder infolge grober Fahrlässigkeit nicht kannte; grobe Fahrlässigkeit liegt vor, wenn der Begünstigte die erforderliche Sorgfalt in besonders schwerem Maße verletzt hat"
+    },
+    {
+      "aussage": "Kein Vertrauensschutz bei arglistiger Täuschung, Drohung, Bestechung",
+      "norm": "§ 45 Abs. 2 Satz 3 Nr. 1 SGB X",
+      "wortlaut": "er den Verwaltungsakt durch arglistige Täuschung, Drohung oder Bestechung erwirkt hat"
+    },
+    {
+      "aussage": "Zwei Jahre nach Bekanntgabe",
+      "norm": "§ 45 Abs. 3 Satz 1 SGB X",
+      "wortlaut": "kann nach Absatz 2 nur bis zum Ablauf von zwei Jahren nach seiner Bekanntgabe zurückgenommen werden"
+    },
+    {
+      "aussage": "Zehn Jahre nach Bekanntgabe",
+      "norm": "§ 45 Abs. 3 Satz 3 SGB X",
+      "wortlaut": "Bis zum Ablauf von zehn Jahren nach seiner Bekanntgabe kann ein rechtswidriger begünstigender Verwaltungsakt mit Dauerwirkung nach Absatz 2 zurückgenommen werden"
+    },
+    {
+      "aussage": "Laufende Geldleistung: Rücknahme auch nach zehn Jahren",
+      "norm": "§ 45 Abs. 3 Satz 4 SGB X",
+      "wortlaut": "kann ein Verwaltungsakt über eine laufende Geldleistung auch nach Ablauf der Frist von zehn Jahren zurückgenommen werden, wenn diese Geldleistung mindestens bis zum Beginn des Verwaltungsverfahrens über die Rücknahme gezahlt wurde"
+    },
+    {
+      "aussage": "Rücknahme für die Vergangenheit nur in den Fällen des Abs. 2 Satz 3",
+      "norm": "§ 45 Abs. 4 Satz 1 SGB X",
+      "wortlaut": "Nur in den Fällen von Absatz 2 Satz 3 und Absatz 3 Satz 2 wird der Verwaltungsakt mit Wirkung für die Vergangenheit zurückgenommen."
+    },
+    {
+      "aussage": "Jahresfrist ab Kenntnis",
+      "norm": "§ 45 Abs. 4 Satz 2 SGB X",
+      "wortlaut": "Die Behörde muss dies innerhalb eines Jahres seit Kenntnis der Tatsachen tun"
+    },
+    {
+      "aussage": "Aufhebung für die Zukunft bei wesentlicher Änderung",
+      "norm": "§ 48 Abs. 1 Satz 1 SGB X",
+      "wortlaut": "eine wesentliche Änderung eintritt, ist der Verwaltungsakt mit Wirkung für die Zukunft aufzuheben"
+    },
+    {
+      "aussage": "Aufhebung ab Änderungszeitpunkt: Sollvorschrift",
+      "norm": "§ 48 Abs. 1 Satz 2 SGB X",
+      "wortlaut": "Der Verwaltungsakt soll mit Wirkung vom Zeitpunkt der Änderung der Verhältnisse aufgehoben werden"
+    },
+    {
+      "aussage": "Satz 2 Nr. 1: Änderung zugunsten",
+      "norm": "§ 48 Abs. 1 Satz 2 Nr. 1 SGB X",
+      "wortlaut": "die Änderung zugunsten des Betroffenen erfolgt"
+    },
+    {
+      "aussage": "Satz 2 Nr. 2: Verletzung der Mitteilungspflicht",
+      "norm": "§ 48 Abs. 1 Satz 2 Nr. 2 SGB X",
+      "wortlaut": "der Betroffene einer durch Rechtsvorschrift vorgeschriebenen Pflicht zur Mitteilung wesentlicher für ihn nachteiliger Änderungen der Verhältnisse vorsätzlich oder grob fahrlässig nicht nachgekommen ist"
+    },
+    {
+      "aussage": "Satz 2 Nr. 3: Einkommen oder Vermögen nach Antragstellung oder Erlass",
+      "norm": "§ 48 Abs. 1 Satz 2 Nr. 3 SGB X",
+      "wortlaut": "nach Antragstellung oder Erlass des Verwaltungsaktes Einkommen oder Vermögen erzielt worden ist, das zum Wegfall oder zur Minderung des Anspruchs geführt haben würde"
+    },
+    {
+      "aussage": "Satz 2 Nr. 4: Kenntnis vom Wegfall des Anspruchs",
+      "norm": "§ 48 Abs. 1 Satz 2 Nr. 4 SGB X",
+      "wortlaut": "der Betroffene wusste oder nicht wusste, weil er die erforderliche Sorgfalt in besonders schwerem Maße verletzt hat, dass der sich aus dem Verwaltungsakt ergebende Anspruch kraft Gesetzes zum Ruhen gekommen oder ganz oder teilweise weggefallen ist"
+    },
+    {
+      "aussage": "Zeitpunkt der Änderung bei rückwirkender Anrechnung ist der Beginn des Anrechnungszeitraums",
+      "norm": "§ 48 Abs. 1 Satz 3 SGB X",
+      "wortlaut": "der Beginn des Anrechnungszeitraumes"
+    },
+    {
+      "aussage": "Jahresfrist und Zehnjahresfrist gelten über Verweis auch bei § 48; Jahresfrist nicht bei Änderung zugunsten",
+      "norm": "§ 48 Abs. 4 SGB X",
+      "wortlaut": "§ 44 Abs. 3 und 4, § 45 Abs. 3 Satz 3 bis 5 und Abs. 4 Satz 2 gelten entsprechend. § 45 Abs. 4 Satz 2 gilt nicht im Fall des Absatzes 1 Satz 2 Nr. 1."
+    },
+    {
+      "aussage": "Im SGB II wird aus der Sollvorschrift des § 48 eine Pflicht: Aufhebung ab Änderung",
+      "norm": "§ 330 Abs. 3 Satz 1 SGB III",
+      "wortlaut": "ist dieser mit Wirkung vom Zeitpunkt der Änderung der Verhältnisse aufzuheben"
+    },
+    {
+      "aussage": "Im SGB II: bei § 45 Abs. 2 Satz 3 ist auch für die Vergangenheit zurückzunehmen",
+      "norm": "§ 330 Abs. 2 SGB III",
+      "wortlaut": "ist dieser auch mit Wirkung für die Vergangenheit zurückzunehmen"
+    },
+    {
+      "aussage": "§ 330 Abs. 2, 3 Satz 1 und 4 SGB III gelten im SGB II entsprechend",
+      "norm": "§ 40 Abs. 2 Nr. 3 SGB II",
+      "wortlaut": "die Aufhebung von Verwaltungsakten (§ 330 Absatz 2, 3 Satz 1 und 4)"
+    },
+    {
+      "aussage": "SGB X gilt für das Verfahren nach dem SGB II",
+      "norm": "§ 40 Abs. 1 Satz 1 SGB II",
+      "wortlaut": "Für das Verfahren nach diesem Buch gilt das Zehnte Buch."
+    },
+    {
+      "aussage": "Bagatellgrenze 50 Euro für die Gesamtheit der Bedarfsgemeinschaft",
+      "norm": "§ 40 Abs. 1 Satz 3 SGB II",
+      "wortlaut": "dass ein Verwaltungsakt mit Wirkung für die Vergangenheit nicht aufzuheben ist, wenn sich ausschließlich Erstattungsforderungen nach § 50 Absatz 1 des Zehnten Buches von insgesamt weniger als 50 Euro für die Gesamtheit der Mitglieder der Bedarfsgemeinschaft ergäben"
+    },
+    {
+      "aussage": "Bereits geprüfte Umstände werden bei der Bagatellprüfung nicht berücksichtigt",
+      "norm": "§ 40 Abs. 1 Satz 4 SGB II",
+      "wortlaut": "Bei der Prüfung der Aufhebung nach Satz 3 sind Umstände, die bereits Gegenstand einer vorherigen Prüfung nach Satz 3 waren, nicht zu berücksichtigen."
+    },
+    {
+      "aussage": "Bagatellgrenze gilt entsprechend bei Erstattung ohne Verwaltungsakt",
+      "norm": "§ 40 Abs. 1 Satz 5 SGB II",
+      "wortlaut": "Die Sätze 3 und 4 gelten in den Fällen des § 50 Absatz 2 des Zehnten Buches entsprechend."
+    },
+    {
+      "aussage": "Überzahlung nach abschließender Entscheidung: Erstattung ab 50 Euro",
+      "norm": "§ 41a Abs. 6 Satz 3 SGB II",
+      "wortlaut": "Überzahlungen, die nach der Anrechnung fortbestehen, sind zu erstatten, sofern sie insgesamt mindestens 50 Euro für die Gesamtheit der Mitglieder der Bedarfsgemeinschaft betragen."
+    },
+    {
+      "aussage": "Vierjahresfrist für Überprüfung nicht begünstigender Bescheide im SGB II (Betroffene), Antrag genügt",
+      "norm": "§ 40 Abs. 1 Satz 2 Nr. 1 SGB II",
+      "wortlaut": "nicht später als vier Jahre nach Ablauf des Jahres, in dem der Verwaltungsakt bekanntgegeben wurde, zurückzunehmen sind; ausreichend ist, wenn die Rücknahme innerhalb dieses Zeitraums beantragt wird"
+    },
+    {
+      "aussage": "Nachzahlung bei Rücknahme im SGB II nur für ein Jahr statt vier",
+      "norm": "§ 40 Abs. 1 Satz 2 Nr. 2 SGB II",
+      "wortlaut": "anstelle des Zeitraums von vier Jahren nach Absatz 4 Satz 1 ein Zeitraum von einem Jahr tritt"
+    },
+    {
+      "aussage": "Abschließende Entscheidung nach Aufhebung für die Zukunft, wenn vorläufig zu entscheiden wäre",
+      "norm": "§ 40 Abs. 4 SGB II",
+      "wortlaut": "mit Wirkung für die Zukunft ganz aufzuheben, wenn in den tatsächlichen Verhältnissen der leistungsberechtigten Person Änderungen eintreten, aufgrund derer nach Maßgabe des § 41a vorläufig zu entscheiden wäre"
+    },
+    {
+      "aussage": "Abschließende Entscheidung, wenn vorläufige Leistung nicht der abschließend festzustellenden entspricht oder Antrag",
+      "norm": "§ 41a Abs. 3 Satz 1 SGB II",
+      "wortlaut": "entscheiden abschließend über den monatlichen Leistungsanspruch, sofern die vorläufig bewilligte Leistung nicht der abschließend festzustellenden entspricht oder die leistungsberechtigte Person eine abschließende Entscheidung beantragt"
+    },
+    {
+      "aussage": "Fehlende Nachweise: Anspruch nur in nachgewiesener Höhe, sonst kein Anspruch",
+      "norm": "§ 41a Abs. 3 Satz 3 und 4 SGB II",
+      "wortlaut": "Für die übrigen Kalendermonate wird festgestellt, dass ein Leistungsanspruch nicht bestand."
+    },
+    {
+      "aussage": "Nachweise sind nach dem Tag nach Bekanntgabe des Widerspruchsbescheides ausgeschlossen",
+      "norm": "§ 41a Abs. 3 Satz 5 SGB II",
+      "wortlaut": "spätestens am Tag nach Bekanntgabe des Widerspruchsbescheides, zugegangen sind, ist ausgeschlossen"
+    },
+    {
+      "aussage": "Abschließende Entscheidung soll nach Ablauf des Bewilligungszeitraums erfolgen",
+      "norm": "§ 41a Abs. 4 SGB II",
+      "wortlaut": "Die abschließende Entscheidung nach Absatz 3 soll nach Ablauf des Bewilligungszeitraums erfolgen."
+    },
+    {
+      "aussage": "Jahresfrist nach Ablauf des Bewilligungszeitraums: Fiktion der abschließenden Festsetzung",
+      "norm": "§ 41a Abs. 5 Satz 1 SGB II",
+      "wortlaut": "Ergeht innerhalb eines Jahres nach Ablauf des Bewilligungszeitraums keine abschließende Entscheidung nach Absatz 3, gelten die vorläufig bewilligten Leistungen als abschließend festgesetzt."
+    },
+    {
+      "aussage": "Ausnahme: Antrag auf abschließende Entscheidung innerhalb der Jahresfrist",
+      "norm": "§ 41a Abs. 5 Satz 2 Nr. 1 SGB II",
+      "wortlaut": "die leistungsberechtigte Person innerhalb der Frist nach Satz 1 eine abschließende Entscheidung beantragt"
+    },
+    {
+      "aussage": "Ausnahme: anderer Grund, ein Jahr seit Kenntnis, spätestens zehn Jahre nach Bekanntgabe",
+      "norm": "§ 41a Abs. 5 Satz 2 Nr. 2 SGB II",
+      "wortlaut": "innerhalb eines Jahres seit Kenntnis von diesen Tatsachen, spätestens aber nach Ablauf von zehn Jahren nach der Bekanntgabe der vorläufigen Entscheidung, abschließend entscheidet"
+    },
+    {
+      "aussage": "Anrechnung vorläufiger Leistungen; Überzahlung wird mit Nachzahlungen anderer Monate verrechnet",
+      "norm": "§ 41a Abs. 6 Satz 1 und 2 SGB II",
+      "wortlaut": "Soweit im Bewilligungszeitraum in einzelnen Kalendermonaten vorläufig zu hohe Leistungen erbracht wurden, sind die sich daraus ergebenden Überzahlungen auf die abschließend bewilligten Leistungen anzurechnen, die für andere Kalendermonate dieses Bewilligungszeitraums nachzuzahlen wären."
+    },
+    {
+      "aussage": "Vorläufige Entscheidung: Rücknahme für die Zukunft, § 45 Abs. 2 nicht anwendbar",
+      "norm": "§ 41a Abs. 2 Satz 4 und 5 SGB II",
+      "wortlaut": "Soweit die vorläufige Entscheidung nach Absatz 1 rechtswidrig ist, ist sie für die Zukunft zurückzunehmen. § 45 Absatz 2 des Zehnten Buches findet keine Anwendung."
+    },
+    {
+      "aussage": "Mitwirkungspflichten nach Ablauf des Bewilligungszeitraums: §§ 60, 61, 65, 65a SGB I gelten entsprechend",
+      "norm": "§ 41a Abs. 3 Satz 2 SGB II",
+      "wortlaut": "die §§ 60, 61, 65 und 65a des Ersten Buches gelten entsprechend"
+    },
+    {
+      "aussage": "Mitteilung von Änderungen unverzüglich",
+      "norm": "§ 60 Abs. 1 Satz 1 Nr. 2 SGB I",
+      "wortlaut": "Änderungen in den Verhältnissen, die für die Leistung erheblich sind oder über die im Zusammenhang mit der Leistung Erklärungen abgegeben worden sind, unverzüglich mitzuteilen"
+    },
+    {
+      "aussage": "Erstattung bereits erbrachter Leistungen, soweit der Verwaltungsakt aufgehoben ist",
+      "norm": "§ 50 Abs. 1 Satz 1 SGB X",
+      "wortlaut": "Soweit ein Verwaltungsakt aufgehoben worden ist, sind bereits erbrachte Leistungen zu erstatten."
+    },
+    {
+      "aussage": "Erstattung ohne Verwaltungsakt; §§ 45 und 48 entsprechend",
+      "norm": "§ 50 Abs. 2 SGB X",
+      "wortlaut": "Soweit Leistungen ohne Verwaltungsakt zu Unrecht erbracht worden sind, sind sie zu erstatten. §§ 45 und 48 gelten entsprechend."
+    },
+    {
+      "aussage": "Festsetzung der Erstattung durch schriftlichen Verwaltungsakt, regelmäßig verbunden mit der Aufhebung",
+      "norm": "§ 50 Abs. 3 SGB X",
+      "wortlaut": "Die zu erstattende Leistung ist durch schriftlichen Verwaltungsakt festzusetzen. Die Festsetzung soll, sofern die Leistung auf Grund eines Verwaltungsakts erbracht worden ist, mit der Aufhebung des Verwaltungsaktes verbunden werden."
+    },
+    {
+      "aussage": "Verjährung: vier Jahre nach Ablauf des Kalenderjahres der Unanfechtbarkeit",
+      "norm": "§ 50 Abs. 4 Satz 1 SGB X",
+      "wortlaut": "Der Erstattungsanspruch verjährt in vier Jahren nach Ablauf des Kalenderjahres, in dem der Verwaltungsakt nach Absatz 3 unanfechtbar geworden ist."
+    },
+    {
+      "aussage": "BGB-Vorschriften zu Hemmung und Neubeginn sinngemäß",
+      "norm": "§ 50 Abs. 4 Satz 2 SGB X",
+      "wortlaut": "Für die Hemmung, die Ablaufhemmung, den Neubeginn und die Wirkung der Verjährung gelten die Vorschriften des Bürgerlichen Gesetzbuchs sinngemäß."
+    },
+    {
+      "aussage": "Aufrechnungsmöglichkeit mit Erstattungsansprüchen nach § 50 SGB X und § 41a Abs. 6 Satz 3",
+      "norm": "§ 43 Abs. 1 Satz 1 SGB II",
+      "wortlaut": "Die Jobcenter können gegen Ansprüche leistungsberechtigter Personen auf Geldleistungen zur Sicherung des Lebensunterhalts aufrechnen mit"
+    },
+    {
+      "aussage": "Aufrechnung ist zwingend, wenn von der Anhörung nach § 24 Abs. 2 Nr. 7 SGB X abgesehen werden kann",
+      "norm": "§ 43 Abs. 1 Satz 2 SGB II",
+      "wortlaut": "Die Jobcenter rechnen gegen Ansprüche von leistungsberechtigten Personen auf Geldleistungen zur Sicherung des Lebensunterhalts mit Erstattungs- oder Ersatzansprüchen nach Satz 1 auf, wenn nach § 24 Absatz 2 Nummer 7 des Zehnten Buches von einer Anhörung abgesehen werden kann."
+    },
+    {
+      "aussage": "10 Prozent bei § 41a und § 48 Abs. 1 Satz 2 Nr. 3, sonst 30 Prozent",
+      "norm": "§ 43 Abs. 2 Satz 1 SGB II",
+      "wortlaut": "10 Prozent des für die leistungsberechtigte Person maßgebenden Regelbedarfs, in den übrigen Fällen 30 Prozent"
+    },
+    {
+      "aussage": "Gesamtgrenze 30 Prozent mit laufenden Aufrechnungen und Darlehenstilgung",
+      "norm": "§ 43 Abs. 2 Satz 2 SGB II",
+      "wortlaut": "insgesamt 30 Prozent des maßgebenden Regelbedarfs übersteigen würde, ist unzulässig"
+    },
+    {
+      "aussage": "Keine Aufrechnung während einer Minderung um mindestens 30 Prozent",
+      "norm": "§ 43 Abs. 3 Satz 1 SGB II",
+      "wortlaut": "Eine Aufrechnung ist nicht zulässig für Zeiträume, in denen der Auszahlungsanspruch nach § 31b Absatz 1 Satz 1 um mindestens 30 Prozent des maßgebenden Regelbedarfs gemindert ist."
+    },
+    {
+      "aussage": "Aufrechnung per schriftlichem Verwaltungsakt",
+      "norm": "§ 43 Abs. 4 Satz 1 SGB II",
+      "wortlaut": "Die Aufrechnung ist gegenüber der leistungsberechtigten Person schriftlich durch Verwaltungsakt zu erklären."
+    },
+    {
+      "aussage": "Höchstdauer: drei Jahre nach dem Monat, der auf die Bestandskraft folgt",
+      "norm": "§ 43 Abs. 4 Satz 2 SGB II",
+      "wortlaut": "Sie endet spätestens drei Jahre nach dem Monat, der auf die Bestandskraft der in Absatz 1 genannten Entscheidungen folgt."
+    },
+    {
+      "aussage": "Zeiten ohne Vollziehbarkeit verlängern den Aufrechnungszeitraum",
+      "norm": "§ 43 Abs. 4 Satz 3 SGB II",
+      "wortlaut": "Zeiten, in denen die Aufrechnung nicht vollziehbar ist, verlängern den Aufrechnungszeitraum entsprechend."
+    },
+    {
+      "aussage": "Darlehenstilgung 5 Prozent (zählt in die 30-Prozent-Grenze)",
+      "norm": "§ 42a Abs. 2 Satz 1 SGB II",
+      "wortlaut": "durch monatliche Aufrechnung in Höhe von 5 Prozent des maßgebenden Regelbedarfs getilgt"
+    },
+    {
+      "aussage": "Raten von 10 Prozent bei Erstattung wegen bedarfsdeckender sozialversicherungspflichtiger Beschäftigung",
+      "norm": "§ 40 Abs. 10 Satz 1 SGB II",
+      "wortlaut": "in monatlichen Raten in Höhe von 10 Prozent des maßgebenden Regelbedarfs zu tilgen"
+    },
+    {
+      "aussage": "Erlass von Ansprüchen bei Unbilligkeit",
+      "norm": "§ 44 SGB II",
+      "wortlaut": "dürfen Ansprüche erlassen, wenn deren Einziehung nach Lage des einzelnen Falles unbillig wäre"
+    },
+    {
+      "aussage": "Anhörung vor Eingriff in Rechte",
+      "norm": "§ 24 Abs. 1 SGB X",
+      "wortlaut": "ist diesem Gelegenheit zu geben, sich zu den für die Entscheidung erheblichen Tatsachen zu äußern"
+    },
+    {
+      "aussage": "Anhörung kann entfallen, wenn einkommensabhängige Leistungen den geänderten Verhältnissen angepasst werden",
+      "norm": "§ 24 Abs. 2 Nr. 5 SGB X",
+      "wortlaut": "einkommensabhängige Leistungen den geänderten Verhältnissen angepasst werden sollen"
+    },
+    {
+      "aussage": "Anhörung kann bei Aufrechnung unter 70 Euro entfallen",
+      "norm": "§ 24 Abs. 2 Nr. 7 SGB X",
+      "wortlaut": "gegen Ansprüche oder mit Ansprüchen von weniger als 70 Euro aufgerechnet oder verrechnet werden soll"
+    },
+    {
+      "aussage": "Anhörungsmangel kann nachgeholt werden",
+      "norm": "§ 41 Abs. 1 Nr. 3 SGB X",
+      "wortlaut": "die erforderliche Anhörung eines Beteiligten nachgeholt wird"
+    },
+    {
+      "aussage": "Nachholung bis zur letzten Tatsacheninstanz",
+      "norm": "§ 41 Abs. 2 SGB X",
+      "wortlaut": "können bis zur letzten Tatsacheninstanz eines sozial- oder verwaltungsgerichtlichen Verfahrens nachgeholt werden"
+    },
+    {
+      "aussage": "Fehlende Anhörung oder Begründung: Fristversäumung gilt als unverschuldet; Wiedereinsetzungsfrist beginnt mit der Nachholung",
+      "norm": "§ 41 Abs. 3 SGB X",
+      "wortlaut": "gilt die Versäumung der Rechtsbehelfsfrist als nicht verschuldet. Das für die Wiedereinsetzungsfrist maßgebende Ereignis tritt im Zeitpunkt der Nachholung der unterlassenen Verfahrenshandlung ein."
+    },
+    {
+      "aussage": "Unterbliebene Anhörung schließt den Ausschluss der Aufhebung wegen offensichtlicher Folgenlosigkeit aus",
+      "norm": "§ 42 Satz 2 SGB X",
+      "wortlaut": "Satz 1 gilt nicht, wenn die erforderliche Anhörung unterblieben oder nicht wirksam nachgeholt ist."
+    },
+    {
+      "aussage": "Bestimmtheitsgebot",
+      "norm": "§ 33 Abs. 1 SGB X",
+      "wortlaut": "Ein Verwaltungsakt muss inhaltlich hinreichend bestimmt sein."
+    },
+    {
+      "aussage": "Begründungspflicht für schriftliche Verwaltungsakte",
+      "norm": "§ 35 Abs. 1 Satz 1 SGB X",
+      "wortlaut": "ist mit einer Begründung zu versehen"
+    },
+    {
+      "aussage": "Inhalt der Begründung",
+      "norm": "§ 35 Abs. 1 Satz 2 SGB X",
+      "wortlaut": "In der Begründung sind die wesentlichen tatsächlichen und rechtlichen Gründe mitzuteilen, die die Behörde zu ihrer Entscheidung bewogen haben."
+    },
+    {
+      "aussage": "Bekanntgabe am vierten Tag nach Aufgabe zur Post",
+      "norm": "§ 37 Abs. 2 Satz 1 SGB X",
+      "wortlaut": "gilt am vierten Tag nach der Aufgabe zur Post als bekannt gegeben"
+    },
+    {
+      "aussage": "Nachweislast der Behörde im Zweifel",
+      "norm": "§ 37 Abs. 2 Satz 3 SGB X",
+      "wortlaut": "im Zweifel hat die Behörde den Zugang des Verwaltungsaktes und den Zeitpunkt des Zugangs nachzuweisen"
+    },
+    {
+      "aussage": "Bekanntgabe an den Beteiligten, für den der Verwaltungsakt bestimmt ist",
+      "norm": "§ 37 Abs. 1 Satz 1 SGB X",
+      "wortlaut": "Ein Verwaltungsakt ist demjenigen Beteiligten bekannt zu geben, für den er bestimmt ist oder der von ihm betroffen wird."
+    },
+    {
+      "aussage": "Vermutung der Bevollmächtigung für die Bedarfsgemeinschaft, widerleglich",
+      "norm": "§ 38 Abs. 1 Satz 1 SGB II",
+      "wortlaut": "wird vermutet, dass die oder der erwerbsfähige Leistungsberechtigte bevollmächtigt ist, Leistungen nach diesem Buch auch für die mit ihm in einer Bedarfsgemeinschaft lebenden Personen zu beantragen und entgegenzunehmen"
+    },
+    {
+      "aussage": "Haftungsbeschränkung Minderjähriger: Vermögen über 15 000 Euro bei Volljährigkeit",
+      "norm": "§ 40 Abs. 9 SGB II",
+      "wortlaut": "dass sich die Haftung eines Kindes auf das Vermögen beschränkt, das bei Eintritt der Volljährigkeit den Betrag von 15 000 Euro übersteigt"
+    },
+    {
+      "aussage": "Allgemeine Beschränkung der Minderjährigenhaftung auf das bei Volljährigkeit vorhandene Vermögen",
+      "norm": "§ 1629a Abs. 1 Satz 1 BGB",
+      "wortlaut": "beschränkt sich auf den Bestand des bei Eintritt der Volljährigkeit vorhandenen Vermögens des Kindes"
+    },
+    {
+      "aussage": "Keine aufschiebende Wirkung bei Aufhebung, Rücknahme, Widerruf, Entziehung von Leistungen",
+      "norm": "§ 39 Nr. 1 SGB II",
+      "wortlaut": "Keine aufschiebende Wirkung haben Widerspruch und Anfechtungsklage gegen einen Verwaltungsakt, 1. der Leistungen der Grundsicherung für Arbeitsuchende aufhebt, zurücknimmt, widerruft, entzieht,"
+    },
+    {
+      "aussage": "Grundsatz: aufschiebende Wirkung",
+      "norm": "§ 86a Abs. 1 Satz 1 SGG",
+      "wortlaut": "Widerspruch und Anfechtungsklage haben aufschiebende Wirkung."
+    },
+    {
+      "aussage": "Wegfall in anderen durch Bundesgesetz vorgeschriebenen Fällen",
+      "norm": "§ 86a Abs. 2 Nr. 4 SGG",
+      "wortlaut": "in anderen durch Bundesgesetz vorgeschriebenen Fällen"
+    },
+    {
+      "aussage": "Aussetzung der Vollziehung durch Behörde möglich",
+      "norm": "§ 86a Abs. 3 Satz 1 SGG",
+      "wortlaut": "In den Fällen des Absatzes 2 kann die Stelle, die den Verwaltungsakt erlassen oder die über den Widerspruch zu entscheiden hat, die sofortige Vollziehung ganz oder teilweise aussetzen."
+    },
+    {
+      "aussage": "Gericht kann aufschiebende Wirkung anordnen",
+      "norm": "§ 86b Abs. 1 Satz 1 Nr. 2 SGG",
+      "wortlaut": "in den Fällen, in denen Widerspruch oder Anfechtungsklage keine aufschiebende Wirkung haben, die aufschiebende Wirkung ganz oder teilweise anordnen"
+    },
+    {
+      "aussage": "Gerichtlicher Antrag schon vor Klageerhebung zulässig",
+      "norm": "§ 86b Abs. 3 SGG",
+      "wortlaut": "Die Anträge nach den Absätzen 1 und 2 sind schon vor Klageerhebung zulässig."
+    },
+    {
+      "aussage": "Rechtsweg: Sozialgerichte in Angelegenheiten der Grundsicherung für Arbeitsuchende",
+      "norm": "§ 51 Abs. 1 Nr. 4a SGG",
+      "wortlaut": "in Angelegenheiten der Grundsicherung für Arbeitsuchende"
+    },
+    {
+      "aussage": "Vorverfahren vor Anfechtungsklage",
+      "norm": "§ 78 Abs. 1 Satz 1 SGG",
+      "wortlaut": "Vor Erhebung der Anfechtungsklage sind Rechtmäßigkeit und Zweckmäßigkeit des Verwaltungsakts in einem Vorverfahren nachzuprüfen."
+    },
+    {
+      "aussage": "Widerspruchsfrist ein Monat, bei der erlassenden Stelle",
+      "norm": "§ 84 Abs. 1 Satz 1 SGG",
+      "wortlaut": "Der Widerspruch ist binnen eines Monats, nachdem der Verwaltungsakt dem Beschwerten bekanntgegeben worden ist"
+    },
+    {
+      "aussage": "Bekanntgabe im Ausland drei Monate",
+      "norm": "§ 84 Abs. 1 Satz 2 SGG",
+      "wortlaut": "Die Frist beträgt bei Bekanntgabe im Ausland drei Monate."
+    },
+    {
+      "aussage": "Fristlauf ab dem Tag nach Zustellung",
+      "norm": "§ 64 Abs. 1 SGG",
+      "wortlaut": "beginnt, soweit nichts anderes bestimmt ist, mit dem Tag nach der Zustellung"
+    },
+    {
+      "aussage": "Monatsfrist endet am entsprechenden Tag, sonst am Monatsende",
+      "norm": "§ 64 Abs. 2 SGG",
+      "wortlaut": "Fehlt dem letzten Monat der entsprechende Tag, so endet die Frist mit dem Monat."
+    },
+    {
+      "aussage": "Verschiebung auf den nächsten Werktag",
+      "norm": "§ 64 Abs. 3 SGG",
+      "wortlaut": "so endet die Frist mit Ablauf des nächsten Werktags"
+    },
+    {
+      "aussage": "Fehlende oder unrichtige Belehrung: ein Jahr",
+      "norm": "§ 66 Abs. 2 SGG",
+      "wortlaut": "Ist die Belehrung unterblieben oder unrichtig erteilt, so ist die Einlegung des Rechtsbehelfs nur innerhalb eines Jahres seit Zustellung, Eröffnung oder Verkündung zulässig"
+    },
+    {
+      "aussage": "Wiedereinsetzung: Antrag binnen eines Monats nach Wegfall des Hindernisses",
+      "norm": "§ 67 Abs. 2 Satz 1 SGG",
+      "wortlaut": "Der Antrag ist binnen eines Monats nach Wegfall des Hindernisses zu stellen."
+    },
+    {
+      "aussage": "Klagefrist ein Monat, nach Vorverfahren ab Widerspruchsbescheid",
+      "norm": "§ 87 SGG",
+      "wortlaut": "Die Klage ist binnen eines Monats nach Bekanntgabe des Verwaltungsakts zu erheben."
+    },
+    {
+      "aussage": "Mit Vorverfahren beginnt die Klagefrist mit Bekanntgabe des Widerspruchsbescheids",
+      "norm": "§ 87 Abs. 2 SGG",
+      "wortlaut": "Hat ein Vorverfahren stattgefunden, so beginnt die Frist mit der Bekanntgabe des Widerspruchsbescheids."
+    }
+  ],
+  "rdg_grenze": "Diese Seite beschreibt den Bescheidtyp und allgemeine Fehlerbilder anhand des Gesetzestextes; sie bewertet nicht, ob ein konkreter Aufhebungs- oder Erstattungsbescheid rechtmäßig ist, ob ein Widerspruch Erfolg hätte oder ob ein Antrag auf einstweiligen Rechtsschutz sinnvoll ist.",
+  "noch_offen": [
+    "Rechtsprechung des Bundessozialgerichts und der Landessozialgerichte: etwa zum Maßstab der groben Fahrlässigkeit, zum Begriff der Kenntnis in § 45 Abs. 4 Satz 2 SGB X und zu den Anforderungen an die Bestimmtheit nach Monat und Person wurden nicht gelesen.",
+    "Kopfteilprinzip und Erstattung je Person der Bedarfsgemeinschaft: Der gelesene Gesetzestext enthält dazu keine Regel (auch § 38 SGB II regelt nur die Vermutung der Bevollmächtigung). Ratgeberaussagen dazu sind nicht übernommen.",
+    "Wie sich eine sofort vollziehbare Aufhebung auf die Erstattungsfestsetzung und die Aufrechnung auswirkt, wenn beides in einem Schreiben steht: § 39 SGB II nennt die Erstattung nicht, die Rechtsfolge im Zusammenspiel wurde nicht anhand von Rechtsprechung belegt.",
+    "Der Begriff der Kenntnis in § 45 Abs. 4 Satz 2 SGB X wird im Gesetz nicht definiert; die Auslegung steht nicht im Text.",
+    "Verfahren und Voraussetzungen für Stundung, Niederschlagung und Ratenzahlung (außer § 44 SGB II und § 40 Abs. 10 SGB II) wurden nicht gelesen; § 44 SGB II enthält nur die Erlassmöglichkeit bei Unbilligkeit.",
+    "§ 50 Abs. 3 SGB X und § 41a Abs. 6 SGB II: ob die Erstattung nach abschließender Festsetzung ausdrücklich durch eigenen Verwaltungsakt festzusetzen ist, sagt § 41a nicht; § 43 Abs. 1 Satz 1 Nr. 4 nennt sie nur als Aufrechnungsgrundlage.",
+    "Die Anwendung der Bagatellgrenze des § 40 Abs. 1 Satz 3 SGB II auf Fälle, in denen mehrere Aufhebungsbescheide ergehen (Aufteilung), ist nur durch Satz 4 geregelt; weitere Auslegung wurde nicht geprüft.",
+    "Verwaltungsanweisungen der Bundesagentur für Arbeit zu SGB II und Beratungsstellenmaterial wurden nicht herangezogen.",
+    "§ 330 Abs. 3 Satz 1 und 4 SGB III: § 40 Abs. 2 Nr. 3 SGB II verweist auf Satz 4, § 330 Abs. 3 hat in der abgerufenen Fassung aber nur zwei Sätze. Der Verweis läuft nach dem Text ins Leere; ob eine Folge entsteht, wurde nicht geprüft.",
+    "Der Abruf betrifft den Gesetzesstand vom 2026-11-15. Spätere Änderungen sind nicht erfasst; Fristen, 50 Euro, 70 Euro und die Prozentsätze sollten bei jeder Jahresaktualisierung gegen den Volltext geprüft werden."
+  ]
+}

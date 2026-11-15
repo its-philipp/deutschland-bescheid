@@ -1,0 +1,278 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import AdSlot from '../components/AdSlot.astro';
+import Disclaimer from '../components/Disclaimer.astro';
+import Icon from '../components/Icon.astro';
+import Quellen from '../components/Quellen.astro';
+import { isoLang } from '../lib/format';
+import { berechneFrist } from '../lib/frist';
+import { jahrAus } from '../lib/jahr';
+import {
+  DANACH,
+  FORM,
+  FRIST_BELEHRUNG,
+  INHALT,
+  KEIN_EINSPRUCH,
+  KOSTEN,
+  RDG_GRENZE_WIDERSPRUCH,
+  VORVERFAHREN,
+  WEGE,
+  WIDERSPRUCH_ERHOBEN_AM,
+  WIDERSPRUCH_QUELLEN,
+  WIEDEREINSETZUNG,
+  WIRKUNG,
+} from '../data/bafoegWiderspruch';
+
+/**
+ * Widerspruch gegen den BAföG-Bescheid (2026-11-15).
+ *
+ * Aus den Suchdaten: „bafög bescheid widerspruch" und „einspruch gegen bafög
+ * bescheid" hatten zusammen 17 Impressionen auf Position 48 bis 56 — auf der
+ * Erklärseite, die den Rechtsbehelf nur in der Fristenkette streift.
+ *
+ * **Was diese Seite von einem Widerspruchs-Ratgeber unterscheidet und nicht
+ * verloren gehen darf:** Sie beginnt nicht mit dem Widerspruch, sondern mit der
+ * Frage, ob er der richtige Weg ist. Der häufigste Grund für zu wenig BAföG —
+ * das gesunkene Elterneinkommen — ist kein Fehler des Amts, und ein
+ * Widerspruch ändert daran nichts; dafür gibt es den Aktualisierungsantrag,
+ * der mit dem Bewilligungszeitraum verfällt.
+ *
+ * **Die Länderfrage bleibt offen, mit Absicht** (siehe Datensatz). Die Seite
+ * sagt nirgends unbedingt „legen Sie Widerspruch ein".
+ *
+ * Das Rechenbeispiel wird beim Bauen von `lib/frist.ts` gerechnet — derselben
+ * Funktion, die `check:fristen` gegen die Grenzfälle prüft. Kein Datum im
+ * Beispiel ist von Hand eingesetzt außer dem Ausgangstag.
+ */
+const BEISPIEL_POST = '2026-11-02';
+const beispiel = berechneFrist({ aufgabeZurPost: BEISPIEL_POST });
+const beispielOhneBelehrung = berechneFrist({
+  aufgabeZurPost: BEISPIEL_POST,
+  belehrungFehltOderFalsch: true,
+});
+---
+
+<BaseLayout
+  title={`Widerspruch gegen den BAföG-Bescheid: Frist, Form, Kosten ${jahrAus(WIDERSPRUCH_ERHOBEN_AM)}`}
+  description="Widerspruch, Klage, Aktualisierungsantrag oder Überprüfung: welcher Weg gegen den BAföG-Bescheid wozu passt, wie die Monatsfrist läuft und was es kostet."
+  path="/bafoeg-bescheid-widerspruch/"
+>
+  <nav class="text-[14px] text-ink-mute" aria-label="Sie sind hier">
+    <a href="/" class="underline underline-offset-2">Startseite</a> ·{' '}
+    <a href="/bafoeg-bescheid/" class="underline underline-offset-2">BAföG-Bescheid</a> · Widerspruch
+  </nav>
+
+  <h1 class="mt-2 font-display text-[clamp(1.9rem,5vw,2.75rem)] leading-tight text-ink">
+    Widerspruch gegen den BAföG-Bescheid — und wann ein anderer Weg der richtige ist
+  </h1>
+  <p class="mt-4 max-w-prose text-ink-soft">
+    Gegen einen BAföG-Bescheid gibt es nicht einen Weg, sondern fünf, und sie
+    haben verschiedene Fristen. Der Widerspruch ist der bekannteste — aber er
+    passt nur, wenn das Amt etwas falsch gemacht hat. Für die häufigste Lage,
+    ein gesunkenes Einkommen der Eltern, sieht das Gesetz einen eigenen Antrag
+    vor, und dessen Frist steht in keiner Rechtsbehelfsbelehrung.
+  </p>
+  <p class="mt-3 max-w-prose text-[15px] text-ink-mute">{KEIN_EINSPRUCH}</p>
+
+  <section class="mt-12">
+    <h2 class="font-display text-2xl text-ink">Welcher Weg zu welcher Lage gehört</h2>
+    <div class="mt-5 flex flex-col gap-5">
+      {
+        WEGE.map((w, i) => (
+          <article class="border-t-4 border-marker bg-paper p-5 sm:p-6">
+            <p class="flex gap-3 text-ink">
+              <span class="font-display text-xl font-semibold text-marker">{i + 1}</span>
+              <span class="text-[17px]">{w.situation}</span>
+            </p>
+            <dl class="mt-4 flex flex-col divide-y divide-rule border-y border-rule text-[15px]">
+              <div class="flex flex-wrap gap-x-6 gap-y-1 py-2.5">
+                <dt class="w-full shrink-0 text-[14px] text-ink-mute sm:w-24">Weg</dt>
+                <dd class="min-w-0 flex-1 font-medium text-ink">{w.weg}</dd>
+              </div>
+              <div class="flex flex-wrap gap-x-6 gap-y-1 py-2.5">
+                <dt class="w-full shrink-0 text-[14px] text-ink-mute sm:w-24">Frist</dt>
+                <dd class="min-w-0 flex-1 text-ink-soft">{w.frist}</dd>
+              </div>
+            </dl>
+            <p class="mt-2 text-[14px] text-ink-mute">{w.legal_basis}</p>
+          </article>
+        ))
+      }
+    </div>
+    <p class="mt-5 max-w-prose text-ink-soft">
+      Die Wege schließen einander nicht aus. Wer unsicher ist, ob das Amt falsch
+      gerechnet hat oder nur das alte Einkommen zugrunde gelegt hat, findet die
+      Positionen der Rechnung auf der Seite zum{' '}
+      <a href="/bafoeg-bescheid/" class="text-ink underline underline-offset-2">BAföG-Bescheid</a>
+      {' '}— dort steht, was das Amt angeben muss und wo bei diesem Bescheidtyp
+      häufig Fehler sitzen.
+    </p>
+  </section>
+
+  <div class="mt-10">
+    <AdSlot />
+  </div>
+
+  <section class="mt-14 max-w-prose">
+    <h2 class="font-display text-2xl text-ink">Widerspruch oder gleich Klage?</h2>
+    <p class="mt-3 text-ink-soft">{VORVERFAHREN.regel}</p>
+    <p class="mt-4 border-l-4 border-marker bg-marker-tint px-4 py-3 text-ink">
+      <strong>Prüfen Sie zuerst die Rechtsbehelfsbelehrung.</strong> {VORVERFAHREN.folge}
+    </p>
+    <p class="mt-3 text-[15px] text-ink-soft">{VORVERFAHREN.was_tun}</p>
+    <p class="mt-2 text-[14px] text-ink-mute">{VORVERFAHREN.legal_basis}</p>
+  </section>
+
+  <section class="mt-14 max-w-prose">
+    <h2 class="font-display text-2xl text-ink">Die Monatsfrist an einem Beispiel</h2>
+    <p class="mt-3 text-ink-soft">
+      Die Frist beginnt nicht am Datum, das oben auf dem Bescheid steht, sondern
+      mit der Bekanntgabe — und die gilt bei einem Brief erst am vierten Tag
+      nach der Aufgabe zur Post als erfolgt.
+    </p>
+    <ol class="mt-5 flex flex-col divide-y divide-rule border-y border-rule">
+      <li class="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 py-3">
+        <span class="text-ink-soft">Bescheid zur Post gegeben</span>
+        <span class="font-semibold tabular-nums text-ink">{isoLang(BEISPIEL_POST)}</span>
+      </li>
+      <li class="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 py-3">
+        <span class="text-ink-soft">gilt als bekannt gegeben am vierten Tag danach</span>
+        <span class="font-semibold tabular-nums text-ink">{isoLang(beispiel.bekanntgabe)}</span>
+      </li>
+      <li class="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 py-3">
+        <span class="text-ink-soft">
+          Widerspruch muss eingegangen sein bis
+          {beispiel.aufWerktagVerschoben && ' (auf den nächsten Werktag verschoben)'}
+        </span>
+        <span class="font-display text-xl font-semibold text-ink">
+          {beispiel.fristendeWochentag}, {isoLang(beispiel.fristende)}
+        </span>
+      </li>
+      <li class="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 py-3">
+        <span class="text-ink-soft">bei fehlender oder unrichtiger Rechtsbehelfsbelehrung</span>
+        <span class="font-semibold tabular-nums text-ink">
+          {beispielOhneBelehrung.fristendeWochentag}, {isoLang(beispielOhneBelehrung.fristende)}
+        </span>
+      </li>
+    </ol>
+    <p class="mt-3 text-[15px] text-ink-soft">
+      Entscheidend ist der Eingang beim Amt, nicht der Poststempel. Für Ihr
+      eigenes Datum rechnet der{' '}
+      <a href="/widerspruchsfrist/" class="text-ink underline underline-offset-2">Fristenrechner</a>
+      ; gesetzliche Feiertage Ihres Landes berücksichtigt er nicht.
+    </p>
+    <p class="mt-4 text-[15px] text-ink-soft">
+      {FRIST_BELEHRUNG.text}
+      <span class="block text-[14px] text-ink-mute">{FRIST_BELEHRUNG.legal_basis}</span>
+    </p>
+    <p class="mt-3 text-[15px] text-ink-soft">
+      {WIEDEREINSETZUNG.text}
+      <span class="block text-[14px] text-ink-mute">{WIEDEREINSETZUNG.legal_basis}</span>
+    </p>
+  </section>
+
+  <section class="mt-14">
+    <h2 class="font-display text-2xl text-ink">Form: wie und wo der Widerspruch eingeht</h2>
+    <div class="mt-5 grid gap-6 sm:grid-cols-2">
+      <article class="border-t-4 border-marker bg-paper p-5">
+        <h3 class="flex items-center gap-2 font-display text-xl text-ink">
+          <Icon name="bescheid" class="h-5 w-5 shrink-0 text-marker" />
+          Zugelassene Wege
+        </h3>
+        <ul class="mt-3 flex flex-col gap-2">
+          {
+            FORM.wege.map((weg) => (
+              <li class="flex gap-2.5 text-[15px] text-ink">
+                <Icon name="pruefen" class="mt-1 h-4 w-4 shrink-0 text-marker" />
+                <span>{weg}</span>
+              </li>
+            ))
+          }
+        </ul>
+        <p class="mt-3 text-[15px] text-ink-soft">{FORM.wo}</p>
+        <p class="mt-2 text-[14px] text-ink-mute">{FORM.legal_basis}</p>
+      </article>
+      <article class="border-t-4 border-marker bg-paper p-5">
+        <h3 class="flex items-center gap-2 font-display text-xl text-ink">
+          <Icon name="markierung" class="h-5 w-5 shrink-0 text-marker" />
+          Was darin stehen sollte
+        </h3>
+        <ul class="mt-3 flex flex-col gap-2">
+          {
+            INHALT.map((punkt) => (
+              <li class="flex gap-2.5 text-[15px] text-ink">
+                <Icon name="pruefen" class="mt-1 h-4 w-4 shrink-0 text-marker" />
+                <span>{punkt}</span>
+              </li>
+            ))
+          }
+        </ul>
+      </article>
+    </div>
+    <p class="mt-4 flex max-w-prose gap-2.5 text-[15px] text-ink">
+      <Icon name="hinweis" class="mt-0.5 h-5 w-5 shrink-0 text-marker" />
+      <span>{FORM.hinweis}</span>
+    </p>
+  </section>
+
+  <section class="mt-14 max-w-prose">
+    <h2 class="font-display text-2xl text-ink">Was der Widerspruch bewirkt — und was nicht</h2>
+    <p class="mt-3 flex gap-2.5 text-ink-soft">
+      <Icon name="frist" class="mt-1 h-5 w-5 shrink-0 text-marker" />
+      <span>
+        <strong class="text-ink">Bei einer Rückforderung:</strong> {WIRKUNG.rueckforderung}
+      </span>
+    </p>
+    <p class="mt-3 flex gap-2.5 text-ink-soft">
+      <Icon name="hinweis" class="mt-1 h-5 w-5 shrink-0 text-marker" />
+      <span>
+        <strong class="text-ink">Bei Ablehnung oder zu wenig BAföG:</strong> {WIRKUNG.ablehnung}
+      </span>
+    </p>
+    <p class="mt-2 text-[14px] text-ink-mute">{WIRKUNG.legal_basis}</p>
+  </section>
+
+  <section class="mt-14 max-w-prose">
+    <h2 class="font-display text-2xl text-ink">Wie es nach dem Widerspruch weitergeht</h2>
+    <ol class="mt-5 flex flex-col divide-y divide-rule border-y border-rule">
+      {
+        DANACH.map((s, i) => (
+          <li class="flex gap-3 py-3">
+            <span class="font-display text-lg font-semibold text-marker">{i + 1}</span>
+            <div class="min-w-0">
+              <p class="text-ink">{s.schritt}</p>
+              <p class="mt-1 text-[14px] text-ink-mute">{s.legal_basis}</p>
+            </div>
+          </li>
+        ))
+      }
+    </ol>
+  </section>
+
+  <section class="mt-14 max-w-prose">
+    <h2 class="font-display text-2xl text-ink">Was das Verfahren kostet</h2>
+    <dl class="mt-5 flex flex-col divide-y divide-rule border-y border-rule">
+      {
+        KOSTEN.map((k) => (
+          <div class="flex flex-wrap gap-x-6 gap-y-1 py-3">
+            <dt class="w-full shrink-0 text-[14px] text-ink-mute sm:w-40">{k.posten}</dt>
+            <dd class="min-w-0 flex-1 text-ink">
+              {k.text}
+              <span class="block text-[14px] text-ink-mute">{k.legal_basis}</span>
+            </dd>
+          </div>
+        ))
+      }
+    </dl>
+  </section>
+
+  <p class="mt-8 max-w-prose text-[15px] text-ink-mute">{RDG_GRENZE_WIDERSPRUCH}</p>
+
+  <Quellen quellen={WIDERSPRUCH_QUELLEN} erhobenAm={WIDERSPRUCH_ERHOBEN_AM} />
+
+  <Disclaimer />
+
+  <div class="mt-10">
+    <AdSlot />
+  </div>
+</BaseLayout>

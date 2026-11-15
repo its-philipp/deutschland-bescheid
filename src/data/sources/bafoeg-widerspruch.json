@@ -1,0 +1,279 @@
+{
+  "_meta": {
+    "topic": "bafoeg-widerspruch",
+    "retrieved": "2026-11-15",
+    "collector": "local session (owner's machine)",
+    "method": "Einzelnormen von BAföG, VwGO, SGB I und SGB X bei gesetze-im-internet.de abgerufen und im Volltext gelesen. Welche Länder das Vorverfahren für BAföG-Bescheide abgeschafft oder freigestellt haben, wurde bewusst nicht erhoben: Die Landesgesetze sind uneinheitlich und ändern sich; maßgeblich ist die Rechtsbehelfsbelehrung des einzelnen Bescheids.",
+    "sources": [
+      {
+        "label": "BAföG § 20 – Rückzahlungspflicht",
+        "url": "https://www.gesetze-im-internet.de/baf_g/__20.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "BAföG § 24 – Berechnungszeitraum für das Einkommen der Eltern und des Ehegatten oder Lebenspartners",
+        "url": "https://www.gesetze-im-internet.de/baf_g/__24.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "BAföG § 36 – Vorausleistung von Ausbildungsförderung",
+        "url": "https://www.gesetze-im-internet.de/baf_g/__36.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "BAföG § 46 – Antrag",
+        "url": "https://www.gesetze-im-internet.de/baf_g/__46.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "BAföG § 50 – Bescheid",
+        "url": "https://www.gesetze-im-internet.de/baf_g/__50.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "BAföG § 51 – Zahlweise",
+        "url": "https://www.gesetze-im-internet.de/baf_g/__51.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "BAföG § 53 – Änderung des Bescheides",
+        "url": "https://www.gesetze-im-internet.de/baf_g/__53.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "BAföG § 54 – Rechtsweg",
+        "url": "https://www.gesetze-im-internet.de/baf_g/__54.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "VwGO § 58",
+        "url": "https://www.gesetze-im-internet.de/vwgo/__58.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "VwGO § 60",
+        "url": "https://www.gesetze-im-internet.de/vwgo/__60.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "VwGO § 68",
+        "url": "https://www.gesetze-im-internet.de/vwgo/__68.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "VwGO § 70",
+        "url": "https://www.gesetze-im-internet.de/vwgo/__70.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "VwGO § 73",
+        "url": "https://www.gesetze-im-internet.de/vwgo/__73.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "VwGO § 74",
+        "url": "https://www.gesetze-im-internet.de/vwgo/__74.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "VwGO § 75",
+        "url": "https://www.gesetze-im-internet.de/vwgo/__75.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "VwGO § 80",
+        "url": "https://www.gesetze-im-internet.de/vwgo/__80.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "VwGO § 188",
+        "url": "https://www.gesetze-im-internet.de/vwgo/__188.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB I § 68 – Besondere Teile dieses Gesetzbuches",
+        "url": "https://www.gesetze-im-internet.de/sgb_1/__68.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB X § 44 – Rücknahme eines rechtswidrigen nicht begünstigenden Verwaltungsaktes",
+        "url": "https://www.gesetze-im-internet.de/sgb_10/__44.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB X § 63 – Erstattung von Kosten im Vorverfahren",
+        "url": "https://www.gesetze-im-internet.de/sgb_10/__63.html",
+        "retrieved": "2026-11-15"
+      },
+      {
+        "label": "SGB X § 64 – Kostenfreiheit",
+        "url": "https://www.gesetze-im-internet.de/sgb_10/__64.html",
+        "retrieved": "2026-11-15"
+      }
+    ]
+  },
+  "bescheid_begriff": {
+    "legal_basis": "§ 50 Abs. 1 Satz 1 BAföG",
+    "definition": "Bescheid nennt das Gesetz die Entscheidung über den Antrag, die dem Antragsteller schriftlich oder elektronisch mitgeteilt wird.",
+    "bescheid_erteilt": "„Bescheid erteilt“ heißt deshalb zunächst nur: Das Amt hat entschieden und die Entscheidung auf den Weg gebracht. Über den Inhalt sagt die Formulierung nichts — ein Bescheid kann bewilligen, weniger bewilligen als erwartet oder ablehnen. Was davon zutrifft, steht erst im Schreiben selbst.",
+    "bescheid_erteilt_grenze": "Wie die Statusanzeige eines Antragsportals im Einzelnen zu lesen ist, regelt das Gesetz nicht. Wenn die Anzeige einen Bescheid meldet und nach einigen Tagen kein Schreiben da ist, kann nur Ihr Amt für Ausbildungsförderung sagen, wann und wohin er verschickt wurde — das Datum ist wichtig, weil daran die Frist hängt.",
+    "pflichtangaben_legal_basis": "§ 50 Abs. 2 Satz 1 BAföG",
+    "pflichtangaben": [
+      "Höhe und Zusammensetzung des Bedarfs",
+      "Höhe des Einkommens — Ihres eigenen, das Ihres Ehegatten oder Lebenspartners und Ihrer Eltern — sowie Ihres Vermögens",
+      "Höhe der Steuern und der Abzüge für die soziale Sicherung, die bei der Einkommensermittlung berücksichtigt wurden",
+      "Höhe der gewährten Freibeträge und des Einkommens, das auf den Bedarf anderer Auszubildender angerechnet wurde",
+      "Höhe der Beträge, die aus Einkommen und Vermögen auf Ihren Bedarf angerechnet wurden"
+    ],
+    "pflichtangaben_ausnahmen": "Diese Angaben entfallen, wenn der Antrag dem Grunde nach abgelehnt wird. Auf begründetes Verlangen eines Elternteils, des Ehegatten oder Lebenspartners entfallen außerdem die Angaben zu deren Einkommen bis auf den angerechneten Betrag — es sei denn, Sie haben ein besonderes berechtigtes Interesse daran, sie zu kennen.",
+    "pflichtangaben_ausnahmen_legal_basis": "§ 50 Abs. 2 Satz 2 und 3 BAföG",
+    "arten": [
+      {
+        "name": "Bewilligungsbescheid",
+        "legal_basis": "§ 50 Abs. 2 und 3 BAföG",
+        "text": "Bewilligt Förderung, in der Regel für ein Jahr — den Bewilligungszeitraum. Er muss die vollständige Rechnung enthalten, bei Hochschulen und Akademien zusätzlich das Ende der Förderungshöchstdauer."
+      },
+      {
+        "name": "Ablehnungsbescheid",
+        "legal_basis": "§ 50 Abs. 2 Satz 2 BAföG",
+        "text": "Lehnt das Amt den Antrag dem Grunde nach ab — die Ausbildung oder die Person ist nach seiner Auffassung gar nicht förderungsfähig —, muss der Bescheid keine Rechnung enthalten. Die Ausnahme nennt nur diesen Fall. Für eine Ablehnung, die sich erst aus der Rechnung ergibt, weil das angerechnete Einkommen den Bedarf übersteigt, sieht das Gesetz keine Ausnahme von den Pflichtangaben vor."
+      },
+      {
+        "name": "Bescheid unter dem Vorbehalt der Rückforderung",
+        "legal_basis": "§ 50 Abs. 1 Satz 2, § 24 Abs. 2 und 3, § 51 Abs. 2, § 20 Abs. 1 Satz 1 Nr. 4 BAföG",
+        "text": "Ein Vorbehalt ist nur zulässig, wo das Gesetz ihn vorsieht: wenn der Steuerbescheid der Eltern noch fehlt, nach einem Aktualisierungsantrag, oder wenn sich beim ersten Antrag die Feststellungen länger als sechs Kalenderwochen oder die Zahlung länger als zehn Kalenderwochen hinziehen — dann werden für vier Monate bis zu vier Fünftel des voraussichtlichen Bedarfs gezahlt. Später wird abschließend entschieden; was danach zu viel gezahlt war, ist zu erstatten."
+      },
+      {
+        "name": "Änderungsbescheid",
+        "legal_basis": "§ 53 Satz 1 BAföG",
+        "text": "Ändert sich ein maßgeblicher Umstand, wird der Bescheid geändert: zu Ihren Gunsten ab dem Monat der Änderung, rückwirkend aber höchstens für die drei Monate vor dem Monat, in dem Sie die Änderung mitgeteilt haben; zu Ihren Ungunsten ab dem Monat, der auf die Änderung folgt."
+      },
+      {
+        "name": "Vorabentscheidung",
+        "legal_basis": "§ 46 Abs. 5 BAföG",
+        "text": "Auf Antrag entscheidet das Amt vorab dem Grunde nach, ob eine bestimmte Ausbildung überhaupt gefördert werden kann — etwa eine weitere oder eine andere Ausbildung, eine Ausbildung im Ausland oder eine nach Überschreiten der Altersgrenze. Das Amt ist daran nicht mehr gebunden, wenn die Ausbildung nicht binnen eines Jahres nach Antragstellung beginnt."
+      },
+      {
+        "name": "Aufhebungs- und Erstattungsbescheid",
+        "legal_basis": "§ 20 Abs. 1 BAföG, §§ 44 bis 50 SGB X",
+        "text": "Hebt eine Bewilligung auf und verlangt Geld zurück. Das BAföG nennt dafür zwei eigene Fälle: eigenes Einkommen, das bei der Bewilligung nicht berücksichtigt war, und Zahlungen unter Vorbehalt. Alle anderen Fälle richten sich nach den allgemeinen Vorschriften des Zehnten Buches Sozialgesetzbuch."
+      }
+    ],
+    "ohne_neuen_bescheid": {
+      "legal_basis": "§ 50 Abs. 4 BAföG",
+      "text": "Endet der Bewilligungszeitraum, ohne dass ein neuer Bescheid da ist, wird nach dem alten Bescheid unter Vorbehalt weitergezahlt — aber nur, wenn der Folgeantrag im Wesentlichen vollständig und mit den Nachweisen zwei Kalendermonate vor Ablauf gestellt war."
+    },
+    "zahlung": {
+      "legal_basis": "§ 51 Abs. 1, 3 und 4 BAföG",
+      "text": "Gezahlt wird unbar und monatlich im Voraus. Monatsbeträge werden auf volle Euro gerundet; Monatsbeträge unter 10 Euro werden nicht geleistet."
+    }
+  },
+  "wege": [
+    {
+      "situation": "Das Amt hat falsch gerechnet oder etwas nicht berücksichtigt, das im Antrag stand",
+      "weg": "Widerspruch — oder, wo das Land das Vorverfahren abgeschafft hat, Klage",
+      "frist": "ein Monat ab Bekanntgabe des Bescheids",
+      "legal_basis": "§ 70 Abs. 1, § 74 Abs. 1 VwGO"
+    },
+    {
+      "situation": "Die Rechnung stimmt, aber das Einkommen der Eltern ist heute wesentlich niedriger als im vorletzten Kalenderjahr",
+      "weg": "Aktualisierungsantrag — ein eigener Antrag, kein Rechtsbehelf",
+      "frist": "bis zum Ende des Bewilligungszeitraums; später gestellte Anträge werden nicht berücksichtigt",
+      "legal_basis": "§ 24 Abs. 3 BAföG"
+    },
+    {
+      "situation": "Die Eltern zahlen den Unterhalt nicht, den der Bescheid ihnen anrechnet",
+      "weg": "Antrag auf Vorausleistung",
+      "frist": "bis zum Ende des Bewilligungszeitraums; später gestellte Anträge werden nicht berücksichtigt",
+      "legal_basis": "§ 36 Abs. 1 BAföG"
+    },
+    {
+      "situation": "Nach dem Bescheid hat sich etwas geändert — Umzug, Kind, Wegfall von Einkommen",
+      "weg": "Änderung mitteilen; der Bescheid wird geändert",
+      "frist": "zu Ihren Gunsten rückwirkend höchstens für die drei Monate vor dem Monat der Mitteilung",
+      "legal_basis": "§ 53 Satz 1 Nr. 1 BAföG"
+    },
+    {
+      "situation": "Die Monatsfrist ist abgelaufen, der Bescheid war aber von Anfang an falsch",
+      "weg": "Überprüfungsantrag: Rücknahme eines rechtswidrigen, nicht begünstigenden Bescheids",
+      "frist": "Leistungen werden längstens für vier Jahre vor der Rücknahme nachgezahlt, gerechnet vom Beginn des Jahres, in dem der Antrag gestellt wird",
+      "legal_basis": "§ 44 Abs. 1 und 4 SGB X i. V. m. § 68 Nr. 1 SGB I"
+    }
+  ],
+  "kein_einspruch": "Gesucht wird oft nach dem „Einspruch“ gegen den BAföG-Bescheid. Diesen Rechtsbehelf kennt die Verwaltungsgerichtsordnung hier nicht: Er heißt Widerspruch — oder es ist unmittelbar Klage zu erheben. Welches von beiden, steht in der Rechtsbehelfsbelehrung am Ende des Bescheids.",
+  "vorverfahren": {
+    "legal_basis": "§ 68 Abs. 1 VwGO, § 74 Abs. 1 Satz 2 VwGO",
+    "regel": "Grundsätzlich wird ein Bescheid vor einer Klage in einem Vorverfahren nachgeprüft — das ist der Widerspruch. Einer solchen Nachprüfung bedarf es nicht, wenn ein Gesetz dies bestimmt. Mehrere Länder haben davon Gebrauch gemacht, manche ganz, manche für einzelne Rechtsgebiete, manche stellen den Widerspruch frei.",
+    "folge": "Ist kein Widerspruchsverfahren vorgesehen, muss die Klage innerhalb eines Monats nach Bekanntgabe des Bescheids beim Verwaltungsgericht erhoben werden. Ein Widerspruch, der dort nicht statthaft ist, wahrt diese Frist nicht von selbst.",
+    "was_tun": "Diese Seite löst das nicht für sechzehn Länder auf, weil sich die Landesgesetze ändern und ein veralteter Stand hier mehr schaden würde als keiner. Maßgeblich ist die Rechtsbehelfsbelehrung Ihres Bescheids: Sie muss den Rechtsbehelf, die Stelle, deren Sitz und die Frist nennen."
+  },
+  "form": {
+    "legal_basis": "§ 70 Abs. 1 VwGO",
+    "wege": [
+      "schriftlich",
+      "in elektronischer Form nach § 3a Absatz 2 des Verwaltungsverfahrensgesetzes oder schriftformersetzend nach dessen Absatz 3 und § 9a Absatz 5 des Onlinezugangsgesetzes",
+      "zur Niederschrift bei der Behörde"
+    ],
+    "wo": "Bei dem Amt, das den Bescheid erlassen hat. Die Frist wird auch gewahrt, wenn der Widerspruch bei der Behörde eingeht, die den Widerspruchsbescheid zu erlassen hat.",
+    "hinweis": "Eine einfache E-Mail nennt die Vorschrift nicht. Wer sichergehen will, wählt den Brief mit Unterschrift oder die Niederschrift im Amt und lässt sich den Eingang bestätigen."
+  },
+  "inhalt": [
+    "wer widerspricht — Name, Anschrift, Förderungsnummer",
+    "gegen welchen Bescheid — Datum und Aktenzeichen",
+    "dass es ein Widerspruch sein soll",
+    "möglichst: welche Position der Rechnung nicht stimmt — Bedarf, Einkommen, Freibetrag oder angerechneter Betrag. Die Begründung darf nachgereicht werden."
+  ],
+  "frist_belehrung": {
+    "legal_basis": "§ 58 Abs. 1 und 2, § 70 Abs. 2 VwGO",
+    "text": "Die Monatsfrist beginnt nur zu laufen, wenn der Bescheid über den Rechtsbehelf, die Stelle, deren Sitz und die Frist belehrt. Fehlt die Belehrung oder ist sie unrichtig, kann der Rechtsbehelf innerhalb eines Jahres eingelegt werden."
+  },
+  "wiedereinsetzung": {
+    "legal_basis": "§ 60 Abs. 1 bis 3, § 70 Abs. 2 VwGO",
+    "text": "Wer die Frist ohne Verschulden versäumt hat, kann Wiedereinsetzung beantragen — binnen zwei Wochen, nachdem das Hindernis weggefallen ist, und zusammen mit dem nachgeholten Widerspruch. Ein Jahr nach Ende der versäumten Frist ist auch das ausgeschlossen."
+  },
+  "wirkung": {
+    "legal_basis": "§ 80 Abs. 1 und Abs. 2 Satz 1 Nr. 4 VwGO",
+    "rueckforderung": "Widerspruch und Anfechtungsklage haben aufschiebende Wirkung. Bei einem Bescheid, der eine Bewilligung aufhebt oder Geld zurückfordert, heißt das: Solange über den Widerspruch nicht entschieden ist, darf er grundsätzlich nicht vollzogen werden — es sei denn, das Amt hat die sofortige Vollziehung besonders angeordnet und schriftlich begründet.",
+    "ablehnung": "Bei einem Ablehnungsbescheid oder einem zu niedrigen Bewilligungsbescheid gibt es nichts aufzuschieben: Der Widerspruch führt nicht dazu, dass in der Zwischenzeit mehr gezahlt wird."
+  },
+  "danach": [
+    {
+      "schritt": "Das Amt prüft selbst. Hält es den Widerspruch für begründet, hilft es ab — es ändert den Bescheid.",
+      "legal_basis": "§ 73 Abs. 1 Satz 1 VwGO"
+    },
+    {
+      "schritt": "Hilft es nicht ab, ergeht ein Widerspruchsbescheid. Er muss begründet sein, eine Rechtsmittelbelehrung enthalten und förmlich zugestellt werden; er entscheidet auch über die Kosten.",
+      "legal_basis": "§ 73 Abs. 1 und 3 VwGO"
+    },
+    {
+      "schritt": "Gegen den Widerspruchsbescheid kann innerhalb eines Monats nach Zustellung Klage beim Verwaltungsgericht erhoben werden.",
+      "legal_basis": "§ 74 Abs. 1 Satz 1 VwGO, § 54 BAföG"
+    },
+    {
+      "schritt": "Entscheidet das Amt ohne zureichenden Grund nicht in angemessener Frist, ist die Klage auch ohne Widerspruchsbescheid zulässig — in der Regel nicht vor Ablauf von drei Monaten seit Einlegung des Widerspruchs.",
+      "legal_basis": "§ 75 VwGO"
+    }
+  ],
+  "kosten": [
+    {
+      "posten": "Verfahren beim Amt",
+      "text": "Für das Verfahren bei den Behörden nach dem Sozialgesetzbuch werden keine Gebühren und Auslagen erhoben; das BAföG gilt als besonderer Teil des Sozialgesetzbuchs.",
+      "legal_basis": "§ 64 Abs. 1 Satz 1 SGB X, § 68 Nr. 1 SGB I"
+    },
+    {
+      "posten": "Gericht",
+      "text": "In Verfahren der Ausbildungsförderung werden vor den Verwaltungsgerichten keine Gerichtskosten erhoben.",
+      "legal_basis": "§ 188 Satz 2 VwGO"
+    },
+    {
+      "posten": "Eigene Aufwendungen",
+      "text": "Soweit der Widerspruch erfolgreich ist, werden die notwendigen Aufwendungen erstattet — die eines Anwalts oder anderen Bevollmächtigten nur, wenn seine Zuziehung notwendig war.",
+      "legal_basis": "§ 63 Abs. 1 und 2 SGB X"
+    }
+  ],
+  "rdg_grenze": "Diese Seite beschreibt, welche Wege das Gesetz gegen einen BAföG-Bescheid kennt und wie ihre Fristen laufen. Sie beurteilt keinen einzelnen Bescheid und sagt nicht, ob ein Widerspruch in Ihrem Fall Aussicht auf Erfolg hat. Dafür sind die Sozialberatung des Studierendenwerks, eine Rechtsanwältin oder ein Rechtsanwalt die richtige Stelle.",
+  "noch_offen": [
+    "Welche Länder das Vorverfahren für BAföG-Bescheide abgeschafft oder freigestellt haben (Landesausführungsgesetze zur VwGO) — bewusst nicht erhoben.",
+    "Statusbezeichnungen des Portals BAföG Digital („Bescheid erteilt“): keine amtliche Erläuterung gefunden; die Seite sagt dazu nur, was § 50 Abs. 1 BAföG hergibt."
+  ]
+}

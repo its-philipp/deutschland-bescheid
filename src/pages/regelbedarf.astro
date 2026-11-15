@@ -2,7 +2,19 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import AdSlot from '../components/AdSlot.astro';
 import Disclaimer from '../components/Disclaimer.astro';
+import Icon from '../components/Icon.astro';
 import { ERHOBEN_AM, QUELLEN, REGELBEDARF, STUFEN } from '../data/grundsicherungsgeld';
+import {
+  ERSTES_JAHR,
+  GROESSTER_ANSTIEG,
+  LETZTES_JAHR,
+  NEUERMITTLUNG,
+  UNVERAENDERT_SEIT,
+  VERLAUF,
+  VERLAUF_ERHOBEN_AM,
+  VERLAUF_LEGAL_BASIS,
+  VERLAUF_QUELLEN,
+} from '../data/regelbedarfVerlauf';
 import { isoToGerman } from '../lib/format';
 
 /**
@@ -32,11 +44,26 @@ import { isoToGerman } from '../lib/format';
  *   - Grundsicherungsgeld = die Leistung fuer Erwerbsfaehige (§ 19 Abs. 1 SGB II)
  */
 const jahr = REGELBEDARF.gueltig_ab.slice(0, 4);
+
+/**
+ * Verlaufstabelle seit 2011 (2026-11-15) — aus den Suchdaten: Anfragen nach
+ * „regelbedarf 2018", „2019", „2020", „regelbedarfsstufen 2022 tabelle"
+ * landeten hier, und die Seite kannte nur das laufende Jahr. Neueste Zeile
+ * zuerst, weil die meisten nach den letzten Jahren suchen.
+ */
+const verlaufAbsteigend = [...VERLAUF].reverse();
+const komma = (n: number) => n.toLocaleString('de-DE', { minimumFractionDigits: 1 });
+const anstiegGesamt = LETZTES_JAHR.betraege[0] - ERSTES_JAHR.betraege[0];
+const anstiegGesamtProzent = Math.round((anstiegGesamt / ERSTES_JAHR.betraege[0]) * 100);
+// Quellen beider Datensätze, jede Adresse einmal.
+const alleQuellen = [...QUELLEN, ...VERLAUF_QUELLEN].filter(
+  (q, i, alle) => alle.findIndex((x) => x.url === q.url) === i,
+);
 ---
 
 <BaseLayout
   title={`Regelbedarf und Regelsatz ${jahr}: die sechs Stufen`}
-  description={`Die sechs Regelbedarfsstufen ${jahr} mit Betrag und Zuordnung, der Unterschied zwischen Regelbedarf und Regelsatz — und warum die Beträge nicht gestiegen sind.`}
+  description={`Die sechs Regelbedarfsstufen ${jahr} mit Betrag und Zuordnung, alle Beträge seit ${ERSTES_JAHR.jahr} in einer Tabelle — und warum sie zuletzt nicht gestiegen sind.`}
   path="/regelbedarf/"
 >
   <nav class="text-[14px] text-ink-mute" aria-label="Sie sind hier">
@@ -111,6 +138,114 @@ const jahr = REGELBEDARF.gueltig_ab.slice(0, 4);
     )
   }
 
+  <section class="mt-14">
+    <h2 class="font-display text-2xl text-ink">
+      Regelbedarf {ERSTES_JAHR.jahr} bis {LETZTES_JAHR.jahr}: alle Stufen im Verlauf
+    </h2>
+    <p class="mt-3 max-w-prose text-ink-soft">
+      Wer einen älteren Bescheid nachvollziehen will — etwa bei einer
+      Nachzahlung oder einer Rückforderung für vergangene Jahre —, braucht den
+      Betrag, der damals galt. Die Tabelle nennt ihn für jedes Jahr seit{' '}
+      {ERSTES_JAHR.jahr}, jeweils ab dem 1. Januar.
+    </p>
+
+    <div class="mt-5 overflow-x-auto">
+      <table class="w-full min-w-[36rem] border-collapse text-[15px]">
+        <caption class="sr-only">
+          Regelbedarfsstufen 1 bis 6 in Euro im Monat, je Jahr seit {ERSTES_JAHR.jahr}, mit der
+          Veränderung der Stufe 1 zum Vorjahr
+        </caption>
+        <thead>
+          <tr class="border-y border-rule text-left text-[14px] text-ink-mute">
+            <th scope="col" class="py-2 pr-3 font-normal">Jahr</th>
+            {
+              [1, 2, 3, 4, 5, 6].map((n) => (
+                <th scope="col" class="py-2 pr-3 text-right font-normal">
+                  Stufe {n}
+                </th>
+              ))
+            }
+            <th scope="col" class="py-2 text-right font-normal">Stufe 1 zum Vorjahr</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            verlaufAbsteigend.map((z) => (
+              <tr class="border-b border-rule/60">
+                <th scope="row" class="py-2 pr-3 text-left font-semibold text-ink">
+                  {z.jahr}
+                </th>
+                {z.betraege.map((b) => (
+                  <td class="py-2 pr-3 text-right tabular-nums text-ink">{b} €</td>
+                ))}
+                <td class="py-2 text-right tabular-nums text-ink-soft">
+                  {z.differenzStufe1 === null
+                    ? '—'
+                    : z.differenzStufe1 === 0
+                      ? 'unverändert'
+                      : `+ ${z.differenzStufe1} € (${komma(z.prozentStufe1 ?? 0)} %)`}
+                </td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+    <p class="mt-3 text-[14px] text-ink-mute">
+      {VERLAUF_LEGAL_BASIS} · Euro im Monat · gelesen am {isoToGerman(VERLAUF_ERHOBEN_AM)}
+    </p>
+
+    <ul class="mt-6 flex max-w-prose flex-col gap-3 text-ink-soft">
+      <li class="flex gap-2.5">
+        <Icon name="quelle" class="mt-1 h-5 w-5 shrink-0 text-marker" />
+        <span>
+          Die Stufe 1 ist seit {ERSTES_JAHR.jahr} von {ERSTES_JAHR.betraege[0]} € auf{' '}
+          {LETZTES_JAHR.betraege[0]} € gestiegen — um {anstiegGesamt} € oder rund{' '}
+          {anstiegGesamtProzent} Prozent.
+        </span>
+      </li>
+      <li class="flex gap-2.5">
+        <Icon name="quelle" class="mt-1 h-5 w-5 shrink-0 text-marker" />
+        <span>
+          Der größte Schritt war der zum 1. Januar {GROESSTER_ANSTIEG.jahr}: +{' '}
+          {GROESSTER_ANSTIEG.differenzStufe1} € ({komma(GROESSTER_ANSTIEG.prozentStufe1 ?? 0)} %).
+          Seit {UNVERAENDERT_SEIT} gilt derselbe Betrag.
+        </span>
+      </li>
+      <li class="flex gap-2.5">
+        <Icon name="quelle" class="mt-1 h-5 w-5 shrink-0 text-marker" />
+        <span>
+          Zum 1. Januar {NEUERMITTLUNG.jahr} wurden die Stufen nicht fortgeschrieben, sondern
+          neu ermittelt — auf Grundlage der {NEUERMITTLUNG.grundlage}. Deshalb springen dort
+          einzelne Stufen stärker als die übrigen, am deutlichsten die Stufen 4 und 6.
+          <span class="block text-[14px] text-ink-mute">{NEUERMITTLUNG.legal_basis}</span>
+        </span>
+      </li>
+    </ul>
+  </section>
+
+  <section class="mt-14 max-w-prose">
+    <h2 class="font-display text-2xl text-ink">
+      Gesetz oder Verordnung: woher der Betrag eines Jahres kommt
+    </h2>
+    <p class="mt-3 text-ink-soft">
+      Es gibt zwei Wege, auf denen ein neuer Betrag entsteht, und sie werden oft
+      verwechselt. Liegt eine neue Einkommens- und Verbrauchsstichprobe vor,
+      ermittelt ein Bundesgesetz die Regelbedarfe neu — das
+      Regelbedarfs-Ermittlungsgesetz (RBEG), zuletzt für {NEUERMITTLUNG.jahr}. In
+      allen Jahren dazwischen werden die Beträge zum 1. Januar durch eine
+      Verordnung fortgeschrieben, die Regelbedarfsstufen-Fortschreibungsverordnung.
+    </p>
+    <p class="mt-3 text-ink-soft">
+      Für {jahr} gibt es deshalb kein neues RBEG, sondern eine Fortschreibungsverordnung.
+      Gerechnet wird darin mit einem Mischindex: Die Preisentwicklung der
+      regelbedarfsrelevanten Güter zählt zu 70 Prozent, die Entwicklung der
+      Nettolöhne zu 30 Prozent; eine zweite, ergänzende Fortschreibung
+      berücksichtigt zusätzlich die Preise des zweiten Quartals des Vorjahres.
+    </p>
+    <p class="mt-2 text-[14px] text-ink-mute">§ 28 Abs. 1 und § 28a Abs. 1 bis 4 SGB XII</p>
+  </section>
+
   <section class="mt-14 max-w-prose">
     <h2 class="font-display text-2xl text-ink">
       Regelbedarf, Regelsatz, Grundsicherungsgeld — was heißt was?
@@ -159,11 +294,12 @@ const jahr = REGELBEDARF.gueltig_ab.slice(0, 4);
     <h2 class="font-display text-2xl text-ink">Quellen</h2>
     <p class="mt-3 text-ink-soft">
       Alle Beträge auf dieser Seite stammen aus dem Volltext der Vorschriften,
-      gelesen am {isoToGerman(ERHOBEN_AM)}:
+      gelesen am {isoToGerman(ERHOBEN_AM)}; die Tabelle seit {ERSTES_JAHR.jahr} am{' '}
+      {isoToGerman(VERLAUF_ERHOBEN_AM)}:
     </p>
     <ul class="mt-3 flex list-disc flex-col gap-1 pl-5">
       {
-        QUELLEN.map((q) => (
+        alleQuellen.map((q) => (
           <li>
             <a href={q.url} rel="noopener" class="text-ink underline underline-offset-2">
               {q.label}
